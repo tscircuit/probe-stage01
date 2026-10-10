@@ -1,0 +1,21 @@
+{
+  "revision": "v3",
+  "final_source_sha256": "728df35c034453cf4d31f964c829f9c01d7d9ba7d5cd8efbed7b714e1e1e1d84",
+  "valid_single_solid_components": 48,
+  "pose_count": 41,
+  "pairs_per_pose": 1128,
+  "total_component_pair_checks": 46248,
+  "no_excluded_parts_or_regions": true,
+  "all_pair_intersection_count": 0,
+  "optical_print_failure_count": 0,
+  "optical_other_nonprobe_failure_count": 0,
+  "conservative_probe_check_count": 1927,
+  "positive_volume_threshold_mm3": 1e-05,
+  "minimum_conservative_probe_to_front_clamp_gap_mm": 1.885263290251272,
+  "statement": "No intersections at 41 checked poses; \u00d844 projected optical field clear of printed parts.",
+  "validation_scope": "All 48 exported components are valid single solids and passed STEP roundtrip checks. No intersections at 41 checked poses; \u00d844 projected optical field clear of printed parts. Every component pair was checked at each pose (1128 pairs per pose), with no excluded parts or regions. A conservative full-length \u00d86 mm probe envelope was also checked against every other component, replacing the necked probe reference. This is a geometry and motion prototype; stiffness, strength, backlash, fit tolerances and manufacturing need physical validation. These sampled checks do not prove clearance at every intermediate position. Separate conservative bounds keep every printed part outside the \u00d844 projected barrel corridor throughout the prescribed vertical stroke, with the bounds checked against a 24 mm corridor radius. The projected footprint is not a measured lens field of view. The checked minimum gap between a full-length \u00d86 mm probe envelope and the front clamp is 1.885 mm.",
+  "raw_report": "v3_all_pairs.json",
+  "step_roundtrip_report": "step_roundtrip_checks.json",
+  "optical_bounds_report": "optical_bounds.json",
+  "continuous_printed_optical_exclusion_scope": "Continuous printed-part optical exclusion for the prescribed vertical motion. Physical drive collisions are checked separately with an all-pairs BRep pose audit. The optical corridor is a conservative projected housing footprint, not a measured lens field of view."
+}

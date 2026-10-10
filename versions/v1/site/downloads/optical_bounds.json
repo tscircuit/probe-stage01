@@ -1,0 +1,56 @@
+{
+  "source_sha256": "728df35c034453cf4d31f964c829f9c01d7d9ba7d5cd8efbed7b714e1e1e1d84",
+  "working_distance_mm": 100.0,
+  "vertical_stroke_mm": 40.0,
+  "optical_projection_radius_mm": 22.0,
+  "checked_corridor_radius_mm": 24.0,
+  "world_y_interval_mm": [
+    -100.0,
+    0
+  ],
+  "scope": "Continuous printed-part optical exclusion for the prescribed vertical motion. Physical drive collisions are checked separately with an all-pairs BRep pose audit. The optical corridor is a conservative projected housing footprint, not a measured lens field of view.",
+  "parts": [
+    {
+      "part": "frame_front_clamp",
+      "motion": "fixed",
+      "optical_corridor_intersection_mm3": 0,
+      "bound": "Fixed solid intersects the entire below-barrel corridor by zero volume."
+    },
+    {
+      "part": "rear_clamp",
+      "motion": "fixed",
+      "optical_corridor_intersection_mm3": 0,
+      "bound": "Fixed solid intersects the entire below-barrel corridor by zero volume."
+    },
+    {
+      "part": "front_axle_bridge",
+      "motion": "fixed",
+      "optical_corridor_intersection_mm3": 0,
+      "bound": "Fixed solid intersects the entire below-barrel corridor by zero volume."
+    },
+    {
+      "part": "sector_crank",
+      "motion": "wheel",
+      "minimum_world_x_bound_mm": 41.94999999999999,
+      "bound": "Full rotation disk, expanded by tessellation tolerance."
+    },
+    {
+      "part": "motor_pinion",
+      "motion": "pinion",
+      "minimum_world_x_bound_mm": 48.949999999999996,
+      "bound": "Full rotation disk, expanded by tessellation tolerance."
+    },
+    {
+      "part": "connecting_rod",
+      "motion": "rod",
+      "minimum_world_x_bound_mm": 98.94999999999996,
+      "bound": "Capsule about the two joint centers; centerline stays at nonnegative local X."
+    },
+    {
+      "part": "probe_carriage",
+      "motion": "slider",
+      "minimum_world_x_bound_mm": 34.20577126594005,
+      "bound": "Exact solid bound; vertical translation keeps X and Z constant."
+    }
+  ]
+}

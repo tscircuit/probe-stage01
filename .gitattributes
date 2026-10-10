@@ -1,0 +1,6 @@
+# Preserve every byte in the frozen Site snapshot, including source and reports.
+versions/v1/site/** -text
+*.step -diff
+*.stl -diff
+*.glb -diff
+*.zip -diff

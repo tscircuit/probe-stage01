@@ -1,0 +1,316 @@
+{
+  "parameters": {
+    "microscope_d": 44.0,
+    "clamp_clearance": 0.4,
+    "clamp_outer_r": 29.0,
+    "clamp_y": 9.0,
+    "clamp_width": 18.0,
+    "split_gap": 0.8,
+    "stroke": 40.0,
+    "crank_r": 25.0,
+    "rod_length": 110.0,
+    "module": 1.0,
+    "ring_teeth": 120,
+    "pinion_teeth": 20,
+    "pressure_angle": 20.0,
+    "backlash": 0.2,
+    "wheel_r": 68.0,
+    "window_inner_r": 36.0,
+    "wheel_thickness": 8.0,
+    "bearing_id": 5.0,
+    "bearing_od": 16.0,
+    "bearing_width": 5.0,
+    "bearing_seat_allowance": 0.1,
+    "m5_clearance": 5.3,
+    "motor_size": 42.0,
+    "motor_length": 40.0,
+    "motor_hole_spacing": 31.0,
+    "motor_shaft_d": 5.0,
+    "probe_d": 6.0,
+    "probe_clearance": 0.35,
+    "probe_x": -65.0,
+    "probe_z": -34.0,
+    "probe_tip_extension": 90.0,
+    "probe_total_length": 104.0,
+    "probe_stem_d": 1.0,
+    "probe_stem_length": 60.0,
+    "probe_transition_length": 10.0,
+    "slide_clearance": 0.3,
+    "approach_angle_degrees": 60.0,
+    "working_distance": 100.0,
+    "clamp_rotation_degrees": 45.0,
+    "frame_thickness": 8.0,
+    "strut_width": 16.0,
+    "strut_depth": 8.0
+  },
+  "derived": {
+    "vertical_travel_mm": 40.0,
+    "horizontal_travel_mm": 0,
+    "probe_axis_angle_from_plate_degrees": 60.0,
+    "wheel_limit_degrees": 53.13010235415599,
+    "wheel_sweep_degrees": 106.26020470831197,
+    "motor_to_wheel_ratio": 6.0,
+    "motor_travel_degrees": 637.5612282498719,
+    "pinion_to_window_inner_clearance_mm": 3.0,
+    "pinion_to_slot_end_clearance_mm": 18.999999999999993,
+    "world_origin_mm": [
+      110.0,
+      106.91475992911631,
+      34.0
+    ],
+    "carriage_y_low": -128.97247358851683,
+    "carriage_y_high": -88.97247358851683,
+    "clamp_band_world_y_mm": [
+      0,
+      18.0
+    ],
+    "conservative_6mm_probe_min_x_at_barrel_end_full_retraction_mm": 31.176914536239803,
+    "conservative_6mm_probe_to_clamp_envelope_clearance_mm": 2.176914536239803,
+    "optical_projection_radius_mm": 22.0,
+    "probe_reference_note": "Customizable reference: 1 mm stem, taper to 6 mm shank outside the central optical projection; collet center 90 mm from tip. Conservative full-length 6 mm clearance envelope available via conservative_probe().",
+    "conservative_6mm_clamp_envelope_metric_note": "The exported envelope clearance is the horizontal X gap at the barrel-end plane. The minimum Euclidean probe-to-front-clamp surface gap from the 41-pose BRep audit is recorded separately below.",
+    "minimum_checked_conservative_6mm_probe_to_front_clamp_surface_gap_mm": 1.885263290251272
+  },
+  "parts": {
+    "frame_front_clamp": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 263803.0679804471
+    },
+    "rear_clamp": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11387.650462047663
+    },
+    "front_axle_bridge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16212.741471175908
+    },
+    "sector_crank": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 86417.5393911563
+    },
+    "motor_pinion": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2949.9145479874037
+    },
+    "connecting_rod": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10589.384356524331
+    },
+    "probe_carriage": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 44832.95293413939
+    },
+    "625ZZ_wheel_rear": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 907.1348787240529
+    },
+    "625ZZ_wheel_front": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 907.1348787240529
+    },
+    "625ZZ_crank": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 907.1348787240529
+    },
+    "625ZZ_slider": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 907.1348787240527
+    },
+    "wheel_inner_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.494687336415936
+    },
+    "wheel_rear_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34.494687336415936
+    },
+    "wheel_front_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 68.98937467283187
+    },
+    "crank_rear_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 310.45218602774327
+    },
+    "crank_front_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 37.9441560700575
+    },
+    "slider_rear_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25.871015502311934
+    },
+    "slider_front_spacer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 37.944156070057495
+    },
+    "M5_wheel_axle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 905.4659076268332
+    },
+    "M5_crank_bolt": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 948.662806613693
+    },
+    "M5_crank_nut": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.16268702907144
+    },
+    "M5_slider_pivot_bolt": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 575.5986789999049
+    },
+    "M5_slider_captive_nut": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.1626870290716
+    },
+    "M5_axle_captive_nut": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.16268702907152
+    },
+    "NEMA17_body": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 65117.046472995
+    },
+    "NEMA17_face": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5961.693305965739
+    },
+    "motor_shaft": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 451.8231413692664
+    },
+    "M3_motor_-15.5_-15.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 125.19246724555322
+    },
+    "M3_motor_-15.5_15.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 125.19246724555322
+    },
+    "M3_motor_15.5_-15.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 125.19246724555322
+    },
+    "M3_motor_15.5_15.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 125.19246724555325
+    },
+    "M5_stop_-1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 432.26351417987064
+    },
+    "M5_stop_nut_-1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.1626870290716
+    },
+    "M5_stop_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 432.26351417987064
+    },
+    "M5_stop_nut_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.1626870290716
+    },
+    "M5_clamp_-28": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 689.481412692535
+    },
+    "M5_clamp_nut_-28": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.1626870290715
+    },
+    "M5_clamp_28": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 689.4814126925348
+    },
+    "M5_clamp_nut_28": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.16268702907135
+    },
+    "M5_bridge_bolt_0": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 905.4659076268332
+    },
+    "M5_bridge_nut_0": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.1626870290716
+    },
+    "M5_bridge_bolt_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 905.4659076268331
+    },
+    "M5_bridge_nut_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.16268702907163
+    },
+    "M5_probe_clamp_bolt": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 689.481412692535
+    },
+    "M5_probe_clamp_nut": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 143.16268702907152
+    },
+    "microscope_reference": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 212874.3182072444
+    },
+    "probe_reference": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1118.9305834535644
+    },
+    "specimen_plate_reference": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 30000.0
+    }
+  }
+}

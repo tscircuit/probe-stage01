@@ -1,0 +1,10 @@
+{
+  "step_models": 48,
+  "bad": [],
+  "max_volume_error_mm3": 0.00010264158481732011,
+  "probe_world_y_bounds": [
+    -99.99999999999,
+    -8.433358006389424
+  ],
+  "source_sha256": "728df35c034453cf4d31f964c829f9c01d7d9ba7d5cd8efbed7b714e1e1e1d84"
+}
