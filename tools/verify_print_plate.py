@@ -139,5 +139,6 @@ if __name__ == '__main__':
     ap.add_argument('--repo', type=Path, required=True)
     ap.add_argument('--plates', type=Path, required=True)
     ap.add_argument('--output', type=Path, required=True)
+    ap.add_argument('--versions', nargs='+', default=['v2', 'v3', 'v4'])
     args = ap.parse_args()
-    print(json.dumps([verify(args.repo, args.plates, v, args.output) for v in ('v2', 'v3')], indent=2))
+    print(json.dumps([verify(args.repo, args.plates, v, args.output) for v in args.versions], indent=2))

@@ -4,7 +4,7 @@
 Usage: python generate_print_plates.py --repo /path/to/probe-stage01 --output ./print-plates
 Requires numpy and scipy. Meshes retain all original triangles; only rigid motions
 and exact coordinate deduplication are applied. Hardware is never included.
-Defaults to v2 and v3; explicitly selecting v1 writes its unsupported-source
+Defaults to v2, v3 and v4; explicitly selecting v1 writes its unsupported-source
 diagnostic without creating a 3MF, because the frozen frame STL is non-manifold.
 """
 from __future__ import annotations
@@ -366,7 +366,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", type=Path, required=True)
     ap.add_argument("--output", type=Path, required=True)
-    ap.add_argument("--versions", nargs="+", default=["v2", "v3"])
+    ap.add_argument("--versions", nargs="+", default=["v2", "v3", "v4"])
     args = ap.parse_args()
     for version in args.versions:
         generate(args.repo, args.output, version)

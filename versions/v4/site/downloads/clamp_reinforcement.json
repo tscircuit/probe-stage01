@@ -1,0 +1,1730 @@
+{
+  "complete": true,
+  "validated": true,
+  "source_unchanged": true,
+  "changed_part": "frame_front_clamp",
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "baseline_source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+  "source": "/workspace/work/v4_frame_design/probe_stage_v4.py",
+  "baseline_source": "/workspace/probe-stage01/versions/v3/site/downloads/probe_stage_v3.py",
+  "scope": "Exact CAD section geometry of the marked clamp-to-frame root. Area and centroidal second moments of area are geometric quantities only. Whole-system stiffness, material strength, FEA, physical load capacity, creep, fatigue and print adhesion are untested.",
+  "method": "Fresh build123d front_frame() builds; OCC exact planar intersections and BRepGProp surface integration. All section coordinates are in the microscope world frame. The main compared sections are above the18mm clamp band, using complete connected section faces with center X<40mm and Z>12mm to exclude the remote frame. Same planes and selection are used in both versions.",
+  "coordinate_definition": {
+    "units": "mm",
+    "cylinder_axis": "world +Y",
+    "barrel_end_y_mm": 0,
+    "clamp_band_y_mm": [
+      0,
+      18
+    ],
+    "dominant_bending_note": "The published v3 static stage-only gravity moment about world Z is larger than that about X. Iz=integral((x\u2212xc)^2 dA) measures the geometric width contribution at these Y sections; an increase does not imply the same increase in global stiffness or strength."
+  },
+  "baseline_geometry": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 75606.6671949662,
+    "center_of_volume_world_mm": [
+      56.1189580257708,
+      41.01868953224807,
+      24.63555735589108
+    ],
+    "world_bounds_mm": {
+      "min": [
+        -32.526911934581186,
+        -50.663491882443225,
+        -23.758787847868
+      ],
+      "max": [
+        132.0,
+        147.83650811755678,
+        45.5
+      ]
+    },
+    "marked_connection_severance_test": {
+      "world_box_mm": {
+        "min": [
+          10,
+          18.0001,
+          12
+        ],
+        "max": [
+          40,
+          18.5,
+          36
+        ]
+      },
+      "result_valid": true,
+      "solid_count_after": 2,
+      "solid_volumes_after_mm3": [
+        11967.725275111648,
+        63613.53763417225
+      ],
+      "note": "A thin cut through the selected root separates the clamp from the mechanism; this verifies that the measured root is a connecting material path."
+    }
+  },
+  "source_geometry": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 78678.36114960458,
+    "center_of_volume_world_mm": [
+      55.10707092400741,
+      41.036004212521796,
+      24.787055423021243
+    ],
+    "world_bounds_mm": {
+      "min": [
+        -32.526911934581186,
+        -50.663491882443225,
+        -23.758787847868
+      ],
+      "max": [
+        132.0,
+        147.83650811755678,
+        45.5
+      ]
+    },
+    "marked_connection_severance_test": {
+      "world_box_mm": {
+        "min": [
+          10,
+          18.0001,
+          12
+        ],
+        "max": [
+          40,
+          18.5,
+          36
+        ]
+      },
+      "result_valid": true,
+      "solid_count_after": 2,
+      "solid_volumes_after_mm3": [
+        12381.049662383306,
+        66227.67880895948
+      ],
+      "note": "A thin cut through the selected root separates the clamp from the mechanism; this verifies that the measured root is a connecting material path."
+    }
+  },
+  "section_comparisons": [
+    {
+      "world_y_mm": 18.0001,
+      "baseline": {
+        "world_y_mm": 18.0001,
+        "face_count": 1,
+        "area_mm2": 47.29998176272527,
+        "centroid_world_mm": [
+          23.385082843571656,
+          18.0001,
+          26.396371675579722
+        ],
+        "world_bounds_mm": {
+          "min": [
+            19.951071031140195,
+            18.0001,
+            21.64397327356369
+          ],
+          "max": [
+            27.17905204640433,
+            18.000100000000003,
+            30.013683009501737
+          ]
+        },
+        "centroidal_Ix_mm4": 193.2908869421226,
+        "centroidal_Iz_mm4": 220.99889716121106,
+        "centroidal_Ixz_mm4": -8.548917203006567,
+        "face_areas_mm2": [
+          47.29998176272527
+        ]
+      },
+      "source": {
+        "world_y_mm": 18.0001,
+        "face_count": 1,
+        "area_mm2": 139.29555205518838,
+        "centroid_world_mm": [
+          20.589162028476107,
+          18.0001,
+          26.97706863093907
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.029504855023891,
+            18.0001,
+            22.0
+          ],
+          "max": [
+            28.571459523809523,
+            18.000100000000003,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 979.612639222818,
+        "centroidal_Iz_mm4": 2850.49035271522,
+        "centroidal_Ixz_mm4": -118.14658842417703,
+        "face_areas_mm2": [
+          139.29555205518838
+        ]
+      },
+      "area_ratio": 2.9449388110538384,
+      "area_increase_percent": 194.49388110538385,
+      "centroidal_Ix_ratio": 5.068074624315552,
+      "centroidal_Iz_ratio": 12.898210757295706
+    },
+    {
+      "world_y_mm": 18.1,
+      "baseline": {
+        "world_y_mm": 18.1,
+        "face_count": 1,
+        "area_mm2": 48.673585365512544,
+        "centroid_world_mm": [
+          23.311669648487182,
+          18.1,
+          26.38875017633954
+        ],
+        "world_bounds_mm": {
+          "min": [
+            19.801619393068393,
+            18.1,
+            21.662358702340946
+          ],
+          "max": [
+            27.197437475181587,
+            18.1,
+            30.014497369522104
+          ]
+        },
+        "centroidal_Ix_mm4": 200.92285349455778,
+        "centroidal_Iz_mm4": 237.05666584290157,
+        "centroidal_Ixz_mm4": -9.75233737776216,
+        "face_areas_mm2": [
+          48.673585365512544
+        ]
+      },
+      "source": {
+        "world_y_mm": 18.1,
+        "face_count": 1,
+        "area_mm2": 139.3115010337398,
+        "centroid_world_mm": [
+          20.62107192554236,
+          18.1,
+          26.97704263514764
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.0587474437478,
+            18.1,
+            22.0
+          ],
+          "max": [
+            28.602380952380955,
+            18.1,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 979.733411070134,
+        "centroidal_Iz_mm4": 2853.3234576612012,
+        "centroidal_Ixz_mm4": -117.13728953881946,
+        "face_areas_mm2": [
+          139.3115010337398
+        ]
+      },
+      "area_ratio": 2.8621581908870093,
+      "area_increase_percent": 186.21581908870093,
+      "centroidal_Ix_ratio": 4.8761671160352655,
+      "centroidal_Iz_ratio": 12.03646160936099
+    },
+    {
+      "world_y_mm": 18.5,
+      "baseline": {
+        "world_y_mm": 18.5,
+        "face_count": 1,
+        "area_mm2": 54.17818436983305,
+        "centroid_world_mm": [
+          23.023058614233435,
+          18.5,
+          26.361589350335617
+        ],
+        "world_bounds_mm": {
+          "min": [
+            19.20321443582394,
+            18.5,
+            21.735974032780398
+          ],
+          "max": [
+            27.27105280562104,
+            18.5,
+            30.017758070304367
+          ]
+        },
+        "centroidal_Ix_mm4": 231.5484935135537,
+        "centroidal_Iz_mm4": 309.05181406319025,
+        "centroidal_Ixz_mm4": -14.765422766737174,
+        "face_areas_mm2": [
+          54.17818436983305
+        ]
+      },
+      "source": {
+        "world_y_mm": 18.5,
+        "face_count": 1,
+        "area_mm2": 138.97527940502158,
+        "centroid_world_mm": [
+          20.77057559026345,
+          18.5,
+          26.97759191732865
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.217948717948715,
+            18.499999999999996,
+            22.0
+          ],
+          "max": [
+            28.726190476190478,
+            18.5,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 977.1873706341721,
+        "centroidal_Iz_mm4": 2841.625408229491,
+        "centroidal_Ixz_mm4": -112.40854090497305,
+        "face_areas_mm2": [
+          138.97527940502158
+        ]
+      },
+      "area_ratio": 2.565152026069083,
+      "area_increase_percent": 156.51520260690833,
+      "centroidal_Ix_ratio": 4.2202277190672906,
+      "centroidal_Iz_ratio": 9.194656943992175
+    },
+    {
+      "world_y_mm": 18.799,
+      "baseline": {
+        "world_y_mm": 18.799,
+        "face_count": 1,
+        "area_mm2": 58.2977686176791,
+        "centroid_world_mm": [
+          22.811894263748236,
+          18.799,
+          26.344136393866886
+        ],
+        "world_bounds_mm": {
+          "min": [
+            18.755906730283712,
+            18.799,
+            21.79100149228389
+          ],
+          "max": [
+            27.32608026512453,
+            18.799,
+            30.020195444139105
+          ]
+        },
+        "centroidal_Ix_mm4": 254.51824667215988,
+        "centroidal_Iz_mm4": 371.52801695431845,
+        "centroidal_Ixz_mm4": -18.70402523152734,
+        "face_areas_mm2": [
+          58.2977686176791
+        ]
+      },
+      "source": {
+        "world_y_mm": 18.799,
+        "face_count": 1,
+        "area_mm2": 138.6163151193073,
+        "centroid_world_mm": [
+          20.88820967412832,
+          18.799,
+          26.978181295065085
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.348282051282052,
+            18.798999999999996,
+            22.0
+          ],
+          "max": [
+            28.818738095238096,
+            18.799,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 974.4690182570193,
+        "centroidal_Iz_mm4": 2826.587491186292,
+        "centroidal_Ixz_mm4": -108.68781596883491,
+        "face_areas_mm2": [
+          138.6163151193073
+        ]
+      },
+      "area_ratio": 2.377729343782657,
+      "area_increase_percent": 137.7729343782657,
+      "centroidal_Ix_ratio": 3.8286803834234107,
+      "centroidal_Iz_ratio": 7.608006293463024
+    },
+    {
+      "world_y_mm": 18.801,
+      "baseline": {
+        "world_y_mm": 18.801,
+        "face_count": 1,
+        "area_mm2": 69.76212126760039,
+        "centroid_world_mm": [
+          23.05588165975899,
+          18.801,
+          25.735865654908043
+        ],
+        "world_bounds_mm": {
+          "min": [
+            18.75291470549749,
+            18.801,
+            21.474946177198703
+          ],
+          "max": [
+            27.32644834177673,
+            18.801000000000002,
+            30.020211747643017
+          ]
+        },
+        "centroidal_Ix_mm4": 393.5545786291914,
+        "centroidal_Iz_mm4": 414.4340685825591,
+        "centroidal_Ixz_mm4": 34.15679120118148,
+        "face_areas_mm2": [
+          69.76212126760039
+        ]
+      },
+      "source": {
+        "world_y_mm": 18.801,
+        "face_count": 1,
+        "area_mm2": 146.9669313186813,
+        "centroid_world_mm": [
+          21.084255494505495,
+          18.801,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.349153846153847,
+            18.800999999999995,
+            22.0
+          ],
+          "max": [
+            28.819357142857143,
+            18.801000000000002,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1105.3137959592568,
+        "centroidal_Iz_mm4": 2931.098558458092,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          146.9669313186813
+        ]
+      },
+      "area_ratio": 2.1066866753510993,
+      "area_increase_percent": 110.66866753510993,
+      "centroidal_Ix_ratio": 2.808540050046496,
+      "centroidal_Iz_ratio": 7.072532836122738
+    },
+    {
+      "world_y_mm": 19,
+      "baseline": {
+        "world_y_mm": 19,
+        "face_count": 1,
+        "area_mm2": 72.47494813510359,
+        "centroid_world_mm": [
+          22.93018911269169,
+          19.0,
+          25.75186443852782
+        ],
+        "world_bounds_mm": {
+          "min": [
+            18.455208239268373,
+            19.0,
+            21.48043972123275
+          ],
+          "max": [
+            27.363071968670358,
+            19.0,
+            30.02183394628219
+          ]
+        },
+        "centroidal_Ix_mm4": 408.53292674604745,
+        "centroidal_Iz_mm4": 464.8924215154475,
+        "centroidal_Ixz_mm4": 36.77325379304966,
+        "face_areas_mm2": [
+          72.47494813510359
+        ]
+      },
+      "source": {
+        "world_y_mm": 19,
+        "face_count": 1,
+        "area_mm2": 146.72802197802199,
+        "centroid_world_mm": [
+          21.158424908424905,
+          19.0,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.435897435897434,
+            18.999999999999996,
+            22.0
+          ],
+          "max": [
+            28.88095238095238,
+            19.0,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1103.516998626379,
+        "centroidal_Iz_mm4": 2916.827407499586,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          146.72802197802199
+        ]
+      },
+      "area_ratio": 2.024534349503778,
+      "area_increase_percent": 102.4534349503778,
+      "centroidal_Ix_ratio": 2.7011702763247483,
+      "centroidal_Iz_ratio": 6.274198658673264
+    },
+    {
+      "world_y_mm": 20,
+      "baseline": {
+        "world_y_mm": 20,
+        "face_count": 1,
+        "area_mm2": 80.33138354256343,
+        "centroid_world_mm": [
+          22.6503304361812,
+          20.0,
+          25.797365350679254
+        ],
+        "world_bounds_mm": {
+          "min": [
+            17.728376222819442,
+            20.0,
+            21.508045470147543
+          ],
+          "max": [
+            27.54711029476899,
+            20.000000000000004,
+            30.02998569823784
+          ]
+        },
+        "centroidal_Ix_mm4": 452.0907939948811,
+        "centroidal_Iz_mm4": 633.5221644621779,
+        "centroidal_Ixz_mm4": 39.25732196716126,
+        "face_areas_mm2": [
+          80.33138354256343
+        ]
+      },
+      "source": {
+        "world_y_mm": 20,
+        "face_count": 1,
+        "area_mm2": 145.52747252747253,
+        "centroid_world_mm": [
+          21.531135531135533,
+          20.0,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            13.871794871794872,
+            19.999999999999996,
+            22.0
+          ],
+          "max": [
+            29.190476190476193,
+            20.0,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1094.487866300362,
+        "centroidal_Iz_mm4": 2845.813947635106,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          145.52747252747253
+        ]
+      },
+      "area_ratio": 1.8115892707159098,
+      "area_increase_percent": 81.15892707159098,
+      "centroidal_Ix_ratio": 2.4209470328492344,
+      "centroidal_Iz_ratio": 4.492051118765561
+    },
+    {
+      "world_y_mm": 24,
+      "baseline": {
+        "world_y_mm": 24,
+        "face_count": 1,
+        "area_mm2": 65.33746206289676,
+        "centroid_world_mm": [
+          24.362094756503115,
+          24.0,
+          25.869179129533485
+        ],
+        "world_bounds_mm": {
+          "min": [
+            20.402150864272457,
+            24.0,
+            21.618468465806725
+          ],
+          "max": [
+            28.283263599163526,
+            24.000000000000004,
+            30.062592706060443
+          ]
+        },
+        "centroidal_Ix_mm4": 375.5386704929115,
+        "centroidal_Iz_mm4": 332.67132602132915,
+        "centroidal_Ixz_mm4": 11.78743380420201,
+        "face_areas_mm2": [
+          65.33746206289676
+        ]
+      },
+      "source": {
+        "world_y_mm": 24,
+        "face_count": 1,
+        "area_mm2": 140.72527472527472,
+        "centroid_world_mm": [
+          23.02197802197802,
+          24.0,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            15.615384615384613,
+            23.999999999999996,
+            22.0
+          ],
+          "max": [
+            30.42857142857143,
+            24.000000000000004,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1058.3713369963225,
+        "centroidal_Iz_mm4": 2573.284824743343,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          140.72527472527472
+        ]
+      },
+      "area_ratio": 2.153822176162984,
+      "area_increase_percent": 115.3822176162984,
+      "centroidal_Ix_ratio": 2.818275240755266,
+      "centroidal_Iz_ratio": 7.735216784443747
+    },
+    {
+      "world_y_mm": 26,
+      "baseline": {
+        "world_y_mm": 26,
+        "face_count": 1,
+        "area_mm2": 60.039973163548744,
+        "centroid_world_mm": [
+          25.356905478479177,
+          26.0,
+          25.904613160037652
+        ],
+        "world_bounds_mm": {
+          "min": [
+            21.73903818499896,
+            26.0,
+            21.673679963636314
+          ],
+          "max": [
+            28.956060380813085,
+            26.0,
+            30.078896209971735
+          ]
+        },
+        "centroidal_Ix_mm4": 346.81145579362055,
+        "centroidal_Iz_mm4": 257.8797471336293,
+        "centroidal_Ixz_mm4": 1.2874815997929545,
+        "face_areas_mm2": [
+          60.039973163548744
+        ]
+      },
+      "source": {
+        "world_y_mm": 26,
+        "face_count": 1,
+        "area_mm2": 138.32417582417582,
+        "centroid_world_mm": [
+          23.767399267399266,
+          26.0,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            16.487179487179485,
+            26.0,
+            22.0
+          ],
+          "max": [
+            31.047619047619047,
+            26.000000000000004,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1040.3130723443173,
+        "centroidal_Iz_mm4": 2443.8008813480556,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          138.32417582417582
+        ]
+      },
+      "area_ratio": 2.3038680488310863,
+      "area_increase_percent": 130.38680488310862,
+      "centroidal_Ix_ratio": 2.9996502565456877,
+      "centroidal_Iz_ratio": 9.476513407940159
+    },
+    {
+      "world_y_mm": 28,
+      "baseline": {
+        "world_y_mm": 28,
+        "face_count": 1,
+        "area_mm2": 60.98579138426727,
+        "centroid_world_mm": [
+          26.587236384099313,
+          28.0,
+          25.93823619416588
+        ],
+        "world_bounds_mm": {
+          "min": [
+            22.918652705768185,
+            28.0,
+            21.728891461465903
+          ],
+          "max": [
+            30.292947701539585,
+            28.000000000000004,
+            30.095199713883037
+          ]
+        },
+        "centroidal_Ix_mm4": 348.1865716549364,
+        "centroidal_Iz_mm4": 273.83390460653754,
+        "centroidal_Ixz_mm4": -7.114512541709701,
+        "face_areas_mm2": [
+          60.98579138426727
+        ]
+      },
+      "source": {
+        "world_y_mm": 28,
+        "face_count": 1,
+        "area_mm2": 135.9230769230769,
+        "centroid_world_mm": [
+          24.51282051282051,
+          28.0,
+          26.750000000000007
+        ],
+        "world_bounds_mm": {
+          "min": [
+            17.358974358974358,
+            28.0,
+            22.0
+          ],
+          "max": [
+            31.66666666666667,
+            28.000000000000004,
+            31.500000000000007
+          ]
+        },
+        "centroidal_Ix_mm4": 1022.2548076923122,
+        "centroidal_Iz_mm4": 2318.7350933090493,
+        "centroidal_Ixz_mm4": 0.0,
+        "face_areas_mm2": [
+          135.9230769230769
+        ]
+      },
+      "area_ratio": 2.2287663050338224,
+      "area_increase_percent": 122.87663050338224,
+      "centroidal_Ix_ratio": 2.935939783184396,
+      "centroidal_Iz_ratio": 8.467669833071838
+    }
+  ],
+  "below_band_regional_sections": {
+    "window_world_x_mm": [
+      11,
+      30
+    ],
+    "window_world_z_mm": [
+      20,
+      33
+    ],
+    "note": "Window-limited intersection through the clamp/bolt region; not a minimum neck search or complete clamp section.",
+    "rows": [
+      {
+        "world_y_mm": 0.1,
+        "baseline": {
+          "world_y_mm": 0.1,
+          "face_count": 1,
+          "area_mm2": 106.45751826573621,
+          "centroid_world_mm": [
+            16.267736876812215,
+            0.10000000000000002,
+            25.109112979850565
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              0.09999999999999999,
+              20.0
+            ],
+            "max": [
+              23.758787847867996,
+              0.1,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 930.6755845661683,
+          "centroidal_Iz_mm4": 968.9422714552711,
+          "centroidal_Ixz_mm4": 55.34215556925483,
+          "face_areas_mm2": [
+            106.45751826573621
+          ]
+        },
+        "source": {
+          "world_y_mm": 0.1,
+          "face_count": 1,
+          "area_mm2": 121.39402429642116,
+          "centroid_world_mm": [
+            16.68367711171367,
+            0.1,
+            25.690037654438594
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              0.09999999999999999,
+              20.0
+            ],
+            "max": [
+              23.758787847867996,
+              0.10000000000000071,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1245.8356946678832,
+          "centroidal_Iz_mm4": 1181.1389431830394,
+          "centroidal_Ixz_mm4": -135.0208896623517,
+          "face_areas_mm2": [
+            121.39402429642116
+          ]
+        }
+      },
+      {
+        "world_y_mm": 1,
+        "baseline": {
+          "world_y_mm": 1,
+          "face_count": 1,
+          "area_mm2": 117.71611179613691,
+          "centroid_world_mm": [
+            16.873146388614373,
+            1.0,
+            25.315586048678405
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              0.9999999999999996,
+              20.0
+            ],
+            "max": [
+              24.050382098894943,
+              1.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 992.8099500058597,
+          "centroidal_Iz_mm4": 1387.3927264701924,
+          "centroidal_Ixz_mm4": -78.75591651612194,
+          "face_areas_mm2": [
+            117.71611179613691
+          ]
+        },
+        "source": {
+          "world_y_mm": 1,
+          "face_count": 1,
+          "area_mm2": 131.80677145257067,
+          "centroid_world_mm": [
+            16.936626771136122,
+            1.0,
+            25.953135609757513
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              1.0,
+              20.0
+            ],
+            "max": [
+              23.758787847867996,
+              1.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1383.6476456192468,
+          "centroidal_Iz_mm4": 1487.7435547077257,
+          "centroidal_Ixz_mm4": -198.29588472714386,
+          "face_areas_mm2": [
+            131.80677145257067
+          ]
+        }
+      },
+      {
+        "world_y_mm": 3,
+        "baseline": {
+          "world_y_mm": 3,
+          "face_count": 1,
+          "area_mm2": 120.57684457974311,
+          "centroid_world_mm": [
+            17.00660842272998,
+            3.0,
+            25.37146756892239
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              3.0,
+              20.0
+            ],
+            "max": [
+              24.41845875109221,
+              3.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1012.9148129775858,
+          "centroidal_Iz_mm4": 1487.5661521051443,
+          "centroidal_Ixz_mm4": -111.28343383345054,
+          "face_areas_mm2": [
+            120.57684457974311
+          ]
+        },
+        "source": {
+          "world_y_mm": 3,
+          "face_count": 1,
+          "area_mm2": 138.5130236889628,
+          "centroid_world_mm": [
+            17.138653622005997,
+            3.0,
+            26.073481358415172
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              3.0,
+              20.0
+            ],
+            "max": [
+              23.92857142857143,
+              3.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1449.7527481313737,
+          "centroidal_Iz_mm4": 1755.3650382292035,
+          "centroidal_Ixz_mm4": -238.63761364947277,
+          "face_areas_mm2": [
+            138.5130236889628
+          ]
+        }
+      },
+      {
+        "world_y_mm": 5,
+        "baseline": {
+          "world_y_mm": 5,
+          "face_count": 1,
+          "area_mm2": 122.40052509572004,
+          "centroid_world_mm": [
+            17.126138543091223,
+            5.0,
+            25.39696501286915
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999998,
+              5.0,
+              20.0
+            ],
+            "max": [
+              24.786535403289477,
+              5.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1021.8211742939893,
+          "centroidal_Iz_mm4": 1585.5254316391365,
+          "centroidal_Ixz_mm4": -137.04632807896996,
+          "face_areas_mm2": [
+            122.40052509572004
+          ]
+        },
+        "source": {
+          "world_y_mm": 5,
+          "face_count": 1,
+          "area_mm2": 140.4176415020892,
+          "centroid_world_mm": [
+            17.437743216264362,
+            5.0,
+            26.074281276960225
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              5.0,
+              20.0
+            ],
+            "max": [
+              24.54761904761905,
+              5.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1451.1048925297364,
+          "centroidal_Iz_mm4": 1888.7542259873735,
+          "centroidal_Ixz_mm4": -344.33085278656654,
+          "face_areas_mm2": [
+            140.4176415020892
+          ]
+        }
+      },
+      {
+        "world_y_mm": 7,
+        "baseline": {
+          "world_y_mm": 7,
+          "face_count": 2,
+          "area_mm2": 86.35452503293546,
+          "centroid_world_mm": [
+            18.060051321473722,
+            6.999999999999999,
+            25.931263476914502
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999996,
+              7.0,
+              20.0
+            ],
+            "max": [
+              25.154612055486744,
+              7.000000000000001,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 747.6103267861108,
+          "centroidal_Iz_mm4": 1304.0520174372905,
+          "centroidal_Ixz_mm4": -222.28492758446373,
+          "face_areas_mm2": [
+            67.5088903272844,
+            18.845634705651047
+          ]
+        },
+        "source": {
+          "world_y_mm": 7,
+          "face_count": 2,
+          "area_mm2": 103.86204137074066,
+          "centroid_world_mm": [
+            18.61947216724185,
+            7.000000000000001,
+            26.682542974059704
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999996,
+              7.0,
+              20.0
+            ],
+            "max": [
+              25.166666666666668,
+              7.000000000000001,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1045.70344977254,
+          "centroidal_Iz_mm4": 1555.3933642563643,
+          "centroidal_Ixz_mm4": -432.0139395383303,
+          "face_areas_mm2": [
+            85.0164066650896,
+            18.845634705651047
+          ]
+        }
+      },
+      {
+        "world_y_mm": 8,
+        "baseline": {
+          "world_y_mm": 8,
+          "face_count": 2,
+          "area_mm2": 73.45456922209799,
+          "centroid_world_mm": [
+            18.62121341337811,
+            8.0,
+            26.216949188491377
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              8.0,
+              20.0
+            ],
+            "max": [
+              25.33865038158538,
+              8.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 627.8964076952179,
+          "centroidal_Iz_mm4": 1159.064283585103,
+          "centroidal_Ixz_mm4": -200.5388507233074,
+          "face_areas_mm2": [
+            60.30951014790907,
+            13.145059074188909
+          ]
+        },
+        "source": {
+          "world_y_mm": 8,
+          "face_count": 2,
+          "area_mm2": 92.11299753459494,
+          "centroid_world_mm": [
+            19.247205044357322,
+            8.0,
+            27.03305782495757
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              8.0,
+              20.0
+            ],
+            "max": [
+              25.476190476190474,
+              8.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 890.002607929433,
+          "centroidal_Iz_mm4": 1405.621577087375,
+          "centroidal_Ixz_mm4": -371.4072428271975,
+          "face_areas_mm2": [
+            78.96793846040603,
+            13.145059074188909
+          ]
+        }
+      },
+      {
+        "world_y_mm": 8.9,
+        "baseline": {
+          "world_y_mm": 8.9,
+          "face_count": 2,
+          "area_mm2": 70.81324359574138,
+          "centroid_world_mm": [
+            18.85789005147751,
+            8.9,
+            26.30344626500542
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              8.9,
+              20.0
+            ],
+            "max": [
+              25.50428487507415,
+              8.900000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 595.8647404079602,
+          "centroidal_Iz_mm4": 1143.4970521124487,
+          "centroidal_Ixz_mm4": -190.9014399628868,
+          "face_areas_mm2": [
+            59.03752118782112,
+            11.775722407920268
+          ]
+        },
+        "source": {
+          "world_y_mm": 8.9,
+          "face_count": 2,
+          "area_mm2": 90.68629723555135,
+          "centroid_world_mm": [
+            19.539232536913875,
+            8.899999999999999,
+            27.13954797141943
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              8.899999999999999,
+              20.0
+            ],
+            "max": [
+              25.754761904761907,
+              8.900000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 854.6483370922942,
+          "centroidal_Iz_mm4": 1417.1205080047293,
+          "centroidal_Ixz_mm4": -350.9473402927033,
+          "face_areas_mm2": [
+            78.91057482763108,
+            11.775722407920268
+          ]
+        }
+      },
+      {
+        "world_y_mm": 9,
+        "baseline": {
+          "world_y_mm": 9,
+          "face_count": 2,
+          "area_mm2": 70.88673491787777,
+          "centroid_world_mm": [
+            18.86967835169631,
+            9.0,
+            26.30477353170497
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              9.0,
+              20.0
+            ],
+            "max": [
+              25.522688707684015,
+              9.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 595.8531438655045,
+          "centroidal_Iz_mm4": 1147.6762994329183,
+          "centroidal_Ixz_mm4": -191.0355090977173,
+          "face_areas_mm2": [
+            59.12396290877453,
+            11.762772009103248
+          ]
+        },
+        "source": {
+          "world_y_mm": 9,
+          "face_count": 2,
+          "area_mm2": 90.90077759322628,
+          "centroid_world_mm": [
+            19.557736827582143,
+            9.0,
+            27.14139081481801
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              9.0,
+              20.0
+            ],
+            "max": [
+              25.785714285714285,
+              9.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 855.5611978103698,
+          "centroidal_Iz_mm4": 1426.0280655429597,
+          "centroidal_Ixz_mm4": -351.1832024698233,
+          "face_areas_mm2": [
+            79.13800558412304,
+            11.762772009103248
+          ]
+        }
+      },
+      {
+        "world_y_mm": 9.1,
+        "baseline": {
+          "world_y_mm": 9.1,
+          "face_count": 2,
+          "area_mm2": 71.02983859536221,
+          "centroid_world_mm": [
+            18.878540343085223,
+            9.1,
+            26.304503887181298
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              9.1,
+              20.0
+            ],
+            "max": [
+              25.541092540293878,
+              9.100000000000001,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 596.5310158048815,
+          "centroidal_Iz_mm4": 1153.0536847251387,
+          "centroidal_Ixz_mm4": -191.4335122043267,
+          "face_areas_mm2": [
+            59.25411618744194,
+            11.775722407920268
+          ]
+        },
+        "source": {
+          "world_y_mm": 9.1,
+          "face_count": 2,
+          "area_mm2": 91.18593566458321,
+          "centroid_world_mm": [
+            19.57345932939545,
+            9.1,
+            27.141328159025605
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              9.1,
+              20.0
+            ],
+            "max": [
+              25.81666666666667,
+              9.100000000000001,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 857.4131694480457,
+          "centroidal_Iz_mm4": 1436.5092517999146,
+          "centroidal_Ixz_mm4": -351.955690309318,
+          "face_areas_mm2": [
+            79.41021325666294,
+            11.775722407920268
+          ]
+        }
+      },
+      {
+        "world_y_mm": 10,
+        "baseline": {
+          "world_y_mm": 10,
+          "face_count": 2,
+          "area_mm2": 75.62051921830634,
+          "centroid_world_mm": [
+            18.821959172845887,
+            9.999999999999998,
+            26.229360841792975
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              10.0,
+              20.0
+            ],
+            "max": [
+              25.70672703378265,
+              10.000000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 634.7149989250465,
+          "centroidal_Iz_mm4": 1259.0324323670866,
+          "centroidal_Ixz_mm4": -207.14539120779227,
+          "face_areas_mm2": [
+            62.47546014411743,
+            13.145059074188909
+          ]
+        },
+        "source": {
+          "world_y_mm": 10,
+          "face_count": 2,
+          "area_mm2": 97.10938182491391,
+          "centroid_world_mm": [
+            19.583822099524376,
+            10.0,
+            27.05515209210811
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              10.0,
+              20.0
+            ],
+            "max": [
+              26.0952380952381,
+              10.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 918.0793419545807,
+          "centroidal_Iz_mm4": 1608.6420309624082,
+          "centroidal_Ixz_mm4": -384.64252723378013,
+          "face_areas_mm2": [
+            83.964322750725,
+            13.145059074188909
+          ]
+        }
+      },
+      {
+        "world_y_mm": 11,
+        "baseline": {
+          "world_y_mm": 11,
+          "face_count": 2,
+          "area_mm2": 90.6864250253522,
+          "centroid_world_mm": [
+            18.421647835793816,
+            11.0,
+            25.965609447273255
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999996,
+              11.0,
+              20.0
+            ],
+            "max": [
+              25.890765359881286,
+              11.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 762.714352539333,
+          "centroidal_Iz_mm4": 1534.1613145908996,
+          "centroidal_Ixz_mm4": -244.9753033955276,
+          "face_areas_mm2": [
+            71.84079031970114,
+            18.845634705651047
+          ]
+        },
+        "source": {
+          "world_y_mm": 11,
+          "face_count": 2,
+          "area_mm2": 113.85480995137856,
+          "centroid_world_mm": [
+            19.249825451221344,
+            11.0,
+            26.750475345050475
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999996,
+              11.0,
+              20.0
+            ],
+            "max": [
+              26.404761904761905,
+              11.000000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1106.0481616670877,
+          "centroidal_Iz_mm4": 2026.8758058170497,
+          "centroidal_Ixz_mm4": -482.0507211194854,
+          "face_areas_mm2": [
+            95.0091752457275,
+            18.845634705651047
+          ]
+        }
+      },
+      {
+        "world_y_mm": 12,
+        "baseline": {
+          "world_y_mm": 12,
+          "face_count": 1,
+          "area_mm2": 129.87176852981608,
+          "centroid_world_mm": [
+            17.612098870990117,
+            12.0,
+            25.47083744447187
+          ],
+          "world_bounds_mm": {
+            "min": [
+              10.999999999999998,
+              12.0,
+              20.0
+            ],
+            "max": [
+              26.074803685979916,
+              12.000000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1055.0343962133484,
+          "centroidal_Iz_mm4": 2072.844319572003,
+          "centroidal_Ixz_mm4": -214.69585214482504,
+          "face_areas_mm2": [
+            129.87176852981608
+          ]
+        },
+        "source": {
+          "world_y_mm": 12,
+          "face_count": 1,
+          "area_mm2": 155.27381676872776,
+          "centroid_world_mm": [
+            18.41991837161303,
+            12.0,
+            26.1641898462172
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              12.0,
+              20.0
+            ],
+            "max": [
+              26.714285714285715,
+              12.000000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1527.386345618288,
+          "centroidal_Iz_mm4": 2856.450798340782,
+          "centroidal_Ixz_mm4": -583.7505119224224,
+          "face_areas_mm2": [
+            155.27381676872776
+          ]
+        }
+      },
+      {
+        "world_y_mm": 14,
+        "baseline": {
+          "world_y_mm": 14,
+          "face_count": 1,
+          "area_mm2": 132.2288561650317,
+          "centroid_world_mm": [
+            17.762264309372444,
+            14.0,
+            25.48577105143124
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              14.0,
+              20.0
+            ],
+            "max": [
+              26.442880338177186,
+              14.000000000000002,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1066.7146749583626,
+          "centroidal_Iz_mm4": 2259.147108064193,
+          "centroidal_Ixz_mm4": -227.4334834029214,
+          "face_areas_mm2": [
+            132.2288561650317
+          ]
+        },
+        "source": {
+          "world_y_mm": 14,
+          "face_count": 1,
+          "area_mm2": 162.45646745849731,
+          "centroid_world_mm": [
+            18.676049627128,
+            13.999999999999998,
+            26.22608090216237
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              14.0,
+              20.0
+            ],
+            "max": [
+              27.333333333333336,
+              14.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1597.8130625754711,
+          "centroidal_Iz_mm4": 3316.6973496107094,
+          "centroidal_Ixz_mm4": -581.358353940901,
+          "face_areas_mm2": [
+            162.45646745849731
+          ]
+        }
+      },
+      {
+        "world_y_mm": 16,
+        "baseline": {
+          "world_y_mm": 16,
+          "face_count": 1,
+          "area_mm2": 134.39480616124007,
+          "centroid_world_mm": [
+            17.928075694110227,
+            16.0,
+            25.48992519619652
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              16.0,
+              20.0
+            ],
+            "max": [
+              26.810956990374457,
+              16.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1075.9387635246676,
+          "centroidal_Iz_mm4": 2459.578797307244,
+          "centroidal_Ixz_mm4": -240.53272819533595,
+          "face_areas_mm2": [
+            134.39480616124007
+          ]
+        },
+        "source": {
+          "world_y_mm": 16,
+          "face_count": 1,
+          "area_mm2": 167.92347082059277,
+          "centroid_world_mm": [
+            19.004900980750435,
+            16.0,
+            26.23372731930018
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              16.0,
+              20.0
+            ],
+            "max": [
+              27.952380952380953,
+              16.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1635.7245141967724,
+          "centroidal_Iz_mm4": 3756.6138302391482,
+          "centroidal_Ixz_mm4": -619.366887197175,
+          "face_areas_mm2": [
+            167.92347082059277
+          ]
+        }
+      },
+      {
+        "world_y_mm": 17,
+        "baseline": {
+          "world_y_mm": 17,
+          "face_count": 1,
+          "area_mm2": 136.32397242673412,
+          "centroid_world_mm": [
+            18.03978439391521,
+            17.0,
+            25.516388964982077
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              17.0,
+              20.0
+            ],
+            "max": [
+              26.994995316473087,
+              17.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1095.9376034537854,
+          "centroidal_Iz_mm4": 2582.1661353288946,
+          "centroidal_Ixz_mm4": -260.54708990662766,
+          "face_areas_mm2": [
+            136.32397242673412
+          ]
+        },
+        "source": {
+          "world_y_mm": 17,
+          "face_count": 1,
+          "area_mm2": 170.67549102015903,
+          "centroid_world_mm": [
+            19.168533782149513,
+            17.0,
+            26.23774373966063
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              17.0,
+              20.0
+            ],
+            "max": [
+              28.261904761904763,
+              17.0,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1654.896780785435,
+          "centroidal_Iz_mm4": 3988.5086142339424,
+          "centroidal_Ixz_mm4": -638.2114664882392,
+          "face_areas_mm2": [
+            170.67549102015903
+          ]
+        }
+      },
+      {
+        "world_y_mm": 17.9,
+        "baseline": {
+          "world_y_mm": 17.9,
+          "face_count": 1,
+          "area_mm2": 140.1864828490204,
+          "centroid_world_mm": [
+            18.176172749343444,
+            17.9,
+            25.585515458978083
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              17.9,
+              20.0
+            ],
+            "max": [
+              27.16062980996186,
+              17.9,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1135.220442158985,
+          "centroidal_Iz_mm4": 2707.7469629931,
+          "centroidal_Ixz_mm4": -292.00549145648984,
+          "face_areas_mm2": [
+            140.1864828490204
+          ]
+        },
+        "source": {
+          "world_y_mm": 17.9,
+          "face_count": 1,
+          "area_mm2": 173.13869785197312,
+          "centroid_world_mm": [
+            19.316239973435863,
+            17.9,
+            26.24084266424913
+          ],
+          "world_bounds_mm": {
+            "min": [
+              11.0,
+              17.9,
+              20.0
+            ],
+            "max": [
+              28.54047619047619,
+              17.9,
+              32.52691193458119
+            ]
+          },
+          "centroidal_Ix_mm4": 1671.7926881331368,
+          "centroidal_Iz_mm4": 4203.240687957645,
+          "centroidal_Ixz_mm4": -655.7452194836806,
+          "face_areas_mm2": [
+            173.13869785197312
+          ]
+        }
+      }
+    ]
+  },
+  "summary": {
+    "world_y_mm": 18.0001,
+    "baseline_area_mm2": 47.29998176272527,
+    "area_mm2": 139.29555205518838,
+    "area_ratio": 2.9449388110538384,
+    "area_increase_percent": 194.49388110538385,
+    "centroidal_Ix_ratio": 5.068074624315552,
+    "centroidal_Iz_ratio": 12.898210757295706,
+    "frame_volume_increase_mm3": 3071.69395463838,
+    "frame_volume_increase_percent": 4.06272894785513,
+    "estimated_added_solid_PETG_mass_g": 3.901051322390743
+  },
+  "print_orientation_note": "The v3 printable plate places original +Z toward the bed; broad X/Y saddle dimensions therefore lie in the layer plane. This is an orientation observation, not a validation of a v4 print profile or print strength.",
+  "limitations": [
+    "No structural load rating or validated safety factor.",
+    "Controller, heatsink and cable mass is unknown; the published reference gravity estimate excluded these.",
+    "Section measurements do not measure clamp slip, bolt preload, barrel damage, layer adhesion, creep or dynamic forces.",
+    "The measured planes are specified local geometry probes, not a global minimum-section search."
+  ]
+}

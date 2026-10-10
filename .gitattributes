@@ -2,6 +2,7 @@
 versions/v1/site/** -text
 versions/v2/site/** -text
 versions/v3/site/** -text
+versions/v4/site/** -text
 faceted-parasolid/** -text
 print-plates/** -text
 *.step -diff

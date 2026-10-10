@@ -1,0 +1,363 @@
+{
+  "versions": [
+    {
+      "version": "v4",
+      "download_available": true,
+      "filename": "probe-stage-v4-print-plate.3mf",
+      "sha256": "1855c7173cfcc982f9c7e84c8afa1394e7e6e3e1216a8bb1da44740872205fa2",
+      "object_count": 7,
+      "build_item_count": 7,
+      "names": [
+        "frame_front_clamp",
+        "rear_clamp",
+        "front_axle_bridge",
+        "sector_crank",
+        "motor_pinion",
+        "connecting_rod",
+        "probe_carriage"
+      ]
+    },
+    {
+      "version": "v1",
+      "download_available": false
+    },
+    {
+      "version": "v2",
+      "download_available": true,
+      "filename": "probe-stage-v2-print-plate.3mf",
+      "sha256": "3987e9885b5806776b4cfb8779eedd678279270a715289641d7c4d8eecc085ba",
+      "object_count": 7,
+      "build_item_count": 7,
+      "names": [
+        "frame_front_clamp",
+        "rear_clamp",
+        "front_axle_bridge",
+        "sector_crank",
+        "motor_pinion",
+        "connecting_rod",
+        "probe_carriage"
+      ]
+    },
+    {
+      "version": "v3",
+      "download_available": true,
+      "filename": "probe-stage-v3-print-plate.3mf",
+      "sha256": "24383de721f8052a1c5af10af65134b82cfa6857143baa64e8238752e1f08afe",
+      "object_count": 7,
+      "build_item_count": 7,
+      "names": [
+        "frame_front_clamp",
+        "rear_clamp",
+        "front_axle_bridge",
+        "sector_crank",
+        "motor_pinion",
+        "connecting_rod",
+        "probe_carriage"
+      ]
+    },
+    {
+      "version": "v4",
+      "download_available": true,
+      "filename": "probe-stage-v4-print-plate.3mf",
+      "sha256": "1855c7173cfcc982f9c7e84c8afa1394e7e6e3e1216a8bb1da44740872205fa2",
+      "object_count": 7,
+      "build_item_count": 7,
+      "names": [
+        "frame_front_clamp",
+        "rear_clamp",
+        "front_axle_bridge",
+        "sector_crank",
+        "motor_pinion",
+        "connecting_rod",
+        "probe_carriage"
+      ]
+    }
+  ],
+  "gate_cases": [
+    {
+      "case": "missing",
+      "hidden_no_href": true
+    },
+    {
+      "case": "wrong_source",
+      "hidden_no_href": true
+    },
+    {
+      "case": "hardware_name",
+      "hidden_no_href": true
+    },
+    {
+      "case": "duplicate_name",
+      "hidden_no_href": true
+    },
+    {
+      "case": "wrong_version_path",
+      "hidden_no_href": true
+    },
+    {
+      "case": "external_path",
+      "hidden_no_href": true
+    },
+    {
+      "case": "encoded_path",
+      "hidden_no_href": true
+    }
+  ],
+  "responsive_widths": [
+    {
+      "width": 320,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 52.03125,
+          "y": 49,
+          "right": 155,
+          "bottom": 79,
+          "width": 102.96875,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 262.59375,
+          "y": 58.5,
+          "right": 304,
+          "bottom": 69.5,
+          "width": 41.40625,
+          "height": 11
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 16,
+          "y": 89,
+          "right": 155,
+          "bottom": 123,
+          "width": 139,
+          "height": 34
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 165,
+          "y": 89,
+          "right": 304,
+          "bottom": 123,
+          "width": 139,
+          "height": 34
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 52.03125,
+          "y": 49,
+          "right": 182.5,
+          "bottom": 79,
+          "width": 130.46875,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 317.59375,
+          "y": 58.5,
+          "right": 359,
+          "bottom": 69.5,
+          "width": 41.40625,
+          "height": 11
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 16,
+          "y": 89,
+          "right": 182.5,
+          "bottom": 123,
+          "width": 166.5,
+          "height": 34
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 192.5,
+          "y": 89,
+          "right": 359,
+          "bottom": 123,
+          "width": 166.5,
+          "height": 34
+        }
+      ]
+    },
+    {
+      "width": 650,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 57.359375,
+          "y": 49,
+          "right": 320,
+          "bottom": 79,
+          "width": 262.640625,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 588.453125,
+          "y": 58,
+          "right": 634,
+          "bottom": 70,
+          "width": 45.546875,
+          "height": 12
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 16,
+          "y": 89,
+          "right": 320,
+          "bottom": 123,
+          "width": 304,
+          "height": 34
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 330,
+          "y": 89,
+          "right": 634,
+          "bottom": 123,
+          "width": 304,
+          "height": 34
+        }
+      ]
+    },
+    {
+      "width": 760,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 61.359375,
+          "y": 48.5,
+          "right": 224.359375,
+          "bottom": 78.5,
+          "width": 163,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 447.90625,
+          "y": 57.5,
+          "right": 493.453125,
+          "bottom": 69.5,
+          "width": 45.546875,
+          "height": 12
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 505.453125,
+          "y": 48,
+          "right": 617.46875,
+          "bottom": 79,
+          "width": 112.015625,
+          "height": 31
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 629.46875,
+          "y": 48,
+          "right": 740,
+          "bottom": 79,
+          "width": 110.53125,
+          "height": 31
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 469.125,
+          "y": 18.5,
+          "right": 632.125,
+          "bottom": 48.5,
+          "width": 163,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 649.125,
+          "y": 27.5,
+          "right": 694.671875,
+          "bottom": 39.5,
+          "width": 45.546875,
+          "height": 12
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 711.671875,
+          "y": 15.5,
+          "right": 849.234375,
+          "bottom": 51.5,
+          "width": 137.5625,
+          "height": 36
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 866.234375,
+          "y": 15.5,
+          "right": 1002,
+          "bottom": 51.5,
+          "width": 135.765625,
+          "height": 36
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow_px": 0,
+      "controls": [
+        {
+          "id": "versionSelect",
+          "x": 867.125,
+          "y": 18.5,
+          "right": 1030.125,
+          "bottom": 48.5,
+          "width": 163,
+          "height": 30
+        },
+        {
+          "id": "repositoryLink",
+          "x": 1047.125,
+          "y": 27.5,
+          "right": 1092.671875,
+          "bottom": 39.5,
+          "width": 45.546875,
+          "height": 12
+        },
+        {
+          "id": "printPlateDownload",
+          "x": 1109.671875,
+          "y": 15.5,
+          "right": 1247.234375,
+          "bottom": 51.5,
+          "width": 137.5625,
+          "height": 36
+        },
+        {
+          "id": "assemblyDownload",
+          "x": 1264.234375,
+          "y": 15.5,
+          "right": 1400,
+          "bottom": 51.5,
+          "width": 135.765625,
+          "height": 36
+        }
+      ]
+    }
+  ],
+  "page_errors": [],
+  "load_failure_preserves_active_download": true,
+  "complete": true
+}

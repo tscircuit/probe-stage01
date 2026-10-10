@@ -1,0 +1,352 @@
+{
+  "versions": {
+    "v4": {
+      "available": 48,
+      "unsupported": {},
+      "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+      "downloads": [
+        {
+          "name": "frame_front_clamp",
+          "available": true,
+          "sha256": "0b1b9254d5531d8b770212fb410af818da18686e0bfa8e42f9b72290ff485c6c",
+          "source_step_sha256": "7e1c9c2df26361af3aec1a777d030a4de973db604a11c567c146d9467881aa62",
+          "readerPassed": true
+        },
+        {
+          "name": "rear_clamp",
+          "available": true,
+          "sha256": "3f34e28580156b8584147e688b1b9e90b8924b8e23cdecd42d2fd22c904ebad4",
+          "source_step_sha256": "ed88a1832e075a620d3d3a4f6cc07e8b290f397cea44594d1b46fed207595762",
+          "readerPassed": true
+        },
+        {
+          "name": "front_axle_bridge",
+          "available": true,
+          "sha256": "89de6ef86cbaef73ddd789236a3e662a09f290c0d6a6f4396aeb64e50f2e5697",
+          "source_step_sha256": "fdd3cda8558a23bdfe3556b3334dc78a40da01cbe8d3626b95642f97ccd23d5e",
+          "readerPassed": true
+        },
+        {
+          "name": "sector_crank",
+          "available": true,
+          "sha256": "e8ffe8af02c049b938dac49d4afb1bfae53fd558e16cd7575e9c4772e87cffe1",
+          "source_step_sha256": "54f3c69667694c9c7f6882dcb852380d4fa47a74e9fd53c3edc3607bd99b615f",
+          "readerPassed": true
+        },
+        {
+          "name": "motor_pinion",
+          "available": true,
+          "sha256": "b8e3f0a1aa2914801194d95ea1cf73e4a7f0510b4960853c7072782137481113",
+          "source_step_sha256": "027adf5783fc76b03f2c03e47b37f64da65ba6a99acc08b4966d081bfe15fcd0",
+          "readerPassed": true
+        },
+        {
+          "name": "connecting_rod",
+          "available": true,
+          "sha256": "0ca6e6c6c114d91221bd6e4ec71b3a0d3c0d36e5343bf2aff8ae39305eff146b",
+          "source_step_sha256": "266990a12422465aa7d57e363f53c6859c8ecb207e5cc0f3d6ee25e913344649",
+          "readerPassed": true
+        },
+        {
+          "name": "probe_carriage",
+          "available": true,
+          "sha256": "45eab1cbc59c93278eb65b3b4603c88a9a440e503e516e7e7b5e3643ff7c5e2d",
+          "source_step_sha256": "1b341608428523857c5c60ed0039d18ad3be8f88a01bf0ffee523419246b52de",
+          "readerPassed": true
+        },
+        {
+          "name": "625ZZ_wheel_rear",
+          "available": true,
+          "sha256": "e10b1ff3ce1217b00bd8444c1699111d45246c1671ff8f7b161b826fc6b6bd5a",
+          "source_step_sha256": "07efebc3496df4a6703a0de6307bfd07d6f5cab99e72bcc081acde411054cd09",
+          "readerPassed": true
+        },
+        {
+          "name": "625ZZ_wheel_front",
+          "available": true,
+          "sha256": "e1639c29ba32cdf40e5d5444ea91ea8e1595d28e71a01804a1c343bb7dbf95aa",
+          "source_step_sha256": "c6f9fd676848c93f04de54313f72d5ece1b4955e565aa8a6c11cf7108a699428",
+          "readerPassed": true
+        },
+        {
+          "name": "625ZZ_crank",
+          "available": true,
+          "sha256": "d9eb840a64e5ea14d2d7f25acdba1b75587c9bee401c5dfe2d6e5cd521eed4a2",
+          "source_step_sha256": "ab757b1159f5f971b2d1f6740b1ec7958f2f503ca89021c2935c9cd065936cfe",
+          "readerPassed": true
+        },
+        {
+          "name": "625ZZ_slider",
+          "available": true,
+          "sha256": "568e89a7fa201761fd803ada9ba3ba0f612a3f75e1b02e1a31d5f2d20b3ed114",
+          "source_step_sha256": "e2b82412487b4da6d6998fb98ab3350e26adfd89a6a6a02fa764fea07b9058b0",
+          "readerPassed": true
+        },
+        {
+          "name": "wheel_inner_spacer",
+          "available": true,
+          "sha256": "1e703118cc42a6706a73ed2e09ed029512eecebb6f3252a14c260b25ff6b0837",
+          "source_step_sha256": "7504dfdfde7818c39a32a3c8047e0e713d02196fa6667543a396befbcb7c681e",
+          "readerPassed": true
+        },
+        {
+          "name": "wheel_rear_spacer",
+          "available": true,
+          "sha256": "082c2ebecbae914927b90d037f143aae8680276cca980fea0f84d6942831d6cd",
+          "source_step_sha256": "c936c4cda5b51edeb8d6737446b3f4e6dfcf211aa42138b432f6c64a46351829",
+          "readerPassed": true
+        },
+        {
+          "name": "wheel_front_spacer",
+          "available": true,
+          "sha256": "b8c0228983724a94c564afdc017b2fc67fce6354b5422d04c28c5433cead274d",
+          "source_step_sha256": "0ff4c76ab319fc20abfb1c0483979fe888d47a8f638eeb8fb7dd806cf08dd794",
+          "readerPassed": true
+        },
+        {
+          "name": "crank_rear_spacer",
+          "available": true,
+          "sha256": "fce97cbd175394e04762c498b128458856fb06bdb687b6d5de0e4972a608e8c8",
+          "source_step_sha256": "470aab826539d3208d20272030811ca239e24d34c6f4be20bbc90a4093703a4a",
+          "readerPassed": true
+        },
+        {
+          "name": "crank_front_spacer",
+          "available": true,
+          "sha256": "e9c8c5ccdae9956d8af614dd1c93c743ee408d91cdc28bd942782f961a092d78",
+          "source_step_sha256": "0a3f93e803a93d4e0ce9e2c852ed134aff07dbafc0f35b06545fa7599ecbe7ef",
+          "readerPassed": true
+        },
+        {
+          "name": "slider_rear_spacer",
+          "available": true,
+          "sha256": "c8ecc78403ebe8adcc5535cd42abff4d81ef13eedfc122ede502e525951c53d8",
+          "source_step_sha256": "3bc4a85fa3bf7dfd6f3234c5e43e8dd39e34ba91633a635a42d6327089f824f3",
+          "readerPassed": true
+        },
+        {
+          "name": "slider_front_spacer",
+          "available": true,
+          "sha256": "38965fea49c07201ccf5fb55e6a1d603694f6c6d81e50042be42a1c8e9476b14",
+          "source_step_sha256": "15529d1f8cfb93bcd77b840cd611e15bf2a693f4fc9263ddaa461969d3afac14",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_wheel_axle",
+          "available": true,
+          "sha256": "96287530015689852985a29fc8e2ea128fdf3e7368572f52b85f059c1ea0e55e",
+          "source_step_sha256": "0469abd31fb7b07567a84b2c1d4c4097da21ab36e0b3aa42ddf437ffef270566",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_crank_bolt",
+          "available": true,
+          "sha256": "fd98df4c46328bfd74c366c1df992606247024944d9d038b8c5745648994af3a",
+          "source_step_sha256": "a6933dafcc46dea70f657e2483a31eddd108fc1254ced3be8688d734bdd9c151",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_crank_nut",
+          "available": true,
+          "sha256": "779874d944e28fe429ae363eb3be9676f255000239ef629a109fee3ad9e19067",
+          "source_step_sha256": "37ce9f014cc39c956da46324754122405900553184579e2afaded04af807dd6a",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_slider_pivot_bolt",
+          "available": true,
+          "sha256": "3e423ede5ea1a6428d0cb990ac4ce5b9a43402645f334c7a5eb7a6d5586f553c",
+          "source_step_sha256": "4b42e7bb4ec4881c64a999fe126ea0e162bbfa718b7adefbe8520fa50fb963dc",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_slider_captive_nut",
+          "available": true,
+          "sha256": "d5252f71f8c18e8f2e0fe2cc6da316cfb5951b9ed22494ff187961b0ff8061b9",
+          "source_step_sha256": "29365e64225be18d1ed715ffe65f41570112037e6794fd63011571749bfeb88d",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_axle_captive_nut",
+          "available": true,
+          "sha256": "506aaad9f6a6c73cb04fbe523d87d23d12018e577e8a33517b0efd88d78441c3",
+          "source_step_sha256": "b67b4dad8ede4887e89998e762309646c3ac77e8f570878fc62b51e86d7f6d66",
+          "readerPassed": true
+        },
+        {
+          "name": "NEMA17_body",
+          "available": true,
+          "sha256": "cd2dd79c5a4d6bbfe2c0fc99861f7a80cfb04d738e7bd5afa0e28bb3b8ae1aca",
+          "source_step_sha256": "abdc84255a6f78d059a19801f30889b4ea1f8023c294e79cfe0ba036a6342eba",
+          "readerPassed": true
+        },
+        {
+          "name": "NEMA17_face",
+          "available": true,
+          "sha256": "550885e5c35214c3389c6b2e887a68bf6dd6805561daa3d4cf5c1f601d6a79f7",
+          "source_step_sha256": "a59e661aa003ed781416970d2f118193b87dd765aa381023440c22532c964569",
+          "readerPassed": true
+        },
+        {
+          "name": "motor_shaft",
+          "available": true,
+          "sha256": "acc4be400c7f59b84bf73d87aa7ebfe491b589f1799d009fcea8a2ad7c1daa72",
+          "source_step_sha256": "cf704b3e3c3f8a4e5cf9f69bf041b2b2f2fc6655be5d962ef9f33d62868e280f",
+          "readerPassed": true
+        },
+        {
+          "name": "M3_motor_-15.5_-15.5",
+          "available": true,
+          "sha256": "b08c8ed86659afa8c62b0545297c87d7a831f8bb0e0d09aa7b35c94a63dae8a1",
+          "source_step_sha256": "f01c5433ce82b5f2163115f58e526a2b59b06d54eb4ec20f5a2f045bb035c0cf",
+          "readerPassed": true
+        },
+        {
+          "name": "M3_motor_-15.5_15.5",
+          "available": true,
+          "sha256": "2aa93044644f7b0c92e35abf2c0b01e6916116215cbcd9dec4244208bc18e048",
+          "source_step_sha256": "c35897a46ff07dc0c530ed79c8e344d92347818f9f7362c2a5c165b40f96063f",
+          "readerPassed": true
+        },
+        {
+          "name": "M3_motor_15.5_-15.5",
+          "available": true,
+          "sha256": "e46438600b3e1c1e35686ca94376f368ff9eb48bd05c86641da67549cfd824f8",
+          "source_step_sha256": "aecd4bf088f1797488a596087f528861ffd52162ba862a774d40faf9a6c7a54c",
+          "readerPassed": true
+        },
+        {
+          "name": "M3_motor_15.5_15.5",
+          "available": true,
+          "sha256": "4aef8069240d535ba9be34c141f1aead2de340aa1108add61a4234e6bbda5ad3",
+          "source_step_sha256": "51fde506a16fd60b6050d028f2748a32e9c1fb69ded47d496983bb9239ada9e1",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_stop_-1",
+          "available": true,
+          "sha256": "89fd16caa05f2539b4df7c32d84e7c61415961d6d0bf9232f7b5f6ba6fb9030e",
+          "source_step_sha256": "acdca1b7291d211cbd1b0e271c6051c7cfd45e0175d089671d57d9a965feb928",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_stop_nut_-1",
+          "available": true,
+          "sha256": "bbe0b6793540e877c5e019190622638b06240dac02c3edb8fd5bf737799b93cc",
+          "source_step_sha256": "3b4f73e402f55f2ae4c99036f95d7cc131e970c7d84d84a21dcbe7a1093ae852",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_stop_1",
+          "available": true,
+          "sha256": "faae85fa7ec16baddbfdbdeb8e28648ab5774867a5929d00fb4446676aba8f17",
+          "source_step_sha256": "ea22dce7f6dba606e5e7e43abb002bcd07c75b4b93618429457555162b19e5fa",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_stop_nut_1",
+          "available": true,
+          "sha256": "cd4ec4e2a0fdab28e3a3da5328ff40452544207e2ad9b5fbb24e9c22c4f3dec7",
+          "source_step_sha256": "2afd7b47d843add208841d110bdb89296468b2046d4ba18a922f51b69be5066f",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_clamp_-28",
+          "available": true,
+          "sha256": "cd7c9449e8e650deaa3c9dfba7d452757084f7b60fefc37bec55ea8805defecb",
+          "source_step_sha256": "efd4a174bc903b3e04a7393fdc54b4dc92e1411f871264f515767649de81f2c1",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_clamp_nut_-28",
+          "available": true,
+          "sha256": "d16f79422c27f83a8b287c035230729c88f6e33016b5cd1406249b9854ac633a",
+          "source_step_sha256": "578e539f961775350e378a602c21bd6b70163fc3492dd708b5f36a824c43d186",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_clamp_28",
+          "available": true,
+          "sha256": "189772fc98f1d435826d5b4ad1b54f4b95de47edf28b0f86f5d9c4edd8a8f6e4",
+          "source_step_sha256": "7970da0feddd22da318e405bc64fe9590eec5c004bcdd109da1450c9b18d6420",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_clamp_nut_28",
+          "available": true,
+          "sha256": "63b37fb05f001b8d46c7aa6fa2f83611722fbbea91ca095718cbd5a662412ca6",
+          "source_step_sha256": "980a12fdeeddd44cac633dd2db63c963076fbac582ece5fda956101320cc4f59",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_bridge_bolt_0",
+          "available": true,
+          "sha256": "d8a7e47f5ab42c82339ca0037eb251e142291f9509c02bb3f8c9407504c94f40",
+          "source_step_sha256": "0f6e3bf2f4770da6943406042aef781fdeba87aef15b3aaa11caac7e1da1587b",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_bridge_nut_0",
+          "available": true,
+          "sha256": "60df757806d911bcba70017c6487663c1a1000ed65dfa6b0be14878a2e1824eb",
+          "source_step_sha256": "6cd5c8c0f1e2753da2597e47795101609f4a7a91206704ff9054c7c5c8a2ffb6",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_bridge_bolt_1",
+          "available": true,
+          "sha256": "fe50a7431e85b3e238e5fe4589fd6673a449d93af3a8711dcb17430284136e40",
+          "source_step_sha256": "601cc9dc77568e69b83a024714521babd0d1774780e053c77c4d6719e6e5df14",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_bridge_nut_1",
+          "available": true,
+          "sha256": "817ce7ac60f8d6464b2ff93fc18f20869363ac62af03d021e145489de216c728",
+          "source_step_sha256": "577998171cda5cf868764c247c01b274133e12a6d8230ca0e9adeb576ed70fa6",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_probe_clamp_bolt",
+          "available": true,
+          "sha256": "15283c6a56bc446a58a0419c4bac14d4f9f8de1ba3852533ef22a0159e902c9c",
+          "source_step_sha256": "1fc50337fab6ca4c071705999bc0cdcf7d94673bdedad93f0fb8789c23d26b1e",
+          "readerPassed": true
+        },
+        {
+          "name": "M5_probe_clamp_nut",
+          "available": true,
+          "sha256": "7013aad7160345e39238f747ae047d639b79bd43c312bfad36bc5b9b5fedd15a",
+          "source_step_sha256": "c5937fad065525b7fd727b69dac0fc44d31eae1b7e75e9f9ccf0ecdc3968ead4",
+          "readerPassed": true
+        },
+        {
+          "name": "microscope_reference",
+          "available": true,
+          "sha256": "2dde9765f529b7e2287cad19c50bd30451b69b55375e072607623b60a9bd19e3",
+          "source_step_sha256": "e8fd64bffa31c5fa5c4b853acd0cb643e226d0d2209f276d6f0fa3c661dc1bd0",
+          "readerPassed": true
+        },
+        {
+          "name": "probe_reference",
+          "available": true,
+          "sha256": "53786e611a08558e844b2026ddddb0f9590d363d3685e3c863a839082ef6eaf7",
+          "source_step_sha256": "b9bf29d885e040952a9367b3b3aeadcac479e4bc2694cd67ab16ac210c63e918",
+          "readerPassed": true
+        },
+        {
+          "name": "specimen_plate_reference",
+          "available": true,
+          "sha256": "67a28b2c7b3af261951a8b22b8d4b191842f69bbb5184e633f391ab8084a5a42",
+          "source_step_sha256": "9674439f92152efeecd848a2e82da7888073951694b1418c7a69913954ed51a2",
+          "readerPassed": true
+        }
+      ],
+      "bundleIntegrity": true,
+      "validationReport": "./faceted-parasolid/v4/validation.json",
+      "mobileOverflow": false
+    }
+  },
+  "pageErrors": [],
+  "passed": true
+}

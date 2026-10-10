@@ -1,5 +1,5 @@
 {
-  "defaultVersion": "v3",
+  "defaultVersion": "v4",
   "repository": "https://github.com/tscircuit/probe-stage01",
   "versions": [
     {
@@ -235,6 +235,90 @@
         "sha256": "24383de721f8052a1c5af10af65134b82cfa6857143baa64e8238752e1f08afe",
         "bytes": 253875,
         "file": "./print-plates/v3/probe-stage-v3-print-plate.3mf"
+      }
+    },
+    {
+      "id": "v4",
+      "label": "v4 \u00b7 Reinforced clamp",
+      "base": "./versions/v4/site/",
+      "manifest": "./assets/manifest.json",
+      "available": true,
+      "release": "https://github.com/tscircuit/probe-stage01/tree/v4",
+      "facetedXt": {
+        "base": "./faceted-parasolid/v4/parts/",
+        "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+        "names": [
+          "625ZZ_crank",
+          "625ZZ_slider",
+          "625ZZ_wheel_front",
+          "625ZZ_wheel_rear",
+          "M3_motor_-15.5_-15.5",
+          "M3_motor_-15.5_15.5",
+          "M3_motor_15.5_-15.5",
+          "M3_motor_15.5_15.5",
+          "M5_axle_captive_nut",
+          "M5_bridge_bolt_0",
+          "M5_bridge_bolt_1",
+          "M5_bridge_nut_0",
+          "M5_bridge_nut_1",
+          "M5_clamp_-28",
+          "M5_clamp_28",
+          "M5_clamp_nut_-28",
+          "M5_clamp_nut_28",
+          "M5_crank_bolt",
+          "M5_crank_nut",
+          "M5_probe_clamp_bolt",
+          "M5_probe_clamp_nut",
+          "M5_slider_captive_nut",
+          "M5_slider_pivot_bolt",
+          "M5_stop_-1",
+          "M5_stop_1",
+          "M5_stop_nut_-1",
+          "M5_stop_nut_1",
+          "M5_wheel_axle",
+          "NEMA17_body",
+          "NEMA17_face",
+          "connecting_rod",
+          "crank_front_spacer",
+          "crank_rear_spacer",
+          "frame_front_clamp",
+          "front_axle_bridge",
+          "microscope_reference",
+          "motor_pinion",
+          "motor_shaft",
+          "probe_carriage",
+          "probe_reference",
+          "rear_clamp",
+          "sector_crank",
+          "slider_front_spacer",
+          "slider_rear_spacer",
+          "specimen_plate_reference",
+          "wheel_front_spacer",
+          "wheel_inner_spacer",
+          "wheel_rear_spacer"
+        ],
+        "report": "./faceted-parasolid/v4/validation.json",
+        "bundle": "./faceted-parasolid/v4/probe-stage-v4-faceted-parasolid.zip",
+        "unsupported": {}
+      },
+      "printPlate": {
+        "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+        "names": [
+          "frame_front_clamp",
+          "rear_clamp",
+          "front_axle_bridge",
+          "sector_crank",
+          "motor_pinion",
+          "connecting_rod",
+          "probe_carriage"
+        ],
+        "plate_mm": [
+          256,
+          256
+        ],
+        "sha256": "1855c7173cfcc982f9c7e84c8afa1394e7e6e3e1216a8bb1da44740872205fa2",
+        "bytes": 259020,
+        "file": "./print-plates/v4/probe-stage-v4-print-plate.3mf"
       }
     }
   ]

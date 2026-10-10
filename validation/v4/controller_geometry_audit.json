@@ -1,0 +1,102 @@
+{
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "model_sha256": "ec0339198fa3ed96c1432ee08517c5882a803880844e9affa59ad62023cae76a",
+  "checks": {
+    "frozen_source_sha256": true,
+    "48_real_parts": true,
+    "reserved_box_is_not_physical_part": true,
+    "reserved_dimensions_42_42_20": true,
+    "clearance_2_mm": true,
+    "reference_only": true,
+    "rear_normal_away_from_motor_front": true,
+    "nominal_min_matches_derived_motor_back": true,
+    "nominal_max_matches_derived_motor_back": true,
+    "keepout_min_matches_derived_motor_back": true,
+    "keepout_max_matches_derived_motor_back": true,
+    "nominal_world_bounds": true,
+    "keepout_world_bounds": true,
+    "motor_controller_reserved_envelope.step": true,
+    "motor_controller_clearance_keepout.step": true,
+    "all_rear_rays_radially_recede_from_microscope": true,
+    "rear_normal_does_not_face_barrel": true,
+    "probe_mesh_axis_60_degrees": true,
+    "probe_mesh_in_world_xy_plane": true,
+    "source_unchanged": true
+  },
+  "nominal_world_bounds_mm": [
+    [
+      25.0,
+      64.33650811755678,
+      -38.5
+    ],
+    [
+      67.0,
+      106.33650811755678,
+      -18.5
+    ]
+  ],
+  "keepout_world_bounds_mm": [
+    [
+      23.0,
+      62.336508117556775,
+      -40.5
+    ],
+    [
+      69.0,
+      108.33650811755678,
+      -18.5
+    ]
+  ],
+  "motor_back_local_z_mm": -44.0,
+  "motor_back_world_z_mm": -18.5,
+  "rear_normal_dot_direction_to_barrel": -18.5,
+  "minimum_rear_ray_derivative_squared_radial_distance": 37.0,
+  "probe_axis_measured_from_mesh": [
+    0.5000000142484209,
+    0.8660253955581089,
+    0.0
+  ],
+  "probe_angle_measured_from_mesh_degrees": 59.99999905733206,
+  "steps": {
+    "motor_controller_reserved_envelope.step": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds": [
+        [
+          25.0,
+          64.336508117557,
+          -38.5
+        ],
+        [
+          67.0,
+          106.336508117557,
+          -18.5
+        ]
+      ],
+      "bounds_match": true,
+      "volume_mm3": 35280.0,
+      "step_sha256": "b8a8b7e0169a4bca11df674a5988c3443ebe61a651d51f8223abc9b7ca42bd27"
+    },
+    "motor_controller_clearance_keepout.step": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds": [
+        [
+          23.0,
+          62.336508117557,
+          -40.5
+        ],
+        [
+          69.0,
+          108.336508117557,
+          -18.5
+        ]
+      ],
+      "bounds_match": true,
+      "volume_mm3": 46551.99999999999,
+      "step_sha256": "4686849ac06c51790b9215ede37b0f1f569926dc3bbd295244f99657c8c521a4"
+    }
+  },
+  "scope": "Controller reservation is reference space. Backward rays recede from barrel. Actual heat-sink dimensions and electronics mass were not supplied.",
+  "passed": true
+}

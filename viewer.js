@@ -386,6 +386,12 @@ function installBundle(bundle, previousView) {
   const plateSize = Array.isArray(printPlate?.plate_mm) && printPlate.plate_mm.length === 2 && printPlate.plate_mm.every((value) => Number.isFinite(value) && value > 0) ? ` · ${printPlate.plate_mm.map((value) => Number(value.toFixed(1))).join(' × ')} mm plate` : '';
   $('printPlateNotes').textContent = printPlate ? `7 printable parts${plateSize}. No bolts, nuts, bearings, motor or reference parts. Separate objects are laid out on the plate; review orientation, supports and printer fit in your slicer. No printer presets are included.` : '';
   $('fitNotes').textContent = manifest.notes?.fit || `${strokeMax} mm straight vertical travel at a fixed ${$('probeAngleValue').textContent}° probe angle.`;
+  const reinforcementReport = versionURL(manifest.reports?.structure);
+  const reinforced = typeof manifest.notes?.reinforcement === 'string' && manifest.notes.reinforcement.trim() && /^[a-f0-9]{64}$/.test(manifest.source_sha256) && model.meta?.verification?.source_sha256 === manifest.source_sha256 && reinforcementReport;
+  $('reinforcementNotes').hidden = !reinforced;
+  $('reinforcementNotes').textContent = reinforced ? manifest.notes.reinforcement : '';
+  $('reinforcementReportLink').hidden = !reinforced;
+  if (reinforced) $('reinforcementReportLink').href = reinforcementReport; else $('reinforcementReportLink').removeAttribute('href');
   $('validationNotes').textContent = manifest.notes?.validation || 'This fit and motion prototype requires physical load, deflection and print-clearance validation.';
   $('cadNotes').textContent = manifest.notes?.exports || 'STEP preserves solid geometry. x_t is unavailable without a genuine Parasolid exporter.';
   const addon = validatedFacetedAddon(activeVersion, manifest);
@@ -440,7 +446,7 @@ function setOpticalKeepout(visible) {
 
 function setControllerReservation(visible) {
   state.controllerReservation = Boolean(visible);
-  const show = Boolean(controllerReference && state.controllerReservation && state.cameraView !== 'microscope' && !state.isolate && state.explode === 0);
+  const show = Boolean(controllerReference && state.controllerReservation && !['microscope', 'clamp'].includes(state.cameraView) && !state.isolate && state.explode === 0);
   if (controllerReference) controllerReference.group.visible = show;
   $('controllerSpace').checked = state.controllerReservation;
   $('controllerCaption').hidden = !show;
@@ -614,6 +620,23 @@ function setCamera(view, focusBounds = null) {
   camera.fov = 34; camera.updateProjectionMatrix(); controls.minDistance = 25;
   $('fitView').title = 'Fit assembly in view'; $('fitView').setAttribute('aria-label', 'Fit assembly in view');
   let box = focusBounds || bounds;
+  if (view === 'clamp') {
+    // Focus the microscope end and the frame's lower load path using actual
+    // rendered vertices, so the same preset can compare preserved releases.
+    box = new THREE.Box3();
+    const endY = opticalReference.top;
+    const point = new THREE.Vector3();
+    for (const part of state.parts.filter((part) => /rear_clamp|frame_front_clamp/.test(part.name))) {
+      part.mesh.updateWorldMatrix(true, false);
+      const positions = part.mesh.geometry.getAttribute('position');
+      for (let index = 0; index < positions.count; index++) {
+        point.fromBufferAttribute(positions, index); part.mesh.localToWorld(point);
+        const nearClamp = Math.hypot(point.x - opticalReference.x, point.z - opticalReference.z) <= opticalReference.radius * 3;
+        if (point.y >= endY - 2 && point.y <= endY + 45 && nearClamp) box.expandByPoint(point);
+      }
+    }
+    if (box.isEmpty()) box = bounds;
+  }
   if (view === 'motor-rear' && controllerReference) {
     box = new THREE.Box3().setFromObject(controllerReference.group);
     for (const part of state.parts.filter((part) => /NEMA17|microscope_reference|rear_clamp|frame_front_clamp/.test(part.name))) box.expandByObject(part.object);
@@ -624,7 +647,7 @@ function setCamera(view, focusBounds = null) {
   const maxDim = Math.max(size.x, size.y, size.z);
   const aspectAllowance = Math.max(1, 1 / camera.aspect);
   baseDistance = Math.max(85, maxDim / (2 * Math.tan(deg(camera.fov / 2))) * 1.24 * aspectAllowance);
-  const directions = { iso: [1.05, .52, 1.8], front: [0, 0, 1], side: [1, 0, 0], top: [0, 1, .001], 'motor-rear': [.65, .24, -1.8] };
+  const directions = { iso: [1.05, .52, 1.8], front: [0, 0, 1], side: [1, 0, 0], top: [0, 1, .001], clamp: [1.05, .5, 1.8], 'motor-rear': [.65, .24, -1.8] };
   const direction = new THREE.Vector3(...(directions[view] || directions.iso)).normalize();
   camera.position.copy(center).addScaledVector(direction, baseDistance);
   setCameraUp([0, 1, 0]);
@@ -635,6 +658,7 @@ function setCamera(view, focusBounds = null) {
 function fitCurrentView() {
   if (!state.ready) return;
   if (state.cameraView === 'microscope') { setOpticalCamera(); return; }
+  if (state.cameraView === 'clamp') { setCamera('clamp'); return; }
   const visibleBounds = new THREE.Box3(); state.parts.filter((part) => part.object.visible).forEach((part) => visibleBounds.expandByObject(part.object));
   if (visibleBounds.isEmpty()) { toast('Show a component to fit the view.'); return; }
   const direction = camera.position.clone().sub(controls.target).normalize();

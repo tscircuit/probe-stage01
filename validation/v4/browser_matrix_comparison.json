@@ -1,0 +1,1260 @@
+{
+  "version": "v4",
+  "browser_report": "/workspace/work/v4_viewer/final_actual/final-versions-qa.json",
+  "browser_report_sha256": "42258c2c87410701f09a6c2068005a02e88cbdc1f4dd7eda5dc85069d97e0faf",
+  "cad_mesh_audit": "/workspace/work/v4_mesh_review/mesh_audit.json",
+  "cad_mesh_audit_sha256": "604fcafdad3fffa46e6222649bcd1d08010188bf67a54bcd74c4ed9edcab61d0",
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "model_sha256": "ec0339198fa3ed96c1432ee08517c5882a803880844e9affa59ad62023cae76a",
+  "poses": {
+    "0.0": {
+      "height_mm": 0,
+      "missing_names": [],
+      "extra_names": [],
+      "parts": {
+        "frame_front_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "rear_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "front_axle_bridge": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "sector_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_pinion": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "connecting_rod": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_carriage": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_rear": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_front": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_slider": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_inner_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_wheel_axle": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_pivot_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_axle_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_body": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_face": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_shaft": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "microscope_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "specimen_plate_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        }
+      },
+      "max_translation_norm_mm": 0.0,
+      "max_rotation_abs": 0.0,
+      "mismatches": [],
+      "phi_error_rad": 0.0,
+      "passed": true
+    },
+    "20.0": {
+      "height_mm": 20,
+      "missing_names": [],
+      "extra_names": [],
+      "parts": {
+        "frame_front_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "rear_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "front_axle_bridge": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "sector_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_pinion": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "connecting_rod": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_carriage": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_rear": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_front": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_slider": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_inner_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_wheel_axle": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_pivot_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_axle_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_body": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_face": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_shaft": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "microscope_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "specimen_plate_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        }
+      },
+      "max_translation_norm_mm": 0.0,
+      "max_rotation_abs": 0.0,
+      "mismatches": [],
+      "phi_error_rad": 0.0,
+      "passed": true
+    },
+    "40.0": {
+      "height_mm": 40,
+      "missing_names": [],
+      "extra_names": [],
+      "parts": {
+        "frame_front_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "rear_clamp": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "front_axle_bridge": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "sector_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_pinion": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "connecting_rod": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_carriage": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_rear": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_wheel_front": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_crank": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "625ZZ_slider": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_inner_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "wheel_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "crank_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_rear_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "slider_front_spacer": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_wheel_axle": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_crank_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_pivot_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_slider_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_axle_captive_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_body": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "NEMA17_face": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "motor_shaft": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_-15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_-15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M3_motor_15.5_15.5": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_-1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_stop_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_-28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_clamp_nut_28": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_0": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_bolt_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_bridge_nut_1": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_bolt": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "M5_probe_clamp_nut": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "microscope_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "probe_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        },
+        "specimen_plate_reference": {
+          "matrix_max_abs": 0.0,
+          "translation_norm_mm": 0.0,
+          "rotation_max_abs": 0.0,
+          "homogeneous_row_max_abs": 0.0
+        }
+      },
+      "max_translation_norm_mm": 0.0,
+      "max_rotation_abs": 0.0,
+      "mismatches": [],
+      "phi_error_rad": 0.0,
+      "passed": true
+    }
+  },
+  "all_source_mesh_checks_passed": true,
+  "actual_downloaded_source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "downloaded_source_matches_audited_source": true,
+  "neutral_buffer_checks_present": true,
+  "neutral_buffers": {
+    "missing_names": [],
+    "extra_names": [],
+    "parts": {
+      "frame_front_clamp": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "rear_clamp": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "front_axle_bridge": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "sector_crank": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "motor_pinion": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "connecting_rod": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "probe_carriage": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "625ZZ_wheel_rear": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "625ZZ_wheel_front": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "625ZZ_crank": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "625ZZ_slider": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "wheel_inner_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "wheel_rear_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "wheel_front_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "crank_rear_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "crank_front_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "slider_rear_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "slider_front_spacer": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_wheel_axle": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_crank_bolt": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_crank_nut": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_slider_pivot_bolt": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_slider_captive_nut": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_axle_captive_nut": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "NEMA17_body": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "NEMA17_face": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "motor_shaft": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M3_motor_-15.5_-15.5": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M3_motor_-15.5_15.5": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M3_motor_15.5_-15.5": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M3_motor_15.5_15.5": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_stop_-1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_stop_nut_-1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_stop_1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_stop_nut_1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_clamp_-28": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_clamp_nut_-28": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_clamp_28": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_clamp_nut_28": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_bridge_bolt_0": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_bridge_nut_0": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_bridge_bolt_1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_bridge_nut_1": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_probe_clamp_bolt": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "M5_probe_clamp_nut": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "microscope_reference": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "probe_reference": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      },
+      "specimen_plate_reference": {
+        "position_hash_equal": true,
+        "index_hash_equal": true,
+        "position_count_equal": true,
+        "index_count_equal": true,
+        "index_bytes_equal": true
+      }
+    },
+    "passed": true
+  },
+  "missing_heights": [],
+  "passed": true
+}

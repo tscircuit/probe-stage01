@@ -1,0 +1,74 @@
+{
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "model_sha256": "10f014ac4db9992ce1ab8f62e336b0fa717fa4bd5e5fcda47e8c27fb1707624e",
+  "browser_report_sha256": "42258c2c87410701f09a6c2068005a02e88cbdc1f4dd7eda5dc85069d97e0faf",
+  "mode": "actual browser Three.js matrixWorld applied to actual Float32 neutral vertex buffer",
+  "poses": {
+    "0": {
+      "tip_mm": [
+        0.0,
+        -99.99998914970948,
+        0.0
+      ],
+      "target_tip_mm": [
+        0.0,
+        -100.0,
+        0.0
+      ],
+      "max_tip_error_mm": 1.0850290522057549e-05,
+      "axis": [
+        0.5000000142484209,
+        0.8660253955581089,
+        0.0
+      ],
+      "axis_angle_degrees": 59.99999905733206,
+      "passed": true
+    },
+    "20": {
+      "tip_mm": [
+        0.0,
+        -79.99998915070204,
+        0.0
+      ],
+      "target_tip_mm": [
+        0.0,
+        -80.0,
+        0.0
+      ],
+      "max_tip_error_mm": 1.0849297964909965e-05,
+      "axis": [
+        0.5000000142484209,
+        0.8660253955581089,
+        0.0
+      ],
+      "axis_angle_degrees": 59.99999905733206,
+      "passed": true
+    },
+    "40": {
+      "tip_mm": [
+        0.0,
+        -59.99998915036642,
+        0.0
+      ],
+      "target_tip_mm": [
+        0.0,
+        -60.0,
+        0.0
+      ],
+      "max_tip_error_mm": 1.0849633582665774e-05,
+      "axis": [
+        0.5000000142484209,
+        0.8660253955581089,
+        0.0
+      ],
+      "axis_angle_degrees": 59.99999905733206,
+      "passed": true
+    }
+  },
+  "xz_drift_mm": [
+    0.0,
+    0.0
+  ],
+  "y_stroke_mm": 39.99999999934306,
+  "passed": true
+}

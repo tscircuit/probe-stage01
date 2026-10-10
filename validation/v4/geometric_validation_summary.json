@@ -1,0 +1,24 @@
+{
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "complete": true,
+  "validated": true,
+  "part_count": 48,
+  "pose_count": 41,
+  "assembly_pair_count": 46248,
+  "no_excluded_assembly_parts_or_regions": true,
+  "all_48_parts_valid_single_solids": true,
+  "all_assembly_pairs_clear": true,
+  "clamp_closure_clearance_mm": 0.7999999999999909,
+  "continuous_nonprobe_optical_clear": true,
+  "continuous_full_length_6mm_probe_clear": true,
+  "nominal_controller_and_2mm_margin_clear": true,
+  "continuous_infinite_rear_access_clear": true,
+  "vertical_stroke_mm": 40.0,
+  "evidence_file_sha256": {
+    "v4_all_pairs.json": "2fbf7ba0c227faa2de92f34168f1eaba980cd0a8690c83fe8af9c3addac9f81f",
+    "v4_optical_bounds.json": "aec77cbe4842c2f6236206e0c47b7b939b53b1aebbdc99e79d9619dad2c29830",
+    "v4_rear_access.json": "29d104c6101173a6f60fc26948d531fc8bea0de21bb0f16c51295f706e05eb72",
+    "v4_continuous_probe.json": "b1b13bc6993812e1b40858a03131f0366317f4bc9109b2197221a7626d04a3a6"
+  },
+  "scope": "Geometric validity and clearance only. No mechanical load rating or fatigue/thermal analysis is claimed."
+}

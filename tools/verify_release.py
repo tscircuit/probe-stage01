@@ -157,6 +157,16 @@ def main():
         require(comparison.get('complete') is True and source_hash in provenance and
                 baseline['source_sha256'] in provenance, 'Comparison source provenance differs.')
 
+    if 'structure' in manifest.get('reports', {}):
+        structure = read_json(report_path(site, manifest, 'structure', 'clamp_reinforcement.json'))
+        previous = read_json(args.root.resolve() / 'versions/v3/SNAPSHOT.json')
+        require(structure['source_sha256'] == source_hash and
+                structure['baseline_source_sha256'] == previous['source_sha256'],
+                'Clamp reinforcement source or v3 baseline differs.')
+        require(structure['changed_part'] == 'frame_front_clamp', 'Unexpected reinforced part.')
+        for key in ('complete', 'validated', 'source_unchanged'):
+            require(structure.get(key) is True, f'Reinforcement geometry report failed: {key}')
+
     reference_count = snapshot.get('reference_step_count', 0)
     if 'controller' in manifest.get('reports', {}):
         for key in ('all_controller_reservations_clear', 'all_open_rear_access_clear'):

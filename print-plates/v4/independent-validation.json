@@ -1,0 +1,239 @@
+{
+  "public_version": "v4",
+  "passed": true,
+  "reader": "official lib3mf",
+  "reader_version": [
+    2,
+    5,
+    0
+  ],
+  "strict_mode": true,
+  "reader_warnings": 0,
+  "units": "mm",
+  "source_sha256": "ffadf100fb825cf6b946df9a32f7ebc91bbf871860f5c4a190525cefbbc2da09",
+  "file_sha256": "1855c7173cfcc982f9c7e84c8afa1394e7e6e3e1216a8bb1da44740872205fa2",
+  "build_items": 7,
+  "mesh_objects": 7,
+  "hardware_included": false,
+  "parts": [
+    {
+      "name": "frame_front_clamp",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 7434,
+      "source_stl_sha256": "3ad20693469509109f2f9a6a5d9d6b23825cba8e8e1630ee7770a9ab31b6cdc9",
+      "readback_rigid_coordinate_error_mm": 7.62939453125e-06,
+      "readback_volume_relative_error": 6.46175761787049e-08,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "rear_clamp",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 1016,
+      "source_stl_sha256": "65b69e25e3f1da538a90f9678990f43e3a91f89689da8d1d59509854cac23b0d",
+      "readback_rigid_coordinate_error_mm": 1.9073486328125e-06,
+      "readback_volume_relative_error": 5.932810676068101e-08,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "front_axle_bridge",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 1172,
+      "source_stl_sha256": "46e91c57a548c219a68d11c7d227ebc2be646b429662d713c7a2d65788101c48",
+      "readback_rigid_coordinate_error_mm": 7.62939453125e-06,
+      "readback_volume_relative_error": 1.8056833916979542e-07,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "sector_crank",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 4632,
+      "source_stl_sha256": "531b25832a9e7c2a32305967acf00a2c05b101018743891603d50672bb71f991",
+      "readback_rigid_coordinate_error_mm": 7.62939455967171e-06,
+      "readback_volume_relative_error": 3.619519250985803e-08,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "motor_pinion",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 2024,
+      "source_stl_sha256": "3662be3d112a97b7ac47ff7cf8dea32dc1df02293df199bbc0e9cd0f68c48d1c",
+      "readback_rigid_coordinate_error_mm": 3.814697265625e-06,
+      "readback_volume_relative_error": 3.4999085851694645e-09,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "connecting_rod",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 1452,
+      "source_stl_sha256": "d8172db70e8f932b44c11a84d8e5778bbda0cb0917450b6d00b7bb00cb268969",
+      "readback_rigid_coordinate_error_mm": 7.62939453125e-06,
+      "readback_volume_relative_error": 4.868827484516558e-07,
+      "bed_z_min_mm": 0.0
+    },
+    {
+      "name": "probe_carriage",
+      "valid": true,
+      "manifold_oriented": true,
+      "triangles": 2504,
+      "source_stl_sha256": "9515ecc467f7f80ba38dbd93c4c7990f666c9eddef9fb8e91d51e5938928eaf0",
+      "readback_rigid_coordinate_error_mm": 7.62939453125e-06,
+      "readback_volume_relative_error": 5.7801985864358585e-08,
+      "bed_z_min_mm": 0.0
+    }
+  ],
+  "separation_pairs": [
+    {
+      "names": [
+        "frame_front_clamp",
+        "rear_clamp"
+      ],
+      "projected_separation_mm": 19.35095603743254
+    },
+    {
+      "names": [
+        "frame_front_clamp",
+        "front_axle_bridge"
+      ],
+      "projected_separation_mm": 5.227091613346602
+    },
+    {
+      "names": [
+        "frame_front_clamp",
+        "sector_crank"
+      ],
+      "projected_separation_mm": 5.130248217253211
+    },
+    {
+      "names": [
+        "frame_front_clamp",
+        "motor_pinion"
+      ],
+      "projected_separation_mm": 6.290319031161474
+    },
+    {
+      "names": [
+        "frame_front_clamp",
+        "connecting_rod"
+      ],
+      "projected_separation_mm": 5.120004038625467
+    },
+    {
+      "names": [
+        "frame_front_clamp",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 51.28289489310643
+    },
+    {
+      "names": [
+        "rear_clamp",
+        "front_axle_bridge"
+      ],
+      "projected_separation_mm": 93.71023387142192
+    },
+    {
+      "names": [
+        "rear_clamp",
+        "sector_crank"
+      ],
+      "projected_separation_mm": 166.60789346198342
+    },
+    {
+      "names": [
+        "rear_clamp",
+        "motor_pinion"
+      ],
+      "projected_separation_mm": 5.275240621789727
+    },
+    {
+      "names": [
+        "rear_clamp",
+        "connecting_rod"
+      ],
+      "projected_separation_mm": 137.7490848670801
+    },
+    {
+      "names": [
+        "rear_clamp",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 173.82853359330943
+    },
+    {
+      "names": [
+        "front_axle_bridge",
+        "sector_crank"
+      ],
+      "projected_separation_mm": 33.486797148899754
+    },
+    {
+      "names": [
+        "front_axle_bridge",
+        "motor_pinion"
+      ],
+      "projected_separation_mm": 138.29725125221995
+    },
+    {
+      "names": [
+        "front_axle_bridge",
+        "connecting_rod"
+      ],
+      "projected_separation_mm": 138.16597336933393
+    },
+    {
+      "names": [
+        "front_axle_bridge",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 5.268027110944132
+    },
+    {
+      "names": [
+        "sector_crank",
+        "motor_pinion"
+      ],
+      "projected_separation_mm": 144.29471446258037
+    },
+    {
+      "names": [
+        "sector_crank",
+        "connecting_rod"
+      ],
+      "projected_separation_mm": 32.16469606204653
+    },
+    {
+      "names": [
+        "sector_crank",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 5.9116781994460155
+    },
+    {
+      "names": [
+        "motor_pinion",
+        "connecting_rod"
+      ],
+      "projected_separation_mm": 111.98025695848075
+    },
+    {
+      "names": [
+        "motor_pinion",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 187.27331852931604
+    },
+    {
+      "names": [
+        "connecting_rod",
+        "probe_carriage"
+      ],
+      "projected_separation_mm": 125.45982614282482
+    }
+  ]
+}
