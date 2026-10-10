@@ -1,0 +1,3245 @@
+{
+  "format": "native Parasolid X_T with planar facets",
+  "faceted": true,
+  "exact_analytic_step_retained_separately": true,
+  "native_siemens_or_shapr3d_import_verified": false,
+  "expected_parts": 48,
+  "passed_parts": 47,
+  "failed_parts": 1,
+  "tessellation": {
+    "linear_deflection_mm": 0.025,
+    "angular_deflection_radians": 0.1
+  },
+  "validation": "Each actual X_T read with parasolid-kit 0.3.5; complete OCCT solid; healing disabled; all faces tessellated; closed oriented mesh; volume/area/bounds compared with whole source tessellation",
+  "parts": [
+    {
+      "name": "625ZZ_crank",
+      "file": "parts/625ZZ_crank.faceted.x_t",
+      "source_step_sha256": "5d3948e7ac7d0bd444a5d7524e393bc3aa03483c5c544d67549b373aa07112a7",
+      "sha256": "4a1c370cedf8768c7e422521401e3973c16e181c29a8601b9aeaea6acbf646e2",
+      "bytes": 291320,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 907.1348787240727,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          117.0,
+          78.91475992911,
+          68.0,
+          133.0,
+          94.91475992911,
+          73.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251575,
+        "surface_area_mm2": 692.5366387047671,
+        "bounding_box": [
+          117.0,
+          78.91724647310348,
+          68.0,
+          133.0,
+          94.91227338511653,
+          73.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          116.9999999,
+          78.9172463731035,
+          67.9999999,
+          133.0000001,
+          94.91227348511653,
+          73.0000001
+        ],
+        "surface_area": 692.5366387047667,
+        "volume": 906.7589675251568
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 6.661338147750939e-16,
+        "bounds_max_absolute_error_mm": 9.999999406318238e-08
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265674334,
+        "surface_area_relative_change": -0.0002664007065198426,
+        "bounds_max_absolute_change_mm": 0.002486443993490184
+      },
+      "independent_report": "reports/625ZZ_crank.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.921171854000931
+    },
+    {
+      "name": "625ZZ_slider",
+      "file": "parts/625ZZ_slider.faceted.x_t",
+      "source_step_sha256": "12097f172c296df89fd342f896a196160813f33b34860ca6f485471674508d6b",
+      "sha256": "ae9fd77f14475a419d1751ca5b2077fb3da463ea782f977bb1f367a181268a5f",
+      "bytes": 294511,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 907.1348787240725,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          102.0,
+          -30.057713659390004,
+          68.0,
+          118.0,
+          -14.057713659390004,
+          73.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251572,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          102.0,
+          -30.055227115396548,
+          68.0,
+          118.0,
+          -14.060200203383474,
+          73.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          101.99999990000002,
+          -30.05522721539655,
+          67.9999999,
+          118.00000010000001,
+          -14.060200103383474,
+          73.0000001
+        ],
+        "surface_area": 692.5366387047674,
+        "volume": 906.7589675251575
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265574414,
+        "surface_area_relative_change": -0.0002664007065188434,
+        "bounds_max_absolute_change_mm": 0.002486443993470644
+      },
+      "independent_report": "reports/625ZZ_slider.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 5.249403329999041
+    },
+    {
+      "name": "625ZZ_wheel_front",
+      "file": "parts/625ZZ_wheel_front.faceted.x_t",
+      "source_step_sha256": "9e953d00f92adf80e1e7b3f9413ea1c06a35288c244f04c03f7f5e5a1ee464d7",
+      "sha256": "c9906cbf9dec8e22d14284c8d6741d27dca879e4c40f47e989ec8a4fe3feb446",
+      "bytes": 302880,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 907.1348787240726,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          102.0,
+          98.91475992911,
+          47.0,
+          118.0,
+          114.91475992911,
+          52.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          102.0,
+          98.91724647310348,
+          47.0,
+          118.0,
+          114.91227338511653,
+          52.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          101.99999990000002,
+          98.91724637310348,
+          46.9999999,
+          118.00000010000001,
+          114.91227348511653,
+          52.00000010000001
+        ],
+        "surface_area": 692.536638704767,
+        "volume": 906.7589675251587
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.5543122344752192e-15,
+        "area_relative_error": 0.0,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426545229,
+        "surface_area_relative_change": -0.0002664007065192875,
+        "bounds_max_absolute_change_mm": 0.002486443993475973
+      },
+      "independent_report": "reports/625ZZ_wheel_front.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.602579596001306
+    },
+    {
+      "name": "625ZZ_wheel_rear",
+      "file": "parts/625ZZ_wheel_rear.faceted.x_t",
+      "source_step_sha256": "68de5537802e3097349ff080faf053b606503d315def786fb2afc9f6256b74fb",
+      "sha256": "d88050c4c9fb2f6c2eeeae3c1bd6e5f6f920bdaf8f28a341e926cc61281634b8",
+      "bytes": 290745,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 907.1348787240726,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          102.0,
+          98.91475992911,
+          40.0,
+          118.0,
+          114.91475992911,
+          45.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          102.0,
+          98.91724647310348,
+          40.0,
+          118.0,
+          114.91227338511653,
+          45.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          101.99999990000002,
+          98.91724637310348,
+          39.9999999,
+          118.00000010000001,
+          114.91227348511653,
+          45.0000001
+        ],
+        "surface_area": 692.5366387047665,
+        "volume": 906.7589675251571
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 7.771561172376096e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265618823,
+        "surface_area_relative_change": -0.00026640070652006465,
+        "bounds_max_absolute_change_mm": 0.002486443993475973
+      },
+      "independent_report": "reports/625ZZ_wheel_rear.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 5.28975122600059
+    },
+    {
+      "name": "M3_motor_-15.5_-15.5",
+      "file": "parts/M3_motor_-15.5_-15.5.faceted.x_t",
+      "source_step_sha256": "ef98c51fcfd86785c72f2afe57bcdf655121690463f84fbbf791cd59c6464bd2",
+      "sha256": "a2342f94c436950090af4c894dbc91e9324ce090d42ca836c9b55df545398a92",
+      "bytes": 301158,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 125.19246724555262,
+        "surface_area_mm2": 178.06547160547785,
+        "bounding_box": [
+          41.7,
+          88.61475992911001,
+          26.0,
+          47.3,
+          94.21475992911,
+          37.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546316,
+        "surface_area_mm2": 178.03171320994747,
+        "bounding_box": [
+          41.7,
+          88.61563021950772,
+          26.0,
+          47.3,
+          94.21388963871229,
+          37.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          41.6999999,
+          88.61563011950773,
+          25.999999900000002,
+          47.3000001,
+          94.21388973871228,
+          37.5000001
+        ],
+        "surface_area": 178.03171320994755,
+        "volume": 125.14058824546312
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.3306690738754696e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394263032003,
+        "surface_area_relative_change": -0.00018958417499992386,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_-15.5_-15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.158786723999583
+    },
+    {
+      "name": "M3_motor_-15.5_15.5",
+      "file": "parts/M3_motor_-15.5_15.5.faceted.x_t",
+      "source_step_sha256": "53f799d27c7222e9bbd9709b8cdaa4ccf37ba5463f6df3ef39d45a111e795fcf",
+      "sha256": "a3a6ad2bbb7cf4d74f60eabb45e864aaa50439eb107d96afa81126481dc0571d",
+      "bytes": 301120,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 125.19246724555262,
+        "surface_area_mm2": 178.06547160547785,
+        "bounding_box": [
+          41.7,
+          119.61475992911001,
+          26.0,
+          47.3,
+          125.21475992911,
+          37.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546316,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          41.7,
+          119.61563021950772,
+          26.0,
+          47.3,
+          125.21388963871229,
+          37.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          41.6999999,
+          119.61563011950773,
+          25.999999900000002,
+          47.3000001,
+          125.2138897387123,
+          37.5000001
+        ],
+        "surface_area": 178.03171320994764,
+        "volume": 125.14058824546329
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-15,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262898777,
+        "surface_area_relative_change": -0.00018958417499947977,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_-15.5_15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.531839706998653
+    },
+    {
+      "name": "M3_motor_15.5_-15.5",
+      "file": "parts/M3_motor_15.5_-15.5.faceted.x_t",
+      "source_step_sha256": "6b16fc349e77da39a8f24fd37dd94ec10f6c0af7ec6e8d4ff0b514cceb6953d8",
+      "sha256": "0e9b153243c220ad5580c12e5a563a63336e80495dabdc5857cfd9da465c8b0d",
+      "bytes": 300261,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 125.19246724555268,
+        "surface_area_mm2": 178.06547160547797,
+        "bounding_box": [
+          72.7,
+          88.61475992911001,
+          26.0,
+          78.3,
+          94.21475992911,
+          37.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546319,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          72.7,
+          88.61563021950772,
+          26.0,
+          78.3,
+          94.21388963871229,
+          37.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.69999990000001,
+          88.61563011950773,
+          25.999999900000002,
+          78.30000009999999,
+          94.21388973871228,
+          37.5000001
+        ],
+        "surface_area": 178.0317132099475,
+        "volume": 125.14058824546322
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 0.0,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262998697,
+        "surface_area_relative_change": -0.00018958417500092306,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_15.5_-15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 5.995156490000227
+    },
+    {
+      "name": "M3_motor_15.5_15.5",
+      "file": "parts/M3_motor_15.5_15.5.faceted.x_t",
+      "source_step_sha256": "9e877edd6e09dfe54cc0c4af1130761233984400c3458b86dd00e16587d572ec",
+      "sha256": "893e798f2a1d50fca1c6b532858604be6ff26849ab23346adb6376b12502763d",
+      "bytes": 300261,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 125.19246724555268,
+        "surface_area_mm2": 178.06547160547797,
+        "bounding_box": [
+          72.7,
+          119.61475992911001,
+          26.0,
+          78.3,
+          125.21475992911,
+          37.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546319,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          72.7,
+          119.61563021950772,
+          26.0,
+          78.3,
+          125.21388963871229,
+          37.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.69999990000001,
+          119.61563011950773,
+          25.999999900000002,
+          78.30000009999999,
+          125.2138897387123,
+          37.5000001
+        ],
+        "surface_area": 178.03171320994764,
+        "volume": 125.14058824546322
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262998697,
+        "surface_area_relative_change": -0.0001895841750001459,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_15.5_15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.76177541099969
+    },
+    {
+      "name": "M5_axle_captive_nut",
+      "file": "parts/M5_axle_captive_nut.faceted.x_t",
+      "source_step_sha256": "95619dc7e4f78e53781ee14fca44b3ef6c1feb46a50e8dad597c3a0a62a99e0e",
+      "sha256": "5f5bfcd8c656cf9b92aee6ef62808baa2ffd96e0bcb3a798fa55293aa4e7d427",
+      "bytes": 146092,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702909758,
+        "surface_area_mm2": 245.26444827077572,
+        "bounding_box": [
+          106.0,
+          102.29595777559175,
+          30.0,
+          114.0,
+          111.53356208262826,
+          34.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323393,
+        "surface_area_mm2": 245.27421159097264,
+        "bounding_box": [
+          106.0,
+          102.29595777559301,
+          30.0,
+          114.0,
+          111.533562082627,
+          34.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.9999999,
+          102.29595767559302,
+          29.9999999,
+          114.0000001,
+          111.533562182627,
+          34.0000001
+        ],
+        "surface_area": 245.2742115909727,
+        "volume": 143.1952334532339
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873477598365,
+        "surface_area_relative_change": 3.980731926622738e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_axle_captive_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 5.569697889000963
+    },
+    {
+      "name": "M5_bridge_bolt_0",
+      "file": "parts/M5_bridge_bolt_0.faceted.x_t",
+      "source_step_sha256": "c418ad0b09a1b17a102cd179a724181a16c0a7c34009b61d5398ab066a1df7b5",
+      "sha256": "764f05f9455a8ed132372c0a999b17c5584ad3e72d293c4e2b4e8d49831af0f5",
+      "bytes": 299587,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 905.4659076268247,
+        "surface_area_mm2": 772.4390937014339,
+        "bounding_box": [
+          105.75,
+          182.66475992911,
+          26.0,
+          114.25,
+          191.16475992911,
+          65.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 905.0906880394506,
+        "surface_area_mm2": 772.323791627698,
+        "bounding_box": [
+          105.75,
+          182.66608090560652,
+          26.0,
+          114.25,
+          191.1634389526135,
+          65.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.7499999,
+          182.66608080560653,
+          25.9999999,
+          114.2500001,
+          191.1634390526135,
+          65.5000001
+        ],
+        "surface_area": 772.323791627697,
+        "volume": 905.0906880394504
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 1.3322676295501878e-15,
+        "bounds_max_absolute_error_mm": 1.0000002248489182e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262532403,
+        "surface_area_relative_change": -0.00014927011679888302,
+        "bounds_max_absolute_change_mm": 0.0013208764965213504
+      },
+      "independent_report": "reports/M5_bridge_bolt_0.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 5.808128134000071
+    },
+    {
+      "name": "M5_bridge_bolt_1",
+      "file": "parts/M5_bridge_bolt_1.faceted.x_t",
+      "source_step_sha256": "2a0b61c8289b5a9027c5219fd3181f8b0cbde61ffe50a50befddff8fd1ed8ca7",
+      "sha256": "2ba3961feed1b367a91c6aaa1056f4ed4b940953a1a124c3de655f103b5d6a5d",
+      "bytes": 301125,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 905.4659076268239,
+        "surface_area_mm2": 772.4390937014339,
+        "bounding_box": [
+          43.75,
+          54.664759929110005,
+          26.0,
+          52.25,
+          63.164759929110005,
+          65.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 905.0906880394507,
+        "surface_area_mm2": 772.3237916276981,
+        "bounding_box": [
+          43.75,
+          54.666080905606535,
+          26.0,
+          52.25,
+          63.163438952613475,
+          65.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          43.749999900000006,
+          54.66608080560653,
+          25.9999999,
+          52.2500001,
+          63.16343905261348,
+          65.5000001
+        ],
+        "surface_area": 772.323791627698,
+        "volume": 905.0906880394504
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.3306690738754696e-16,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262443585,
+        "surface_area_relative_change": -0.00014927011679755076,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_bridge_bolt_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.344900170000983
+    },
+    {
+      "name": "M5_bridge_nut_0",
+      "file": "parts/M5_bridge_nut_0.faceted.x_t",
+      "source_step_sha256": "52276ec2c907f046ecad3439a1488aa034854f28d9491b10f0a838442c2478e7",
+      "sha256": "74d196c490b3dfd870c4f81a28557851bc4a264cd1b7f02b7b8d2a9ed44118ae",
+      "bytes": 146015,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.1626870290976,
+        "surface_area_mm2": 245.26444827077577,
+        "bounding_box": [
+          106.0,
+          182.29595777559175,
+          30.0,
+          114.0,
+          191.53356208262826,
+          34.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323347,
+        "surface_area_mm2": 245.2742115909723,
+        "bounding_box": [
+          106.0,
+          182.29595777559302,
+          30.0,
+          114.0,
+          191.533562082627,
+          34.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.9999999,
+          182.29595767559303,
+          29.9999999,
+          114.0000001,
+          191.53356218262698,
+          34.0000001
+        ],
+        "surface_area": 245.27421159097187,
+        "volume": 143.19523345323296
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.552713678800501e-15,
+        "area_relative_error": 1.7763568394002505e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873476910027,
+        "surface_area_relative_change": 3.980731926267467e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_bridge_nut_0.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.034737599999062
+    },
+    {
+      "name": "M5_bridge_nut_1",
+      "file": "parts/M5_bridge_nut_1.faceted.x_t",
+      "source_step_sha256": "61cd656c4bc22ca3ea8781a2903e96e77dbf8387ce9d9f962d7a63000bd3d869",
+      "sha256": "8e2e2d8e9a8c5262a0ea5768674f92445386b84f09aa68191b9018246d334101",
+      "bytes": 146998,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702888956,
+        "surface_area_mm2": 245.2644482706077,
+        "bounding_box": [
+          43.99999999999986,
+          54.2959577756,
+          30.0,
+          52.00000000000014,
+          63.533562082630006,
+          34.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.195233453042,
+        "surface_area_mm2": 245.2742115908287,
+        "bounding_box": [
+          44.0,
+          54.2959577756,
+          30.0,
+          52.0,
+          63.533562082630006,
+          34.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          43.9999999,
+          54.2959576756,
+          29.9999999,
+          52.00000010000001,
+          63.53356218263,
+          34.0000001
+        ],
+        "surface_area": 245.27421159082863,
+        "volume": 143.19523345304208
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 6.661338147750939e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873488944845,
+        "surface_area_relative_change": 3.980731936392701e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_bridge_nut_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 4.164615071998924
+    },
+    {
+      "name": "M5_clamp_-28",
+      "file": "parts/M5_clamp_-28.faceted.x_t",
+      "source_step_sha256": "eefeeebaace8a5a78dbfe7182107d4c0d2097b6ce943b33f71f37dbda64d065b",
+      "sha256": "35db837d389917a5375403d211c1938de6ad5eb4854b28c17927fabd800d5adc",
+      "bytes": 348924,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 689.4814126925293,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          -30.759144981614817,
+          4.75,
+          8.838834764831843,
+          -5.833630944789015,
+          13.25,
+          33.76434880165765
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715565,
+        "surface_area_mm2": 599.5540978828532,
+        "bounding_box": [
+          -30.759144981614817,
+          4.75132097649653,
+          8.838834764831843,
+          -5.833630944789018,
+          13.248679023503469,
+          33.764348801657654
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -30.75914508161482,
+          4.751320876496529,
+          8.838834664831841,
+          -5.833630844789018,
+          13.248679123503468,
+          33.764348901657655
+        ],
+        "surface_area": 599.5540978828531,
+        "volume": 689.1956957715573
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-15,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262443585,
+        "surface_area_relative_change": -0.0001624274624438815,
+        "bounds_max_absolute_change_mm": 0.0013208764965320086
+      },
+      "independent_report": "reports/M5_clamp_-28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 15.398225400000229
+    },
+    {
+      "name": "M5_clamp_28",
+      "file": "parts/M5_clamp_28.faceted.x_t",
+      "source_step_sha256": "f8d1c536c65d60122142f2f5e2c35025321c6486b7e78062bbc18a169a51f317",
+      "sha256": "46e261e29a4aaf05abd5570d8d1f4ea2aea2857841c9a2089aa1f0ec7825d218",
+      "bytes": 348913,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 689.4814126925293,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          8.838834764831843,
+          4.75,
+          -30.759144981614817,
+          33.76434880165765,
+          13.25,
+          -5.833630944789015
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715569,
+        "surface_area_mm2": 599.5540978828536,
+        "bounding_box": [
+          8.838834764831843,
+          4.75132097649653,
+          -30.759144981614817,
+          33.764348801657654,
+          13.248679023503469,
+          -5.833630944789018
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          8.838834664831843,
+          4.751320876496529,
+          -30.75914508161482,
+          33.764348901657655,
+          13.248679123503468,
+          -5.833630844789018
+        ],
+        "surface_area": 599.5540978828533,
+        "volume": 689.1956957715568
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-16,
+        "area_relative_error": 5.551115123125783e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262532403,
+        "surface_area_relative_change": -0.00016242746244343742,
+        "bounds_max_absolute_change_mm": 0.0013208764965320086
+      },
+      "independent_report": "reports/M5_clamp_28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.857290944000852
+    },
+    {
+      "name": "M5_clamp_nut_-28",
+      "file": "parts/M5_clamp_nut_-28.faceted.x_t",
+      "source_step_sha256": "3be6fe9c44109e0b29194317f65432444f9aa170e04fbbf9b336526c401f3900",
+      "sha256": "a254eba52f7b106b3b719e11e817a56c25ff696cf8a513b4ee6ba1cd37ace4ce",
+      "bytes": 177532,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702909764,
+        "surface_area_mm2": 245.26444827077574,
+        "bounding_box": [
+          -31.112698372208094,
+          4.381197846481745,
+          8.485281374238571,
+          -22.627416997969522,
+          13.618802153518255,
+          16.970562748477143
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323412,
+        "surface_area_mm2": 245.27421159097287,
+        "bounding_box": [
+          -31.112698372208097,
+          4.381197846483,
+          8.48528137423857,
+          -22.627416997969526,
+          13.618802153517,
+          16.970562748477143
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -31.1126984722081,
+          4.381197746483,
+          8.48528127423857,
+          -22.627416897969525,
+          13.618802253517,
+          16.970562848477144
+        ],
+        "surface_area": 245.27421159097295,
+        "volume": 143.19523345323387
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.7763568394002505e-15,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873477531752,
+        "surface_area_relative_change": 3.980731926711556e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_clamp_nut_-28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.761890379999386
+    },
+    {
+      "name": "M5_clamp_nut_28",
+      "file": "parts/M5_clamp_nut_28.faceted.x_t",
+      "source_step_sha256": "4d9675021689c9c2f9f5e87484dd5d09718aa616362b9694e9b424063251ec5c",
+      "sha256": "263391466759cb38c7624ddec9ee483cb18460b74f8659e111b2d51861f6587a",
+      "bytes": 177524,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.1626870290977,
+        "surface_area_mm2": 245.26444827077574,
+        "bounding_box": [
+          8.485281374238571,
+          4.381197846481745,
+          -31.112698372208094,
+          16.970562748477143,
+          13.618802153518255,
+          -22.627416997969522
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.1952334532341,
+        "surface_area_mm2": 245.27421159097287,
+        "bounding_box": [
+          8.48528137423857,
+          4.381197846483,
+          -31.112698372208097,
+          16.970562748477143,
+          13.618802153517,
+          -22.627416997969526
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          8.48528127423857,
+          4.381197746483,
+          -31.1126984722081,
+          16.970562848477144,
+          13.618802253517,
+          -22.627416897969525
+        ],
+        "surface_area": 245.27421159097287,
+        "volume": 143.195233453234
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 5.551115123125783e-16,
+        "area_relative_error": 0.0,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873477598365,
+        "surface_area_relative_change": 3.9807319266893515e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_clamp_nut_28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 6.858907144998739
+    },
+    {
+      "name": "M5_crank_bolt",
+      "file": "parts/M5_crank_bolt.faceted.x_t",
+      "source_step_sha256": "7abed8182bed48750a828597d0ed8387caa86c5d0916c68a2ba843a5931f1083",
+      "sha256": "46c36b24ad92b58e1a036ed9ae7a0eff8f08cc2cc443315544533682547eac3a",
+      "bytes": 298086,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 948.6628066136832,
+        "surface_area_mm2": 806.9966128909239,
+        "bounding_box": [
+          120.75,
+          82.66475992911,
+          38.5,
+          129.25,
+          91.16475992911,
+          80.2
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 948.2696864930294,
+        "surface_area_mm2": 806.877730376667,
+        "bounding_box": [
+          120.75,
+          82.66608090560653,
+          38.5,
+          129.25,
+          91.16343895261348,
+          80.2
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          120.7499999,
+          82.66608080560654,
+          38.4999999,
+          129.2500001,
+          91.16343905261347,
+          80.2000001
+        ],
+        "surface_area": 806.8777303766674,
+        "volume": 948.2696864930294
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 0.0,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262432483,
+        "surface_area_relative_change": -0.00014731476236384822,
+        "bounds_max_absolute_change_mm": 0.0013208764965355613
+      },
+      "independent_report": "reports/M5_crank_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 13.844024365998848
+    },
+    {
+      "name": "M5_crank_nut",
+      "file": "parts/M5_crank_nut.faceted.x_t",
+      "source_step_sha256": "fb534b0a2384d29e5443be40e7dca8be472e3a10d51f260c1757b9e9d4fa43f2",
+      "sha256": "18fc05e5add0d249f0e9801ca2c2a49a6b2a995ef0f2573f6b03719f657df650",
+      "bytes": 147120,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702888965,
+        "surface_area_mm2": 245.26444827060777,
+        "bounding_box": [
+          120.99999999999986,
+          82.2959577756,
+          75.2,
+          129.00000000000014,
+          91.53356208263,
+          79.2
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345304177,
+        "surface_area_mm2": 245.27421159082854,
+        "bounding_box": [
+          121.0,
+          82.2959577756,
+          75.2,
+          129.0,
+          91.53356208263,
+          79.2
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          120.9999999,
+          82.29595767560001,
+          75.19999990000001,
+          129.0000001,
+          91.53356218262999,
+          79.2000001
+        ],
+        "surface_area": 245.27421159082866,
+        "volume": 143.19523345304185
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 6.661338147750939e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 9.999999406318238e-08
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.000227338734887228,
+        "surface_area_relative_change": 3.980731936370496e-05,
+        "bounds_max_absolute_change_mm": 9.999999406318238e-08
+      },
+      "independent_report": "reports/M5_crank_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.359276552000665
+    },
+    {
+      "name": "M5_probe_clamp_bolt",
+      "file": "parts/M5_probe_clamp_bolt.faceted.x_t",
+      "source_step_sha256": "8bd7b316ccc7c31008bcac529c794c0d4d88dbe99b2ca09543ec0f2b224e9533",
+      "sha256": "efa59af033dad0f8fbb756154849fe22e36ba854b42039fa172dac8c4b038f41",
+      "bytes": 298247,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 689.4814126925293,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          30.0,
+          -26.307713659390004,
+          1.75,
+          58.5,
+          -17.807713659390004,
+          10.25
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715563,
+        "surface_area_mm2": 599.5540978828531,
+        "bounding_box": [
+          30.0,
+          -26.30639268289346,
+          1.75,
+          58.5,
+          -17.809034635886533,
+          10.25
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          29.9999999,
+          -26.306392782893464,
+          1.7499999,
+          58.5000001,
+          -17.809034535886532,
+          10.2500001
+        ],
+        "surface_area": 599.5540978828532,
+        "volume": 689.1956957715565
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426256571,
+        "surface_area_relative_change": -0.00016242746244365946,
+        "bounds_max_absolute_change_mm": 0.001320876496539114
+      },
+      "independent_report": "reports/M5_probe_clamp_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.555472385998655
+    },
+    {
+      "name": "M5_probe_clamp_nut",
+      "file": "parts/M5_probe_clamp_nut.faceted.x_t",
+      "source_step_sha256": "3aa04583a9726dd7147b56d2641ebfb97c193531a00f1f3faeaa52028046b7f6",
+      "sha256": "7013aad7160345e39238f747ae047d639b79bd43c312bfad36bc5b9b5fedd15a",
+      "bytes": 155918,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702909758,
+        "surface_area_mm2": 245.26444827077572,
+        "bounding_box": [
+          35.0,
+          -26.676515812918254,
+          1.9999999999999982,
+          39.0,
+          -17.438911505881748,
+          10.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323387,
+        "surface_area_mm2": 245.27421159097264,
+        "bounding_box": [
+          35.0,
+          -26.676515812917,
+          2.0,
+          39.0,
+          -17.438911505883002,
+          10.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          34.9999999,
+          -26.676515912917,
+          1.9999999,
+          39.0000001,
+          -17.438911405883,
+          10.0000001
+        ],
+        "surface_area": 245.27421159097293,
+        "volume": 143.19523345323444
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.9968028886505635e-15,
+        "area_relative_error": 1.1102230246251565e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387347797584,
+        "surface_area_relative_change": 3.980731926711556e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_probe_clamp_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.572403590000249
+    },
+    {
+      "name": "M5_slider_captive_nut",
+      "file": "parts/M5_slider_captive_nut.faceted.x_t",
+      "source_step_sha256": "cac1bc245aa10d2d617286fafd6e7660fa7432c45d84873ba01327a01f710c73",
+      "sha256": "4648fa1d9625b862f13d35b3aedf305f859e5f64b65ac921209a80dbaa7bcdf1",
+      "bytes": 148035,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.1626870283297,
+        "surface_area_mm2": 245.2644482702479,
+        "bounding_box": [
+          106.0,
+          -26.67651581288999,
+          58.0,
+          114.00000000001745,
+          -17.438911505845233,
+          62.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345240216,
+        "surface_area_mm2": 245.27421159034884,
+        "bounding_box": [
+          106.0,
+          -26.67651581288999,
+          58.0,
+          114.0,
+          -17.43891150588999,
+          62.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.9999999,
+          -26.67651591288999,
+          57.9999999,
+          114.0000001,
+          -17.43891140588999,
+          62.0000001
+        ],
+        "surface_area": 245.27421159034907,
+        "volume": 143.19523345240214
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873433078422,
+        "surface_area_relative_change": 3.980731887565092e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_slider_captive_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 6.91498584799956
+    },
+    {
+      "name": "M5_slider_pivot_bolt",
+      "file": "parts/M5_slider_pivot_bolt.faceted.x_t",
+      "source_step_sha256": "560cfa10503557d93730c227baeb936abefae9030057de7f6bf17affe4ac85d0",
+      "sha256": "c5846fd312e5e26ae51f24d28e7fea9a25020e79b4423120725229558dbd2eaf",
+      "bytes": 297437,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 575.5986789999014,
+        "surface_area_mm2": 508.54531079987396,
+        "bounding_box": [
+          105.75,
+          -26.307713659390004,
+          56.0,
+          114.25,
+          -17.807713659390004,
+          78.7
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 575.360154393939,
+        "surface_area_mm2": 508.45735027193484,
+        "bounding_box": [
+          105.75,
+          -26.306392682893488,
+          56.0,
+          114.25,
+          -17.809034635886533,
+          78.7
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.7499999,
+          -26.30639278289349,
+          55.9999999,
+          114.2500001,
+          -17.809034535886532,
+          78.7000001
+        ],
+        "surface_area": 508.4573502719347,
+        "volume": 575.3601543939385
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426290988,
+        "surface_area_relative_change": -0.00017296497690821866,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_slider_pivot_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.325619698000082
+    },
+    {
+      "name": "M5_stop_-1",
+      "file": "parts/M5_stop_-1.faceted.x_t",
+      "source_step_sha256": "92b459b52cef57662c54c2d43b4d0f591a0ad68ac76576b6ce66da5156b190f0",
+      "sha256": "40f537f51b65bdc2c91bc1ddfdf62f2c74f6a3b5a86544c0cc68ba97b770eb65",
+      "bytes": 293582,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 432.26351417986905,
+        "surface_area_mm2": 393.8771789438388,
+        "bounding_box": [
+          137.981428891234,
+          49.701234823350006,
+          26.5,
+          146.481428891234,
+          58.201234823350006,
+          41.9
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 432.0843867979727,
+        "surface_area_mm2": 393.8010989685377,
+        "bounding_box": [
+          137.981428891234,
+          49.702555799846536,
+          26.5,
+          146.481428891234,
+          58.19991384685348,
+          41.9
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          137.981428791234,
+          49.702555699846535,
+          26.4999999,
+          146.481428991234,
+          58.19991394685348,
+          41.9000001
+        ],
+        "surface_area": 393.801098968538,
+        "volume": 432.0843867979728
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 6.661338147750939e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394263032003,
+        "surface_area_relative_change": -0.00019315659644170147,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_stop_-1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.69965905999925
+    },
+    {
+      "name": "M5_stop_1",
+      "file": "parts/M5_stop_1.faceted.x_t",
+      "source_step_sha256": "08ed89abac207036d88bb14561b45544b94360d72c9da228bcf5ecb0b5fd9eba",
+      "sha256": "b36345388cd625de6fc501c54a2e01e5df136925593616581c99c3e53a08ab48",
+      "bytes": 292840,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 432.26351417986905,
+        "surface_area_mm2": 393.8771789438388,
+        "bounding_box": [
+          137.981428891234,
+          155.628285034878,
+          26.5,
+          146.481428891234,
+          164.128285034878,
+          41.9
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 432.08438679797274,
+        "surface_area_mm2": 393.80109896853764,
+        "bounding_box": [
+          137.981428891234,
+          155.62960601137453,
+          26.5,
+          146.481428891234,
+          164.12696405838147,
+          41.9
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          137.981428791234,
+          155.62960591137454,
+          26.4999999,
+          146.481428991234,
+          164.12696415838147,
+          41.9000001
+        ],
+        "surface_area": 393.8010989685378,
+        "volume": 432.0843867979728
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394263032003,
+        "surface_area_relative_change": -0.00019315659644214556,
+        "bounds_max_absolute_change_mm": 0.0013208764965497721
+      },
+      "independent_report": "reports/M5_stop_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.30543434500032
+    },
+    {
+      "name": "M5_stop_nut_-1",
+      "file": "parts/M5_stop_nut_-1.faceted.x_t",
+      "source_step_sha256": "4594a64b7839dbb714d751d094ca29507461a85a95deff8bc289534a1c90a1d9",
+      "sha256": "f6c408ae30cb377b8e951ae881f38d75e6a73571172e4a0d9f82132cb76b8ebc",
+      "bytes": 147298,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702888965,
+        "surface_area_mm2": 245.26444827060786,
+        "bounding_box": [
+          138.23142889123386,
+          49.332432669830006,
+          34.0,
+          146.23142889123415,
+          58.57003697686,
+          38.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345304196,
+        "surface_area_mm2": 245.2742115908287,
+        "bounding_box": [
+          138.231428891234,
+          49.332432669830006,
+          34.0,
+          146.231428891234,
+          58.57003697686,
+          38.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          138.231428791234,
+          49.332432569830004,
+          33.9999999,
+          146.231428991234,
+          58.570037076860004,
+          38.0000001
+        ],
+        "surface_area": 245.27421159082857,
+        "volume": 143.195233453042
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 5.551115123125783e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873488811618,
+        "surface_area_relative_change": 3.980731936303883e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_stop_nut_-1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.822281611999642
+    },
+    {
+      "name": "M5_stop_nut_1",
+      "file": "parts/M5_stop_nut_1.faceted.x_t",
+      "source_step_sha256": "823dcdcb1d72d0b5325e335c4d1f5835d3ea2043524509b4c10e90a4e8d55413",
+      "sha256": "57dc25fcdceac443a3600e91a85621d3ce2d8d1f1a0dcc0a97de7b8a64be0819",
+      "bytes": 147023,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 143.16268702907777,
+        "surface_area_mm2": 245.2644482707579,
+        "bounding_box": [
+          138.231428891234,
+          155.2594828813605,
+          34.0,
+          146.231428891234,
+          164.49708718839625,
+          38.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345321747,
+        "surface_area_mm2": 245.27421159096036,
+        "bounding_box": [
+          138.231428891234,
+          155.259482881361,
+          34.0,
+          146.231428891234,
+          164.497087188395,
+          38.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          138.231428791234,
+          155.25948278136102,
+          33.9999999,
+          146.231428991234,
+          164.497087288395,
+          38.0000001
+        ],
+        "surface_area": 245.27421159096048,
+        "volume": 143.19523345321753
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873479996447,
+        "surface_area_relative_change": 3.9807319289097975e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_stop_nut_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 6.962925609001104
+    },
+    {
+      "name": "M5_wheel_axle",
+      "file": "parts/M5_wheel_axle.faceted.x_t",
+      "source_step_sha256": "ca786a2292a19b9c70e05927dc5594928d794d03afb279c5c42b76eee9d565c6",
+      "sha256": "3538a61762ed37b123c911563aa4e5a7471f9df198fb9b0fc9455d5b26e3fc9f",
+      "bytes": 299833,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 905.4659076268243,
+        "surface_area_mm2": 772.4390937014339,
+        "bounding_box": [
+          105.75,
+          102.66475992911,
+          26.0,
+          114.25,
+          111.16475992911,
+          65.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 905.0906880394505,
+        "surface_area_mm2": 772.323791627698,
+        "bounding_box": [
+          105.75,
+          102.66608090560653,
+          26.0,
+          114.25,
+          111.16343895261348,
+          65.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          105.7499999,
+          102.66608080560654,
+          25.9999999,
+          114.2500001,
+          111.16343905261347,
+          65.5000001
+        ],
+        "surface_area": 772.3237916276967,
+        "volume": 905.0906880394498
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 1.7763568394002505e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426255461,
+        "surface_area_relative_change": -0.0001492701167993271,
+        "bounds_max_absolute_change_mm": 0.0013208764965355613
+      },
+      "independent_report": "reports/M5_wheel_axle.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 11.834727253000892
+    },
+    {
+      "name": "NEMA17_body",
+      "file": "parts/NEMA17_body.faceted.x_t",
+      "source_step_sha256": "6b8269e5b14e845714d5e5cdf56f895eafd9030ea7bc3f98d7e964f1f743fdf1",
+      "sha256": "775ca9a703254c977aad61d5512694ef5f2af798792a13f7b371c3ba878222c6",
+      "bytes": 589006,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2028,
+      "input_vertices": 2048,
+      "output_faces": 514,
+      "raw_source_triangles": 2028,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 65117.04647299502,
+        "surface_area_mm2": 9938.77874452258,
+        "bounding_box": [
+          39.0,
+          85.91475992911,
+          -10.0,
+          81.0,
+          127.91475992911,
+          27.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 65117.10902722222,
+        "surface_area_mm2": 9938.758563857826,
+        "bounding_box": [
+          39.0,
+          85.91475992911,
+          -10.0,
+          81.0,
+          127.91475992911,
+          27.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          38.9999999,
+          85.91475982911001,
+          -10.0000001,
+          81.0000001,
+          127.91476002911,
+          27.0000001
+        ],
+        "surface_area": 9938.758563857453,
+        "volume": 65117.10902722219
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 3.752553823233029e-14,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 9.606428816866242e-07,
+        "surface_area_relative_change": -2.0304974731599756e-06,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/NEMA17_body.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 29.008398764000958
+    },
+    {
+      "name": "NEMA17_face",
+      "file": "parts/NEMA17_face.faceted.x_t",
+      "source_step_sha256": "f11c700cb477365eab4d055f40816983d8dea9fc740a479aaae510308976c3e4",
+      "sha256": "72b677c86d0b532b8abe772fdd49ddc590f1dcb6cb36be9a17b306735b13bb4b",
+      "bytes": 747987,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2548,
+      "input_vertices": 2554,
+      "output_faces": 637,
+      "raw_source_triangles": 2548,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 5961.693305965766,
+        "surface_area_mm2": 4226.715912669511,
+        "bounding_box": [
+          39.0,
+          85.91475992911,
+          27.0,
+          81.0,
+          127.91475992911,
+          32.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 5961.415789116321,
+        "surface_area_mm2": 4226.714504199459,
+        "bounding_box": [
+          39.0,
+          85.91475992911,
+          27.0,
+          81.0,
+          127.91475992911,
+          32.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          38.9999999,
+          85.91475982911001,
+          26.9999999,
+          81.0000001,
+          127.91476002911,
+          32.0000001
+        ],
+        "surface_area": 4226.714504199491,
+        "volume": 5961.415789116332
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.7763568394002505e-15,
+        "area_relative_error": 7.549516567451064e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -4.655000436804002e-05,
+        "surface_area_relative_change": -3.3323034942522867e-07,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/NEMA17_face.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 28.182198125001378
+    },
+    {
+      "name": "connecting_rod",
+      "file": "parts/connecting_rod.faceted.x_t",
+      "source_step_sha256": "4f80985adba367286965124eb1129c0fd960840bbf526c32a59a5a8dd9f1ba27",
+      "sha256": "dee3e4181d46e11584e4a7e3243c70e293924854bed06f5909740cc82552ff68",
+      "bytes": 864463,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2852,
+      "input_vertices": 2864,
+      "output_faces": 716,
+      "raw_source_triangles": 2852,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 10589.384356523382,
+        "surface_area_mm2": 6160.735938986869,
+        "bounding_box": [
+          98.99999999996523,
+          -33.05771365939606,
+          68.0,
+          136.0,
+          97.914759929116,
+          75.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 10588.509111584008,
+        "surface_area_mm2": 6160.150343693757,
+        "bounding_box": [
+          99.00119299101587,
+          -33.05688269677192,
+          68.0,
+          135.99880700894937,
+          97.9139289664918,
+          75.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          99.00119289101588,
+          -33.05688279677192,
+          67.9999999,
+          135.99880710894936,
+          97.91392906649179,
+          75.0000001
+        ],
+        "surface_area": 6160.150343693777,
+        "volume": 10588.509111584002
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 5.551115123125783e-16,
+        "area_relative_error": 3.3306690738754696e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -8.265305233168263e-05,
+        "surface_area_relative_change": -9.505281493815687e-05,
+        "bounds_max_absolute_change_mm": 0.0011928910506497914
+      },
+      "independent_report": "reports/connecting_rod.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 33.9980053700001
+    },
+    {
+      "name": "crank_front_spacer",
+      "file": "parts/crank_front_spacer.faceted.x_t",
+      "source_step_sha256": "4ae0aaf94addb9ce375bb9ada1a459dadf99704328e5462e16abce04bba9eac7",
+      "sha256": "93521e150b6d13a2ff6d8af90886ccfe73dbc3028a1a9bd7d2aee19c05387a1f",
+      "bytes": 292091,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 37.94415607005834,
+        "surface_area_mm2": 118.81503415877157,
+        "bounding_box": [
+          121.5,
+          83.41475992911,
+          73.0,
+          128.5,
+          90.41475992911,
+          75.20000000000002
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 37.92843224162376,
+        "surface_area_mm2": 118.79200349441513,
+        "bounding_box": [
+          121.5,
+          83.41584779210714,
+          73.0,
+          128.5,
+          90.41367206611287,
+          75.2
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          121.4999999,
+          83.41584769210715,
+          72.9999999,
+          128.5000001,
+          90.41367216611286,
+          75.2000001
+        ],
+        "surface_area": 118.79200349441517,
+        "volume": 37.92843224162388
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.1086244689504383e-15,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 9.999999406318238e-08
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426516363,
+        "surface_area_relative_change": -0.00019383628106883766,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/crank_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.80276548600159
+    },
+    {
+      "name": "crank_rear_spacer",
+      "file": "parts/crank_rear_spacer.faceted.x_t",
+      "source_step_sha256": "abe555c7684b14d70d14f69d83ff944da4f80d09592b21a888c08dd9aec85fa1",
+      "sha256": "7712f43ae55f6fda9f151d116d969ce9143e4ed8d698f20937e11cdb51aab996",
+      "bytes": 290478,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 310.45218602774963,
+        "surface_area_mm2": 724.3884340647797,
+        "bounding_box": [
+          121.5,
+          83.41475992911,
+          50.0,
+          128.5,
+          90.41475992911,
+          68.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 310.32353652237583,
+        "surface_area_mm2": 724.3026610627119,
+        "bounding_box": [
+          121.5,
+          83.41584779210714,
+          50.0,
+          128.5,
+          90.41367206611287,
+          68.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          121.4999999,
+          83.41584769210715,
+          49.9999999,
+          128.5000001,
+          90.41367216611286,
+          68.0000001
+        ],
+        "surface_area": 724.3026610627118,
+        "volume": 310.32353652237686
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.3306690738754696e-15,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265141427,
+        "surface_area_relative_change": -0.00011840747040459121,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/crank_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.78046633199847
+    },
+    {
+      "name": "front_axle_bridge",
+      "file": "parts/front_axle_bridge.faceted.x_t",
+      "source_step_sha256": "dbd591260f8fc15aa9b02dece3a75db02c5c3516fbbf6f0e24d846e6321c838c",
+      "sha256": "8b5a36786f2ff77c9eff26052341bec6fc9451012ba19927b1e379f6ff92159f",
+      "bytes": 659382,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2248,
+      "input_vertices": 2262,
+      "output_faces": 562,
+      "raw_source_triangles": 2248,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 16212.741471170211,
+        "surface_area_mm2": 7916.898454692118,
+        "bounding_box": [
+          40.0,
+          50.914759929110005,
+          56.0,
+          120.0,
+          194.91475992911,
+          62.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 16212.090333128965,
+        "surface_area_mm2": 7916.603318247271,
+        "bounding_box": [
+          40.00082854921723,
+          50.915204366053004,
+          56.0,
+          119.99980772477068,
+          194.91227338511652,
+          62.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          40.00082844921723,
+          50.915204266053,
+          55.9999999,
+          119.99980782477067,
+          194.91227348511651,
+          62.0000001
+        ],
+        "surface_area": 7916.603318247123,
+        "volume": 16212.090333128972
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 1.8762769116165146e-14,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -4.016211831892047e-05,
+        "surface_area_relative_change": -3.7279301570491974e-05,
+        "bounds_max_absolute_change_mm": 0.002486443993490184
+      },
+      "independent_report": "reports/front_axle_bridge.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 20.644309105000502
+    },
+    {
+      "name": "microscope_reference",
+      "file": "parts/microscope_reference.faceted.x_t",
+      "source_step_sha256": "7801f70aeae3376aafd29d7a8da1e6c9920cf57f9583a509725291c9087aab6c",
+      "sha256": "2dde9765f529b7e2287cad19c50bd30451b69b55375e072607623b60a9bd19e3",
+      "bytes": 143335,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 500,
+      "input_vertices": 506,
+      "output_faces": 128,
+      "raw_source_triangles": 500,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 212874.31820724442,
+        "surface_area_mm2": 22393.27243478932,
+        "bounding_box": [
+          -22.0,
+          0.0,
+          -22.0,
+          22.0,
+          140.0,
+          22.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 212786.1043792369,
+        "surface_area_mm2": 22390.0071905546,
+        "bounding_box": [
+          -21.99316200401796,
+          0.0,
+          -22.0,
+          21.993162004017957,
+          140.0,
+          22.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -21.993162104017962,
+          -1e-07,
+          -22.0000001,
+          21.99316210401796,
+          140.0000001,
+          22.0000001
+        ],
+        "surface_area": 22390.007190554636,
+        "volume": 212786.10437923693
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 1.5543122344752192e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394263431684,
+        "surface_area_relative_change": -0.00014581362523913288,
+        "bounds_max_absolute_change_mm": 0.006837895982041431
+      },
+      "independent_report": "reports/microscope_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.0054830939989187755
+    },
+    {
+      "name": "motor_pinion",
+      "file": "parts/motor_pinion.faceted.x_t",
+      "source_step_sha256": "f8a5cdd78d002555631060e4bede382e0f6f087aed8eaaf5de4c5758ad8d588a",
+      "sha256": "52959545a587de3693bc797ec80fae5d6ac14071f53b4fb33c0dd9671360eee7",
+      "bytes": 1096579,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2814,
+      "input_vertices": 3458,
+      "output_faces": 1056,
+      "raw_source_triangles": 2814,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 2949.9145479863796,
+        "surface_area_mm2": 2023.7986632384861,
+        "bounding_box": [
+          49.022880544402085,
+          95.93764047351209,
+          38.4999999,
+          70.97711945559792,
+          117.89187938470792,
+          50.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 2949.683863672335,
+        "surface_area_mm2": 2023.7774872916896,
+        "bounding_box": [
+          49.02288054440208,
+          95.93764047351209,
+          38.5,
+          70.97711945559792,
+          117.89187938470792,
+          50.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          49.02288044440208,
+          95.9376403735121,
+          38.4999999,
+          70.97711955559791,
+          117.89187948470791,
+          50.0000001
+        ],
+        "surface_area": 2023.7774872916873,
+        "volume": 2949.683863672334
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.3306690738754696e-16,
+        "area_relative_error": 1.1102230246251565e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -7.820033777006241e-05,
+        "surface_area_relative_change": -1.0463465157650731e-05,
+        "bounds_max_absolute_change_mm": 1.000000082740371e-07
+      },
+      "independent_report": "reports/motor_pinion.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.026462239999091253
+    },
+    {
+      "name": "motor_shaft",
+      "file": "parts/motor_shaft.faceted.x_t",
+      "source_step_sha256": "08d39602583abc74e8695cda30a29a64944139512aad4181319b6dacd006f40f",
+      "sha256": "5551eba6024c325147824ab89af20daf8c16b4b607de98c072cebe4bcf79f7b5",
+      "bytes": 229141,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 504,
+      "input_vertices": 514,
+      "output_faces": 258,
+      "raw_source_triangles": 504,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 451.82314136926067,
+        "surface_area_mm2": 412.12842126528784,
+        "bounding_box": [
+          57.5,
+          104.41475992910999,
+          32.0,
+          62.5,
+          109.41475992910999,
+          56.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 451.6661350330661,
+        "surface_area_mm2": 412.07931982201745,
+        "bounding_box": [
+          57.50056614891042,
+          104.41477659112965,
+          32.0,
+          62.49950259483117,
+          109.4147547718828,
+          56.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          57.50056604891042,
+          104.41477649112967,
+          31.9999999,
+          62.49950269483117,
+          109.41475487188279,
+          56.0000001
+        ],
+        "surface_area": 412.07931982201774,
+        "volume": 451.66613503306667
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.3322676295501878e-15,
+        "area_relative_error": 6.661338147750939e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0003474951188161546,
+        "surface_area_relative_change": -0.00011914112382582775,
+        "bounds_max_absolute_change_mm": 0.0005660489104215571
+      },
+      "independent_report": "reports/motor_shaft.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.017367779999403865
+    },
+    {
+      "name": "probe_carriage",
+      "file": "parts/probe_carriage.faceted.x_t",
+      "source_step_sha256": "5e2ab86047d636813eec8c556cbab0bf829de6c6d2917cbf24f8b83c32e526f8",
+      "sha256": "1c6aa8b88523854225118d6a24298cba93b47211d8088cc49f9c9b4fc3042eb1",
+      "bytes": 2198815,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 4730,
+      "input_vertices": 4854,
+      "output_faces": 2025,
+      "raw_source_triangles": 4730,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 44832.95293695806,
+        "surface_area_mm2": 15312.961516126628,
+        "bounding_box": [
+          34.20577126594104,
+          -36.0577136594,
+          -9.0000001,
+          127.0,
+          -8.057713659400001,
+          66.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 44832.741777458315,
+        "surface_area_mm2": 15312.778332161331,
+        "bounding_box": [
+          34.20611620419017,
+          -36.0577136594,
+          -8.9989038025032,
+          127.0,
+          -8.057713659400001,
+          66.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          34.206116104190166,
+          -36.05771375940001,
+          -8.9989039025032,
+          127.0000001,
+          -8.057713559400002,
+          66.5000001
+        ],
+        "surface_area": 15312.77833216134,
+        "volume": 44832.741777459065
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.6653345369377348e-14,
+        "area_relative_error": 6.661338147750939e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -4.7099172632014685e-06,
+        "surface_area_relative_change": -1.1962673914789335e-05,
+        "bounds_max_absolute_change_mm": 0.001096197496799789
+      },
+      "independent_report": "reports/probe_carriage.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.07844995999948878
+    },
+    {
+      "name": "probe_reference",
+      "file": "parts/probe_reference.faceted.x_t",
+      "source_step_sha256": "a795d95448625d36808a39c33207b94b250487279829629f81a98d1aaa390174",
+      "sha256": "8bebf7bb2ab127e2299d61005f4cbc69a91ab30df40707f238ed0aae1a3a5b56",
+      "bytes": 1682340,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 5038,
+      "input_vertices": 3065,
+      "output_faces": 948,
+      "raw_source_triangles": 5039,
+      "zero_area_primitives_removed": [
+        {
+          "raw_triangle_index": 137,
+          "vertex_indices": [
+            254,
+            127,
+            149
+          ],
+          "coordinates": [
+            [
+              0.07125116213775584,
+              -99.83119132519488,
+              0.0011328610377603354
+            ],
+            [
+              0.0,
+              -99.99999999999,
+              0.0
+            ],
+            [
+              0.0,
+              -99.99999999999,
+              0.0
+            ]
+          ],
+          "reason": "exactly coincident vertices; mathematically zero area"
+        }
+      ],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 1118.930583454646,
+        "surface_area_mm2": 964.7602917489578,
+        "bounding_box": [
+          0.0,
+          -99.99999999999,
+          -3.0,
+          54.59807621137905,
+          -8.433358006389424,
+          3.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 1118.3453353109621,
+        "surface_area_mm2": 964.6172701924278,
+        "bounding_box": [
+          0.0,
+          -99.99999999999,
+          -2.9990675460024505,
+          54.59807621136,
+          -8.433358006389426,
+          2.9990675460024505
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -1e-07,
+          -100.00000009998999,
+          -2.9990676460024503,
+          54.59807631136,
+          -8.433357906389427,
+          2.9990676460024503
+        ],
+        "surface_area": 964.6172701924289,
+        "volume": 1118.3453353109614
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 5.551115123125783e-16,
+        "area_relative_error": 1.1102230246251565e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0005230424052559135,
+        "surface_area_relative_change": -0.00014824569144489264,
+        "bounds_max_absolute_change_mm": 0.0009323539975496509
+      },
+      "independent_report": "reports/probe_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 39.270198445999995
+    },
+    {
+      "name": "rear_clamp",
+      "file": "parts/rear_clamp.faceted.x_t",
+      "source_step_sha256": "62fd696bfbd96e6a1f96cccd8a4765625601121f80840acfc44933b9daa37c80",
+      "sha256": "2172ed884a87f901506c291a53d3c173d8264a3ea1324b756a4d95ee94c73ee1",
+      "bytes": 767081,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1900,
+      "input_vertices": 1960,
+      "output_faces": 686,
+      "raw_source_triangles": 1900,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 11387.650462047393,
+        "surface_area_mm2": 5369.846554273775,
+        "bounding_box": [
+          -32.52691193458119,
+          -1e-07,
+          -32.52691193458119,
+          23.758787847868,
+          18.0000001,
+          23.758787847868
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 11385.819352697694,
+        "surface_area_mm2": 5369.406134534578,
+        "bounding_box": [
+          -32.52691193458119,
+          0.0,
+          -32.52691193458119,
+          23.758787847868003,
+          18.0,
+          23.758787847868003
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -32.526912034581194,
+          -1e-07,
+          -32.526912034581194,
+          23.758787947868004,
+          18.000000100000005,
+          23.758787947868004
+        ],
+        "surface_area": 5369.406134534608,
+        "volume": 11385.819352697697
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 5.551115123125783e-15,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00016079781828559625,
+        "surface_area_relative_change": -8.201719261724527e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/rear_clamp.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.04835592800009181
+    },
+    {
+      "name": "sector_crank",
+      "file": "parts/sector_crank.faceted.x_t",
+      "source_step_sha256": "b9482d46b285debd16d24396d6d9413ab9d93c31c604f2b8a736899b2a4ba25e",
+      "sha256": "91f94f74f6fc8d40dd30f1df64032711f53067223b6735ec26a459558d962dc5",
+      "bytes": 2379881,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 7452,
+      "input_vertices": 8916,
+      "output_faces": 1869,
+      "raw_source_triangles": 7452,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 86417.53939116724,
+        "surface_area_mm2": 30422.109214347263,
+        "bounding_box": [
+          42.0,
+          38.914759929110005,
+          38.5,
+          178.0,
+          174.91475992911,
+          52.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 86369.65170308015,
+        "surface_area_mm2": 30409.661594442307,
+        "bounding_box": [
+          42.01383066187799,
+          38.91553159490354,
+          38.5,
+          177.98616933812204,
+          174.91398826331647,
+          52.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          42.01383056187799,
+          38.91553149490354,
+          38.4999999,
+          177.98616943812203,
+          174.91398836331646,
+          52.00000010000001
+        ],
+        "surface_area": 30409.661594442474,
+        "volume": 86369.65170308008
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 8.881784197001252e-16,
+        "area_relative_error": 5.551115123125783e-15,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0005541431568700794,
+        "surface_area_relative_change": -0.0004091636058856096,
+        "bounds_max_absolute_change_mm": 0.013830561877988146
+      },
+      "independent_report": "reports/sector_crank.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.158707800999764
+    },
+    {
+      "name": "slider_front_spacer",
+      "file": "parts/slider_front_spacer.faceted.x_t",
+      "source_step_sha256": "f6463682534e02d9e41d216745519ddd58ea46bc397d4c727b6474435ffce55c",
+      "sha256": "17dcb1b0f1ab10e25d65b2f6255721d795d29912a344992ca1fd61192fcf9baa",
+      "bytes": 294901,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 37.944156070058426,
+        "surface_area_mm2": 118.81503415877162,
+        "bounding_box": [
+          106.5,
+          -25.557713659390004,
+          73.0,
+          113.5,
+          -18.557713659390004,
+          75.20000000000002
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 37.928432241623796,
+        "surface_area_mm2": 118.79200349441518,
+        "bounding_box": [
+          106.5,
+          -25.556625796392865,
+          73.0,
+          113.5,
+          -18.558801522387142,
+          75.2
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          106.4999999,
+          -25.556625896392866,
+          72.9999999,
+          113.5000001,
+          -18.55880142238714,
+          75.2000001
+        ],
+        "surface_area": 118.79200349441516,
+        "volume": 37.92843224162389
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.4424906541753444e-15,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426536347,
+        "surface_area_relative_change": -0.00019383628106939277,
+        "bounds_max_absolute_change_mm": 0.0010877629971375313
+      },
+      "independent_report": "reports/slider_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.009066908000022522
+    },
+    {
+      "name": "slider_rear_spacer",
+      "file": "parts/slider_rear_spacer.faceted.x_t",
+      "source_step_sha256": "9dea42982bfce420db0cc9d8bc2ceac04066dad6d3c316d906384e49870745c2",
+      "sha256": "f68e0319da4c15f516c448d7c952c347e997baeb54dd561dc4d629d6693ef48f",
+      "bytes": 294893,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 25.87101550231253,
+        "surface_area_mm2": 91.98583289711294,
+        "bounding_box": [
+          106.5,
+          -25.557713659390004,
+          66.5,
+          113.5,
+          -18.557713659390004,
+          68.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 25.860294710198012,
+        "surface_area_mm2": 91.96558195657913,
+        "bounding_box": [
+          106.5,
+          -25.556625796392865,
+          66.5,
+          113.5,
+          -18.558801522387142,
+          68.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          106.4999999,
+          -25.556625896392866,
+          66.4999999,
+          113.5000001,
+          -18.55880142238714,
+          68.0000001
+        ],
+        "surface_area": 91.9655819565791,
+        "volume": 25.86029471019801
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265618823,
+        "surface_area_relative_change": -0.00022015282023368776,
+        "bounds_max_absolute_change_mm": 0.0010877629971375313
+      },
+      "independent_report": "reports/slider_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.012464412000554148
+    },
+    {
+      "name": "specimen_plate_reference",
+      "file": "parts/specimen_plate_reference.faceted.x_t",
+      "source_step_sha256": "cfd243281403742d81ec0a2c98d18ff5cc80fcf1c6e4a99c9867fcb7e9296d4a",
+      "sha256": "67a28b2c7b3af261951a8b22b8d4b191842f69bbb5184e633f391ab8084a5a42",
+      "bytes": 3237,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 12,
+      "input_vertices": 24,
+      "output_faces": 6,
+      "raw_source_triangles": 12,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 30000.0,
+        "surface_area_mm2": 21200.0,
+        "bounding_box": [
+          -50.0,
+          -103.0,
+          -50.0,
+          50.0,
+          -100.0,
+          50.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 30000.0,
+        "surface_area_mm2": 21200.0,
+        "bounding_box": [
+          -50.0,
+          -103.0,
+          -50.0,
+          50.0,
+          -100.0,
+          50.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -50.0000001,
+          -103.00000010000001,
+          -50.0000001,
+          50.0000001,
+          -99.9999999,
+          50.0000001
+        ],
+        "surface_area": 21200.000000000004,
+        "volume": 30000.00000000014
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.6629367034256575e-15,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 4.6629367034256575e-15,
+        "surface_area_relative_change": 2.220446049250313e-16,
+        "bounds_max_absolute_change_mm": 1.000000082740371e-07
+      },
+      "independent_report": "reports/specimen_plate_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.0019022739998035831
+    },
+    {
+      "name": "wheel_front_spacer",
+      "file": "parts/wheel_front_spacer.faceted.x_t",
+      "source_step_sha256": "2582ae09ac0a12721fc4a7f1e4fb27b686d9cc37f03ed7a2223bc19cd02ba24d",
+      "sha256": "18c1fa5b3b91a27eb7be50284874e56543e04516f50e10f20c877fc1cb4cb656",
+      "bytes": 302962,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 68.98937467283335,
+        "surface_area_mm2": 187.80440883160793,
+        "bounding_box": [
+          106.5,
+          103.41475992911,
+          52.0,
+          113.5,
+          110.41475992911,
+          56.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 68.96078589386137,
+        "surface_area_mm2": 187.7742303059932,
+        "bounding_box": [
+          106.5,
+          103.41584779210714,
+          52.0,
+          113.5,
+          110.41367206611287,
+          56.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          106.4999999,
+          103.41584769210715,
+          51.999999900000006,
+          113.5000001,
+          110.41367216611286,
+          56.0000001
+        ],
+        "surface_area": 187.77423030599286,
+        "volume": 68.96078589386128
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.2212453270876722e-15,
+        "area_relative_error": 1.7763568394002505e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265629925,
+        "surface_area_relative_change": -0.00016069125215334434,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.003068276000703918
+    },
+    {
+      "name": "wheel_inner_spacer",
+      "file": "parts/wheel_inner_spacer.faceted.x_t",
+      "source_step_sha256": "dd912265bbee1418763054eb908c5038c55eb2b11bfdadebeeca06b5d9866319",
+      "sha256": "8c2632ddd9689eeb7691a660708df88783322e87361bf5d0dfe3d25d9f3700a3",
+      "bytes": 292342,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 34.494687336416675,
+        "surface_area_mm2": 111.14954808401193,
+        "bounding_box": [
+          106.5,
+          103.41475992911,
+          45.0,
+          113.5,
+          110.41475992911,
+          47.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 34.480392946930685,
+        "surface_area_mm2": 111.12731162646193,
+        "bounding_box": [
+          106.5,
+          103.41584779210714,
+          45.0,
+          113.5,
+          110.41367206611287,
+          47.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          106.4999999,
+          103.41584769210715,
+          44.9999999,
+          113.5000001,
+          110.41367216611286,
+          47.0000001
+        ],
+        "surface_area": 111.12731162646182,
+        "volume": 34.480392946930785
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.886579864025407e-15,
+        "area_relative_error": 9.992007221626409e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426520804,
+        "surface_area_relative_change": -0.00020005891102048423,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_inner_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.003581380999094108
+    },
+    {
+      "name": "wheel_rear_spacer",
+      "file": "parts/wheel_rear_spacer.faceted.x_t",
+      "source_step_sha256": "15cad7c27318af1713229cd6a7c76649266593f5a344641bcce80ad855de6132",
+      "sha256": "4a89b7be48faca7a07f271d94e09237776262d463bbdd4b7328a798a1aeb232d",
+      "bytes": 290721,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "exact_step": {
+        "volume_mm3": 34.494687336416675,
+        "surface_area_mm2": 111.14954808401193,
+        "bounding_box": [
+          106.5,
+          103.41475992911,
+          38.0,
+          113.5,
+          110.41475992911,
+          40.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 34.480392946930685,
+        "surface_area_mm2": 111.12731162646193,
+        "bounding_box": [
+          106.5,
+          103.41584779210714,
+          38.0,
+          113.5,
+          110.41367206611287,
+          40.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          106.4999999,
+          103.41584769210715,
+          37.9999999,
+          113.5000001,
+          110.41367216611286,
+          40.0000001
+        ],
+        "surface_area": 111.12731162646183,
+        "volume": 34.48039294693074
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.5543122344752192e-15,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265341267,
+        "surface_area_relative_change": -0.0002000589110203732,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 0.0034859170009440277
+    }
+  ],
+  "failures": [
+    {
+      "name": "frame_front_clamp",
+      "error": "54 |   cycles.forEach((cycle, face) =>\n55 |     cycle.forEach((vertex) => vertexFaces[vertex]!.add(face)),\n56 |   )\n57 |   for (const entries of uses.values()) {\n58 |     if (entries.length !== 2 || entries[0]!.face === entries[1]!.face) {\n59 |       throw new Error(\n                     ^\nerror: Mesh is open or non-manifold: an edge has 4 incident faces (expected two)\n      at orientSolid (/workspace/work/faceted-parasolid/tools/vendor/jscad-to-parasolid/lib/merge-coplanar.ts:59:17)\n      at mergeCoplanarBody (/workspace/work/faceted-parasolid/tools/vendor/jscad-to-parasolid/lib/merge-coplanar.ts:155:3)\n      at map (1:11)\n      at jscadToParasolid (/workspace/work/faceted-parasolid/tools/vendor/jscad-to-parasolid/lib/index.ts:88:16)\n      at /workspace/work/faceted-parasolid/tools/export_mesh.ts:10:12\n\nBun v1.4.0 (Linux x64)\n"
+    }
+  ]
+}

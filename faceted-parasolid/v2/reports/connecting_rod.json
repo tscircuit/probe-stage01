@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "producer": "parasolid-kit.interop.occt",
+  "parser_version": "0.3.5",
+  "ocp_distribution": "cadquery-ocp-novtk==7.9.3.1.1",
+  "ocp_version": "7.9.3.1",
+  "source_identity": null,
+  "source_format": "text",
+  "schema_key": "SCH_3000000_30000",
+  "units": {
+    "source": "m",
+    "target": "mm",
+    "source_to_metres": 1.0,
+    "target_to_metres": 0.001,
+    "applied_scale": 1000.0
+  },
+  "validation_tolerances": {
+    "linear_absolute": 1e-06,
+    "relative": 1e-09
+  },
+  "source_complete": true,
+  "conversion_complete": true,
+  "occt_valid": true,
+  "input_topology": {
+    "bodies": 1,
+    "edges": 2160,
+    "faces": 724,
+    "half_edges": 4320,
+    "loops": 730,
+    "points": 1440,
+    "regions": 2,
+    "shells": 2,
+    "vertices": 1440
+  },
+  "input_curve_kinds": {
+    "line": 2160
+  },
+  "input_surface_kinds": {
+    "plane": 724
+  },
+  "output_topology": {
+    "compounds": 0,
+    "compsolids": 0,
+    "edges": 2160,
+    "faces": 724,
+    "shells": 1,
+    "solids": 1,
+    "vertices": 1440,
+    "wires": 730
+  },
+  "metrics": {
+    "bounding_box": [
+      98.9999999,
+      -33.057416590497205,
+      -51.30584062951375,
+      106.00000010000001,
+      76.33621104865477,
+      -19.001923434514865
+    ],
+    "surface_area": 5064.452770241514,
+    "volume": 7775.000223327546
+  },
+  "mapping_relation_count": 13703,
+  "generated_topology_count": 0,
+  "diagnostics": [],
+  "limits": {
+    "max_entities": 1000000,
+    "max_occt_subshapes": 2000000,
+    "max_curve_samples": 1000000,
+    "max_triangles": 5000000,
+    "max_vertices": 10000000,
+    "max_output_bytes": 536870912,
+    "max_diagnostics": 10000
+  },
+  "usage": {
+    "entities": 13703,
+    "occt_subshapes": 5056,
+    "curve_samples": 0,
+    "triangles": 0,
+    "vertices": 1440,
+    "output_bytes": 0,
+    "diagnostics": 0
+  },
+  "topology_operations": [
+    "trimmed_plane_face",
+    "shared_boundary_shell",
+    "solid_from_closed_shell"
+  ],
+  "healing": {
+    "requested": false,
+    "performed": false,
+    "operations": []
+  },
+  "input_xt_sha256": "32f2288c458418e66e775efeab4593633d0f78f3ddba03654de8009cf70d5ef2",
+  "surface_correspondence": {
+    "valid": true,
+    "method": "whole supporting-plane region union area and reciprocal region coverage",
+    "source_triangles": 2884,
+    "readback_faces": 724,
+    "supporting_plane_groups": 723,
+    "all_source_triangles_compared": true,
+    "all_readback_faces_compared": true,
+    "precision_grid_mm": 1e-07,
+    "max_boundary_hausdorff_mm": 0.3162434236826973,
+    "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+    "complete_bidirectional_surface_region_coverage": true,
+    "surface_region_hausdorff_upper_bound_mm": 1e-05,
+    "surface_region_tolerance_mm": 1e-05,
+    "max_symmetric_difference_area_mm2": 6.732744293770731e-06,
+    "total_symmetric_difference_area_mm2": 0.00017593223415759594,
+    "max_allowed_symmetric_difference_area_mm2": 0.000733998984937929,
+    "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+    "max_plane_offset_mm": 3.794298208958935e-12,
+    "max_normal_difference": 8.043984012575158e-14,
+    "plane_offset_tolerance_mm": 1e-06,
+    "normal_tolerance": 1e-08,
+    "seconds": 1.2550722469986795,
+    "shapely_version": "2.1.2"
+  },
+  "source_mesh_sha256": "6d5d4d8877aefd819c13896eca722e4802690a306f9fec9bfa5851bb7d27df4e",
+  "native_colors": {
+    "source": "native_x_t_attributes",
+    "body_colors": [],
+    "face_color_count": 0,
+    "palette": [],
+    "colored_primitive_count": 0,
+    "uncolored_primitive_count": 724,
+    "material_color_space": "linear_srgb"
+  },
+  "mesh_validation": {
+    "valid": true,
+    "body_count": 1,
+    "triangle_count": 2884,
+    "surface_area_mm2": 5064.452893884717,
+    "signed_volume_mm3": 7775.000133413997,
+    "area_relative_error": 2.4413931425762217e-08,
+    "volume_relative_error": 1.156444331355007e-08,
+    "relative_tolerance": 1e-05,
+    "bodies": [
+      {
+        "body_id": 0,
+        "triangles": 2884,
+        "surface_area_mm2": 5064.452893884717,
+        "signed_volume_mm3": 7775.000133413997
+      }
+    ]
+  },
+  "preview": {
+    "triangle_count": 2884,
+    "vertex_count": 4320,
+    "missing_face_count": 0,
+    "glb_valid": true
+  }
+}

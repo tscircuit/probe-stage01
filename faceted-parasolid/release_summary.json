@@ -1,0 +1,40 @@
+{
+  "tools_files": 34,
+  "tools_zip": {
+    "file": "/workspace/work/faceted-parasolid/faceted-parasolid-tools.zip",
+    "bytes": 55083,
+    "sha256": "0e72d4cd9769646e20cd60c881657287a57ac0b4108cbe06853b0cac527f7f16"
+  },
+  "versions": {
+    "v1": {
+      "source_sha256": "728df35c034453cf4d31f964c829f9c01d7d9ba7d5cd8efbed7b714e1e1e1d84",
+      "passed": 47,
+      "unsupported": [
+        "frame_front_clamp"
+      ],
+      "bundle": {
+        "file": "probe-stage-v1-faceted-parasolid.zip",
+        "url": "/faceted-parasolid/v1/probe-stage-v1-faceted-parasolid.zip",
+        "sha256": "d38140c0c89ce7f8630cfc144c7373ba21a3b250a708d1e95a9177de00827ae6",
+        "bytes": 5959181
+      },
+      "surface_compared_parts": 0,
+      "max_volume_deviation_percent": 0.05541431568700794,
+      "max_bounds_deviation_mm": 0.013830561877988146
+    },
+    "v2": {
+      "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+      "passed": 48,
+      "unsupported": [],
+      "bundle": {
+        "file": "probe-stage-v2-faceted-parasolid.zip",
+        "url": "/faceted-parasolid/v2/probe-stage-v2-faceted-parasolid.zip",
+        "sha256": "330f77d02d2c771f32743007ca7216cd51e026f23ca2a835c91b5adb64c9a965",
+        "bytes": 7545237
+      },
+      "surface_compared_parts": 48,
+      "max_volume_deviation_percent": 0.06958965571242093,
+      "max_bounds_deviation_mm": 0.01245719765637432
+    }
+  }
+}

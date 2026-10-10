@@ -1,0 +1,34 @@
+{
+  "frame_front_clamp": {
+    "status": "unsupported",
+    "reason": "Complete source tessellation contains two coincident junction edges with four incident nonzero triangles; planar exporter requires a closed orientable two-face-per-edge mesh. Original STEP is preserved. No faces are omitted and no partial/cropped X_T is supplied.",
+    "evidence": {
+      "four_incident_triangle_edges": 2,
+      "edge_1_mm": [
+        [
+          36.23999152003,
+          58.13077349707,
+          38.5
+        ],
+        [
+          36.23999152003,
+          58.13077349707,
+          30.0
+        ]
+      ],
+      "edge_2_mm": [
+        [
+          36.23999152003,
+          58.13077349707,
+          30.0
+        ],
+        [
+          27.76000847998,
+          71.69874636116,
+          30.0
+        ]
+      ]
+    },
+    "source_step_sha256": "9246e64029b9781c798fe73d1b03a24d7069b68e5bc17c0deb4c811ecef4a007"
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "source_unchanged": true,
+  "part_count": 48,
+  "valid_single_solid_all": true,
+  "parts": [
+    {
+      "part": "frame_front_clamp",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 77844.06763044359,
+      "step_volume_mm3": 77844.06763139303,
+      "absolute_volume_error_mm3": 9.494397090747952e-07
+    },
+    {
+      "part": "rear_clamp",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 11387.650462047657,
+      "step_volume_mm3": 11387.650462047393,
+      "absolute_volume_error_mm3": 2.637534635141492e-10
+    },
+    {
+      "part": "front_axle_bridge",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 7284.373445561171,
+      "step_volume_mm3": 7284.373445560899,
+      "absolute_volume_error_mm3": 2.7193891583010554e-10
+    },
+    {
+      "part": "sector_crank",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 25951.557992574606,
+      "step_volume_mm3": 25951.557992576243,
+      "absolute_volume_error_mm3": 1.6370904631912708e-09
+    },
+    {
+      "part": "motor_pinion",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 2385.90533444941,
+      "step_volume_mm3": 2385.9053344486315,
+      "absolute_volume_error_mm3": 7.785274647176266e-10
+    },
+    {
+      "part": "connecting_rod",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 7775.956709436471,
+      "step_volume_mm3": 7775.9567094359645,
+      "absolute_volume_error_mm3": 5.06588548887521e-10
+    },
+    {
+      "part": "probe_carriage",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 25479.832983978846,
+      "step_volume_mm3": 25479.832974382934,
+      "absolute_volume_error_mm3": 9.59591125138104e-06
+    },
+    {
+      "part": "625ZZ_wheel_rear",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 907.1348787240529,
+      "step_volume_mm3": 907.1348787240727,
+      "absolute_volume_error_mm3": 1.978150976356119e-11
+    },
+    {
+      "part": "625ZZ_wheel_front",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 907.1348787240529,
+      "step_volume_mm3": 907.1348787240727,
+      "absolute_volume_error_mm3": 1.978150976356119e-11
+    },
+    {
+      "part": "625ZZ_crank",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 907.1348787240527,
+      "step_volume_mm3": 907.1348787240727,
+      "absolute_volume_error_mm3": 2.000888343900442e-11
+    },
+    {
+      "part": "625ZZ_slider",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 907.1348787240529,
+      "step_volume_mm3": 907.1348787240727,
+      "absolute_volume_error_mm3": 1.978150976356119e-11
+    },
+    {
+      "part": "wheel_inner_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 34.494687336415936,
+      "step_volume_mm3": 34.49468733641666,
+      "absolute_volume_error_mm3": 7.247535904753022e-13
+    },
+    {
+      "part": "wheel_rear_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 34.494687336415936,
+      "step_volume_mm3": 34.494687336416675,
+      "absolute_volume_error_mm3": 7.389644451905042e-13
+    },
+    {
+      "part": "wheel_front_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 34.494687336415936,
+      "step_volume_mm3": 34.494687336416675,
+      "absolute_volume_error_mm3": 7.389644451905042e-13
+    },
+    {
+      "part": "crank_rear_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 275.9574986913276,
+      "step_volume_mm3": 275.9574986913335,
+      "absolute_volume_error_mm3": 5.9117155615240335e-12
+    },
+    {
+      "part": "crank_front_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 37.94415607005753,
+      "step_volume_mm3": 37.94415607005841,
+      "absolute_volume_error_mm3": 8.810729923425242e-13
+    },
+    {
+      "part": "slider_rear_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 60.365702838727856,
+      "step_volume_mm3": 60.36570283872913,
+      "absolute_volume_error_mm3": 1.2718714970105793e-12
+    },
+    {
+      "part": "slider_front_spacer",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 37.94415607005748,
+      "step_volume_mm3": 37.94415607005837,
+      "absolute_volume_error_mm3": 8.881784197001252e-13
+    },
+    {
+      "part": "M5_wheel_axle",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 846.5610453720244,
+      "step_volume_mm3": 846.5610453720162,
+      "absolute_volume_error_mm3": 8.185452315956354e-12
+    },
+    {
+      "part": "M5_crank_bolt",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 870.1229902739481,
+      "step_volume_mm3": 870.1229902739396,
+      "absolute_volume_error_mm3": 8.412825991399586e-12
+    },
+    {
+      "part": "M5_crank_nut",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.1626870290715,
+      "step_volume_mm3": 143.16268702888965,
+      "absolute_volume_error_mm3": 1.8184209693572484e-10
+    },
+    {
+      "part": "M5_slider_pivot_bolt",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 575.5986789999049,
+      "step_volume_mm3": 575.598678999901,
+      "absolute_volume_error_mm3": 3.865352482534945e-12
+    },
+    {
+      "part": "M5_slider_captive_nut",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.1626870290716,
+      "step_volume_mm3": 143.16268703032955,
+      "absolute_volume_error_mm3": 1.2579448593896814e-09
+    },
+    {
+      "part": "M5_axle_captive_nut",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907152,
+      "step_volume_mm3": 143.16268702909758,
+      "absolute_volume_error_mm3": 2.6062707547680475e-11
+    },
+    {
+      "part": "NEMA17_body",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 65117.046472994996,
+      "step_volume_mm3": 65117.04647299502,
+      "absolute_volume_error_mm3": 2.1827872842550278e-11
+    },
+    {
+      "part": "NEMA17_face",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 5961.693305965739,
+      "step_volume_mm3": 5961.693305965767,
+      "absolute_volume_error_mm3": 2.8194335754960775e-11
+    },
+    {
+      "part": "motor_shaft",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 451.82314136926647,
+      "step_volume_mm3": 451.82314136926027,
+      "absolute_volume_error_mm3": 6.195932655828074e-12
+    },
+    {
+      "part": "M3_motor_-15.5_-15.5",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 125.19246724555322,
+      "step_volume_mm3": 125.19246724555262,
+      "absolute_volume_error_mm3": 5.968558980384842e-13
+    },
+    {
+      "part": "M3_motor_-15.5_15.5",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 125.19246724555322,
+      "step_volume_mm3": 125.19246724555262,
+      "absolute_volume_error_mm3": 5.968558980384842e-13
+    },
+    {
+      "part": "M3_motor_15.5_-15.5",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 125.19246724555325,
+      "step_volume_mm3": 125.19246724555265,
+      "absolute_volume_error_mm3": 5.968558980384842e-13
+    },
+    {
+      "part": "M3_motor_15.5_15.5",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 125.19246724555325,
+      "step_volume_mm3": 125.19246724555265,
+      "absolute_volume_error_mm3": 5.968558980384842e-13
+    },
+    {
+      "part": "M5_stop_-1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 432.2635141798705,
+      "step_volume_mm3": 432.2635141798687,
+      "absolute_volume_error_mm3": 1.8189894035458565e-12
+    },
+    {
+      "part": "M5_stop_nut_-1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.1626870290716,
+      "step_volume_mm3": 143.16268702920974,
+      "absolute_volume_error_mm3": 1.3812950783176348e-10
+    },
+    {
+      "part": "M5_stop_1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 432.2635141798705,
+      "step_volume_mm3": 432.2635141798687,
+      "absolute_volume_error_mm3": 1.8189894035458565e-12
+    },
+    {
+      "part": "M5_stop_nut_1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907166,
+      "step_volume_mm3": 143.1626870290778,
+      "absolute_volume_error_mm3": 6.139089236967266e-12
+    },
+    {
+      "part": "M5_clamp_-28",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 689.4814126925348,
+      "step_volume_mm3": 689.4814126925293,
+      "absolute_volume_error_mm3": 5.5706550483591855e-12
+    },
+    {
+      "part": "M5_clamp_nut_-28",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907144,
+      "step_volume_mm3": 143.16268702909764,
+      "absolute_volume_error_mm3": 2.6204816094832495e-11
+    },
+    {
+      "part": "M5_clamp_28",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 689.4814126925351,
+      "step_volume_mm3": 689.4814126925293,
+      "absolute_volume_error_mm3": 5.7980287238024175e-12
+    },
+    {
+      "part": "M5_clamp_nut_28",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907138,
+      "step_volume_mm3": 143.1626870290977,
+      "absolute_volume_error_mm3": 2.631850293255411e-11
+    },
+    {
+      "part": "M5_bridge_bolt_0",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 846.5610453720244,
+      "step_volume_mm3": 846.5610453720165,
+      "absolute_volume_error_mm3": 7.958078640513122e-12
+    },
+    {
+      "part": "M5_bridge_nut_0",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.1626870290716,
+      "step_volume_mm3": 143.1626870290977,
+      "absolute_volume_error_mm3": 2.609112925711088e-11
+    },
+    {
+      "part": "M5_bridge_bolt_1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 846.5610453720244,
+      "step_volume_mm3": 846.5610453720161,
+      "absolute_volume_error_mm3": 8.29913915367797e-12
+    },
+    {
+      "part": "M5_bridge_nut_1",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907155,
+      "step_volume_mm3": 143.1626870288896,
+      "absolute_volume_error_mm3": 1.8195578377344646e-10
+    },
+    {
+      "part": "M5_probe_clamp_bolt",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 689.4814126925348,
+      "step_volume_mm3": 689.481412692529,
+      "absolute_volume_error_mm3": 5.7980287238024175e-12
+    },
+    {
+      "part": "M5_probe_clamp_nut",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 143.16268702907146,
+      "step_volume_mm3": 143.16268702909758,
+      "absolute_volume_error_mm3": 2.6119550966541283e-11
+    },
+    {
+      "part": "microscope_reference",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 212874.3182072444,
+      "step_volume_mm3": 212874.31820724442,
+      "absolute_volume_error_mm3": 2.9103830456733704e-11
+    },
+    {
+      "part": "probe_reference",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 1118.9305834535644,
+      "step_volume_mm3": 1118.9305834524598,
+      "absolute_volume_error_mm3": 1.1045813153032213e-09
+    },
+    {
+      "part": "specimen_plate_reference",
+      "valid": true,
+      "solids": 1,
+      "source_volume_mm3": 30000.0,
+      "step_volume_mm3": 30000.0,
+      "absolute_volume_error_mm3": 0.0
+    }
+  ],
+  "assembly": {
+    "valid": true,
+    "solids": 48,
+    "expected_solids": 48,
+    "source_volume_mm3": 486628.16417119553,
+    "step_volume_mm3": 486628.1641625491,
+    "absolute_volume_error_mm3": 8.646456990391016e-06
+  }
+}

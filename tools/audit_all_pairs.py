@@ -1,7 +1,6 @@
-"""Unrestricted actual BRep audit: every pair of every assembly component.
+"""Audit every assembly pair, optical corridor, and conservative probe pose.
 
-No carriage/arm regions or hardware are excluded. Modeled M3 screw entries
-into solid motor reference envelopes are explicitly labeled, never removed.
+No components or regions are excluded from the assembly-pair checks.
 """
 import argparse
 import hashlib
@@ -52,13 +51,6 @@ def intersect(a, c):
     return v, {'minimum_mm': list(bounds.min), 'maximum_mm': list(bounds.max)}
 
 
-def intent_label(a, c):
-    motor = ('NEMA17_body', 'NEMA17_face')
-    if (a.startswith('M3_motor_') and c in motor) or (c.startswith('M3_motor_') and a in motor):
-        return 'Motor mounting screw occupies unmodeled tapped hole in solid motor reference envelope.'
-    return None
-
-
 def initialize(source):
     load_model(source)
 
@@ -78,6 +70,10 @@ def audit_pose(phi):
               'non_single_solid_parts': {n:len(s.solids()) for n,s in parts.items() if len(s.solids())!=1},
               'broadphase_candidates': 0, 'intersections': [], 'optical_keepout': [],
               'optical_other_nonprobe_checks': [], 'conservative_probe_checks': []}
+    result['part_mass_properties_world'] = {
+        name: {'volume_mm3': shape.volume,
+               'centroid_world_mm': list(shape.center(b.CenterOf.MASS))}
+        for name, shape in parts.items()}
     for a, c in itertools.combinations(names, 2):
         if not bbox_overlap(parts[a], parts[c]):
             continue
@@ -85,7 +81,7 @@ def audit_pose(phi):
         volume, bounds = intersect(parts[a], parts[c])
         if volume > 1e-5:
             row = {'a': a, 'b': c, 'intersection_volume_mm3': volume,
-                   'intersection_bounds_world_mm': bounds, 'intentional_reference_engagement': intent_label(a, c)}
+                   'intersection_bounds_world_mm': bounds, 'intentional_reference_engagement': None}
             result['intersections'].append(row)
             print('INTERSECTION', round(height, 4), a, c, round(volume, 6), flush=True)
     # Protect the barrel's optical projection below Y=0, with 2 mm clearance.
@@ -122,8 +118,8 @@ def audit_pose(phi):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--source', type=Path, default=Path(__file__).resolve().parents[1] / 'versions/v1/site/downloads/slider_crank_v3.py')
-    ap.add_argument('--output', type=Path, default=Path.cwd() / 'regenerated/v1_all_pairs.json')
+    ap.add_argument('--source', type=Path, required=True)
+    ap.add_argument('--output', type=Path, required=True)
     ap.add_argument('--frames', type=int, default=41)
     ap.add_argument('--workers', type=int, default=3)
     ap.add_argument('--contact-only', action='store_true')
@@ -131,7 +127,9 @@ def main():
     load_model(args.source)
     p = MODEL.P
     report = {'source': str(args.source.resolve()), 'source_sha256': hashlib.sha256(args.source.read_bytes()).hexdigest(),
-              'no_excluded_parts_or_regions': True, 'poses': [],
+              'no_excluded_parts_or_regions': True, 'poses': [], 'complete': False,
+              'intersection_volume_tolerance_mm3': 1e-5,
+              'sampling': 'Uniform crank-angle samples, including both ends of the complete vertical stroke.',
               'conservative_probe_scope':'Alternative pointed full-length 6 mm diameter metal probe against every actual part except the existing probe_reference, which represents the same physical part.',
               'optical_keepout_definition': {'world_y_interval_mm': [-p.working_distance,0], 'radii_mm':[p.microscope_d/2,p.microscope_d/2+2]}}
     angles = [-p.limit] if args.contact_only else [-p.limit+2*p.limit*i/(args.frames-1) for i in range(args.frames)]
@@ -144,8 +142,7 @@ def main():
         print('AUDIT POSE',i+1,'/',len(angles),'height',pose['height_above_contact_mm'],'pairs',pose['pair_count'],'completed',flush=True)
     pool.close();pool.join()
     report['unexpected_intersections'] = [dict(height_above_contact_mm=pose['height_above_contact_mm'], **row)
-                                          for pose in report['poses'] for row in pose['intersections']
-                                          if row['intentional_reference_engagement'] is None]
+                                          for pose in report['poses'] for row in pose['intersections']]
     report['optical_print_failures'] = [dict(height_above_contact_mm=pose['height_above_contact_mm'], **row)
                                        for pose in report['poses'] for row in pose['optical_keepout']
                                        if row['intersection_volume_mm3'] > 1e-5]
@@ -153,6 +150,13 @@ def main():
         for pose in report['poses'] for row in pose['optical_other_nonprobe_checks'] if row['intersection_volume_mm3']>1e-5]
     report['conservative_probe_failures'] = [dict(height_above_contact_mm=pose['height_above_contact_mm'], **row)
         for pose in report['poses'] for row in pose['conservative_probe_checks'] if row['intersection_volume_mm3']>1e-5]
+    report['final_source_sha256'] = hashlib.sha256(args.source.read_bytes()).hexdigest()
+    report['source_unchanged'] = report['final_source_sha256'] == report['source_sha256'] and all(
+        pose['source_sha256'] == report['source_sha256'] for pose in report['poses'])
+    report['pose_count'] = len(report['poses'])
+    report['all_intersection_count'] = sum(len(pose['intersections']) for pose in report['poses'])
+    report['all_assembly_pairs_clear'] = report['all_intersection_count'] == 0
+    report['complete'] = len(report['poses']) == len(angles) and report['source_unchanged']
     args.output.write_text(json.dumps(report,indent=2))
     print('COMPLETE',args.output,'unexpected intersections',len(report['unexpected_intersections']),
           'optical print failures',len(report['optical_print_failures']),flush=True)

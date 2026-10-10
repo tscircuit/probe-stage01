@@ -1,0 +1,19 @@
+{
+  "jscad-to-parasolid": {
+    "version": "0.0.4",
+    "git_revision": "fb38ea65d925781a750b8f631f313da4ffd0b3b5",
+    "repository": "https://github.com/tscircuit/jscad-to-parasolid"
+  },
+  "parasolidts": {
+    "npm_version": "0.0.2"
+  },
+  "independent_reader": {
+    "parasolid-kit": "0.3.5",
+    "cadquery-ocp-novtk": "7.9.3.1.1"
+  },
+  "tessellator": {
+    "build123d": "0.10.0",
+    "linear_deflection_mm": 0.025,
+    "angular_deflection_radians": 0.1
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "producer": "parasolid-kit.interop.occt",
+  "parser_version": "0.3.5",
+  "ocp_distribution": "cadquery-ocp-novtk==7.9.3.1.1",
+  "ocp_version": "7.9.3.1",
+  "source_identity": null,
+  "source_format": "text",
+  "schema_key": "SCH_3000000_30000",
+  "units": {
+    "source": "m",
+    "target": "mm",
+    "source_to_metres": 1.0,
+    "target_to_metres": 0.001,
+    "applied_scale": 1000.0
+  },
+  "validation_tolerances": {
+    "linear_absolute": 1e-06,
+    "relative": 1e-09
+  },
+  "source_complete": true,
+  "conversion_complete": true,
+  "occt_valid": true,
+  "input_topology": {
+    "bodies": 1,
+    "edges": 756,
+    "faces": 255,
+    "half_edges": 1512,
+    "loops": 256,
+    "points": 504,
+    "regions": 2,
+    "shells": 2,
+    "vertices": 504
+  },
+  "input_curve_kinds": {
+    "line": 756
+  },
+  "input_surface_kinds": {
+    "plane": 255
+  },
+  "output_topology": {
+    "compounds": 0,
+    "compsolids": 0,
+    "edges": 756,
+    "faces": 255,
+    "shells": 1,
+    "solids": 1,
+    "vertices": 504,
+    "wires": 256
+  },
+  "metrics": {
+    "bounding_box": [
+      41.6999999,
+      88.61563011950773,
+      25.999999900000002,
+      47.3000001,
+      94.21388973871228,
+      37.5000001
+    ],
+    "surface_area": 178.03171320994755,
+    "volume": 125.14058824546312
+  },
+  "mapping_relation_count": 4803,
+  "generated_topology_count": 0,
+  "diagnostics": [],
+  "limits": {
+    "max_entities": 1000000,
+    "max_occt_subshapes": 2000000,
+    "max_curve_samples": 1000000,
+    "max_triangles": 5000000,
+    "max_vertices": 10000000,
+    "max_output_bytes": 536870912,
+    "max_diagnostics": 10000
+  },
+  "usage": {
+    "entities": 4803,
+    "occt_subshapes": 1773,
+    "curve_samples": 0,
+    "triangles": 0,
+    "vertices": 504,
+    "output_bytes": 0,
+    "diagnostics": 0
+  },
+  "topology_operations": [
+    "trimmed_plane_face",
+    "shared_boundary_shell",
+    "solid_from_closed_shell"
+  ],
+  "healing": {
+    "requested": false,
+    "performed": false,
+    "operations": []
+  },
+  "input_xt_sha256": "a2342f94c436950090af4c894dbc91e9324ce090d42ca836c9b55df545398a92",
+  "native_colors": {
+    "source": "native_x_t_attributes",
+    "body_colors": [],
+    "face_color_count": 0,
+    "palette": [],
+    "colored_primitive_count": 0,
+    "uncolored_primitive_count": 255,
+    "material_color_space": "linear_srgb"
+  },
+  "mesh_validation": {
+    "valid": true,
+    "body_count": 1,
+    "triangle_count": 1004,
+    "surface_area_mm2": 178.03173444509102,
+    "signed_volume_mm3": 125.14061702894101,
+    "area_relative_error": 1.1927730785267624e-07,
+    "volume_relative_error": 2.300091304582511e-07,
+    "relative_tolerance": 1e-05,
+    "bodies": [
+      {
+        "body_id": 0,
+        "triangles": 1004,
+        "surface_area_mm2": 178.03173444509102,
+        "signed_volume_mm3": 125.14061702894101
+      }
+    ]
+  },
+  "preview": {
+    "triangle_count": 1004,
+    "vertex_count": 1512,
+    "missing_face_count": 0,
+    "glb_valid": true
+  }
+}

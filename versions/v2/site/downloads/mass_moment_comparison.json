@@ -1,0 +1,617 @@
+{
+  "complete": true,
+  "baseline_source_sha256": "728df35c034453cf4d31f964c829f9c01d7d9ba7d5cd8efbed7b714e1e1e1d84",
+  "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "v2_source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "baseline_source": "/workspace/work/slider_crank_v3/slider_crank_v3.py",
+  "v2_source": "/workspace/work/compact_design/probe_stage_v2.py",
+  "estimate_assumptions": {
+    "petg_solid_density_g_cm3": 1.27,
+    "steel_density_g_cm3": 7.85,
+    "motor_assumed_total_mass_g": 280.0,
+    "motor_mass_allocation_g": {
+      "NEMA17_body": 270.0,
+      "NEMA17_face": 9.0,
+      "motor_shaft": 1.0
+    },
+    "625ZZ_assumed_mass_each_g": 5.0,
+    "print_effective_material_fractions": [
+      1.0,
+      0.6,
+      0.35
+    ],
+    "excluded_existing_equipment": [
+      "microscope_reference",
+      "optical_view_reference",
+      "specimen_plate_reference"
+    ],
+    "included_probe": "Actual tapered metal reference, modeled as steel",
+    "motor_centroid_note": "270/9/1 g body/face/shaft allocation is an assumption, not a measured motor mass distribution.",
+    "print_note": "100%-solid CAD equivalent; lower uniform fractions are sensitivity cases and are not slicer infill percentages.",
+    "limitations": "Static gravity only. No acceleration, contact force, cable load, material anisotropy, stress, clamp slip or stiffness validation."
+  },
+  "method": {
+    "reference_point_world_mm": [
+      0,
+      9,
+      0
+    ],
+    "gravity_direction_world": [
+      0,
+      -1,
+      0
+    ],
+    "formula": "torque_Nm = 9.80665e-6 * [sum(m_g*z_mm), 0, -sum(m_g*x_mm)]; bending = norm(torque_Nm)",
+    "source_centroids": "Neutral-angle exact build123d volume centroids; source motion rules move each centroid rigidly; world transform taken from source.",
+    "peak_method": "401 uniform wheel-angle samples across the full 0-40 mm lift, then bounded numerical refinement of every detected local maximum; endpoints included. Static estimate, not a structural validation.",
+    "sample_count_each_source": 401,
+    "fair_comparison": "Each source uses identical assumed densities and purchased masses, and its own full 0\u201340 mm stroke peak. The 0/20/40 mm poses also compare corresponding physical lift heights.",
+    "sensitivity_cases": "Uniform 60% and 35% material fractions are sensitivity estimates, not slicer infill percentages. Actual shells and infill can change mass and centroid."
+  },
+  "geometry": {
+    "baseline_wheel_outer_diameter_mm": 136.0,
+    "v2_wheel_outer_diameter_mm": 96.0,
+    "baseline_printed_solid_volume_mm3": 436193.25114347815,
+    "v2_printed_solid_volume_mm3": 158109.34455849178,
+    "printed_volume_reduction_percent": 63.752455100116975
+  },
+  "scenarios": {
+    "solid_100_percent": {
+      "solid_fraction": 1.0,
+      "baseline": {
+        "solid_fraction": 1.0,
+        "estimated_mass_g": 938.5503412285063,
+        "printed_mass_g": 553.9654289522173,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 104.58491227628909,
+        "printed_solid_volume_mm3": 436193.25114347815,
+        "peak_static_gravity_moment_Nm": 0.8172242898331705,
+        "peak_lift_mm": 21.851042529911567,
+        "peak_wheel_angle_degrees": -1.0612238134233448e-05,
+        "peak_gravity_torque_vector_Nm": [
+          0.29170833627285303,
+          0.0,
+          -0.7633883588595348
+        ],
+        "peak_centroid_world_mm": [
+          82.9406215236947,
+          77.53323186885177,
+          31.69352850789961
+        ],
+        "peak_radial_moment_arm_mm": 88.78978797146559
+      },
+      "v2": {
+        "solid_fraction": 1.0,
+        "estimated_mass_g": 583.109249505615,
+        "printed_mass_g": 200.79886758928455,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 102.31038191633048,
+        "printed_solid_volume_mm3": 158109.34455849178,
+        "peak_static_gravity_moment_Nm": 0.3233534738454236,
+        "peak_lift_mm": 22.319249161041128,
+        "peak_wheel_angle_degrees": -1.4451238154923026e-05,
+        "peak_gravity_torque_vector_Nm": [
+          -0.06317947297345547,
+          0.0,
+          -0.3171211491570681
+        ],
+        "peak_centroid_world_mm": [
+          55.45677376029007,
+          64.5526776061237,
+          -11.048552732280575
+        ],
+        "peak_radial_moment_arm_mm": 56.54665572231466
+      },
+      "estimated_mass_reduction_percent": 37.87128682491768,
+      "peak_gravity_moment_reduction_percent": 60.43271377660182,
+      "matched_lift_poses": [
+        {
+          "lift_mm": 0,
+          "baseline": {
+            "estimated_mass_g": 938.5503412285063,
+            "gravity_torque_vector_Nm": [
+              0.29170833627285303,
+              0.0,
+              -0.7565727694407112
+            ],
+            "static_gravity_moment_Nm": 0.8108613376590743,
+            "centroid_world_mm": [
+              82.20012133674915,
+              73.95429503121221,
+              31.69352850789961
+            ],
+            "radial_moment_arm_mm": 88.0984659177294
+          },
+          "v2": {
+            "estimated_mass_g": 583.109249505615,
+            "gravity_torque_vector_Nm": [
+              -0.059615390919026255,
+              0.0,
+              -0.3171211491570681
+            ],
+            "static_gravity_moment_Nm": 0.32267602649891386,
+            "centroid_world_mm": [
+              55.45677376029007,
+              61.08087583175866,
+              -10.425281491365341
+            ],
+            "radial_moment_arm_mm": 56.4281866629985
+          },
+          "gravity_moment_reduction_percent": 60.20576990013271
+        },
+        {
+          "lift_mm": 20,
+          "baseline": {
+            "estimated_mass_g": 938.5503412285063,
+            "gravity_torque_vector_Nm": [
+              0.29170833627285303,
+              0.0,
+              -0.7633421337515517
+            ],
+            "static_gravity_moment_Nm": 0.8171811100432068,
+            "centroid_world_mm": [
+              82.93559925797422,
+              77.21946902785531,
+              31.69352850789961
+            ],
+            "radial_moment_arm_mm": 88.78509657346969
+          },
+          "v2": {
+            "estimated_mass_g": 583.109249505615,
+            "gravity_torque_vector_Nm": [
+              -0.06314517689806295,
+              0.0,
+              -0.3171211491570681
+            ],
+            "static_gravity_moment_Nm": 0.3233467745442764,
+            "centroid_world_mm": [
+              55.45677376029007,
+              64.18094465804947,
+              -11.042555183082222
+            ],
+            "radial_moment_arm_mm": 56.54548417753104
+          },
+          "gravity_moment_reduction_percent": 60.43144285026607
+        },
+        {
+          "lift_mm": 40,
+          "baseline": {
+            "estimated_mass_g": 938.5503412285063,
+            "gravity_torque_vector_Nm": [
+              0.29170833627285303,
+              0.0,
+              -0.7565727694562511
+            ],
+            "static_gravity_moment_Nm": 0.8108613376735738,
+            "centroid_world_mm": [
+              82.20012133843753,
+              80.75667312485943,
+              31.69352850789961
+            ],
+            "radial_moment_arm_mm": 88.09846591930473
+          },
+          "v2": {
+            "estimated_mass_g": 583.109249505615,
+            "gravity_torque_vector_Nm": [
+              -0.05961539094131588,
+              0.0,
+              -0.3171211491570681
+            ],
+            "static_gravity_moment_Nm": 0.32267602650303195,
+            "centroid_world_mm": [
+              55.45677376029007,
+              67.51512833145782,
+              -10.425281495263254
+            ],
+            "radial_moment_arm_mm": 56.428186663718655
+          },
+          "gravity_moment_reduction_percent": 60.205769900336435
+        }
+      ]
+    },
+    "uniform_60_percent_sensitivity": {
+      "solid_fraction": 0.6,
+      "baseline": {
+        "solid_fraction": 0.6,
+        "estimated_mass_g": 716.9641696476194,
+        "printed_mass_g": 332.3792573713303,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 104.58491227628909,
+        "printed_solid_volume_mm3": 436193.25114347815,
+        "peak_static_gravity_moment_Nm": 0.5942819577708736,
+        "peak_lift_mm": 21.851043715739294,
+        "peak_wheel_angle_degrees": -7.894521324798058e-06,
+        "peak_gravity_torque_vector_Nm": [
+          0.20059766046813685,
+          0.0,
+          -0.559402917356258
+        ],
+        "peak_centroid_world_mm": [
+          79.5621662231308,
+          81.65796197127233,
+          28.53039179982123
+        ],
+        "peak_radial_moment_arm_mm": 84.52290547755918
+      },
+      "v2": {
+        "solid_fraction": 0.6,
+        "estimated_mass_g": 502.7897024699012,
+        "printed_mass_g": 120.47932055357073,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 102.31038191633048,
+        "printed_solid_volume_mm3": 158109.34455849178,
+        "peak_static_gravity_moment_Nm": 0.27012065169399513,
+        "peak_lift_mm": 22.319247456145177,
+        "peak_wheel_angle_degrees": -1.8792719683285052e-05,
+        "peak_gravity_torque_vector_Nm": [
+          -0.046636019096225986,
+          0.0,
+          -0.2660643685171787
+        ],
+        "peak_centroid_world_mm": [
+          53.96096000771674,
+          68.33494691307759,
+          -9.45832910808605
+        ],
+        "peak_radial_moment_arm_mm": 54.783621589588925
+      },
+      "estimated_mass_reduction_percent": 29.872408726224464,
+      "peak_gravity_moment_reduction_percent": 54.54671841171046,
+      "matched_lift_poses": [
+        {
+          "lift_mm": 0,
+          "baseline": {
+            "estimated_mass_g": 716.9641696476194,
+            "gravity_torque_vector_Nm": [
+              0.20059766046813685,
+              0.0,
+              -0.5546738529352525
+            ],
+            "static_gravity_moment_Nm": 0.5898326071991341,
+            "centroid_world_mm": [
+              78.88956585250328,
+              78.34241700068095,
+              28.53039179982123
+            ],
+            "radial_moment_arm_mm": 83.89008795231865
+          },
+          "v2": {
+            "estimated_mass_g": 502.7897024699012,
+            "gravity_torque_vector_Nm": [
+              -0.0437596761640367,
+              0.0,
+              -0.2660643685171787
+            ],
+            "static_gravity_moment_Nm": 0.2696389390507729,
+            "centroid_world_mm": [
+              53.96096000771674,
+              65.19914833196795,
+              -8.874973182610733
+            ],
+            "radial_moment_arm_mm": 54.685924641963084
+          },
+          "gravity_moment_reduction_percent": 54.28551494784693
+        },
+        {
+          "lift_mm": 20,
+          "baseline": {
+            "estimated_mass_g": 716.9641696476194,
+            "gravity_torque_vector_Nm": [
+              0.20059766046813685,
+              0.0,
+              -0.5593708319693543
+            ],
+            "static_gravity_moment_Nm": 0.5942517556081577,
+            "centroid_world_mm": [
+              79.55760281667195,
+              81.36747347100894,
+              28.53039179982123
+            ],
+            "radial_moment_arm_mm": 84.51860991631744
+          },
+          "v2": {
+            "estimated_mass_g": 502.7897024699012,
+            "gravity_torque_vector_Nm": [
+              -0.046608353889224075,
+              0.0,
+              -0.2660643685171787
+            ],
+            "static_gravity_moment_Nm": 0.2701158767024038,
+            "centroid_world_mm": [
+              53.96096000771674,
+              67.99884953711506,
+              -9.452718281138589
+            ],
+            "radial_moment_arm_mm": 54.78265316555029
+          },
+          "gravity_moment_reduction_percent": 54.5452118309744
+        },
+        {
+          "lift_mm": 40,
+          "baseline": {
+            "estimated_mass_g": 716.9641696476194,
+            "gravity_torque_vector_Nm": [
+              0.20059766046813685,
+              0.0,
+              -0.5546738529445764
+            ],
+            "static_gravity_moment_Nm": 0.5898326072079022,
+            "centroid_world_mm": [
+              78.8895658538294,
+              84.63962980146003,
+              28.53039179982123
+            ],
+            "radial_moment_arm_mm": 83.89008795356571
+          },
+          "v2": {
+            "estimated_mass_g": 502.7897024699012,
+            "gravity_torque_vector_Nm": [
+              -0.04375967617741047,
+              0.0,
+              -0.2660643685171787
+            ],
+            "static_gravity_moment_Nm": 0.26963893905294334,
+            "centroid_world_mm": [
+              53.96096000771674,
+              71.01766129380356,
+              -8.874973185323089
+            ],
+            "radial_moment_arm_mm": 54.68592464240327
+          },
+          "gravity_moment_reduction_percent": 54.28551494815852
+        }
+      ]
+    },
+    "uniform_35_percent_sensitivity": {
+      "solid_fraction": 0.35,
+      "baseline": {
+        "solid_fraction": 0.35,
+        "estimated_mass_g": 578.4728124095651,
+        "printed_mass_g": 193.88790013327602,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 104.58491227628909,
+        "printed_solid_volume_mm3": 436193.25114347815,
+        "peak_static_gravity_moment_Nm": 0.4551750372830506,
+        "peak_lift_mm": 21.85104448697534,
+        "peak_wheel_angle_degrees": -6.1269785397468105e-06,
+        "peak_gravity_torque_vector_Nm": [
+          0.14365348809018919,
+          0.0,
+          -0.43191201641671
+        ],
+        "peak_centroid_world_mm": [
+          76.13628095770916,
+          85.84059886014896,
+          25.32284797382735
+        ],
+        "peak_radial_moment_arm_mm": 80.237023297084
+      },
+      "v2": {
+        "solid_fraction": 0.35,
+        "estimated_mass_g": 452.5899855725801,
+        "printed_mass_g": 70.27960365624959,
+        "motor_mass_g": 280.0,
+        "other_hardware_mass_g": 102.31038191633048,
+        "printed_solid_volume_mm3": 158109.34455849178,
+        "peak_static_gravity_moment_Nm": 0.23695034414001093,
+        "peak_lift_mm": 22.3192521433632,
+        "peak_wheel_angle_degrees": -6.856817685952807e-06,
+        "peak_gravity_torque_vector_Nm": [
+          -0.036296360422957856,
+          0.0,
+          -0.23415388061724782
+        ],
+        "peak_centroid_world_mm": [
+          52.756471863828985,
+          71.38057996293598,
+          -8.177818417381902
+        ],
+        "peak_radial_moment_arm_mm": 53.38653423464245
+      },
+      "estimated_mass_reduction_percent": 21.761234778283512,
+      "peak_gravity_moment_reduction_percent": 47.9430274660112,
+      "matched_lift_poses": [
+        {
+          "lift_mm": 0,
+          "baseline": {
+            "estimated_mass_g": 578.4728124095651,
+            "gravity_torque_vector_Nm": [
+              0.14365348809018919,
+              0.0,
+              -0.4284870301193408
+            ],
+            "static_gravity_moment_Nm": 0.4519263873917643,
+            "centroid_world_mm": [
+              75.53253364552228,
+              82.7921435948338,
+              25.32284797382735
+            ],
+            "radial_moment_arm_mm": 79.66436008917367
+          },
+          "v2": {
+            "estimated_mass_g": 452.5899855725801,
+            "gravity_torque_vector_Nm": [
+              -0.03384985444216823,
+              0.0,
+              -0.23415388061724782
+            ],
+            "static_gravity_moment_Nm": 0.2365879380988649,
+            "centroid_world_mm": [
+              52.756471863828985,
+              68.51534354094198,
+              -7.626603875901823
+            ],
+            "radial_moment_arm_mm": 53.30488167324734
+          },
+          "gravity_moment_reduction_percent": 47.64900994954021
+        },
+        {
+          "lift_mm": 20,
+          "baseline": {
+            "estimated_mass_g": 578.4728124095651,
+            "gravity_torque_vector_Nm": [
+              0.14365348809018919,
+              0.0,
+              -0.43188876835548096
+            ],
+            "static_gravity_moment_Nm": 0.4551529774395554,
+            "centroid_world_mm": [
+              76.13218285241415,
+              85.57371154091369,
+              25.32284797382735
+            ],
+            "radial_moment_arm_mm": 80.23313464759428
+          },
+          "v2": {
+            "estimated_mass_g": 452.5899855725801,
+            "gravity_torque_vector_Nm": [
+              -0.03627283950869978,
+              0.0,
+              -0.23415388061724782
+            ],
+            "static_gravity_moment_Nm": 0.23694674231594795,
+            "centroid_world_mm": [
+              52.756471863828985,
+              71.07317690802905,
+              -8.172518994421253
+            ],
+            "radial_moment_arm_mm": 53.38572271903
+          },
+          "gravity_moment_reduction_percent": 47.941295770735756
+        },
+        {
+          "lift_mm": 40,
+          "baseline": {
+            "estimated_mass_g": 578.4728124095651,
+            "gravity_torque_vector_Nm": [
+              0.14365348809018919,
+              0.0,
+              -0.42848703012477973
+            ],
+            "static_gravity_moment_Nm": 0.4519263873969211,
+            "centroid_world_mm": [
+              75.53253364648104,
+              88.57709911248399,
+              25.32284797382735
+            ],
+            "radial_moment_arm_mm": 79.66436009008271
+          },
+          "v2": {
+            "estimated_mass_g": 452.5899855725801,
+            "gravity_torque_vector_Nm": [
+              -0.0338498544499696,
+              0.0,
+              -0.23415388061724782
+            ],
+            "static_gravity_moment_Nm": 0.23658793809998105,
+            "centroid_world_mm": [
+              52.756471863828985,
+              73.83803877693857,
+              -7.626603877659526
+            ],
+            "radial_moment_arm_mm": 53.30488167349882
+          },
+          "gravity_moment_reduction_percent": 47.6490099498906
+        }
+      ]
+    }
+  },
+  "motor_properties_at_lift_20_mm": {
+    "baseline": {
+      "mass_g": 280.0,
+      "centroid_world_mm": [
+        60.00030560463639,
+        106.91461572966355,
+        9.24374040714216
+      ],
+      "radial_moment_arm_mm": 60.70818239219812,
+      "gravity_torque_vector_Nm": [
+        0.025382035521836186,
+        0.0,
+        -0.16475255914815806
+      ],
+      "gravity_bending_moment_Nm": 0.16669629111980588,
+      "mass_first_moment_xz_g_mm": [
+        16800.08556929819,
+        2588.247313999805
+      ]
+    },
+    "v2": {
+      "mass_g": 280.0,
+      "centroid_world_mm": [
+        44.24374040714216,
+        85.33637418181321,
+        -0.00031024005635298075
+      ],
+      "radial_moment_arm_mm": 44.243740408229876,
+      "gravity_torque_vector_Nm": [
+        -8.518763816175082e-07,
+        0.0,
+        -0.12148720552183617
+      ],
+      "gravity_bending_moment_Nm": 0.12148720552482288,
+      "mass_first_moment_xz_g_mm": [
+        12388.247313999806,
+        -0.0868672157788346
+      ]
+    },
+    "note": "Complete assumed 280 g motor COM is used. Compact motor body alone is at radius 43.5 mm, but complete motor COM is at radius about 44.24374 mm."
+  },
+  "independent_agreement_with_cad_agent": {
+    "public_v1_solid_100_percent": {
+      "mass_difference_g": 0.0,
+      "peak_moment_difference_Nm": 1.1102230246251565e-16
+    },
+    "public_v1_uniform_60_percent": {
+      "mass_difference_g": 0.0,
+      "peak_moment_difference_Nm": 0.0
+    },
+    "public_v2_solid_100_percent": {
+      "mass_difference_g": 0.0,
+      "peak_moment_difference_Nm": 0.0
+    },
+    "public_v2_uniform_60_percent": {
+      "mass_difference_g": 0.0,
+      "peak_moment_difference_Nm": 5.551115123125783e-17
+    }
+  },
+  "crosscheck_against_41_direct_CAD_poses": {
+    "complete": true,
+    "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+    "direct_cad_audit": "/workspace/work/compact_review/v2_all_pairs.json",
+    "direct_cad_method": "Audit builds make_parts(phi) separately at each pose, transforms actual BRep solids to world, and computes volume mass centroids.",
+    "predictor_method": "Independent neutral BRep centroids moved with source kinematics and world transform.",
+    "pose_count": 41,
+    "part_properties_check_count": 1968,
+    "fraction_case_moment_check_count": 123,
+    "material_fractions": [
+      1.0,
+      0.6,
+      0.35
+    ],
+    "max_centroid_difference_mm": 5.728578676879116e-14,
+    "worst_centroid_part": {
+      "part": "slider_rear_spacer",
+      "wheel_angle_degrees": -28.23027999717023
+    },
+    "max_volume_difference_mm3": 4.729372449219227e-11,
+    "max_estimated_mass_difference_g": 1.1368683772161603e-13,
+    "max_gravity_torque_vector_difference_Nm": 7.376145397762941e-17,
+    "max_gravity_bending_magnitude_difference_Nm": 1.1102230246251565e-16,
+    "source_hash_rechecked_after_validation": true
+  },
+  "source_hashes_rechecked_before_complete": true,
+  "display": {
+    "wheel_outer_diameter_mm": 96.0,
+    "baseline_wheel_outer_diameter_mm": 136.0,
+    "printed_volume_reduction_percent": 63.752455100116975,
+    "estimated_mass_g": 583.109249505615,
+    "baseline_mass_g": 938.5503412285063,
+    "estimated_mass_reduction_percent": 37.87128682491768,
+    "gravity_moment_nm": 0.3233534738454236,
+    "baseline_gravity_moment_nm": 0.8172242898331705,
+    "gravity_moment_reduction_percent": 60.43271377660182,
+    "solid_fraction": 1.0,
+    "assumptions": "Compared with v1. Static gravity peak over 0\u201340 mm, estimated from 401 poses with bounded refinement; PETG 1.27 g/cm\u00b3 at 100% solid fraction (solid-equivalent estimate); assumed 280 g motor in both estimates. Steel hardware 7.85 g/cm\u00b3; 625ZZ bearings 5 g each. Modeled metal probe included; microscope and specimen excluded. Actual print mass depends on material and toolpaths; this is not a structural load rating."
+  }
+}

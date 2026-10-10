@@ -1,0 +1,10 @@
+{
+  "name": "probe-stage-faceted-parasolid-tools",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@jscad/modeling": "2.13.0",
+    "jscad-planner": "0.0.18",
+    "parasolidts": "0.0.2"
+  }
+}

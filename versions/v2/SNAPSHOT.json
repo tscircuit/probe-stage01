@@ -1,0 +1,300 @@
+{
+  "release": "v2",
+  "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "component_count": 48,
+  "printable_count": 7,
+  "checked_pose_count": 41,
+  "pairs_per_pose": 1128,
+  "all_pair_intersection_count": 0,
+  "site_file_count": 72,
+  "files": {
+    "site/assets/manifest.json": {
+      "sha256": "03ddcbf8147bc2432277bbe46bd05ba09af105850798c706a30bfd30263c8a14",
+      "bytes": 20959
+    },
+    "site/assets/model.json": {
+      "sha256": "c95aa469341d3b17577609f17e646e4b3a73d466e7e7b15b8074395373adab2b",
+      "bytes": 1189772
+    },
+    "site/downloads/README.txt": {
+      "sha256": "5137f769867731608ac937075404051b1e0127ab7a5db27256c28ee54e78e721",
+      "bytes": 2382
+    },
+    "site/downloads/all_pairs.json": {
+      "sha256": "66a733d244b480b85be1dd21ad005d4d5bb5fe4333e0ccee1e5d3b6d90921cea",
+      "bytes": 1715539
+    },
+    "site/downloads/dimensions_and_checks.json": {
+      "sha256": "c09106105d428ac3d46f06bef0c748fc0ff15c7ab28e67728c9158d755e5a0e1",
+      "bytes": 7732
+    },
+    "site/downloads/geometry_verification.json": {
+      "sha256": "8b687e7a71aed1a1a2907b2a1bca4c50a54799deb7e06ea4535bcf1c65b92d10",
+      "bytes": 1366
+    },
+    "site/downloads/manifest.json": {
+      "sha256": "03ddcbf8147bc2432277bbe46bd05ba09af105850798c706a30bfd30263c8a14",
+      "bytes": 20959
+    },
+    "site/downloads/mass_moment_comparison.json": {
+      "sha256": "7a895fb0425a09dba782e67851b69b6ff2348c455955ab5764597711d4d40d79",
+      "bytes": 21922
+    },
+    "site/downloads/optical_bounds.json": {
+      "sha256": "a648f4b0cda253cf0000b51370eb0a7c9d40568221460134d23d6ef531bd0291",
+      "bytes": 18111
+    },
+    "site/downloads/parts/625ZZ_crank.step": {
+      "sha256": "cd8a65185b72dd66e1955224f86d7fb316e08cbb3dec7e53eda485f013914cd0",
+      "bytes": 11390
+    },
+    "site/downloads/parts/625ZZ_slider.step": {
+      "sha256": "8022346ad13ae9a807e135eac117d7a2b464839b87df934b6cf4aa9df3d64e77",
+      "bytes": 11371
+    },
+    "site/downloads/parts/625ZZ_wheel_front.step": {
+      "sha256": "a1fd7921ccf061121536ceadf2935fcffe98df8ff66d1846341f83b07979d756",
+      "bytes": 11309
+    },
+    "site/downloads/parts/625ZZ_wheel_rear.step": {
+      "sha256": "6341dd6a4812d172b8afaf4fa0ecf407f9f52899bd08363c8b4d1fcc7cb49c6f",
+      "bytes": 11297
+    },
+    "site/downloads/parts/M3_motor_-15.5_-15.5.step": {
+      "sha256": "00a02daa4ea39591f3e05ff5a2d17b3ac176d2687b01d45d4c86e753c8efebdf",
+      "bytes": 11511
+    },
+    "site/downloads/parts/M3_motor_-15.5_15.5.step": {
+      "sha256": "ddd9506e03e4bdc62381886b1b46d8d07833c9d4d467696c10f8334431b7666b",
+      "bytes": 11493
+    },
+    "site/downloads/parts/M3_motor_15.5_-15.5.step": {
+      "sha256": "ff39f73b2fa62078a6766c84779c0b61aebd1c9de8177e58682461222a7a49fa",
+      "bytes": 11508
+    },
+    "site/downloads/parts/M3_motor_15.5_15.5.step": {
+      "sha256": "4f876f55046e41c2d82530b9f3a97389c81c7508fe864d3760f37ec05ef4bcf4",
+      "bytes": 11490
+    },
+    "site/downloads/parts/M5_axle_captive_nut.step": {
+      "sha256": "b9145211ed0052e827573e792080b4bc5919751540857590f4790b95110ec997",
+      "bytes": 29283
+    },
+    "site/downloads/parts/M5_bridge_bolt_0.step": {
+      "sha256": "add661871e434171d6c6a33a8a37a24d2331d53e540ff5d9d0b23871938f842f",
+      "bytes": 11452
+    },
+    "site/downloads/parts/M5_bridge_bolt_1.step": {
+      "sha256": "e689f766dc27bce88069df8be51df109a3df042d0c0f8c42b9c3f0df2a9900b5",
+      "bytes": 11497
+    },
+    "site/downloads/parts/M5_bridge_nut_0.step": {
+      "sha256": "c951a7cda009beb36c56cc2fbae2e79dc35a4e3b01cb87e200fbfa35ff6c7c0f",
+      "bytes": 29207
+    },
+    "site/downloads/parts/M5_bridge_nut_1.step": {
+      "sha256": "bff6e8ca6d7681e8c3cb8e9199f3fa5465842c64176463c675c4ba5c9a7b561b",
+      "bytes": 28853
+    },
+    "site/downloads/parts/M5_clamp_-28.step": {
+      "sha256": "b25ade6bb8684ea3bcd89aed9bfa182757a69a16959a0a04086e4dd0a84cdf7c",
+      "bytes": 11462
+    },
+    "site/downloads/parts/M5_clamp_28.step": {
+      "sha256": "edecc86d85abe2ed8ddd5edb507ee2605365a79f09b0fe29b13ec1919c197c59",
+      "bytes": 11441
+    },
+    "site/downloads/parts/M5_clamp_nut_-28.step": {
+      "sha256": "7672147d6c479ea2f7adde9fdec628c6ce764eb74edee261aa762f88a2ad40b1",
+      "bytes": 28862
+    },
+    "site/downloads/parts/M5_clamp_nut_28.step": {
+      "sha256": "aaadc4568a80672c8eb3242f6d9766572c4244e7e97832587f02741fd4c59973",
+      "bytes": 28719
+    },
+    "site/downloads/parts/M5_crank_bolt.step": {
+      "sha256": "d6aa0c0cd918b4749ef86674dade8d9479231035e7b2be06b4f74237fcdf74b0",
+      "bytes": 11637
+    },
+    "site/downloads/parts/M5_crank_nut.step": {
+      "sha256": "a18fe3378c91e53196f4a546e6ba80302b2123e4f4ca639068b03bf4997ca8ee",
+      "bytes": 29582
+    },
+    "site/downloads/parts/M5_probe_clamp_bolt.step": {
+      "sha256": "ff898be4c6fda53803693712419ee48b6a1bbc1fc5e80394c9ec9456d6943b98",
+      "bytes": 11842
+    },
+    "site/downloads/parts/M5_probe_clamp_nut.step": {
+      "sha256": "988c7147da6578c22bd17a0fc10156044d051d87ab46b0f103958da1dcc92ca0",
+      "bytes": 29263
+    },
+    "site/downloads/parts/M5_slider_captive_nut.step": {
+      "sha256": "a207b3656ad5296ae5522198163100373f8b64f41d48ce42fce735b3207d5f44",
+      "bytes": 29338
+    },
+    "site/downloads/parts/M5_slider_pivot_bolt.step": {
+      "sha256": "b44325f19e4db4c30cda1bdef777825068dccc30fc59ba4817b524a9b777e35b",
+      "bytes": 11652
+    },
+    "site/downloads/parts/M5_stop_-1.step": {
+      "sha256": "d52949bc0537cff621bf16d10fe2a875fae897af6deef5b18c25725d778f78fc",
+      "bytes": 11797
+    },
+    "site/downloads/parts/M5_stop_1.step": {
+      "sha256": "45aac5b3efda0c8a8dda6babadf87108663207670be33a39b402a2482c402c9d",
+      "bytes": 11794
+    },
+    "site/downloads/parts/M5_stop_nut_-1.step": {
+      "sha256": "56078fe5e471296ae9c486b03eff14a2fdbc8d5f95472759fae05e0f7e991a3e",
+      "bytes": 29600
+    },
+    "site/downloads/parts/M5_stop_nut_1.step": {
+      "sha256": "4f71145d3c490b38f7347222ae3b50502238c0e76636985c2e7f719cc3edd79b",
+      "bytes": 29589
+    },
+    "site/downloads/parts/M5_wheel_axle.step": {
+      "sha256": "4bbba8e6871f038692a8ca89c48c25934249dcd0f6020d0e0b70404622a29d83",
+      "bytes": 11530
+    },
+    "site/downloads/parts/NEMA17_body.step": {
+      "sha256": "711289b86507fa8a7fd4004bf29fa88e0174c37ddd202a3591f9220b1fa7175a",
+      "bytes": 32998
+    },
+    "site/downloads/parts/NEMA17_face.step": {
+      "sha256": "a91dd7295acc7dcb56c56446bb21998ead4c2256f3ade5472dc7730205ad9d7a",
+      "bytes": 35969
+    },
+    "site/downloads/parts/connecting_rod.step": {
+      "sha256": "ae186493a5fbba1e6e6eafcd6fda582b509a9c5341318c78f1a684198df248a5",
+      "bytes": 34149
+    },
+    "site/downloads/parts/connecting_rod.stl": {
+      "sha256": "9ac074e3af6bc3bc13e63efbf390e6a76fd57a410a4500423fab3f83f6948af5",
+      "bytes": 72684
+    },
+    "site/downloads/parts/crank_front_spacer.step": {
+      "sha256": "9d61172c153e9b182c7ea710a4006e6b2571ed2cb9637d605a485940b674c894",
+      "bytes": 11425
+    },
+    "site/downloads/parts/crank_rear_spacer.step": {
+      "sha256": "76b8b01afb7f77d250f729ca3f8b3628612fa97c8fd01555cdb3a111d57b3c99",
+      "bytes": 11421
+    },
+    "site/downloads/parts/frame_front_clamp.step": {
+      "sha256": "c80d6adae2b1e55e22c2a925649a7cec3f34c6524f8e3e38d7fe81e3b5cbfee8",
+      "bytes": 646356
+    },
+    "site/downloads/parts/frame_front_clamp.stl": {
+      "sha256": "9944bff4b8fa94a6950d49b59f3f2de092231340d134c8576c4f58797b8e8240",
+      "bytes": 361284
+    },
+    "site/downloads/parts/front_axle_bridge.step": {
+      "sha256": "31fcffd50045fc13f307dc5a83b35ecfdf215955b0e0115951eb8a9ffaa7d703",
+      "bytes": 45758
+    },
+    "site/downloads/parts/front_axle_bridge.stl": {
+      "sha256": "0a331a406f89c340365b6d26f2410993087d570e2780bc7b0c1bdf6127524659",
+      "bytes": 58684
+    },
+    "site/downloads/parts/microscope_reference.step": {
+      "sha256": "5d80e2734679ddfec198235956ad7ee40f3f526b07939e86fa1d4eb3fa92594f",
+      "bytes": 7613
+    },
+    "site/downloads/parts/motor_pinion.step": {
+      "sha256": "5b92e79f9a475f75e15e2f3473474834af5ec0c905110d54fb43e59c4d0d5504",
+      "bytes": 1291756
+    },
+    "site/downloads/parts/motor_pinion.stl": {
+      "sha256": "7e5cb97e83e70f376cc69cfeb92321de7dcfc9d24c8198a7f7c4481800dc6d74",
+      "bytes": 101284
+    },
+    "site/downloads/parts/motor_shaft.step": {
+      "sha256": "fb94453156fb3d27ff30247a48e6a77762a7a280c3960545dbe17f326128398a",
+      "bytes": 15020
+    },
+    "site/downloads/parts/probe_carriage.step": {
+      "sha256": "77ef48f81f9d07457cb6de61cd83b489b79af304b8add94c02df76657cc53f4f",
+      "bytes": 269616
+    },
+    "site/downloads/parts/probe_carriage.stl": {
+      "sha256": "957708aa11a6e800b3e2e4af8d24092d92b2c981501c85c2bf9aac58705d12f1",
+      "bytes": 122784
+    },
+    "site/downloads/parts/probe_reference.step": {
+      "sha256": "22fd33439a1b0c4df2ece5c72a98f6494d8a5974bf0b4f4019e4f48706b35a09",
+      "bytes": 14523
+    },
+    "site/downloads/parts/rear_clamp.step": {
+      "sha256": "c79be536532614fdfe739335792fd182f0d2a60e87178d4a257f2b427a978803",
+      "bytes": 139899
+    },
+    "site/downloads/parts/rear_clamp.stl": {
+      "sha256": "952e94cd667fb1525b1489c109c8b09f78cdad40767e2cc3baa9ad3acebbc7fd",
+      "bytes": 50884
+    },
+    "site/downloads/parts/sector_crank.step": {
+      "sha256": "04398ee27ac1209bd8fefa2e240556cade18e321b8a9fbfbb8b4497a90966c34",
+      "bytes": 2607727
+    },
+    "site/downloads/parts/sector_crank.stl": {
+      "sha256": "c6791d12e27985e63521c4e27e3adf652133a07ef9abb43a5d96d00175a2def7",
+      "bytes": 231684
+    },
+    "site/downloads/parts/slider_front_spacer.step": {
+      "sha256": "9e4f1b970649d9be8aa432ffebccaa9dc15b1ce6a857d54499d11d6254e00e7c",
+      "bytes": 11406
+    },
+    "site/downloads/parts/slider_rear_spacer.step": {
+      "sha256": "e4e08ad5ea444bd286c1060015a5de9bf4de49e1f08666714eec4ce332fb79ba",
+      "bytes": 11405
+    },
+    "site/downloads/parts/specimen_plate_reference.step": {
+      "sha256": "78eed6d0b6f323dfc85c05c9a51366a53f04800d53359f3700cd2a21af53fefc",
+      "bytes": 17521
+    },
+    "site/downloads/parts/wheel_front_spacer.step": {
+      "sha256": "3fded0280e74e89de2ba85b3f66294654eed3d8888833da038e8a63db61e0a5d",
+      "bytes": 11317
+    },
+    "site/downloads/parts/wheel_inner_spacer.step": {
+      "sha256": "7256a1893b78046bd229366ee1557cdc64745caaff142dad57942fc382369f5c",
+      "bytes": 11320
+    },
+    "site/downloads/parts/wheel_rear_spacer.step": {
+      "sha256": "25d650862e73bb115b80ed2c0836b928a4e131841623ed309bbb3c4bd1d38e2c",
+      "bytes": 11300
+    },
+    "site/downloads/probe_stage_v2.py": {
+      "sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+      "bytes": 26904
+    },
+    "site/downloads/probe_stage_v2.zip": {
+      "sha256": "882065d0a8232014d4135bb405def5e4863ea3056fc8d5e830d895ec4d0bb4e9",
+      "bytes": 2881410
+    },
+    "site/downloads/probe_stage_v2_assembly.glb": {
+      "sha256": "0649c74e5e9b735466270a0145ec1cb3a607ff77a58c9b8d139236af2a8fbf63",
+      "bytes": 1721008
+    },
+    "site/downloads/probe_stage_v2_assembly.step": {
+      "sha256": "97d3228370b5b4d24c39775fcca4f8126d14e2a82022ed2ecdbdd3d2fa4f95be",
+      "bytes": 5826788
+    },
+    "site/downloads/requirements.txt": {
+      "sha256": "ab0bde0211e00b4f2d5acfc431e9e57593f433b491eb600e4f470509135812d7",
+      "bytes": 18
+    },
+    "site/downloads/sha256_checksums.json": {
+      "sha256": "0d44efc9a531ff24a82244ff7e8bdf25880dded53866f3824b7d97db3beb2af3",
+      "bytes": 6736
+    },
+    "site/downloads/step_roundtrip_checks.json": {
+      "sha256": "539fc00df92a24594c8fe364943b7ef624a839da02fa261765721bb736a289dc",
+      "bytes": 11637
+    },
+    "site/downloads/viewer_model.json": {
+      "sha256": "c95aa469341d3b17577609f17e646e4b3a73d466e7e7b15b8074395373adab2b",
+      "bytes": 1189772
+    }
+  }
+}

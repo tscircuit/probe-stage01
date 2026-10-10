@@ -21,6 +21,26 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def report_path(site, manifest, key, fallback):
+    reference = manifest.get('reports', {}).get(key, './downloads/' + fallback)
+    path = (site / reference).resolve()
+    require(path.is_relative_to(site.resolve()), f'Report path leaves the version: {key}')
+    return path
+
+
+def hash_values(value):
+    found = set()
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if 'sha256' in key.lower() and isinstance(child, str) and re.fullmatch(r'[0-9a-f]{64}', child):
+                found.add(child)
+            found.update(hash_values(child))
+    elif isinstance(value, list):
+        for child in value:
+            found.update(hash_values(child))
+    return found
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--release', default='v1', help='Archived release directory name.')
@@ -53,10 +73,10 @@ def main():
         require((downloads / name).is_file() and digest(downloads / name) == expected,
                 f'Download checksum differs: {name}')
 
-    dimensions = read_json(downloads / 'dimensions_and_checks.json')
-    audit = read_json(downloads / 'v3_all_pairs.json')
-    optical = read_json(downloads / 'optical_bounds.json')
-    roundtrip = read_json(downloads / 'step_roundtrip_checks.json')
+    dimensions = read_json(report_path(site, manifest, 'dimensions', 'dimensions_and_checks.json'))
+    audit = read_json(report_path(site, manifest, 'allPairs', 'v3_all_pairs.json'))
+    optical = read_json(report_path(site, manifest, 'optical', 'optical_bounds.json'))
+    roundtrip = read_json(report_path(site, manifest, 'roundtrip', 'step_roundtrip_checks.json'))
     names = {part['name'] for part in model['parts']}
     printable = set(model['meta']['printable'])
     count = len(names)
@@ -66,10 +86,24 @@ def main():
     require(names == set(dimensions['parts']) == set(manifest['parts']), 'Component names differ.')
     require(all(part['valid'] and part['solids'] == 1 for part in dimensions['parts'].values()),
             'An exported component is invalid or not a single solid.')
-    require(roundtrip['step_models'] == count and not roundtrip['bad'], 'STEP roundtrip report failed.')
+    if 'step_models' in roundtrip:
+        require(roundtrip['step_models'] == count and not roundtrip['bad'], 'STEP roundtrip report failed.')
+    else:
+        require(roundtrip.get('part_count') == count and roundtrip.get('source_unchanged') is True
+                and roundtrip.get('valid_single_solid_all') is True, 'STEP roundtrip report failed.')
+        rows = roundtrip['parts']
+        require(len(rows) == count and {row['part'] for row in rows} == names,
+                'STEP roundtrip component coverage differs.')
+        require(all(row['valid'] and row['solids'] == 1 and row['absolute_volume_error_mm3'] <= 1e-3
+                    for row in rows), 'A component STEP roundtrip failed.')
+        assembly = roundtrip['assembly']
+        require(assembly['valid'] and assembly['solids'] == count
+                and assembly['absolute_volume_error_mm3'] <= 1e-3, 'Assembly STEP roundtrip failed.')
     require(source_hash == audit['source_sha256'] == optical['source_sha256'] == roundtrip['source_sha256'],
             'Verification report source hashes differ.')
     require(audit['no_excluded_parts_or_regions'] is True, 'Audit contains exclusions.')
+    if args.release != 'v1':
+        require(audit.get('complete') is True, 'All-pairs audit is not complete.')
     require(len(audit['poses']) == snapshot['checked_pose_count'], 'Audit pose count differs.')
     require(pair_count == snapshot['pairs_per_pose'], 'Pair count differs.')
     threshold = 1e-5
@@ -93,14 +127,35 @@ def main():
     heights = sorted(pose['height_above_contact_mm'] for pose in audit['poses'])
     require(math.isclose(heights[0], 0, abs_tol=1e-6) and math.isclose(heights[-1], 40, abs_tol=1e-6),
             'Saved audit does not include both travel endpoints.')
-    require({row['part'] for row in optical['parts']} == printable, 'Optical bound component list differs.')
-    for row in optical['parts']:
-        if 'minimum_world_x_bound_mm' in row:
-            require(row['minimum_world_x_bound_mm'] > optical['checked_corridor_radius_mm'],
-                    'Saved moving printed-part optical bound failed.')
-        else:
-            require(row['optical_corridor_intersection_mm3'] <= threshold,
-                    'Saved fixed printed-part optical bound failed.')
+    if 'rows' in optical:
+        for key in ('complete', 'validated', 'all_moving_nonprobe_parts_clear', 'all_fixed_nonprobe_parts_clear'):
+            require(optical.get(key) is True, f'World-space optical validation failed: {key}')
+        optical_names = names - {'probe_reference'}
+        require(optical['part_count'] == count and optical['allowed_part_names'] == ['probe_reference'],
+                'World-space optical component contract differs.')
+        require(set(optical['checked_part_names']) == optical_names and
+                {row['part'] for row in optical['rows']} == optical_names,
+                'World-space optical component coverage differs.')
+        require(optical['rows'] and all(row.get('validated') is True for row in optical['rows']),
+                'A world-space optical validation row failed.')
+    else:
+        # Preserve the original v1 contract; newer versions use validated
+        # world-space rows instead of inheriting these baseline X bounds.
+        require(args.release == 'v1', 'New versions require a world-space optical report.')
+        require({row['part'] for row in optical['parts']} == printable, 'Optical bound component list differs.')
+        for row in optical['parts']:
+            if 'minimum_world_x_bound_mm' in row:
+                require(row['minimum_world_x_bound_mm'] > optical['checked_corridor_radius_mm'],
+                        'Saved moving printed-part optical bound failed.')
+            else:
+                require(row['optical_corridor_intersection_mm3'] <= threshold,
+                        'Saved fixed printed-part optical bound failed.')
+    if 'comparison' in manifest.get('reports', {}):
+        comparison = read_json(report_path(site, manifest, 'comparison', 'mass_moment_comparison.json'))
+        baseline = read_json(args.root.resolve() / 'versions/v1/SNAPSHOT.json')
+        provenance = hash_values(comparison)
+        require(comparison.get('complete') is True and source_hash in provenance and
+                baseline['source_sha256'] in provenance, 'Comparison source provenance differs.')
 
     steps = list((downloads / 'parts').glob('*.step'))
     stls = list((downloads / 'parts').glob('*.stl'))

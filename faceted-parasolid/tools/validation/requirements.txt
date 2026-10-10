@@ -1,0 +1,4 @@
+# Independent X_T parser and OCCT binding, deliberately pinned for CI/snapshots.
+parasolid-kit==0.3.5
+cadquery-ocp-novtk==7.9.3.1.1
+shapely==2.1.2

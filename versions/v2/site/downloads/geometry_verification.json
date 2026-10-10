@@ -1,0 +1,20 @@
+{
+  "revision": "v2",
+  "final_source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "valid_single_solid_components": 48,
+  "pose_count": 41,
+  "pairs_per_pose": 1128,
+  "total_component_pair_checks": 46248,
+  "no_excluded_parts_or_regions": true,
+  "all_pair_intersection_count": 0,
+  "optical_print_failure_count": 0,
+  "optical_other_nonprobe_failure_count": 0,
+  "conservative_probe_failure_count": 0,
+  "positive_volume_threshold_mm3": 1e-05,
+  "statement": "No intersections at 41 checked poses; \u00d844 projected barrel corridor clear of non-probe parts.",
+  "validation_scope": "All 48 components are valid single solids and passed STEP roundtrip checks. No intersections at 41 checked poses; \u00d844 projected barrel corridor clear of non-probe parts. Each pose includes all 1128 component pairs, with no excluded parts or regions. The alternative full-length \u00d86 mm probe was checked against every other component. The independent continuous optical report validates the final world-space transform. Physical collision checks are sampled; strength, stiffness, backlash and print fit need physical validation.",
+  "raw_report": "all_pairs.json",
+  "step_roundtrip_report": "step_roundtrip_checks.json",
+  "optical_bounds_report": "optical_bounds.json",
+  "mass_moment_comparison_report": "mass_moment_comparison.json"
+}
