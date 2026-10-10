@@ -2,9 +2,9 @@
 
 A parametric build123d microscope probe lift with an interactive 3D inspector and component CAD downloads.
 
-The compact **v2** brings the NEMA17 motor closer to the barrel and replaces the large solid frame with ribs, a perimeter rim, and two short struts. Both releases keep a Ø44 mm end clamp, 40 mm straight vertical travel, a probe at 60° to the specimen plate, 100 mm working distance, 625ZZ bearings, and M5 structural hardware.
+The current **v3** turns the NEMA17 rear face into open space for its back-mounted controller and heatsink while keeping the motor close to the microscope. All releases retain a Ø44 mm end clamp, 40 mm straight vertical travel, a probe at 60° to the specimen plate, 100 mm working distance, 625ZZ bearings, and M5 structural hardware. Compact v2 and v3 use a ribbed frame, perimeter rim, and two short struts.
 
-[Open the interactive viewer](https://microscope-probe-inspector.seveibar.chatgpt.site/?version=v2), or inspect the [preserved v1](https://microscope-probe-inspector.seveibar.chatgpt.site/?version=v1). The version selector changes the geometry and all component downloads. Git tags and release pages retain each version separately.
+[Open the interactive viewer](https://microscope-probe-inspector.seveibar.chatgpt.site/?version=v3), or inspect the preserved [v1](https://microscope-probe-inspector.seveibar.chatgpt.site/?version=v1) and [v2](https://microscope-probe-inspector.seveibar.chatgpt.site/?version=v2). The version selector changes the geometry and all component downloads. Git tags and release pages retain each version separately.
 
 To run the current viewer locally from the repository root:
 
@@ -13,6 +13,32 @@ python -m http.server 8000
 ```
 
 Open <http://localhost:8000/>. Everything required by the viewer is included locally.
+
+## V3: open motor rear
+
+The motor axis runs tangentially to the microscope. Its rear points away from the barrel into an unobstructed corridor. A **42 × 42 × 20 mm controller reservation**, plus **2 mm clearance**, sits behind the rear face. Continuous bounds verify that the entire 46 × 46 mm rear footprint remains open behind that reservation throughout travel. The viewer's **Motor rear** preset and controller annotation show the reserved space. This reservation represents clearance, not actual electronics or heatsink CAD.
+
+The motor center stays **46.01 mm** from the microscope axis, compared with 44.24 mm in v2. Short upper braces connect the drive frame to the end clamp and clear the carriage throughout its stroke. The 96 mm crank wheel retains the internal teeth in its 180° slot, the 80/20 virtual ring and pinion combination, and the 4:1 reduction. Only the metal probe enters the projected optical corridor.
+
+| Estimate | v1 | v2 | v3 |
+| --- | ---: | ---: | ---: |
+| Printed solid volume | 436.19 cm³ | 158.11 cm³ | 156.57 cm³ |
+| Stage mass | 938.55 g | 583.11 g | 581.16 g |
+| Peak gravity bending moment | 0.81722 N·m | 0.32335 N·m | 0.31669 N·m |
+
+V3's estimated stage gravity moment is **61.25% below v1 and 2.06% below v2**. These estimates use PETG at 1.27 g/cm³ and 100% solid-equivalent printed volume, an assumed 280 g motor, modeled steel hardware, 5 g bearings, and the metal probe. **Controller, heatsink, and cable mass are unknown and excluded**; the microscope and specimen are excluded. The moment is the vector sum of mass first moments about the barrel axis over the full stroke. These estimates do not establish stiffness or load capacity.
+
+Download the [v3 CAD bundle](versions/v3/site/downloads/probe_stage_v3.zip), [assembly STEP](versions/v3/site/downloads/probe_stage_v3_assembly.step), [build123d source](versions/v3/site/downloads/probe_stage_v3.py), or [individual parts](versions/v3/site/downloads/parts/). The separate [controller envelope](versions/v3/site/downloads/references/motor_controller_reserved_envelope.step) and [clearance envelope](versions/v3/site/downloads/references/motor_controller_clearance_keepout.step) are reference STEP solids, excluded from the 48-component assembly and mass estimates.
+
+Validation includes **46,248 unrestricted component-pair checks at 41 poses**, with no positive-volume intersections, all 48 valid single solids, and clearance for an alternative full-length Ø6 mm probe. Continuous bounds verify the optical exclusion, controller reservation, and open rear corridor. Component and assembly STEP roundtrips pass. Physical assembly collision checks are sampled; strength, stiffness, backlash and print fit require physical validation. Read the [collision audit](versions/v3/site/downloads/all_pairs.json), [controller clearance certificate](versions/v3/site/downloads/controller_clearance.json), [optical bounds](versions/v3/site/downloads/optical_bounds.json), [STEP roundtrip report](versions/v3/site/downloads/step_roundtrip_checks.json), and [mass comparison](versions/v3/site/downloads/mass_moment_comparison.json).
+
+The [actual browser validation reports](validation/v3/) bind the served source, model and viewer hashes to real component vertex buffers, transforms and controller-overlay bounds. They also cover all three preserved versions, motion, mobile layout, component STEP downloads, and all v3 faceted x_t downloads.
+
+```sh
+python tools/verify_release.py --release v3
+python -m pip install -r versions/v3/site/downloads/requirements.txt
+python versions/v3/site/downloads/probe_stage_v3.py --out regenerated/v3
+```
 
 ## Compact v2
 
@@ -127,9 +153,9 @@ python tools/gravity_moment.py --source versions/v2/site/downloads/probe_stage_v
 
 ## Optional faceted Parasolid downloads
 
-All 48 v2 components and 47 of 48 v1 components have native text Parasolid files labeled **Faceted x_t** in the current viewer. Curves, cylindrical seats and holes are approximated with planar facets and straight edges. Use the exact STEP files for precision CAD and manufacturing. Import into Siemens Parasolid or Shapr3D has not been verified.
+All 48 v3 and v2 components and 47 of 48 v1 components have native text Parasolid files labeled **Faceted x_t** in the current viewer. Curves, cylindrical seats and holes are approximated with planar facets and straight edges. Use the exact STEP files for precision CAD and manufacturing. Import into Siemens Parasolid or Shapr3D has not been verified.
 
-Download the [v2 faceted bundle](faceted-parasolid/v2/probe-stage-v2-faceted-parasolid.zip) or [v1 faceted bundle](faceted-parasolid/v1/probe-stage-v1-faceted-parasolid.zip). The [v2 validation report](faceted-parasolid/v2/validation.json) and [v1 validation report](faceted-parasolid/v1/validation.json) bind every native file to its original STEP and downloaded-file hashes. An independent reader reconstructs each as a complete valid single solid with healing disabled; every face is tessellated, and its closed, oriented mesh agrees with the source tessellation. The [portable exporter and validation tools](faceted-parasolid/tools/README.md) include the converter's MIT license and source attribution.
+Download the [v3 faceted bundle](faceted-parasolid/v3/probe-stage-v3-faceted-parasolid.zip), [v2 faceted bundle](faceted-parasolid/v2/probe-stage-v2-faceted-parasolid.zip), or [v1 faceted bundle](faceted-parasolid/v1/probe-stage-v1-faceted-parasolid.zip). The [v3 validation report](faceted-parasolid/v3/validation.json), [v2 validation report](faceted-parasolid/v2/validation.json), and [v1 validation report](faceted-parasolid/v1/validation.json) bind every native file to its original STEP and downloaded-file hashes. An independent reader reconstructs each as a complete valid single solid with healing disabled; every face is tessellated, and its closed, oriented mesh agrees with the source tessellation. V3 also passes bidirectional whole-surface coverage checks for every component. The [v3 portable exporter and validation tools ZIP](faceted-parasolid/probe-stage-v3-faceted-tools.zip) and [earlier tools](faceted-parasolid/tools/README.md) include the converter's MIT license and source attribution.
 
 The original v1 frame's complete tessellation has two nonmanifold junction edges that this exporter cannot represent. Its STEP remains available; its Faceted x_t button explains the limitation. The optional v1 exports are stored separately from the unchanged baseline snapshot and tag.
 

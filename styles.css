@@ -19,3 +19,8 @@
 .design-notes a+a{margin-top:8px}.part-downloads #xtDownload{gap:5px}
 
 #sourceDownload,#facetedBundleDownload,#facetedReportLink{display:block;width:fit-content}
+
+/* Rear controller reservation is an annotation, separate from assembly components. */
+.controller-toggle input{accent-color:#a57a41}.controller-caption{position:absolute;z-index:2;right:20px;top:111px;background:#fffaf1e8;border:1px solid #d7c2a6;border-radius:5px;padding:9px 11px;color:#947149;pointer-events:none;max-width:245px}.controller-caption strong{display:block;font-size:9px;font-weight:550}.controller-caption small{display:block;font-size:8px;line-height:1.5;color:#a39078;margin-top:3px}.design-notes .controller-note{margin-top:9px;color:#947c5d}.inspection-tools{max-width:calc(100% - 40px);flex-wrap:wrap}.show-controller .model-label{top:113px}
+@media(max-width:1050px){.inspection-tools{max-width:calc(100% - 40px)}.inspection-tools button,.keepout-toggle{font-size:9px;padding:6px 7px}}
+@media(max-width:760px){.inspection-tools{max-width:calc(100% - 24px);right:12px;gap:5px}.inspection-tools #motorRearView,.controller-toggle{font-size:8px;padding:6px}.show-controller .model-label{top:130px}.controller-caption{top:150px;left:12px;right:auto;padding:7px 9px;max-width:238px}.controller-caption strong{font-size:8px}.controller-caption small{font-size:7px}.model-panel .inspection-tools{flex-wrap:wrap}.show-controller .axis-widget{bottom:45px}}

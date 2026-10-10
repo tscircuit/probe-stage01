@@ -1,0 +1,412 @@
+{
+  "public_version": "v3",
+  "source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+  "source_file": "probe_stage_v3.py",
+  "format": "native faceted Parasolid X_T",
+  "faceted": true,
+  "native_siemens_import_verified": false,
+  "expected_parts": 48,
+  "passed_parts": 48,
+  "unsupported_parts": {},
+  "parts": {
+    "625ZZ_crank": {
+      "file": "parts/625ZZ_crank.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/625ZZ_crank.faceted.x_t",
+      "sha256": "d9eb840a64e5ea14d2d7f25acdba1b75587c9bee401c5dfe2d6e5cd521eed4a2",
+      "source_step_sha256": "564ef4bd9fafea620f5a7c713a5a79ca830a3f06909fd6baa892cf678ad88b62",
+      "bytes": 293661,
+      "faceted": true
+    },
+    "625ZZ_slider": {
+      "file": "parts/625ZZ_slider.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/625ZZ_slider.faceted.x_t",
+      "sha256": "568e89a7fa201761fd803ada9ba3ba0f612a3f75e1b02e1a31d5f2d20b3ed114",
+      "source_step_sha256": "c0e63d507fa5b80aa62fe0d961e365157622ec809fb7af0a91b6e5e789c782b7",
+      "bytes": 295775,
+      "faceted": true
+    },
+    "625ZZ_wheel_front": {
+      "file": "parts/625ZZ_wheel_front.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/625ZZ_wheel_front.faceted.x_t",
+      "sha256": "e1639c29ba32cdf40e5d5444ea91ea8e1595d28e71a01804a1c343bb7dbf95aa",
+      "source_step_sha256": "05cf1b05bfc3820cf3774e48b99c557fb246bf143cd3dd709efc75e097c1d6b3",
+      "bytes": 303541,
+      "faceted": true
+    },
+    "625ZZ_wheel_rear": {
+      "file": "parts/625ZZ_wheel_rear.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/625ZZ_wheel_rear.faceted.x_t",
+      "sha256": "e10b1ff3ce1217b00bd8444c1699111d45246c1671ff8f7b161b826fc6b6bd5a",
+      "source_step_sha256": "eda23e2c1497fbd923dfda520b9410678d90e6ad7c7788dc2176210bf638ff32",
+      "bytes": 292940,
+      "faceted": true
+    },
+    "M3_motor_-15.5_-15.5": {
+      "file": "parts/M3_motor_-15.5_-15.5.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M3_motor_-15.5_-15.5.faceted.x_t",
+      "sha256": "b08c8ed86659afa8c62b0545297c87d7a831f8bb0e0d09aa7b35c94a63dae8a1",
+      "source_step_sha256": "41fe16fb27ce1ac9cbbe452dd3e22cc031a2b0012855a398640650acc9bebda1",
+      "bytes": 296104,
+      "faceted": true
+    },
+    "M3_motor_-15.5_15.5": {
+      "file": "parts/M3_motor_-15.5_15.5.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M3_motor_-15.5_15.5.faceted.x_t",
+      "sha256": "2aa93044644f7b0c92e35abf2c0b01e6916116215cbcd9dec4244208bc18e048",
+      "source_step_sha256": "b714d1ea7eeeff2b620e1de46e82b96c8aff7768a4b1ce3aefda7ff784f2be24",
+      "bytes": 296124,
+      "faceted": true
+    },
+    "M3_motor_15.5_-15.5": {
+      "file": "parts/M3_motor_15.5_-15.5.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M3_motor_15.5_-15.5.faceted.x_t",
+      "sha256": "e46438600b3e1c1e35686ca94376f368ff9eb48bd05c86641da67549cfd824f8",
+      "source_step_sha256": "ce2026986650e336bf1918410ccc8fd6aaf4d87abd0ffa30a0f1d584309b5664",
+      "bytes": 295171,
+      "faceted": true
+    },
+    "M3_motor_15.5_15.5": {
+      "file": "parts/M3_motor_15.5_15.5.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M3_motor_15.5_15.5.faceted.x_t",
+      "sha256": "4aef8069240d535ba9be34c141f1aead2de340aa1108add61a4234e6bbda5ad3",
+      "source_step_sha256": "20c2373a62c0c09331b661d49f5f15389bc0c838f8928faecdfdbb8bbbb18742",
+      "bytes": 295188,
+      "faceted": true
+    },
+    "M5_axle_captive_nut": {
+      "file": "parts/M5_axle_captive_nut.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_axle_captive_nut.faceted.x_t",
+      "sha256": "506aaad9f6a6c73cb04fbe523d87d23d12018e577e8a33517b0efd88d78441c3",
+      "source_step_sha256": "3394d60c5007b3a1af5d4f828260f53ae6f72b1ffb9785fa46c249e1fed427e2",
+      "bytes": 158497,
+      "faceted": true
+    },
+    "M5_bridge_bolt_0": {
+      "file": "parts/M5_bridge_bolt_0.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_bridge_bolt_0.faceted.x_t",
+      "sha256": "d8a7e47f5ab42c82339ca0037eb251e142291f9509c02bb3f8c9407504c94f40",
+      "source_step_sha256": "8ff9267b98be23224ab152083f5a5dc83502678c50e605b0e0eff71be27a7ed6",
+      "bytes": 294743,
+      "faceted": true
+    },
+    "M5_bridge_bolt_1": {
+      "file": "parts/M5_bridge_bolt_1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_bridge_bolt_1.faceted.x_t",
+      "sha256": "fe50a7431e85b3e238e5fe4589fd6673a449d93af3a8711dcb17430284136e40",
+      "source_step_sha256": "d7db49bb83e532d5dab05a12b99e5419a7fd9693b2bdb1ae6b3dcf18c26857a1",
+      "bytes": 296400,
+      "faceted": true
+    },
+    "M5_bridge_nut_0": {
+      "file": "parts/M5_bridge_nut_0.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_bridge_nut_0.faceted.x_t",
+      "sha256": "60df757806d911bcba70017c6487663c1a1000ed65dfa6b0be14878a2e1824eb",
+      "source_step_sha256": "e76328de71c09ef69558149c74749cb8f568ffac30db3b0d708a60838044613c",
+      "bytes": 158497,
+      "faceted": true
+    },
+    "M5_bridge_nut_1": {
+      "file": "parts/M5_bridge_nut_1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_bridge_nut_1.faceted.x_t",
+      "sha256": "817ce7ac60f8d6464b2ff93fc18f20869363ac62af03d021e145489de216c728",
+      "source_step_sha256": "68f988467ab3f30e6b8de28bca352a38f89e599b6660a351f51005e58f0ae2da",
+      "bytes": 159377,
+      "faceted": true
+    },
+    "M5_clamp_-28": {
+      "file": "parts/M5_clamp_-28.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_clamp_-28.faceted.x_t",
+      "sha256": "cd7c9449e8e650deaa3c9dfba7d452757084f7b60fefc37bec55ea8805defecb",
+      "source_step_sha256": "b48d8202e9298d0895cd03fa6f9e51eedb4001c6683facd7c60c35e02bd944bc",
+      "bytes": 350596,
+      "faceted": true
+    },
+    "M5_clamp_28": {
+      "file": "parts/M5_clamp_28.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_clamp_28.faceted.x_t",
+      "sha256": "189772fc98f1d435826d5b4ad1b54f4b95de47edf28b0f86f5d9c4edd8a8f6e4",
+      "source_step_sha256": "a53f1aee96efa00b34fdd757cf532e73932d331ced708d0f9490974fa630bab6",
+      "bytes": 347550,
+      "faceted": true
+    },
+    "M5_clamp_nut_-28": {
+      "file": "parts/M5_clamp_nut_-28.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_clamp_nut_-28.faceted.x_t",
+      "sha256": "d16f79422c27f83a8b287c035230729c88f6e33016b5cd1406249b9854ac633a",
+      "source_step_sha256": "ee84d84dc5ee6b80d544e73838f2008324398979e7777a05aecceb963eac25ca",
+      "bytes": 178189,
+      "faceted": true
+    },
+    "M5_clamp_nut_28": {
+      "file": "parts/M5_clamp_nut_28.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_clamp_nut_28.faceted.x_t",
+      "sha256": "63b37fb05f001b8d46c7aa6fa2f83611722fbbea91ca095718cbd5a662412ca6",
+      "source_step_sha256": "1c2607a1764a2aa494cac0e1bfa2867afece44ee449a50c4afdd0d8bfc5118c4",
+      "bytes": 176589,
+      "faceted": true
+    },
+    "M5_crank_bolt": {
+      "file": "parts/M5_crank_bolt.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_crank_bolt.faceted.x_t",
+      "sha256": "fd98df4c46328bfd74c366c1df992606247024944d9d038b8c5745648994af3a",
+      "source_step_sha256": "03808d14235ad5b9e612e17036054c72ffba6d52d2fe3bfdaa60869aebe8a93e",
+      "bytes": 298694,
+      "faceted": true
+    },
+    "M5_crank_nut": {
+      "file": "parts/M5_crank_nut.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_crank_nut.faceted.x_t",
+      "sha256": "779874d944e28fe429ae363eb3be9676f255000239ef629a109fee3ad9e19067",
+      "source_step_sha256": "f841a285588607e7dffc77fb7af14b9e3bfc181ba1e9df8084c5a488a3d86064",
+      "bytes": 153908,
+      "faceted": true
+    },
+    "M5_probe_clamp_bolt": {
+      "file": "parts/M5_probe_clamp_bolt.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_probe_clamp_bolt.faceted.x_t",
+      "sha256": "15283c6a56bc446a58a0419c4bac14d4f9f8de1ba3852533ef22a0159e902c9c",
+      "source_step_sha256": "e32e454aac99abb7968abe23f9469a906c66ca37752de0e4e2893182f0c75e7c",
+      "bytes": 298096,
+      "faceted": true
+    },
+    "M5_probe_clamp_nut": {
+      "file": "parts/M5_probe_clamp_nut.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_probe_clamp_nut.faceted.x_t",
+      "sha256": "7013aad7160345e39238f747ae047d639b79bd43c312bfad36bc5b9b5fedd15a",
+      "source_step_sha256": "137b058b5ed43c45301b70ffee8ae833982509b3342cedf77c2d1ed0cc053bf9",
+      "bytes": 155918,
+      "faceted": true
+    },
+    "M5_slider_captive_nut": {
+      "file": "parts/M5_slider_captive_nut.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_slider_captive_nut.faceted.x_t",
+      "sha256": "d5252f71f8c18e8f2e0fe2cc6da316cfb5951b9ed22494ff187961b0ff8061b9",
+      "source_step_sha256": "d94dad129a6fe2827f7f2e581214973cc1e2c045fcfcd0a4e99207a0b104578a",
+      "bytes": 149048,
+      "faceted": true
+    },
+    "M5_slider_pivot_bolt": {
+      "file": "parts/M5_slider_pivot_bolt.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_slider_pivot_bolt.faceted.x_t",
+      "sha256": "3e423ede5ea1a6428d0cb990ac4ce5b9a43402645f334c7a5eb7a6d5586f553c",
+      "source_step_sha256": "d705e2b27241befdbeedd0ca7a59a81993b184e7692ebeeeda6680e7fb4abce3",
+      "bytes": 308184,
+      "faceted": true
+    },
+    "M5_stop_-1": {
+      "file": "parts/M5_stop_-1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_stop_-1.faceted.x_t",
+      "sha256": "89fd16caa05f2539b4df7c32d84e7c61415961d6d0bf9232f7b5f6ba6fb9030e",
+      "source_step_sha256": "830b4893da2805089f7b0551aaca0bca952f0b7beb24016908f819c45a7770a6",
+      "bytes": 311705,
+      "faceted": true
+    },
+    "M5_stop_1": {
+      "file": "parts/M5_stop_1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_stop_1.faceted.x_t",
+      "sha256": "faae85fa7ec16baddbfdbdeb8e28648ab5774867a5929d00fb4446676aba8f17",
+      "source_step_sha256": "ca3d5307694f57865c04029063a90dc5a1311e77f4e260d0b755d6952041b213",
+      "bytes": 310993,
+      "faceted": true
+    },
+    "M5_stop_nut_-1": {
+      "file": "parts/M5_stop_nut_-1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_stop_nut_-1.faceted.x_t",
+      "sha256": "bbe0b6793540e877c5e019190622638b06240dac02c3edb8fd5bf737799b93cc",
+      "source_step_sha256": "4bb844d3deb2b67677d25a3fa5ec2fb9fb09bc11c9206e9f687df92401c3c31d",
+      "bytes": 159267,
+      "faceted": true
+    },
+    "M5_stop_nut_1": {
+      "file": "parts/M5_stop_nut_1.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_stop_nut_1.faceted.x_t",
+      "sha256": "cd4ec4e2a0fdab28e3a3da5328ff40452544207e2ad9b5fbb24e9c22c4f3dec7",
+      "source_step_sha256": "7b9377a44dae54419880d9d9df69808c34aefdb3eda9f17bf05d7056ee1282f7",
+      "bytes": 158958,
+      "faceted": true
+    },
+    "M5_wheel_axle": {
+      "file": "parts/M5_wheel_axle.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/M5_wheel_axle.faceted.x_t",
+      "sha256": "96287530015689852985a29fc8e2ea128fdf3e7368572f52b85f059c1ea0e55e",
+      "source_step_sha256": "5e60e60ae55ae3deaf136f37f04c0c6395b1239cf98b66bcbd18fa5e19b1083e",
+      "bytes": 294970,
+      "faceted": true
+    },
+    "NEMA17_body": {
+      "file": "parts/NEMA17_body.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/NEMA17_body.faceted.x_t",
+      "sha256": "cd2dd79c5a4d6bbfe2c0fc99861f7a80cfb04d738e7bd5afa0e28bb3b8ae1aca",
+      "source_step_sha256": "c44b916a211a0b52e5151b6625ccecd94d33bdf0cef4c467a181e832c6a5182d",
+      "bytes": 592686,
+      "faceted": true
+    },
+    "NEMA17_face": {
+      "file": "parts/NEMA17_face.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/NEMA17_face.faceted.x_t",
+      "sha256": "550885e5c35214c3389c6b2e887a68bf6dd6805561daa3d4cf5c1f601d6a79f7",
+      "source_step_sha256": "b6bb3455fbad50629f462d1483e197c9901fda2e40b6b634f8171abdec0ff2a9",
+      "bytes": 785150,
+      "faceted": true
+    },
+    "connecting_rod": {
+      "file": "parts/connecting_rod.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/connecting_rod.faceted.x_t",
+      "sha256": "0ca6e6c6c114d91221bd6e4ec71b3a0d3c0d36e5343bf2aff8ae39305eff146b",
+      "source_step_sha256": "3e009b5910b69519e29dcb47998b5c1d2f6dff5ddde02f13071026b8c7e43582",
+      "bytes": 897284,
+      "faceted": true
+    },
+    "crank_front_spacer": {
+      "file": "parts/crank_front_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/crank_front_spacer.faceted.x_t",
+      "sha256": "e9c8c5ccdae9956d8af614dd1c93c743ee408d91cdc28bd942782f961a092d78",
+      "source_step_sha256": "d51f4309ee5b6e80c5513f37de4af34dc5f775ec52feec80917d678222488d9b",
+      "bytes": 293638,
+      "faceted": true
+    },
+    "crank_rear_spacer": {
+      "file": "parts/crank_rear_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/crank_rear_spacer.faceted.x_t",
+      "sha256": "fce97cbd175394e04762c498b128458856fb06bdb687b6d5de0e4972a608e8c8",
+      "source_step_sha256": "b4814e4edd0db742630c0a216168f8321012c9c3d44a62d119cce927a1787a31",
+      "bytes": 293764,
+      "faceted": true
+    },
+    "frame_front_clamp": {
+      "file": "parts/frame_front_clamp.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/frame_front_clamp.faceted.x_t",
+      "sha256": "98b19dec49fa0aa8e8ad8bb59dbf57ecc328d6072712ba1cb38b7056b0924f8a",
+      "source_step_sha256": "c8fe22592b318007179378c5a8cc55cb0122fdefdaee019864b145537a9b80f6",
+      "bytes": 5490500,
+      "faceted": true
+    },
+    "front_axle_bridge": {
+      "file": "parts/front_axle_bridge.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/front_axle_bridge.faceted.x_t",
+      "sha256": "89de6ef86cbaef73ddd789236a3e662a09f290c0d6a6f4396aeb64e50f2e5697",
+      "source_step_sha256": "002cadc97aac52149cdcdece900336647ff96395342817d64478a85461ab6412",
+      "bytes": 686148,
+      "faceted": true
+    },
+    "microscope_reference": {
+      "file": "parts/microscope_reference.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/microscope_reference.faceted.x_t",
+      "sha256": "2dde9765f529b7e2287cad19c50bd30451b69b55375e072607623b60a9bd19e3",
+      "source_step_sha256": "5c3399708c2ab97355521ec78a2cd80b29bed69dbe27c1bf9f57eea0bd5675d0",
+      "bytes": 143335,
+      "faceted": true
+    },
+    "motor_pinion": {
+      "file": "parts/motor_pinion.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/motor_pinion.faceted.x_t",
+      "sha256": "b8e3f0a1aa2914801194d95ea1cf73e4a7f0510b4960853c7072782137481113",
+      "source_step_sha256": "861ad7bb08a3b3ed73c41072e9b3f1f6b6e981a656a25994ae1d1c9b8866e9cb",
+      "bytes": 1098224,
+      "faceted": true
+    },
+    "motor_shaft": {
+      "file": "parts/motor_shaft.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/motor_shaft.faceted.x_t",
+      "sha256": "acc4be400c7f59b84bf73d87aa7ebfe491b589f1799d009fcea8a2ad7c1daa72",
+      "source_step_sha256": "0c76d220f7d36c207a892d26d486e9509434e82e28e04214efb87e43fabab5c1",
+      "bytes": 230232,
+      "faceted": true
+    },
+    "probe_carriage": {
+      "file": "parts/probe_carriage.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/probe_carriage.faceted.x_t",
+      "sha256": "45eab1cbc59c93278eb65b3b4603c88a9a440e503e516e7e7b5e3643ff7c5e2d",
+      "source_step_sha256": "16a99eb8d51fb4a9a23a91864f8f9ce10ce1edd56b0732f0381b0b69fd196585",
+      "bytes": 2172345,
+      "faceted": true
+    },
+    "probe_reference": {
+      "file": "parts/probe_reference.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/probe_reference.faceted.x_t",
+      "sha256": "53786e611a08558e844b2026ddddb0f9590d363d3685e3c863a839082ef6eaf7",
+      "source_step_sha256": "662e4bf747493e92fdc7bcf3abd853dbd7c347e8eef85e5b77157d7b226a6b73",
+      "bytes": 1683613,
+      "faceted": true
+    },
+    "rear_clamp": {
+      "file": "parts/rear_clamp.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/rear_clamp.faceted.x_t",
+      "sha256": "3f34e28580156b8584147e688b1b9e90b8924b8e23cdecd42d2fd22c904ebad4",
+      "source_step_sha256": "c4b097876355a24c68d1eeab2fc0ef673284a0bba27378040ccc0f97059eeadf",
+      "bytes": 766158,
+      "faceted": true
+    },
+    "sector_crank": {
+      "file": "parts/sector_crank.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/sector_crank.faceted.x_t",
+      "sha256": "e8ffe8af02c049b938dac49d4afb1bfae53fd558e16cd7575e9c4772e87cffe1",
+      "source_step_sha256": "cda919eca59737ea4356c95d2742ed2780e031d775bcbd4a1f430ede6001e740",
+      "bytes": 2213236,
+      "faceted": true
+    },
+    "slider_front_spacer": {
+      "file": "parts/slider_front_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/slider_front_spacer.faceted.x_t",
+      "sha256": "38965fea49c07201ccf5fb55e6a1d603694f6c6d81e50042be42a1c8e9476b14",
+      "source_step_sha256": "4818a8e2960822892cdeccb3e0ee895614303d80fc7cb9da6597eaeee66fdd39",
+      "bytes": 295636,
+      "faceted": true
+    },
+    "slider_rear_spacer": {
+      "file": "parts/slider_rear_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/slider_rear_spacer.faceted.x_t",
+      "sha256": "c8ecc78403ebe8adcc5535cd42abff4d81ef13eedfc122ede502e525951c53d8",
+      "source_step_sha256": "498a8feb643e6b1d1aa73c77eafd6a2e617857bb3d61cc5b1d2b9cd3cdfe4c39",
+      "bytes": 306288,
+      "faceted": true
+    },
+    "specimen_plate_reference": {
+      "file": "parts/specimen_plate_reference.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/specimen_plate_reference.faceted.x_t",
+      "sha256": "67a28b2c7b3af261951a8b22b8d4b191842f69bbb5184e633f391ab8084a5a42",
+      "source_step_sha256": "18c1a98b2865afb9bacd1603e950b773f401d74da97dfa3fb9af7c77278c6837",
+      "bytes": 3237,
+      "faceted": true
+    },
+    "wheel_front_spacer": {
+      "file": "parts/wheel_front_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/wheel_front_spacer.faceted.x_t",
+      "sha256": "b8c0228983724a94c564afdc017b2fc67fce6354b5422d04c28c5433cead274d",
+      "source_step_sha256": "b57aaa1427ebd5685eacca88ac9f60f92e7aec58040b46da2480cdad705cb660",
+      "bytes": 303566,
+      "faceted": true
+    },
+    "wheel_inner_spacer": {
+      "file": "parts/wheel_inner_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/wheel_inner_spacer.faceted.x_t",
+      "sha256": "1e703118cc42a6706a73ed2e09ed029512eecebb6f3252a14c260b25ff6b0837",
+      "source_step_sha256": "9ac43a66c0f2090077f6d7b08ac11aceafad89357dfc03c083f0e6edd74c4adc",
+      "bytes": 293814,
+      "faceted": true
+    },
+    "wheel_rear_spacer": {
+      "file": "parts/wheel_rear_spacer.faceted.x_t",
+      "url": "/faceted-parasolid/v3/parts/wheel_rear_spacer.faceted.x_t",
+      "sha256": "082c2ebecbae914927b90d037f143aae8680276cca980fea0f84d6942831d6cd",
+      "source_step_sha256": "16b647dcc02548c98299ceede110c8f3be3e8eade599695263bdf0019a38e56a",
+      "bytes": 303535,
+      "faceted": true
+    }
+  },
+  "bundle": {
+    "file": "probe-stage-v3-faceted-parasolid.zip",
+    "url": "/faceted-parasolid/v3/probe-stage-v3-faceted-parasolid.zip",
+    "sha256": "08b5b3d2a362cb07277230c7425005c85f2d72ac4804c54d98b53f42d513a406",
+    "bytes": 7531540
+  },
+  "validation": {
+    "file": "validation.json",
+    "url": "/faceted-parasolid/v3/validation.json",
+    "sha256": "bb2bc44603471cc6be4f5f9e5036804884f987ea72f768b8d102c400c135806e"
+  },
+  "readme": {
+    "file": "README.md",
+    "url": "/faceted-parasolid/v3/README.md"
+  }
+}

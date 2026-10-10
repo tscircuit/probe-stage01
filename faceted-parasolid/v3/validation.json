@@ -1,0 +1,4508 @@
+{
+  "format": "native Parasolid X_T with planar facets",
+  "faceted": true,
+  "exact_analytic_step_retained_separately": true,
+  "native_siemens_or_shapr3d_import_verified": false,
+  "expected_parts": 48,
+  "passed_parts": 48,
+  "failed_parts": 0,
+  "tessellation": {
+    "linear_deflection_mm": 0.025,
+    "angular_deflection_radians": 0.1
+  },
+  "validation": "Each actual X_T read with parasolid-kit 0.3.5; complete OCCT solid; healing disabled; all faces tessellated; closed oriented mesh; volume/area/bounds compared with whole source tessellation",
+  "parts": [
+    {
+      "name": "625ZZ_crank",
+      "file": "parts/625ZZ_crank.faceted.x_t",
+      "source_step_sha256": "564ef4bd9fafea620f5a7c713a5a79ca830a3f06909fd6baa892cf678ad88b62",
+      "sha256": "d9eb840a64e5ea14d2d7f25acdba1b75587c9bee401c5dfe2d6e5cd521eed4a2",
+      "bytes": 293661,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.177973997214875e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.3087295513991437e-06,
+        "total_symmetric_difference_area_mm2": 7.075331566218906e-05,
+        "max_allowed_symmetric_difference_area_mm2": 0.00013193322066945183,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.1922907106054481e-11,
+        "max_normal_difference": 1.122437674180778e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.9027693630014255,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 907.1348787240729,
+        "surface_area_mm2": 692.7211801165713,
+        "bounding_box": [
+          78.307764064044,
+          57.336508117557,
+          55.5,
+          94.307764064044,
+          73.336508117557,
+          60.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          78.307764064044,
+          57.33899466155047,
+          55.5,
+          94.307764064044,
+          73.33402157356353,
+          60.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          78.307763964044,
+          57.33899456155047,
+          55.4999999,
+          94.30776416404399,
+          73.33402167356353,
+          60.5000001
+        ],
+        "surface_area": 692.5366387047671,
+        "volume": 906.7589675251572
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-16,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426565213,
+        "surface_area_relative_change": -0.00026640070651962056,
+        "bounds_max_absolute_change_mm": 0.002486443993475973
+      },
+      "independent_report": "reports/625ZZ_crank.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 13.274058209997747
+    },
+    {
+      "name": "625ZZ_slider",
+      "file": "parts/625ZZ_slider.faceted.x_t",
+      "source_step_sha256": "c0e63d507fa5b80aa62fe0d961e365157622ec809fb7af0a91b6e5e789c782b7",
+      "sha256": "568e89a7fa201761fd803ada9ba3ba0f612a3f75e1b02e1a31d5f2d20b3ed114",
+      "bytes": 295775,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.8116315510377506e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.1507150318034714e-06,
+        "total_symmetric_difference_area_mm2": 6.515135868532733e-05,
+        "max_allowed_symmetric_difference_area_mm2": 0.00013193322067816797,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 4.476419235288631e-12,
+        "max_normal_difference": 8.267295339976187e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.3722883529990213,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 907.1348787240726,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          68.0,
+          -30.057713659342994,
+          55.5,
+          84.0,
+          -14.057713659342994,
+          60.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          68.0,
+          -30.055227115349524,
+          55.5,
+          84.0,
+          -14.060200203336464,
+          60.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          67.9999999,
+          -30.055227215349525,
+          55.4999999,
+          84.0000001,
+          -14.060200103336465,
+          60.5000001
+        ],
+        "surface_area": 692.5366387047669,
+        "volume": 906.7589675251578
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426555221,
+        "surface_area_relative_change": -0.00026640070651950953,
+        "bounds_max_absolute_change_mm": 0.002486443993470644
+      },
+      "independent_report": "reports/625ZZ_slider.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 12.584718271002203
+    },
+    {
+      "name": "625ZZ_wheel_front",
+      "file": "parts/625ZZ_wheel_front.faceted.x_t",
+      "source_step_sha256": "05cf1b05bfc3820cf3774e48b99c557fb246bf143cd3dd709efc75e097c1d6b3",
+      "sha256": "e1639c29ba32cdf40e5d5444ea91ea8e1595d28e71a01804a1c343bb7dbf95aa",
+      "bytes": 303541,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.102569348624121e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.1697286280793152e-06,
+        "total_symmetric_difference_area_mm2": 6.545664882890974e-05,
+        "max_allowed_symmetric_difference_area_mm2": 0.0001319332207088973,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.0366818514739862e-11,
+        "max_normal_difference": 1.00253692389413e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.498366061001434,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 907.1348787240726,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          68.0,
+          77.336508117557,
+          38.5,
+          84.0,
+          93.336508117557,
+          43.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          68.0,
+          77.33899466155047,
+          38.5,
+          84.0,
+          93.33402157356353,
+          43.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          67.9999999,
+          77.33899456155048,
+          38.4999999,
+          84.0000001,
+          93.33402167356353,
+          43.50000010000001
+        ],
+        "surface_area": 692.5366387047674,
+        "volume": 906.7589675251585
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.3322676295501878e-15,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265474494,
+        "surface_area_relative_change": -0.0002664007065188434,
+        "bounds_max_absolute_change_mm": 0.002486443993475973
+      },
+      "independent_report": "reports/625ZZ_wheel_front.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.855166196997743
+    },
+    {
+      "name": "625ZZ_wheel_rear",
+      "file": "parts/625ZZ_wheel_rear.faceted.x_t",
+      "source_step_sha256": "eda23e2c1497fbd923dfda520b9410678d90e6ad7c7788dc2176210bf638ff32",
+      "sha256": "e10b1ff3ce1217b00bd8444c1699111d45246c1671ff8f7b161b826fc6b6bd5a",
+      "bytes": 292940,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.102569348624121e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.1697286280793152e-06,
+        "total_symmetric_difference_area_mm2": 6.545664836993742e-05,
+        "max_allowed_symmetric_difference_area_mm2": 0.0001319332207088973,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.0366818514739862e-11,
+        "max_normal_difference": 1.0020542383359518e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5239762339988374,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 907.1348787240726,
+        "surface_area_mm2": 692.721180116571,
+        "bounding_box": [
+          68.0,
+          77.336508117557,
+          31.5,
+          84.0,
+          93.336508117557,
+          36.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 906.7589675251573,
+        "surface_area_mm2": 692.536638704767,
+        "bounding_box": [
+          68.0,
+          77.33899466155047,
+          31.5,
+          84.0,
+          93.33402157356353,
+          36.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          67.9999999,
+          77.33899456155048,
+          31.4999999,
+          84.0000001,
+          93.33402167356353,
+          36.5000001
+        ],
+        "surface_area": 692.5366387047668,
+        "volume": 906.7589675251571
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265618823,
+        "surface_area_relative_change": -0.00026640070651962056,
+        "bounds_max_absolute_change_mm": 0.002486443993475973
+      },
+      "independent_report": "reports/625ZZ_wheel_rear.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 11.650588756001525
+    },
+    {
+      "name": "M3_motor_-15.5_-15.5",
+      "file": "parts/M3_motor_-15.5_-15.5.faceted.x_t",
+      "source_step_sha256": "41fe16fb27ce1ac9cbbe452dd3e22cc031a2b0012855a398640650acc9bebda1",
+      "sha256": "b08c8ed86659afa8c62b0545297c87d7a831f8bb0e0d09aa7b35c94a63dae8a1",
+      "bytes": 296104,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.309506961369264e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.769282094865048e-07,
+        "total_symmetric_difference_area_mm2": 6.97258847974254e-05,
+        "max_allowed_symmetric_difference_area_mm2": 5.402979513740159e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.1127099242003169e-11,
+        "max_normal_difference": 1.630464099385018e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.8258496480011672,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 125.19246724555265,
+        "surface_area_mm2": 178.06547160547785,
+        "bounding_box": [
+          27.7,
+          67.036508117557,
+          17.5,
+          33.3,
+          72.636508117557,
+          29.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.1405882454632,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          27.700000000000003,
+          67.03737840795472,
+          17.5,
+          33.3,
+          72.63563782715929,
+          29.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          27.6999999,
+          67.03737830795473,
+          17.4999999,
+          33.3000001,
+          72.63563792715928,
+          29.0000001
+        ],
+        "surface_area": 178.03171320994755,
+        "volume": 125.14058824546328
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 6.661338147750939e-16,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262932083,
+        "surface_area_relative_change": -0.00018958417499992386,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_-15.5_-15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 12.348148750999826
+    },
+    {
+      "name": "M3_motor_-15.5_15.5",
+      "file": "parts/M3_motor_-15.5_15.5.faceted.x_t",
+      "source_step_sha256": "b714d1ea7eeeff2b620e1de46e82b96c8aff7768a4b1ce3aefda7ff784f2be24",
+      "sha256": "2aa93044644f7b0c92e35abf2c0b01e6916116215cbcd9dec4244208bc18e048",
+      "bytes": 296124,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.309506961369264e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.769283380940012e-07,
+        "total_symmetric_difference_area_mm2": 7.94761822616028e-05,
+        "max_allowed_symmetric_difference_area_mm2": 5.4029795137401594e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.4374279544426827e-11,
+        "max_normal_difference": 1.630464099385018e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6435030460015696,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 125.19246724555265,
+        "surface_area_mm2": 178.06547160547785,
+        "bounding_box": [
+          27.7,
+          98.036508117557,
+          17.5,
+          33.3,
+          103.636508117557,
+          29.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.1405882454632,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          27.700000000000003,
+          98.03737840795472,
+          17.5,
+          33.3,
+          103.63563782715929,
+          29.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          27.6999999,
+          98.03737830795473,
+          17.4999999,
+          33.3000001,
+          103.63563792715928,
+          29.0000001
+        ],
+        "surface_area": 178.03171320994758,
+        "volume": 125.1405882454631
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426306531,
+        "surface_area_relative_change": -0.00018958417499981284,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_-15.5_15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.522939907001273
+    },
+    {
+      "name": "M3_motor_15.5_-15.5",
+      "file": "parts/M3_motor_15.5_-15.5.faceted.x_t",
+      "source_step_sha256": "ce2026986650e336bf1918410ccc8fd6aaf4d87abd0ffa30a0f1d584309b5664",
+      "sha256": "e46438600b3e1c1e35686ca94376f368ff9eb48bd05c86641da67549cfd824f8",
+      "bytes": 295171,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.0818176525213454e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.769282099742639e-07,
+        "total_symmetric_difference_area_mm2": 7.578240836064551e-05,
+        "max_allowed_symmetric_difference_area_mm2": 5.402979513740159e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.8061996343021747e-11,
+        "max_normal_difference": 1.9512797405373766e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6208715360007773,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 125.19246724555268,
+        "surface_area_mm2": 178.06547160547797,
+        "bounding_box": [
+          58.7,
+          67.036508117557,
+          17.5,
+          64.3,
+          72.636508117557,
+          29.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546319,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          58.7,
+          67.03737840795472,
+          17.5,
+          64.3,
+          72.63563782715929,
+          29.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          58.6999999,
+          67.03737830795473,
+          17.4999999,
+          64.30000009999999,
+          72.63563792715928,
+          29.0000001
+        ],
+        "surface_area": 178.03171320994795,
+        "volume": 125.14058824546332
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-15,
+        "area_relative_error": 2.6645352591003757e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426292098,
+        "surface_area_relative_change": -0.00018958417499836955,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_15.5_-15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.62968370100134
+    },
+    {
+      "name": "M3_motor_15.5_15.5",
+      "file": "parts/M3_motor_15.5_15.5.faceted.x_t",
+      "source_step_sha256": "20c2373a62c0c09331b661d49f5f15389bc0c838f8928faecdfdbb8bbbb18742",
+      "sha256": "4aef8069240d535ba9be34c141f1aead2de340aa1108add61a4234e6bbda5ad3",
+      "bytes": 295188,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.0818176525213454e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.769282094865048e-07,
+        "total_symmetric_difference_area_mm2": 7.050648134683982e-05,
+        "max_allowed_symmetric_difference_area_mm2": 5.402979513740159e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.297895207448164e-11,
+        "max_normal_difference": 1.9512797405373766e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.28690590000042,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 125.19246724555268,
+        "surface_area_mm2": 178.06547160547797,
+        "bounding_box": [
+          58.7,
+          98.036508117557,
+          17.5,
+          64.3,
+          103.636508117557,
+          29.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 125.14058824546319,
+        "surface_area_mm2": 178.0317132099475,
+        "bounding_box": [
+          58.7,
+          98.03737840795472,
+          17.5,
+          64.3,
+          103.63563782715929,
+          29.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          58.6999999,
+          98.03737830795473,
+          17.4999999,
+          64.30000009999999,
+          103.63563792715928,
+          29.0000001
+        ],
+        "surface_area": 178.03171320994787,
+        "volume": 125.14058824546339
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.5543122344752192e-15,
+        "area_relative_error": 1.9984014443252818e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426286547,
+        "surface_area_relative_change": -0.00018958417499881364,
+        "bounds_max_absolute_change_mm": 0.0008701903977197389
+      },
+      "independent_report": "reports/M3_motor_15.5_15.5.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 13.527866476000781
+    },
+    {
+      "name": "M5_axle_captive_nut",
+      "file": "parts/M5_axle_captive_nut.faceted.x_t",
+      "source_step_sha256": "3394d60c5007b3a1af5d4f828260f53ae6f72b1ffb9785fa46c249e1fed427e2",
+      "sha256": "506aaad9f6a6c73cb04fbe523d87d23d12018e577e8a33517b0efd88d78441c3",
+      "bytes": 158497,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 2.4507750824072505e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.924177453417736e-07,
+        "total_symmetric_difference_area_mm2": 2.7878441271283006e-05,
+        "max_allowed_symmetric_difference_area_mm2": 9.146538243839603e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.0366818514739862e-11,
+        "max_normal_difference": 1.0025542900933093e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5459572340005252,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702909758,
+        "surface_area_mm2": 245.26444827077572,
+        "bounding_box": [
+          72.0,
+          80.71770596403874,
+          21.5,
+          80.0,
+          89.95531027107526,
+          25.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323393,
+        "surface_area_mm2": 245.27421159097264,
+        "bounding_box": [
+          72.0,
+          80.71770596404001,
+          21.5,
+          80.0,
+          89.955310271074,
+          25.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.99999990000002,
+          80.71770586404003,
+          21.4999999,
+          80.0000001,
+          89.95531037107399,
+          25.500000100000005
+        ],
+        "surface_area": 245.2742115909722,
+        "volume": 143.1952334532333
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.3298697960381105e-15,
+        "area_relative_error": 1.887379141862766e-15,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387347717648,
+        "surface_area_relative_change": 3.980731926422898e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_axle_captive_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.382230323997646
+    },
+    {
+      "name": "M5_bridge_bolt_0",
+      "file": "parts/M5_bridge_bolt_0.faceted.x_t",
+      "source_step_sha256": "8ff9267b98be23224ab152083f5a5dc83502678c50e605b0e0eff71be27a7ed6",
+      "sha256": "d8a7e47f5ab42c82339ca0037eb251e142291f9509c02bb3f8c9407504c94f40",
+      "bytes": 294743,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.1651032614520717e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.9367842583051242e-06,
+        "total_symmetric_difference_area_mm2": 0.00022936504024903778,
+        "max_allowed_symmetric_difference_area_mm2": 0.00013249861391738084,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.6048496692965273e-11,
+        "max_normal_difference": 1.9569453148632012e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.2508935929981817,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 846.5610453720167,
+        "surface_area_mm2": 725.3152038975838,
+        "bounding_box": [
+          71.75,
+          137.086508117557,
+          17.5,
+          80.25,
+          145.586508117557,
+          54.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 846.2102356027518,
+        "surface_area_mm2": 725.2047842427402,
+        "bounding_box": [
+          71.75,
+          137.08782909405352,
+          17.5,
+          80.25,
+          145.5851871410605,
+          54.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.74999990000002,
+          137.08782899405352,
+          17.4999999,
+          80.2500001,
+          145.58518724106048,
+          54.0000001
+        ],
+        "surface_area": 725.2047842427403,
+        "volume": 846.2102356027517
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-16,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426256571,
+        "surface_area_relative_change": -0.0001522367851248818,
+        "bounds_max_absolute_change_mm": 0.0013208764965213504
+      },
+      "independent_report": "reports/M5_bridge_bolt_0.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.540744706999249
+    },
+    {
+      "name": "M5_bridge_bolt_1",
+      "file": "parts/M5_bridge_bolt_1.faceted.x_t",
+      "source_step_sha256": "d7db49bb83e532d5dab05a12b99e5419a7fd9693b2bdb1ae6b3dcf18c26857a1",
+      "sha256": "fe50a7431e85b3e238e5fe4589fd6673a449d93af3a8711dcb17430284136e40",
+      "bytes": 296400,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.1651034127955802e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.9367823846915167e-06,
+        "total_symmetric_difference_area_mm2": 0.00023577778945304246,
+        "max_allowed_symmetric_difference_area_mm2": 0.0001324986139173808,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.9380942123680143e-12,
+        "max_normal_difference": 5.4036392022604944e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.1613465619993804,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 846.5610453720162,
+        "surface_area_mm2": 725.3152038975838,
+        "bounding_box": [
+          27.75,
+          45.086508117557,
+          17.5,
+          36.25,
+          53.586508117557,
+          54.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 846.2102356027522,
+        "surface_area_mm2": 725.2047842427404,
+        "bounding_box": [
+          27.75,
+          45.08782909405353,
+          17.5,
+          36.25,
+          53.58518714106047,
+          54.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          27.7499999,
+          45.08782899405353,
+          17.4999999,
+          36.2500001,
+          53.585187241060474,
+          54.0000001
+        ],
+        "surface_area": 725.2047842427403,
+        "volume": 846.2102356027524
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262432483,
+        "surface_area_relative_change": -0.0001522367851248818,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_bridge_bolt_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 11.676115262998792
+    },
+    {
+      "name": "M5_bridge_nut_0",
+      "file": "parts/M5_bridge_nut_0.faceted.x_t",
+      "source_step_sha256": "e76328de71c09ef69558149c74749cb8f568ffac30db3b0d708a60838044613c",
+      "sha256": "60df757806d911bcba70017c6487663c1a1000ed65dfa6b0be14878a2e1824eb",
+      "bytes": 158497,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 2.4507750824072505e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.924177646840676e-07,
+        "total_symmetric_difference_area_mm2": 2.7608380372356104e-05,
+        "max_allowed_symmetric_difference_area_mm2": 9.146538243839606e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.6062707547680475e-11,
+        "max_normal_difference": 1.9569453148632012e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6123074179995456,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702909773,
+        "surface_area_mm2": 245.26444827077586,
+        "bounding_box": [
+          72.0,
+          136.71770596403874,
+          21.5,
+          80.0,
+          145.95531027107526,
+          25.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.1952334532344,
+        "surface_area_mm2": 245.27421159097298,
+        "bounding_box": [
+          72.0,
+          136.71770596404,
+          21.5,
+          80.0,
+          145.955310271074,
+          25.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.99999990000002,
+          136.71770586404003,
+          21.4999999,
+          80.0000001,
+          145.955310371074,
+          25.500000100000005
+        ],
+        "surface_area": 245.27421159097239,
+        "volume": 143.19523345323373
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.773959005888173e-15,
+        "area_relative_error": 2.4424906541753444e-15,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387347737632,
+        "surface_area_relative_change": 3.9807319264451024e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_bridge_nut_0.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.648853537000832
+    },
+    {
+      "name": "M5_bridge_nut_1",
+      "file": "parts/M5_bridge_nut_1.faceted.x_t",
+      "source_step_sha256": "68f988467ab3f30e6b8de28bca352a38f89e599b6660a351f51005e58f0ae2da",
+      "sha256": "817ce7ac60f8d6464b2ff93fc18f20869363ac62af03d021e145489de216c728",
+      "bytes": 159377,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 2.450783807779163e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.924096783819516e-07,
+        "total_symmetric_difference_area_mm2": 2.82238532816569e-05,
+        "max_allowed_symmetric_difference_area_mm2": 9.146538243838412e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.9416469260468148e-12,
+        "max_normal_difference": 5.399588826926542e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5775267200006056,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702888956,
+        "surface_area_mm2": 245.2644482706077,
+        "bounding_box": [
+          27.999999999999858,
+          44.717705964047,
+          21.5,
+          36.00000000000014,
+          53.955310271077,
+          25.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.195233453042,
+        "surface_area_mm2": 245.2742115908287,
+        "bounding_box": [
+          28.0,
+          44.717705964047,
+          21.5,
+          36.0,
+          53.955310271077,
+          25.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          27.9999999,
+          44.717705864047,
+          21.4999999,
+          36.00000010000001,
+          53.95531037107701,
+          25.500000100000005
+        ],
+        "surface_area": 245.27421159082934,
+        "volume": 143.19523345304253
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.774758283725532e-15,
+        "area_relative_error": 2.4424906541753444e-15,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873489255707,
+        "surface_area_relative_change": 3.980731936681359e-05,
+        "bounds_max_absolute_change_mm": 1.000000082740371e-07
+      },
+      "independent_report": "reports/M5_bridge_nut_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 6.702591240999027
+    },
+    {
+      "name": "M5_clamp_-28",
+      "file": "parts/M5_clamp_-28.faceted.x_t",
+      "source_step_sha256": "b48d8202e9298d0895cd03fa6f9e51eedb4001c6683facd7c60c35e02bd944bc",
+      "sha256": "cd7c9449e8e650deaa3c9dfba7d452757084f7b60fefc37bec55ea8805defecb",
+      "bytes": 350596,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.905223418672311e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.7671207680607424e-06,
+        "total_symmetric_difference_area_mm2": 0.0001544187668885706,
+        "max_allowed_symmetric_difference_area_mm2": 0.00010049861401820051,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 5.312550399594329e-11,
+        "max_normal_difference": 2.0804895986107606e-12,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.7947075410011166,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 689.4814126925293,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          -33.76434880165765,
+          4.75,
+          -30.759144981614817,
+          -8.838834764831843,
+          13.25,
+          -5.833630944789015
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715565,
+        "surface_area_mm2": 599.5540978828532,
+        "bounding_box": [
+          -33.764348801657654,
+          4.75132097649653,
+          -30.759144981614817,
+          -8.838834764831843,
+          13.248679023503469,
+          -5.833630944789018
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -33.764348901657655,
+          4.751320876496529,
+          -30.75914508161482,
+          -8.838834664831841,
+          13.248679123503468,
+          -5.833630844789018
+        ],
+        "surface_area": 599.554097882853,
+        "volume": 689.1956957715574
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.3322676295501878e-15,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262432483,
+        "surface_area_relative_change": -0.00016242746244410355,
+        "bounds_max_absolute_change_mm": 0.0013208764965320086
+      },
+      "independent_report": "reports/M5_clamp_-28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.078178038998885
+    },
+    {
+      "name": "M5_clamp_28",
+      "file": "parts/M5_clamp_28.faceted.x_t",
+      "source_step_sha256": "a53f1aee96efa00b34fdd757cf532e73932d331ced708d0f9490974fa630bab6",
+      "sha256": "189772fc98f1d435826d5b4ad1b54f4b95de47edf28b0f86f5d9c4edd8a8f6e4",
+      "bytes": 347550,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.905211223427633e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.7671194861480376e-06,
+        "total_symmetric_difference_area_mm2": 0.00015713994704917372,
+        "max_allowed_symmetric_difference_area_mm2": 0.00010049861401820051,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 6.038369804173271e-11,
+        "max_normal_difference": 2.414379276039685e-12,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.7930268829986744,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 689.4814126925293,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          5.833630944789015,
+          4.75,
+          8.838834764831843,
+          30.759144981614817,
+          13.25,
+          33.76434880165765
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715569,
+        "surface_area_mm2": 599.5540978828536,
+        "bounding_box": [
+          5.833630944789018,
+          4.75132097649653,
+          8.838834764831843,
+          30.759144981614817,
+          13.248679023503469,
+          33.764348801657654
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          5.833630844789018,
+          4.751320876496529,
+          8.838834664831843,
+          30.75914508161482,
+          13.248679123503468,
+          33.764348901657655
+        ],
+        "surface_area": 599.5540978828533,
+        "volume": 689.1956957715565
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 5.551115123125783e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426256571,
+        "surface_area_relative_change": -0.00016242746244343742,
+        "bounds_max_absolute_change_mm": 0.0013208764965320086
+      },
+      "independent_report": "reports/M5_clamp_28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.581028694999986
+    },
+    {
+      "name": "M5_clamp_nut_-28",
+      "file": "parts/M5_clamp_nut_-28.faceted.x_t",
+      "source_step_sha256": "ee84d84dc5ee6b80d544e73838f2008324398979e7777a05aecceb963eac25ca",
+      "sha256": "d16f79422c27f83a8b287c035230729c88f6e33016b5cd1406249b9854ac633a",
+      "bytes": 178189,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.905210481968404e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 8.294781666148741e-07,
+        "total_symmetric_difference_area_mm2": 2.447718936759788e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.683829754393747e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.7976731214730535e-12,
+        "max_normal_difference": 7.83362963968387e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6167141990008531,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702909764,
+        "surface_area_mm2": 245.26444827077574,
+        "bounding_box": [
+          -16.970562748477143,
+          4.381197846481745,
+          -31.112698372208094,
+          -8.485281374238571,
+          13.618802153518255,
+          -22.627416997969522
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323412,
+        "surface_area_mm2": 245.27421159097287,
+        "bounding_box": [
+          -16.970562748477143,
+          4.381197846483,
+          -31.112698372208097,
+          -8.48528137423857,
+          13.618802153517,
+          -22.627416997969526
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -16.970562848477144,
+          4.381197746483,
+          -31.1126984722081,
+          -8.48528127423857,
+          13.618802253517,
+          -22.627416897969525
+        ],
+        "surface_area": 245.27421159097295,
+        "volume": 143.19523345323387
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.7763568394002505e-15,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873477531752,
+        "surface_area_relative_change": 3.980731926711556e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_clamp_nut_-28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.684163167999941
+    },
+    {
+      "name": "M5_clamp_nut_28",
+      "file": "parts/M5_clamp_nut_28.faceted.x_t",
+      "source_step_sha256": "1c2607a1764a2aa494cac0e1bfa2867afece44ee449a50c4afdd0d8bfc5118c4",
+      "sha256": "63b37fb05f001b8d46c7aa6fa2f83611722fbbea91ca095718cbd5a662412ca6",
+      "bytes": 176589,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.905199248305583e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 8.294774741336388e-07,
+        "total_symmetric_difference_area_mm2": 2.5000520653397482e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.683829754393747e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.6004975122996257e-12,
+        "max_normal_difference": 1.0248238057644805e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.30537280600037775,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.1626870290977,
+        "surface_area_mm2": 245.26444827077574,
+        "bounding_box": [
+          22.627416997969522,
+          4.381197846481745,
+          8.485281374238571,
+          31.112698372208094,
+          13.618802153518255,
+          16.970562748477143
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.1952334532341,
+        "surface_area_mm2": 245.27421159097287,
+        "bounding_box": [
+          22.627416997969526,
+          4.381197846483,
+          8.48528137423857,
+          31.112698372208097,
+          13.618802153517,
+          16.970562748477143
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          22.627416897969525,
+          4.381197746483,
+          8.48528127423857,
+          31.1126984722081,
+          13.618802253517,
+          16.970562848477144
+        ],
+        "surface_area": 245.27421159097284,
+        "volume": 143.19523345323398
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387347757616,
+        "surface_area_relative_change": 3.980731926667147e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_clamp_nut_28.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.167203600001812
+    },
+    {
+      "name": "M5_crank_bolt",
+      "file": "parts/M5_crank_bolt.faceted.x_t",
+      "source_step_sha256": "03808d14235ad5b9e612e17036054c72ffba6d52d2fe3bfdaa60869aebe8a93e",
+      "sha256": "fd98df4c46328bfd74c366c1df992606247024944d9d038b8c5745648994af3a",
+      "bytes": 298694,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.357221240724266e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 2.007211320531611e-06,
+        "total_symmetric_difference_area_mm2": 0.00025516733464115115,
+        "max_allowed_symmetric_difference_area_mm2": 0.00013729861391738083,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.1922907106054481e-11,
+        "max_normal_difference": 1.122437674180778e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6873303139982454,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 870.1229902739396,
+        "surface_area_mm2": 744.1647598191239,
+        "bounding_box": [
+          82.057764064044,
+          61.086508117557,
+          30.0,
+          90.557764064044,
+          69.586508117557,
+          67.7
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 869.762416577432,
+        "surface_area_mm2": 744.0523871967237,
+        "bounding_box": [
+          82.057764064044,
+          61.08782909405353,
+          30.0,
+          90.557764064044,
+          69.58518714106047,
+          67.7
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          82.057763964044,
+          61.08782899405353,
+          29.9999999,
+          90.55776416404399,
+          69.58518724106047,
+          67.70000010000001
+        ],
+        "surface_area": 744.0523871967234,
+        "volume": 869.7624165774318
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394262443585,
+        "surface_area_relative_change": -0.00015100503069753746,
+        "bounds_max_absolute_change_mm": 0.0013208764965355613
+      },
+      "independent_report": "reports/M5_crank_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.178984212001524
+    },
+    {
+      "name": "M5_crank_nut",
+      "file": "parts/M5_crank_nut.faceted.x_t",
+      "source_step_sha256": "f841a285588607e7dffc77fb7af14b9e3bfc181ba1e9df8084c5a488a3d86064",
+      "sha256": "779874d944e28fe429ae363eb3be9676f255000239ef629a109fee3ad9e19067",
+      "bytes": 153908,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.359560131841135e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.1308347749113575e-06,
+        "total_symmetric_difference_area_mm2": 3.0108764094669525e-05,
+        "max_allowed_symmetric_difference_area_mm2": 9.146538442602124e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.1922907106054481e-11,
+        "max_normal_difference": 1.1231726391545943e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6180061180020857,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.1626870288897,
+        "surface_area_mm2": 245.26444827060777,
+        "bounding_box": [
+          82.30776406404385,
+          60.717705964047,
+          62.7,
+          90.30776406404414,
+          69.955310271077,
+          66.7
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345304182,
+        "surface_area_mm2": 245.27421159082863,
+        "bounding_box": [
+          82.307764064044,
+          60.717705964047,
+          62.7,
+          90.307764064044,
+          69.955310271077,
+          66.7
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          82.307763964044,
+          60.717705864047,
+          62.6999999,
+          90.30776416404399,
+          69.95531037107699,
+          66.7000001
+        ],
+        "surface_area": 245.2742115908284,
+        "volume": 143.19523345304168
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 9.992007221626409e-16,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387348856737,
+        "surface_area_relative_change": 3.9807319362816784e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_crank_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.197329773996898
+    },
+    {
+      "name": "M5_probe_clamp_bolt",
+      "file": "parts/M5_probe_clamp_bolt.faceted.x_t",
+      "source_step_sha256": "e32e454aac99abb7968abe23f9469a906c66ca37752de0e4e2893182f0c75e7c",
+      "sha256": "15283c6a56bc446a58a0419c4bac14d4f9f8de1ba3852533ef22a0159e902c9c",
+      "bytes": 298096,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.7831989520065535e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.4672593819906396e-06,
+        "total_symmetric_difference_area_mm2": 0.0001866051014789213,
+        "max_allowed_symmetric_difference_area_mm2": 0.00010049861391738076,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 3.934630399271555e-13,
+        "max_normal_difference": 2.2134684364148243e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.188834169999609,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 689.4814126925291,
+        "surface_area_mm2": 599.6514977539839,
+        "bounding_box": [
+          30.0,
+          -26.307713659342994,
+          1.75,
+          58.5,
+          -17.807713659342994,
+          10.25
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 689.1956957715561,
+        "surface_area_mm2": 599.5540978828531,
+        "bounding_box": [
+          30.0,
+          -26.306392682846464,
+          1.75,
+          58.5,
+          -17.809034635839524,
+          10.25
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          29.9999999,
+          -26.306392782846466,
+          1.7499999,
+          58.5000001,
+          -17.809034535839523,
+          10.2500001
+        ],
+        "surface_area": 599.5540978828534,
+        "volume": 689.1956957715561
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 0.0,
+        "area_relative_error": 6.661338147750939e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426261012,
+        "surface_area_relative_change": -0.0001624274624433264,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_probe_clamp_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 15.168812873998831
+    },
+    {
+      "name": "M5_probe_clamp_nut",
+      "file": "parts/M5_probe_clamp_nut.faceted.x_t",
+      "source_step_sha256": "137b058b5ed43c45301b70ffee8ae833982509b3342cedf77c2d1ed0cc053bf9",
+      "sha256": "7013aad7160345e39238f747ae047d639b79bd43c312bfad36bc5b9b5fedd15a",
+      "bytes": 155918,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 4.985073081348653e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 5.547035621138026e-07,
+        "total_symmetric_difference_area_mm2": 2.812380587850385e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.683829738850407e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 5.400124791776761e-13,
+        "max_normal_difference": 2.5435471329356267e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.400519450999127,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702909758,
+        "surface_area_mm2": 245.26444827077572,
+        "bounding_box": [
+          35.0,
+          -26.676515812918254,
+          1.9999999999999982,
+          39.0,
+          -17.438911505881748,
+          10.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345323387,
+        "surface_area_mm2": 245.27421159097264,
+        "bounding_box": [
+          35.0,
+          -26.676515812917,
+          2.0,
+          39.0,
+          -17.438911505883002,
+          10.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          34.9999999,
+          -26.676515912917,
+          1.9999999,
+          39.0000001,
+          -17.438911405883,
+          10.0000001
+        ],
+        "surface_area": 245.27421159097293,
+        "volume": 143.19523345323444
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 3.9968028886505635e-15,
+        "area_relative_error": 1.1102230246251565e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387347797584,
+        "surface_area_relative_change": 3.980731926711556e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_probe_clamp_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.194848015999014
+    },
+    {
+      "name": "M5_slider_captive_nut",
+      "file": "parts/M5_slider_captive_nut.faceted.x_t",
+      "source_step_sha256": "d94dad129a6fe2827f7f2e581214973cc1e2c045fcfcd0a4e99207a0b104578a",
+      "sha256": "d5252f71f8c18e8f2e0fe2cc6da316cfb5951b9ed22494ff187961b0ff8061b9",
+      "bytes": 149048,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 4.9806027202388876e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 5.547440956809603e-07,
+        "total_symmetric_difference_area_mm2": 2.7513872577778227e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.683829738855205e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 4.46931380793103e-12,
+        "max_normal_difference": 8.262232085019683e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.700664133997634,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268703032952,
+        "surface_area_mm2": 245.2644482720477,
+        "bounding_box": [
+          72.0,
+          -26.67651581288775,
+          45.5,
+          80.0,
+          -17.438911505798238,
+          49.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.195233454002,
+        "surface_area_mm2": 245.2742115915487,
+        "bounding_box": [
+          72.0,
+          -26.676515812842993,
+          45.5,
+          80.0,
+          -17.438911505842995,
+          49.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.99999990000002,
+          -26.676515912842994,
+          45.4999999,
+          80.0000001,
+          -17.438911405842994,
+          49.5000001
+        ],
+        "surface_area": 245.27421159154838,
+        "volume": 143.1952334540017
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.9984014443252818e-15,
+        "area_relative_error": 1.2212453270876722e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873153191198,
+        "surface_area_relative_change": 3.980731642716506e-05,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/M5_slider_captive_nut.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.335712226999021
+    },
+    {
+      "name": "M5_slider_pivot_bolt",
+      "file": "parts/M5_slider_pivot_bolt.faceted.x_t",
+      "source_step_sha256": "d705e2b27241befdbeedd0ca7a59a81993b184e7692ebeeeda6680e7fb4abce3",
+      "sha256": "3e423ede5ea1a6428d0cb990ac4ce5b9a43402645f334c7a5eb7a6d5586f553c",
+      "bytes": 308184,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 7.118426304540303e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.1268554809213555e-06,
+        "total_symmetric_difference_area_mm2": 0.00014442595241242445,
+        "max_allowed_symmetric_difference_area_mm2": 8.481421336226379e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 4.476419235288631e-12,
+        "max_normal_difference": 8.272370396028465e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.5832298870009254,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 575.598678999901,
+        "surface_area_mm2": 508.54531079987396,
+        "bounding_box": [
+          71.75,
+          -26.307713659342994,
+          43.5,
+          80.25,
+          -17.807713659342994,
+          66.2
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 575.360154393939,
+        "surface_area_mm2": 508.45735027193484,
+        "bounding_box": [
+          71.75,
+          -26.306392682846464,
+          43.5,
+          80.25,
+          -17.809034635839524,
+          66.2
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.74999990000002,
+          -26.306392782846466,
+          43.499999900000006,
+          80.2500001,
+          -17.809034535839523,
+          66.2000001
+        ],
+        "surface_area": 508.45735027193484,
+        "volume": 575.360154393939
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 0.0,
+        "area_relative_error": 0.0,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426277665,
+        "surface_area_relative_change": -0.0001729649769078856,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_slider_pivot_bolt.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.395852653000475
+    },
+    {
+      "name": "M5_stop_-1",
+      "file": "parts/M5_stop_-1.faceted.x_t",
+      "source_step_sha256": "830b4893da2805089f7b0551aaca0bca952f0b7beb24016908f819c45a7770a6",
+      "sha256": "89fd16caa05f2539b4df7c32d84e7c61415961d6d0bf9232f7b5f6ba6fb9030e",
+      "bytes": 311705,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.210081513987693e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 8.161340391694205e-07,
+        "total_symmetric_difference_area_mm2": 0.00010202835825087437,
+        "max_allowed_symmetric_difference_area_mm2": 8.481421332915789e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 8.697043085703626e-12,
+        "max_normal_difference": 1.0116136294305261e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.0292093190000742,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 432.26351417986876,
+        "surface_area_mm2": 393.8771789438387,
+        "bounding_box": [
+          86.399069190506,
+          39.596692838967,
+          18.0,
+          94.899069190506,
+          48.096692838967,
+          33.4
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 432.08438679797257,
+        "surface_area_mm2": 393.80109896853764,
+        "bounding_box": [
+          86.399069190506,
+          39.59801381546353,
+          18.0,
+          94.899069190506,
+          48.09537186247047,
+          33.4
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          86.399069090506,
+          39.59801371546353,
+          17.999999900000002,
+          94.89906929050599,
+          48.09537196247047,
+          33.4000001
+        ],
+        "surface_area": 393.80109896853753,
+        "volume": 432.08438679797234
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 5.551115123125783e-16,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426307641,
+        "surface_area_relative_change": -0.00019315659644258965,
+        "bounds_max_absolute_change_mm": 0.0013208764965284558
+      },
+      "independent_report": "reports/M5_stop_-1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 16.450304071000573
+    },
+    {
+      "name": "M5_stop_1",
+      "file": "parts/M5_stop_1.faceted.x_t",
+      "source_step_sha256": "ca3d5307694f57865c04029063a90dc5a1311e77f4e260d0b755d6952041b213",
+      "sha256": "faae85fa7ec16baddbfdbdeb8e28648ab5774867a5929d00fb4446676aba8f17",
+      "bytes": 310993,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.304591254963956e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.687283256164109e-07,
+        "total_symmetric_difference_area_mm2": 9.985251998694186e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.481421323847549e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.3703705664956942e-11,
+        "max_normal_difference": 2.0056086753948986e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5286659119992692,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 432.2635141798687,
+        "surface_area_mm2": 393.8771789438387,
+        "bounding_box": [
+          86.399069190506,
+          122.57632339615,
+          18.0,
+          94.899069190506,
+          131.07632339615,
+          33.4
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 432.0843867979725,
+        "surface_area_mm2": 393.80109896853764,
+        "bounding_box": [
+          86.399069190506,
+          122.57764437264653,
+          18.0,
+          94.899069190506,
+          131.07500241965346,
+          33.4
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          86.399069090506,
+          122.57764427264654,
+          17.999999900000002,
+          94.89906929050599,
+          131.07500251965348,
+          33.4000001
+        ],
+        "surface_area": 393.8010989685375,
+        "volume": 432.0843867979725
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 0.0,
+        "area_relative_error": 4.440892098500626e-16,
+        "bounds_max_absolute_error_mm": 1.0000002248489182e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.000414393942630209,
+        "surface_area_relative_change": -0.00019315659644270067,
+        "bounds_max_absolute_change_mm": 0.0013208764965355613
+      },
+      "independent_report": "reports/M5_stop_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.01390349400026
+    },
+    {
+      "name": "M5_stop_nut_-1",
+      "file": "parts/M5_stop_nut_-1.faceted.x_t",
+      "source_step_sha256": "4bb844d3deb2b67677d25a3fa5ec2fb9fb09bc11c9206e9f687df92401c3c31d",
+      "sha256": "bbe0b6793540e877c5e019190622638b06240dac02c3edb8fd5bf737799b93cc",
+      "bytes": 159267,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.88739983868474e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.79489520537272e-07,
+        "total_symmetric_difference_area_mm2": 2.8437753268928826e-05,
+        "max_allowed_symmetric_difference_area_mm2": 8.683829738042368e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 8.704148513061227e-12,
+        "max_normal_difference": 1.0125459191791304e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6943341880032676,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.16268702920974,
+        "surface_area_mm2": 245.26444827084788,
+        "bounding_box": [
+          86.64906919050586,
+          39.227890685447,
+          25.5,
+          94.64906919050614,
+          48.465494992487,
+          29.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.19523345336205,
+        "surface_area_mm2": 245.27421159106873,
+        "bounding_box": [
+          86.649069190506,
+          39.227890685447,
+          25.5,
+          94.649069190506,
+          48.465494992487,
+          29.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          86.649069090506,
+          39.227890585447,
+          25.499999900000002,
+          94.64906929050599,
+          48.465495092487004,
+          29.500000100000005
+        ],
+        "surface_area": 245.2742115910687,
+        "volume": 143.19523345336185
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.4432899320127035e-15,
+        "area_relative_error": 1.1102230246251565e-16,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.00022733873488611778,
+        "surface_area_relative_change": 3.980731936348292e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_stop_nut_-1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.797959760002414
+    },
+    {
+      "name": "M5_stop_nut_1",
+      "file": "parts/M5_stop_nut_1.faceted.x_t",
+      "source_step_sha256": "7b9377a44dae54419880d9d9df69808c34aefdb3eda9f17bf05d7056ee1282f7",
+      "sha256": "cd4ec4e2a0fdab28e3a3da5328ff40452544207e2ad9b5fbb24e9c22c4f3dec7",
+      "bytes": 158958,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 528,
+      "input_vertices": 542,
+      "output_faces": 134,
+      "raw_source_triangles": 528,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 528,
+        "readback_faces": 134,
+        "supporting_plane_groups": 134,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 4.0949400670342584e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 9.168631177958097e-07,
+        "total_symmetric_difference_area_mm2": 2.8426021608494178e-05,
+        "max_allowed_symmetric_difference_area_mm2": 9.17721498360312e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.3703705664956942e-11,
+        "max_normal_difference": 2.005627342996579e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.6319661359993916,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 143.1626870290778,
+        "surface_area_mm2": 245.2644482707579,
+        "bounding_box": [
+          86.649069190506,
+          122.20752124263174,
+          25.5,
+          94.649069190506,
+          131.44512554966752,
+          29.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 143.1952334532185,
+        "surface_area_mm2": 245.27421159096104,
+        "bounding_box": [
+          86.649069190506,
+          122.20752124263299,
+          25.5,
+          94.649069190506,
+          131.445125549667,
+          29.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          86.649069090506,
+          122.207521142633,
+          25.499999900000002,
+          94.64906929050599,
+          131.445125649667,
+          29.500000100000005
+        ],
+        "surface_area": 245.27421159096147,
+        "volume": 143.19523345321886
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.6645352591003757e-15,
+        "area_relative_error": 1.7763568394002505e-15,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 0.0002273387348090683,
+        "surface_area_relative_change": 3.980731929309478e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/M5_stop_nut_1.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 7.016857911999978
+    },
+    {
+      "name": "M5_wheel_axle",
+      "file": "parts/M5_wheel_axle.faceted.x_t",
+      "source_step_sha256": "5e60e60ae55ae3deaf136f37f04c0c6395b1239cf98b66bcbd18fa5e19b1083e",
+      "sha256": "96287530015689852985a29fc8e2ea128fdf3e7368572f52b85f059c1ea0e55e",
+      "bytes": 294970,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1004,
+      "input_vertices": 1012,
+      "output_faces": 255,
+      "raw_source_triangles": 1004,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1004,
+        "readback_faces": 255,
+        "supporting_plane_groups": 255,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.1651034624082894e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.9367828532044015e-06,
+        "total_symmetric_difference_area_mm2": 0.0002318648328013024,
+        "max_allowed_symmetric_difference_area_mm2": 0.0001324986139173808,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.035971308738226e-11,
+        "max_normal_difference": 1.0020371709927891e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.086008373000368,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 846.5610453720165,
+        "surface_area_mm2": 725.3152038975838,
+        "bounding_box": [
+          71.75,
+          81.086508117557,
+          17.5,
+          80.25,
+          89.586508117557,
+          54.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 846.210235602752,
+        "surface_area_mm2": 725.2047842427403,
+        "bounding_box": [
+          71.75,
+          81.08782909405353,
+          17.5,
+          80.25,
+          89.58518714106047,
+          54.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          71.74999990000002,
+          81.08782899405354,
+          17.4999999,
+          80.2500001,
+          89.58518724106047,
+          54.0000001
+        ],
+        "surface_area": 725.2047842427397,
+        "volume": 846.2102356027518
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 7.771561172376096e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.000414393942625213,
+        "surface_area_relative_change": -0.00015223678512565897,
+        "bounds_max_absolute_change_mm": 0.0013208764965355613
+      },
+      "independent_report": "reports/M5_wheel_axle.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 13.961976921000314
+    },
+    {
+      "name": "NEMA17_body",
+      "file": "parts/NEMA17_body.faceted.x_t",
+      "source_step_sha256": "c44b916a211a0b52e5151b6625ccecd94d33bdf0cef4c467a181e832c6a5182d",
+      "sha256": "cd2dd79c5a4d6bbfe2c0fc99861f7a80cfb04d738e7bd5afa0e28bb3b8ae1aca",
+      "bytes": 592686,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2028,
+      "input_vertices": 2048,
+      "output_faces": 514,
+      "raw_source_triangles": 2028,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 2028,
+        "readback_faces": 514,
+        "supporting_plane_groups": 507,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 7.831650958648875e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 2.189998541911427e-06,
+        "total_symmetric_difference_area_mm2": 0.00012987446960398887,
+        "max_allowed_symmetric_difference_area_mm2": 0.00041390342550960956,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.532640681034536e-11,
+        "max_normal_difference": 1.3966792083050463e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 2.3679048200028774,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 65117.04647299502,
+        "surface_area_mm2": 9938.77874452258,
+        "bounding_box": [
+          25.0,
+          64.336508117557,
+          -18.5,
+          67.0,
+          106.336508117557,
+          18.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 65117.10902722222,
+        "surface_area_mm2": 9938.758563857826,
+        "bounding_box": [
+          25.0,
+          64.336508117557,
+          -18.5,
+          67.0,
+          106.336508117557,
+          18.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          24.9999999,
+          64.33650801755701,
+          -18.5000001,
+          67.0000001,
+          106.336508217557,
+          18.5000001
+        ],
+        "surface_area": 9938.758563857415,
+        "volume": 65117.109027222155
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 9.992007221626409e-16,
+        "area_relative_error": 4.141131881851834e-14,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 9.60642881242535e-07,
+        "surface_area_relative_change": -2.0304974770457562e-06,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/NEMA17_body.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 26.517190080001455
+    },
+    {
+      "name": "NEMA17_face",
+      "file": "parts/NEMA17_face.faceted.x_t",
+      "source_step_sha256": "b6bb3455fbad50629f462d1483e197c9901fda2e40b6b634f8171abdec0ff2a9",
+      "sha256": "550885e5c35214c3389c6b2e887a68bf6dd6805561daa3d4cf5c1f601d6a79f7",
+      "bytes": 785150,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2548,
+      "input_vertices": 2554,
+      "output_faces": 637,
+      "raw_source_triangles": 2548,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 2548,
+        "readback_faces": 637,
+        "supporting_plane_groups": 633,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 9.008153653562087e-06,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.2184995124008787e-05,
+        "total_symmetric_difference_area_mm2": 0.00010213283586238098,
+        "max_allowed_symmetric_difference_area_mm2": 0.0008481873759037416,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.5347723092418164e-11,
+        "max_normal_difference": 1.3965408184197384e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 3.773630866999156,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 5961.693305965766,
+        "surface_area_mm2": 4226.715912669511,
+        "bounding_box": [
+          25.0,
+          64.336508117557,
+          18.5,
+          67.0,
+          106.336508117557,
+          23.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 5961.415789116321,
+        "surface_area_mm2": 4226.714504199459,
+        "bounding_box": [
+          25.0,
+          64.336508117557,
+          18.5,
+          67.0,
+          106.336508117557,
+          23.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          24.9999999,
+          64.33650801755701,
+          18.4999999,
+          67.0000001,
+          106.336508217557,
+          23.5000001
+        ],
+        "surface_area": 4226.714504199491,
+        "volume": 5961.415789116328
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.1102230246251565e-15,
+        "area_relative_error": 7.549516567451064e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -4.655000436881718e-05,
+        "surface_area_relative_change": -3.3323034942522867e-07,
+        "bounds_max_absolute_change_mm": 1.0000000116860974e-07
+      },
+      "independent_report": "reports/NEMA17_face.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 30.312020229001064
+    },
+    {
+      "name": "connecting_rod",
+      "file": "parts/connecting_rod.faceted.x_t",
+      "source_step_sha256": "3e009b5910b69519e29dcb47998b5c1d2f6dff5ddde02f13071026b8c7e43582",
+      "sha256": "0ca6e6c6c114d91221bd6e4ec71b3a0d3c0d36e5343bf2aff8ae39305eff146b",
+      "bytes": 897284,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2884,
+      "input_vertices": 2896,
+      "output_faces": 724,
+      "raw_source_triangles": 2884,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 2884,
+        "readback_faces": 724,
+        "supporting_plane_groups": 723,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 8.780183651189137e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 6.461705841442668e-06,
+        "total_symmetric_difference_area_mm2": 0.0001770588077011478,
+        "max_allowed_symmetric_difference_area_mm2": 0.000716725869853336,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 6.401990049198503e-12,
+        "max_normal_difference": 6.89126619380077e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.833026489999611,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 7775.9567094359645,
+        "surface_area_mm2": 5065.065270453616,
+        "bounding_box": [
+          64.99999999999264,
+          -33.05771365939947,
+          55.5,
+          97.307764064044,
+          76.336508117557,
+          62.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 7775.000223327547,
+        "surface_area_mm2": 5064.452770241489,
+        "bounding_box": [
+          65.00192353451888,
+          -33.057416490497204,
+          55.5,
+          97.30584052951777,
+          76.33621094865478,
+          62.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          65.00192343451889,
+          -33.057416590497205,
+          55.4999999,
+          97.30584062951776,
+          76.33621104865477,
+          62.5000001
+        ],
+        "surface_area": 5064.452770241511,
+        "volume": 7775.000223327538
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.2212453270876722e-15,
+        "area_relative_error": 4.218847493575595e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00012300558557198915,
+        "surface_area_relative_change": -0.0001209264203717586,
+        "bounds_max_absolute_change_mm": 0.0019234345262475472
+      },
+      "independent_report": "reports/connecting_rod.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 33.22397996899963
+    },
+    {
+      "name": "crank_front_spacer",
+      "file": "parts/crank_front_spacer.faceted.x_t",
+      "source_step_sha256": "d51f4309ee5b6e80c5513f37de4af34dc5f775ec52feec80917d678222488d9b",
+      "sha256": "e9c8c5ccdae9956d8af614dd1c93c743ee408d91cdc28bd942782f961a092d78",
+      "bytes": 293638,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.161611758885649e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.992209339300668e-07,
+        "total_symmetric_difference_area_mm2": 2.5918354506690237e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.664691867017739e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 9.187317573378095e-12,
+        "max_normal_difference": 9.953409475763784e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.0004682520011556,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 37.94415607005838,
+        "surface_area_mm2": 118.81503415877165,
+        "bounding_box": [
+          82.807764064044,
+          61.836508117557,
+          60.5,
+          89.807764064044,
+          68.836508117557,
+          62.7
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 37.928432241623746,
+        "surface_area_mm2": 118.79200349441511,
+        "bounding_box": [
+          82.807764064044,
+          61.83759598055414,
+          60.5,
+          89.807764064044,
+          68.83542025455986,
+          62.7
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          82.807763964044,
+          61.83759588055414,
+          60.4999999,
+          89.80776416404399,
+          68.83542035455986,
+          62.700000100000004
+        ],
+        "surface_area": 118.79200349441527,
+        "volume": 37.92843224162363
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.9976021664879227e-15,
+        "area_relative_error": 1.3322676295501878e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265929685,
+        "surface_area_relative_change": -0.00019383628106872663,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/crank_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.049435376000474
+    },
+    {
+      "name": "crank_rear_spacer",
+      "file": "parts/crank_rear_spacer.faceted.x_t",
+      "source_step_sha256": "b4814e4edd0db742630c0a216168f8321012c9c3d44a62d119cce927a1787a31",
+      "sha256": "fce97cbd175394e04762c498b128458856fb06bdb687b6d5de0e4972a608e8c8",
+      "bytes": 293764,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.161611758885649e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.5517587162554428e-06,
+        "total_symmetric_difference_area_mm2": 0.00017847053347991908,
+        "max_allowed_symmetric_difference_area_mm2": 7.664691867017739e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 9.173106718662893e-12,
+        "max_normal_difference": 9.952028603257628e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.0634643679986766,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 275.9574986913333,
+        "surface_area_mm2": 647.7335733171839,
+        "bounding_box": [
+          82.807764064044,
+          61.836508117557,
+          39.5,
+          89.807764064044,
+          68.836508117557,
+          55.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 275.8431435754451,
+        "surface_area_mm2": 647.6557423831806,
+        "bounding_box": [
+          82.807764064044,
+          61.83759598055414,
+          39.5,
+          89.807764064044,
+          68.83542025455986,
+          55.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          82.807763964044,
+          61.83759588055414,
+          39.4999999,
+          89.80776416404399,
+          68.83542035455986,
+          55.5000001
+        ],
+        "surface_area": 647.6557423831804,
+        "volume": 275.8431435754451
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 0.0,
+        "area_relative_error": 3.3306690738754696e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426560772,
+        "surface_area_relative_change": -0.0001201588696490008,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/crank_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 12.541649672002677
+    },
+    {
+      "name": "frame_front_clamp",
+      "file": "parts/frame_front_clamp.faceted.x_t",
+      "source_step_sha256": "c8fe22592b318007179378c5a8cc55cb0122fdefdaee019864b145537a9b80f6",
+      "sha256": "98b19dec49fa0aa8e8ad8bb59dbf57ecc328d6072712ba1cb38b7056b0924f8a",
+      "bytes": 5490500,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 13648,
+      "input_vertices": 13888,
+      "output_faces": 4715,
+      "raw_source_triangles": 13648,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 13648,
+        "readback_faces": 4715,
+        "supporting_plane_groups": 4659,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 4.021084201920958,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 3.39844653544894e-05,
+        "total_symmetric_difference_area_mm2": 0.0009041421170160191,
+        "max_allowed_symmetric_difference_area_mm2": 0.003774712423357886,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 6.2819474067055125e-09,
+        "max_normal_difference": 3.2123489330549056e-10,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 6.54662216199722,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 75606.66719163586,
+        "surface_area_mm2": 36987.65855225501,
+        "bounding_box": [
+          -32.526911934530006,
+          -50.663491882443,
+          -23.75878784786,
+          132.0,
+          147.836508117557,
+          45.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 75601.08419744285,
+        "surface_area_mm2": 36985.24764866113,
+        "bounding_box": [
+          -32.526911934500006,
+          -50.663491882443,
+          -23.75878784786,
+          131.98782627679816,
+          147.83508030218061,
+          45.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -32.52691203450001,
+          -50.663491982443,
+          -23.758787947860004,
+          131.98782637679815,
+          147.8350804021806,
+          45.5000001
+        ],
+        "surface_area": 36985.24764866275,
+        "volume": 75601.08419744376
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.2212453270876722e-14,
+        "area_relative_error": 4.39648317751562e-14,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -7.38426173176876e-05,
+        "surface_area_relative_change": -6.518129794164107e-05,
+        "bounds_max_absolute_change_mm": 0.01217362320184634
+      },
+      "independent_report": "reports/frame_front_clamp.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 194.29692053700273
+    },
+    {
+      "name": "front_axle_bridge",
+      "file": "parts/front_axle_bridge.faceted.x_t",
+      "source_step_sha256": "002cadc97aac52149cdcdece900336647ff96395342817d64478a85461ab6412",
+      "sha256": "89de6ef86cbaef73ddd789236a3e662a09f290c0d6a6f4396aeb64e50f2e5697",
+      "bytes": 686148,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2312,
+      "input_vertices": 2326,
+      "output_faces": 578,
+      "raw_source_triangles": 2312,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 2312,
+        "readback_faces": 578,
+        "supporting_plane_groups": 578,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 0.9827793364381775,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 8.829926046466435e-06,
+        "total_symmetric_difference_area_mm2": 0.00016152220235403784,
+        "max_allowed_symmetric_difference_area_mm2": 0.0007687435092700438,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.0676793610618915e-11,
+        "max_normal_difference": 1.833506232334021e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 2.2693792290010606,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 7284.373445560897,
+        "surface_area_mm2": 4497.736651594463,
+        "bounding_box": [
+          26.0,
+          43.336508117557,
+          45.5,
+          85.0,
+          147.336508117557,
+          50.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 7283.9983406699575,
+        "surface_area_mm2": 4497.5257625585955,
+        "bounding_box": [
+          26.000471078119702,
+          43.33696955458459,
+          45.5,
+          84.99998557529503,
+          147.3346432095619,
+          50.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          26.0004709781197,
+          43.33696945458459,
+          45.4999999,
+          84.99998567529502,
+          147.3346433095619,
+          50.5000001
+        ],
+        "surface_area": 4497.525762558613,
+        "volume": 7283.998340669961
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 3.774758283725532e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -5.149446191077267e-05,
+        "surface_area_relative_change": -4.688781317951918e-05,
+        "bounds_max_absolute_change_mm": 0.0018648079951049112
+      },
+      "independent_report": "reports/front_axle_bridge.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 25.00600481299989
+    },
+    {
+      "name": "microscope_reference",
+      "file": "parts/microscope_reference.faceted.x_t",
+      "source_step_sha256": "5c3399708c2ab97355521ec78a2cd80b29bed69dbe27c1bf9f57eea0bd5675d0",
+      "sha256": "2dde9765f529b7e2287cad19c50bd30451b69b55375e072607623b60a9bd19e3",
+      "bytes": 143335,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 500,
+      "input_vertices": 506,
+      "output_faces": 128,
+      "raw_source_triangles": 500,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 500,
+        "readback_faces": 128,
+        "supporting_plane_groups": 128,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.7781789784069464e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 5.106530203136117e-06,
+        "total_symmetric_difference_area_mm2": 0.0006490682624405964,
+        "max_allowed_symmetric_difference_area_mm2": 0.0005643878016729504,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 7.105427357601002e-15,
+        "max_normal_difference": 3.0989755835899953e-15,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.41679243100224994,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 212874.31820724442,
+        "surface_area_mm2": 22393.27243478932,
+        "bounding_box": [
+          -22.0,
+          0.0,
+          -22.0,
+          22.0,
+          140.0,
+          22.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 212786.1043792369,
+        "surface_area_mm2": 22390.0071905546,
+        "bounding_box": [
+          -21.99316200401796,
+          0.0,
+          -22.0,
+          21.993162004017957,
+          140.0,
+          22.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -21.993162104017962,
+          -1e-07,
+          -22.0000001,
+          21.99316210401796,
+          140.0000001,
+          22.0000001
+        ],
+        "surface_area": 22390.007190554636,
+        "volume": 212786.10437923693
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 1.5543122344752192e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394263431684,
+        "surface_area_relative_change": -0.00014581362523913288,
+        "bounds_max_absolute_change_mm": 0.006837895982041431
+      },
+      "independent_report": "reports/microscope_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 8.63463126699935
+    },
+    {
+      "name": "motor_pinion",
+      "file": "parts/motor_pinion.faceted.x_t",
+      "source_step_sha256": "861ad7bb08a3b3ed73c41072e9b3f1f6b6e981a656a25994ae1d1c9b8866e9cb",
+      "sha256": "b8e3f0a1aa2914801194d95ea1cf73e4a7f0510b4960853c7072782137481113",
+      "bytes": 1098224,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 2814,
+      "input_vertices": 3458,
+      "output_faces": 1056,
+      "raw_source_triangles": 2814,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 2814,
+        "readback_faces": 1056,
+        "supporting_plane_groups": 1036,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 4.300387981498338e-06,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 3.590222662982085e-06,
+        "total_symmetric_difference_area_mm2": 0.00016588386986322588,
+        "max_allowed_symmetric_difference_area_mm2": 0.00037238334501813505,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.9530688177837874e-10,
+        "max_normal_difference": 3.1107197896964983e-12,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 3.199639129001298,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 2385.9053344486324,
+        "surface_area_mm2": 1729.6536430158305,
+        "bounding_box": [
+          35.000353059076566,
+          74.33686117664149,
+          29.9999999,
+          56.999646940915504,
+          96.33615505848044,
+          39.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 2385.66097941126,
+        "surface_area_mm2": 1729.6351224808202,
+        "bounding_box": [
+          35.00035305907656,
+          74.33686117664207,
+          30.0,
+          56.99964694091493,
+          96.33615505848044,
+          39.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          35.00035295907656,
+          74.33686107664208,
+          29.9999999,
+          56.99964704091493,
+          96.33615515848044,
+          39.5000001
+        ],
+        "surface_area": 1729.6351224808159,
+        "volume": 2385.6609794112605
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-16,
+        "area_relative_error": 2.4424906541753444e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00010241606565175587,
+        "surface_area_relative_change": -1.0707655309749597e-05,
+        "bounds_max_absolute_change_mm": 1.000000082740371e-07
+      },
+      "independent_report": "reports/motor_pinion.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 36.36007976199835
+    },
+    {
+      "name": "motor_shaft",
+      "file": "parts/motor_shaft.faceted.x_t",
+      "source_step_sha256": "0c76d220f7d36c207a892d26d486e9509434e82e28e04214efb87e43fabab5c1",
+      "sha256": "acc4be400c7f59b84bf73d87aa7ebfe491b589f1799d009fcea8a2ad7c1daa72",
+      "bytes": 230232,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 504,
+      "input_vertices": 514,
+      "output_faces": 258,
+      "raw_source_triangles": 504,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 504,
+        "readback_faces": 258,
+        "supporting_plane_groups": 258,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 0.08929428114757643,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.7346515761573755e-06,
+        "total_symmetric_difference_area_mm2": 2.5840128861749645e-06,
+        "max_allowed_symmetric_difference_area_mm2": 9.625043060808038e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 8.335131196357537e-12,
+        "max_normal_difference": 1.0352882993316024e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.8393955979991006,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 451.8231413692604,
+        "surface_area_mm2": 412.1284212652878,
+        "bounding_box": [
+          43.49999999999828,
+          82.8365081175476,
+          23.5,
+          48.49999999999828,
+          87.8365081175476,
+          47.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 451.666135033066,
+        "surface_area_mm2": 412.07931982201745,
+        "bounding_box": [
+          43.50009245150271,
+          82.83674505851002,
+          23.5,
+          48.499969006725685,
+          87.83617465905883,
+          47.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          43.50009235150271,
+          82.83674495851002,
+          23.4999999,
+          48.499969106725686,
+          87.83617475905882,
+          47.5000001
+        ],
+        "surface_area": 412.07931982201694,
+        "volume": 451.6661350330657
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 6.661338147750939e-16,
+        "area_relative_error": 1.2212453270876722e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0003474951188177089,
+        "surface_area_relative_change": -0.00011914112382760411,
+        "bounds_max_absolute_change_mm": 0.0003333584887741381
+      },
+      "independent_report": "reports/motor_shaft.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.099239511997439
+    },
+    {
+      "name": "probe_carriage",
+      "file": "parts/probe_carriage.faceted.x_t",
+      "source_step_sha256": "16a99eb8d51fb4a9a23a91864f8f9ce10ce1edd56b0732f0381b0b69fd196585",
+      "sha256": "45eab1cbc59c93278eb65b3b4603c88a9a440e503e516e7e7b5e3643ff7c5e2d",
+      "bytes": 2172345,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 4726,
+      "input_vertices": 4848,
+      "output_faces": 1990,
+      "raw_source_triangles": 4726,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 4726,
+        "readback_faces": 1990,
+        "supporting_plane_groups": 1846,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 3.459400005567659e-06,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 5.4619892313575216e-06,
+        "total_symmetric_difference_area_mm2": 5.803940012262241e-05,
+        "max_allowed_symmetric_difference_area_mm2": 0.0004020665730493758,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 4.794662888940593e-09,
+        "max_normal_difference": 1.3564972687592272e-10,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 4.851005276999786,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 26179.23688706251,
+        "surface_area_mm2": 10233.506369701729,
+        "bounding_box": [
+          34.20577126594104,
+          -36.0577136594,
+          -9.0000001,
+          91.0,
+          -8.057713659400001,
+          52.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 26178.954271628227,
+        "surface_area_mm2": 10233.338853282534,
+        "bounding_box": [
+          34.20611620419017,
+          -36.0577136594,
+          -8.9989038025032,
+          91.0,
+          -8.057713659400001,
+          52.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          34.206116104190166,
+          -36.05771375940001,
+          -8.9989039025032,
+          91.0000001,
+          -8.057713559400002,
+          52.00000010000001
+        ],
+        "surface_area": 10233.338853282465,
+        "volume": 26178.9542716285
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.0436096431476471e-14,
+        "area_relative_error": 6.772360450213455e-15,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -1.079540382442623e-05,
+        "surface_area_relative_change": -1.6369405872462828e-05,
+        "bounds_max_absolute_change_mm": 0.001096197496799789
+      },
+      "independent_report": "reports/probe_carriage.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 55.65643882600125
+    },
+    {
+      "name": "probe_reference",
+      "file": "parts/probe_reference.faceted.x_t",
+      "source_step_sha256": "662e4bf747493e92fdc7bcf3abd853dbd7c347e8eef85e5b77157d7b226a6b73",
+      "sha256": "53786e611a08558e844b2026ddddb0f9590d363d3685e3c863a839082ef6eaf7",
+      "bytes": 1683613,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 5038,
+      "input_vertices": 3065,
+      "output_faces": 949,
+      "raw_source_triangles": 5039,
+      "zero_area_primitives_removed": [
+        {
+          "raw_triangle_index": 138,
+          "vertex_indices": [
+            254,
+            127,
+            149
+          ],
+          "coordinates": [
+            [
+              0.0712511621367895,
+              -99.83119132515014,
+              0.0011328610377461246
+            ],
+            [
+              0.0,
+              -99.99999999994299,
+              0.0
+            ],
+            [
+              0.0,
+              -99.99999999994299,
+              0.0
+            ]
+          ],
+          "reason": "exactly coincident vertices; mathematically zero area"
+        }
+      ],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 5038,
+        "readback_faces": 949,
+        "supporting_plane_groups": 820,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.1227403927823285e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 5.138417073012421e-06,
+        "total_symmetric_difference_area_mm2": 0.0005453247524925568,
+        "max_allowed_symmetric_difference_area_mm2": 0.0002240997229761233,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 2.8404119944980266e-08,
+        "max_normal_difference": 5.374408521745366e-10,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 4.478521950000868,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 1118.9305834524594,
+        "surface_area_mm2": 964.7602917478364,
+        "bounding_box": [
+          0.0,
+          -99.99999999994299,
+          -3.0,
+          54.59807621135299,
+          -8.433358006412432,
+          3.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 1118.3453353092516,
+        "surface_area_mm2": 964.6172701912926,
+        "bounding_box": [
+          0.0,
+          -99.99999999994299,
+          -2.9990675460024505,
+          54.598076211359995,
+          -8.433358006412433,
+          2.9990675460024505
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -1.0000000001387778e-07,
+          -100.00000009994298,
+          -2.9990676460024503,
+          54.598076311359996,
+          -8.433357906412434,
+          2.9990676460024503
+        ],
+        "surface_area": 964.6172701912934,
+        "volume": 1118.345335309254
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-15,
+        "area_relative_error": 8.881784197001252e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0005230424048285887,
+        "surface_area_relative_change": -0.0001482456914596586,
+        "bounds_max_absolute_change_mm": 0.0009323539975496509
+      },
+      "independent_report": "reports/probe_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 43.7098179550012
+    },
+    {
+      "name": "rear_clamp",
+      "file": "parts/rear_clamp.faceted.x_t",
+      "source_step_sha256": "c4b097876355a24c68d1eeab2fc0ef673284a0bba27378040ccc0f97059eeadf",
+      "sha256": "3f34e28580156b8584147e688b1b9e90b8924b8e23cdecd42d2fd22c904ebad4",
+      "bytes": 766158,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1900,
+      "input_vertices": 1960,
+      "output_faces": 686,
+      "raw_source_triangles": 1900,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1900,
+        "readback_faces": 686,
+        "supporting_plane_groups": 667,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.000000005139782e-07,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 4.367846078047819e-06,
+        "total_symmetric_difference_area_mm2": 0.00019701390388140297,
+        "max_allowed_symmetric_difference_area_mm2": 0.0004227371860804627,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 3.032482576159623e-08,
+        "max_normal_difference": 2.5254876046503554e-09,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 2.406782721998752,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 11387.650462047393,
+        "surface_area_mm2": 5369.846554273775,
+        "bounding_box": [
+          -23.758787847868,
+          -1e-07,
+          -32.52691193458119,
+          32.52691193458119,
+          18.0000001,
+          23.758787847868
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 11385.819352697694,
+        "surface_area_mm2": 5369.406134534578,
+        "bounding_box": [
+          -23.758787847868003,
+          0.0,
+          -32.52691193458119,
+          32.52691193458119,
+          18.0,
+          23.758787847868003
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -23.758787947868004,
+          -1e-07,
+          -32.526912034581194,
+          32.526912034581194,
+          18.000000100000005,
+          23.758787947868004
+        ],
+        "surface_area": 5369.406134534608,
+        "volume": 11385.8193526977
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-16,
+        "area_relative_error": 5.551115123125783e-15,
+        "bounds_max_absolute_error_mm": 1.0000000472132342e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0001607978182853742,
+        "surface_area_relative_change": -8.201719261724527e-05,
+        "bounds_max_absolute_change_mm": 1.0000000472132342e-07
+      },
+      "independent_report": "reports/rear_clamp.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 24.85946984000111
+    },
+    {
+      "name": "sector_crank",
+      "file": "parts/sector_crank.faceted.x_t",
+      "source_step_sha256": "cda919eca59737ea4356c95d2742ed2780e031d775bcbd4a1f430ede6001e740",
+      "sha256": "e8ffe8af02c049b938dac49d4afb1bfae53fd558e16cd7575e9c4772e87cffe1",
+      "bytes": 2213236,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 6900,
+      "input_vertices": 8076,
+      "output_faces": 1729,
+      "raw_source_triangles": 6900,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 6900,
+        "readback_faces": 1729,
+        "supporting_plane_groups": 1476,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.4701067985100652e-06,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 2.0568302640407804e-05,
+        "total_symmetric_difference_area_mm2": 0.00033218576135944785,
+        "max_allowed_symmetric_difference_area_mm2": 0.0019394300360393545,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.1290524071227992e-11,
+        "max_normal_difference": 1.1330564368379727e-13,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 4.670542261999799,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 25951.55799257619,
+        "surface_area_mm2": 14507.500264010434,
+        "bounding_box": [
+          28.0,
+          37.336508117557,
+          30.0,
+          124.0,
+          133.336508117557,
+          43.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 25933.498392717225,
+        "surface_area_mm2": 14501.249042145373,
+        "bounding_box": [
+          28.000110942446376,
+          37.34896541521336,
+          30.0,
+          123.99988905755362,
+          133.32405081990063,
+          43.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          28.000110842446375,
+          37.348965315213356,
+          29.9999999,
+          123.99988915755361,
+          133.32405091990063,
+          43.50000010000001
+        ],
+        "surface_area": 14501.249042145044,
+        "volume": 25933.498392717338
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.440892098500626e-15,
+        "area_relative_error": 2.2648549702353193e-14,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0006958965571167708,
+        "surface_area_relative_change": -0.00043089586432043525,
+        "bounds_max_absolute_change_mm": 0.01245719765637432
+      },
+      "independent_report": "reports/sector_crank.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 68.96447014599835
+    },
+    {
+      "name": "slider_front_spacer",
+      "file": "parts/slider_front_spacer.faceted.x_t",
+      "source_step_sha256": "4818a8e2960822892cdeccb3e0ee895614303d80fc7cb9da6597eaeee66fdd39",
+      "sha256": "38965fea49c07201ccf5fb55e6a1d603694f6c6d81e50042be42a1c8e9476b14",
+      "bytes": 295636,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.984362284743e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.257986700115101e-07,
+        "total_symmetric_difference_area_mm2": 2.9509165007848898e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.664691872232726e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 3.623767952376511e-12,
+        "max_normal_difference": 9.167162449762243e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.8252854929996829,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 37.94415607005838,
+        "surface_area_mm2": 118.81503415877162,
+        "bounding_box": [
+          72.5,
+          -25.557713659342994,
+          60.5,
+          79.5,
+          -18.557713659342994,
+          62.7
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 37.9284322416238,
+        "surface_area_mm2": 118.79200349441517,
+        "bounding_box": [
+          72.5,
+          -25.556625796345855,
+          60.5,
+          79.5,
+          -18.558801522340133,
+          62.7
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.4999999,
+          -25.556625896345857,
+          60.4999999,
+          79.5000001,
+          -18.55880142234013,
+          62.700000100000004
+        ],
+        "surface_area": 118.79200349441514,
+        "volume": 37.9284322416239
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.6645352591003757e-15,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426521914,
+        "surface_area_relative_change": -0.0001938362810695038,
+        "bounds_max_absolute_change_mm": 0.0010877629971375313
+      },
+      "independent_report": "reports/slider_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.102551947999018
+    },
+    {
+      "name": "slider_rear_spacer",
+      "file": "parts/slider_rear_spacer.faceted.x_t",
+      "source_step_sha256": "498a8feb643e6b1d1aa73c77eafd6a2e617857bb3d61cc5b1d2b9cd3cdfe4c39",
+      "sha256": "c8ecc78403ebe8adcc5535cd42abff4d81ef13eedfc122ede502e525951c53d8",
+      "bytes": 306288,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 5.984362284743e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.257986700115101e-07,
+        "total_symmetric_difference_area_mm2": 4.608863737337732e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.664691872232726e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 3.61666252501891e-12,
+        "max_normal_difference": 9.167233650328835e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5774296019990288,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 60.36570283872916,
+        "surface_area_mm2": 168.64069364470893,
+        "bounding_box": [
+          72.5,
+          -25.557713659342994,
+          52.0,
+          79.5,
+          -18.557713659342994,
+          55.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 60.3406876571287,
+        "surface_area_mm2": 168.61250063611038,
+        "bounding_box": [
+          72.5,
+          -25.556625796345855,
+          52.0,
+          79.5,
+          -18.558801522340133,
+          55.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.4999999,
+          -25.556625896345857,
+          51.999999900000006,
+          79.5000001,
+          -18.55880142234013,
+          55.5000001
+        ],
+        "surface_area": 168.61250063611016,
+        "volume": 60.340687657128754
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 8.881784197001252e-16,
+        "area_relative_error": 1.3322676295501878e-15,
+        "bounds_max_absolute_error_mm": 1.0000000116860974e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265385676,
+        "surface_area_relative_change": -0.0001671779686709396,
+        "bounds_max_absolute_change_mm": 0.0010877629971375313
+      },
+      "independent_report": "reports/slider_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 10.579312739999295
+    },
+    {
+      "name": "specimen_plate_reference",
+      "file": "parts/specimen_plate_reference.faceted.x_t",
+      "source_step_sha256": "18c1a98b2865afb9bacd1603e950b773f401d74da97dfa3fb9af7c77278c6837",
+      "sha256": "67a28b2c7b3af261951a8b22b8d4b191842f69bbb5184e633f391ab8084a5a42",
+      "bytes": 3237,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 12,
+      "input_vertices": 24,
+      "output_faces": 6,
+      "raw_source_triangles": 12,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 12,
+        "readback_faces": 6,
+        "supporting_plane_groups": 6,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 1.4210854715202004e-14,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 1.4210854715202004e-12,
+        "total_symmetric_difference_area_mm2": 5.6843418860808015e-12,
+        "max_allowed_symmetric_difference_area_mm2": 0.0007999999999999999,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 1.4210854715202004e-14,
+        "max_normal_difference": 0.0,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.00813215800008038,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 30000.0,
+        "surface_area_mm2": 21200.0,
+        "bounding_box": [
+          -50.0,
+          -103.0,
+          -50.0,
+          50.0,
+          -100.0,
+          50.0
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 30000.0,
+        "surface_area_mm2": 21200.0,
+        "bounding_box": [
+          -50.0,
+          -103.0,
+          -50.0,
+          50.0,
+          -100.0,
+          50.0
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          -50.0000001,
+          -103.00000010000001,
+          -50.0000001,
+          50.0000001,
+          -99.9999999,
+          50.0000001
+        ],
+        "surface_area": 21200.000000000004,
+        "volume": 30000.00000000014
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 4.6629367034256575e-15,
+        "area_relative_error": 2.220446049250313e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": 4.6629367034256575e-15,
+        "surface_area_relative_change": 2.220446049250313e-16,
+        "bounds_max_absolute_change_mm": 1.000000082740371e-07
+      },
+      "independent_report": "reports/specimen_plate_reference.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 2.5089778379988275
+    },
+    {
+      "name": "wheel_front_spacer",
+      "file": "parts/wheel_front_spacer.faceted.x_t",
+      "source_step_sha256": "b57aaa1427ebd5685eacca88ac9f60f92e7aec58040b46da2480cdad705cb660",
+      "sha256": "b8c0228983724a94c564afdc017b2fc67fce6354b5422d04c28c5433cead274d",
+      "bytes": 303566,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.892023785763888e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.105469543694597e-07,
+        "total_symmetric_difference_area_mm2": 2.6703735208703615e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.66469186911262e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 9.258371846954105e-12,
+        "max_normal_difference": 9.367222245604075e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.5109384419993148,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 34.494687336416675,
+        "surface_area_mm2": 111.14954808401193,
+        "bounding_box": [
+          72.5,
+          81.836508117557,
+          43.5,
+          79.5,
+          88.836508117557,
+          45.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 34.480392946930685,
+        "surface_area_mm2": 111.12731162646193,
+        "bounding_box": [
+          72.5,
+          81.83759598055414,
+          43.5,
+          79.5,
+          88.83542025455986,
+          45.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.4999999,
+          81.83759588055415,
+          43.499999900000006,
+          79.5000001,
+          88.83542035455987,
+          45.5000001
+        ],
+        "surface_area": 111.12731162646162,
+        "volume": 34.48039294693061
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 2.220446049250313e-15,
+        "area_relative_error": 2.7755575615628914e-15,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265729845,
+        "surface_area_relative_change": -0.0002000589110222606,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_front_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.302841734999674
+    },
+    {
+      "name": "wheel_inner_spacer",
+      "file": "parts/wheel_inner_spacer.faceted.x_t",
+      "source_step_sha256": "9ac43a66c0f2090077f6d7b08ac11aceafad89357dfc03c083f0e6edd74c4adc",
+      "sha256": "1e703118cc42a6706a73ed2e09ed029512eecebb6f3252a14c260b25ff6b0837",
+      "bytes": 293814,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.892023785763888e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.105469543694597e-07,
+        "total_symmetric_difference_area_mm2": 2.6703734879871997e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.66469186911262e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 9.258371846954105e-12,
+        "max_normal_difference": 9.367222245604075e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 0.7969322850003664,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 34.494687336416675,
+        "surface_area_mm2": 111.14954808401193,
+        "bounding_box": [
+          72.5,
+          81.836508117557,
+          36.5,
+          79.5,
+          88.836508117557,
+          38.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 34.480392946930685,
+        "surface_area_mm2": 111.12731162646193,
+        "bounding_box": [
+          72.5,
+          81.83759598055414,
+          36.5,
+          79.5,
+          88.83542025455986,
+          38.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.4999999,
+          81.83759588055415,
+          36.4999999,
+          79.5000001,
+          88.83542035455987,
+          38.5000001
+        ],
+        "surface_area": 111.12731162646187,
+        "volume": 34.480392946930635
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 1.4432899320127035e-15,
+        "area_relative_error": 5.551115123125783e-16,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.0004143939426564103,
+        "surface_area_relative_change": -0.00020005891101992912,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_inner_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 9.402582727998379
+    },
+    {
+      "name": "wheel_rear_spacer",
+      "file": "parts/wheel_rear_spacer.faceted.x_t",
+      "source_step_sha256": "16b647dcc02548c98299ceede110c8f3be3e8eade599695263bdf0019a38e56a",
+      "sha256": "082c2ebecbae914927b90d037f143aae8680276cca980fea0f84d6942831d6cd",
+      "bytes": 303535,
+      "passed": true,
+      "faceted": true,
+      "occt_valid": true,
+      "healing_performed": false,
+      "native_siemens_import_verified": false,
+      "input_triangles": 1008,
+      "input_vertices": 1012,
+      "output_faces": 254,
+      "raw_source_triangles": 1008,
+      "zero_area_primitives_removed": [],
+      "step_faces_excluded": 0,
+      "surface_correspondence": {
+        "valid": true,
+        "method": "whole supporting-plane region union area and reciprocal region coverage",
+        "source_triangles": 1008,
+        "readback_faces": 254,
+        "supporting_plane_groups": 254,
+        "all_source_triangles_compared": true,
+        "all_readback_faces_compared": true,
+        "precision_grid_mm": 1e-07,
+        "max_boundary_hausdorff_mm": 6.892023785763888e-08,
+        "hausdorff_reporting": "boundary Hausdorff is a discrete diagnostic; internal source tessellation seams can increase it",
+        "complete_bidirectional_surface_region_coverage": true,
+        "surface_region_hausdorff_upper_bound_mm": 1e-05,
+        "surface_region_tolerance_mm": 1e-05,
+        "max_symmetric_difference_area_mm2": 7.105469543694597e-07,
+        "total_symmetric_difference_area_mm2": 2.670373500058338e-05,
+        "max_allowed_symmetric_difference_area_mm2": 7.66469186911262e-05,
+        "symmetric_difference_area_tolerance_rule": "max(1e-8 mm2, (source_perimeter+readback_perimeter)*1e-6 mm)",
+        "max_plane_offset_mm": 9.258371846954105e-12,
+        "max_normal_difference": 9.367569072339972e-14,
+        "plane_offset_tolerance_mm": 1e-06,
+        "normal_tolerance": 1e-08,
+        "seconds": 1.2710984000004828,
+        "shapely_version": "2.1.2"
+      },
+      "exact_step": {
+        "volume_mm3": 34.494687336416675,
+        "surface_area_mm2": 111.14954808401193,
+        "bounding_box": [
+          72.5,
+          81.836508117557,
+          29.5,
+          79.5,
+          88.836508117557,
+          31.5
+        ]
+      },
+      "source_tessellation": {
+        "volume_mm3": 34.480392946930685,
+        "surface_area_mm2": 111.12731162646193,
+        "bounding_box": [
+          72.5,
+          81.83759598055414,
+          29.5,
+          79.5,
+          88.83542025455986,
+          31.5
+        ]
+      },
+      "xt_readback": {
+        "bounding_box": [
+          72.4999999,
+          81.83759588055415,
+          29.499999900000002,
+          79.5000001,
+          88.83542035455987,
+          31.5000001
+        ],
+        "surface_area": 111.12731162646178,
+        "volume": 34.48039294693066
+      },
+      "readback_vs_source_mesh": {
+        "volume_relative_error": 7.771561172376096e-16,
+        "area_relative_error": 1.4432899320127035e-15,
+        "bounds_max_absolute_error_mm": 1.000000082740371e-07
+      },
+      "faceted_vs_exact_step": {
+        "volume_relative_change": -0.00041439394265585516,
+        "surface_area_relative_change": -0.00020005891102092832,
+        "bounds_max_absolute_change_mm": 0.0010877629971446368
+      },
+      "independent_report": "reports/wheel_rear_spacer.json",
+      "all_faces_tessellated": true,
+      "closed_oriented_mesh": true,
+      "seconds": 14.391648739998345
+    }
+  ],
+  "failures": []
+}

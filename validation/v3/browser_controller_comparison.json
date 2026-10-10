@@ -1,0 +1,445 @@
+{
+  "source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+  "final_viewer_sha256": "1163891f8af00f5f06300461b9a9696b2877d5ee3d7c4f761d1c58ca71da65b9",
+  "final_packaged_model_sha256": "28c4258a2a315fb6866f50ec763c922c69f1a6da191edc7d936bf0aa57d1975a",
+  "browser_report_sha256": "5cc8e08eb7aabf6f13271770544fe843bc11c8eb12ae931fde27ff2d3712c9f7",
+  "mesh_audit_sha256": "97177913cf746c1ada402010faeefb5b780dd51283d2f0f0e74240bbe4172921",
+  "controller_geometry_audit_sha256": "8fa6681f7dfba5b1d4ffa7321742198d704ffd525b55e1812b7fcd6ea196acbd",
+  "checks": {
+    "frozen_source_still_matches_review": true,
+    "served_source_matches_frozen_source": true,
+    "final_served_viewer_matches_local_viewer": true,
+    "final_served_model_matches_packaged_model": true,
+    "independent_cad_geometry_review_passed": true,
+    "independent_cad_mesh_review_passed": true,
+    "controller_annotation_is_not_model_part": true,
+    "final_controller_verification_bound_to_source": true,
+    "final_browser_complete": true,
+    "no_browser_errors": true,
+    "all_actual_overlay_poses_match_motor_derived_boxes": true
+  },
+  "actual_controller_overlay_poses": [
+    {
+      "travel_mm": 0,
+      "controller_visible": true,
+      "actual_bounds": {
+        "nominalWorldBounds": {
+          "actual_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            46,
+            85.33650811755678,
+            -28.5,
+            1
+          ]
+        },
+        "keepoutWorldBounds": {
+          "actual_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            23,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            46,
+            85.33650811755678,
+            -29.5,
+            1
+          ]
+        }
+      },
+      "checks": {
+        "controller_annotation_present": true,
+        "controller_not_pickable_as_real_part": true,
+        "48_real_parts": true,
+        "rear_normal_matches": true,
+        "nominalWorldBounds_matches_independent_motor_back_derived_geometry": true,
+        "keepoutWorldBounds_matches_independent_motor_back_derived_geometry": true
+      },
+      "passed": true
+    },
+    {
+      "travel_mm": 20,
+      "controller_visible": false,
+      "actual_bounds": {
+        "nominalWorldBounds": {
+          "actual_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            46,
+            85.33650811755678,
+            -28.5,
+            1
+          ]
+        },
+        "keepoutWorldBounds": {
+          "actual_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            23,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            46,
+            85.33650811755678,
+            -29.5,
+            1
+          ]
+        }
+      },
+      "checks": {
+        "controller_annotation_present": true,
+        "controller_not_pickable_as_real_part": true,
+        "48_real_parts": true,
+        "rear_normal_matches": true,
+        "nominalWorldBounds_matches_independent_motor_back_derived_geometry": true,
+        "keepoutWorldBounds_matches_independent_motor_back_derived_geometry": true
+      },
+      "passed": true
+    },
+    {
+      "travel_mm": 40,
+      "controller_visible": false,
+      "actual_bounds": {
+        "nominalWorldBounds": {
+          "actual_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            46,
+            85.33650811755678,
+            -28.5,
+            1
+          ]
+        },
+        "keepoutWorldBounds": {
+          "actual_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            23,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            46,
+            85.33650811755678,
+            -29.5,
+            1
+          ]
+        }
+      },
+      "checks": {
+        "controller_annotation_present": true,
+        "controller_not_pickable_as_real_part": true,
+        "48_real_parts": true,
+        "rear_normal_matches": true,
+        "nominalWorldBounds_matches_independent_motor_back_derived_geometry": true,
+        "keepoutWorldBounds_matches_independent_motor_back_derived_geometry": true
+      },
+      "passed": true
+    },
+    {
+      "travel_mm": 40,
+      "controller_visible": true,
+      "actual_bounds": {
+        "nominalWorldBounds": {
+          "actual_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              25.0,
+              64.33650811755678,
+              -38.5
+            ],
+            [
+              67.0,
+              106.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            46,
+            85.33650811755678,
+            -28.5,
+            1
+          ]
+        },
+        "keepoutWorldBounds": {
+          "actual_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "expected_mm": [
+            [
+              23.0,
+              62.336508117556775,
+              -40.5
+            ],
+            [
+              69.0,
+              108.33650811755678,
+              -18.5
+            ]
+          ],
+          "max_error_mm": 0.0,
+          "actual_matrixWorld": [
+            23,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            46,
+            85.33650811755678,
+            -29.5,
+            1
+          ]
+        }
+      },
+      "checks": {
+        "controller_annotation_present": true,
+        "controller_not_pickable_as_real_part": true,
+        "48_real_parts": true,
+        "rear_normal_matches": true,
+        "nominalWorldBounds_matches_independent_motor_back_derived_geometry": true,
+        "keepoutWorldBounds_matches_independent_motor_back_derived_geometry": true
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Measures actual Three.js nominal/keepout vertex buffers transformed by matrixWorld, separately from 48 physical parts. Renderer bindings apply to final local packaged files served during QA.",
+  "passed": true
+}

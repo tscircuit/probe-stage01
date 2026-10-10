@@ -157,6 +157,50 @@ def main():
         require(comparison.get('complete') is True and source_hash in provenance and
                 baseline['source_sha256'] in provenance, 'Comparison source provenance differs.')
 
+    reference_count = snapshot.get('reference_step_count', 0)
+    if 'controller' in manifest.get('reports', {}):
+        for key in ('all_controller_reservations_clear', 'all_open_rear_access_clear'):
+            require(audit.get(key) is True, f'Sampled controller/rear-access report failed: {key}')
+        for key in ('controller_reservation_failures', 'controller_reservation_optical_failures',
+                    'controller_reservation_conservative_probe_failures', 'open_rear_access_failures'):
+            require(audit.get(key) == [], f'Sampled controller/rear-access failures: {key}')
+        controller = read_json(report_path(site, manifest, 'controller', 'controller_clearance.json'))
+        require(controller['source_sha256'] == source_hash, 'Controller clearance source differs.')
+        for key in ('complete', 'validated', 'source_unchanged', 'continuous',
+                    'back_faces_away_from_barrel', 'all_reservations_clear', 'all_open_rear_corridor_clear'):
+            require(controller.get(key) is True, f'Controller/rear-access report failed: {key}')
+        require(controller['part_count'] == count and set(controller['checked_part_names']) == names,
+                'Controller obstacle coverage differs.')
+        require(len(controller['rows']) == count and {row['part'] for row in controller['rows']} == names
+                and all(row.get('validated') is True for row in controller['rows']),
+                'Controller continuous validation rows failed.')
+        reservation = model['meta']['controllerReservation']
+        require(controller['nominal_dimensions_mm'] == reservation['nominal_dimensions_mm'] == [42, 42, 20]
+                and controller['clearance_dimensions_mm'] == [46, 46, 22]
+                and reservation['clearance_mm'] == 2, 'Controller reservation dimensions differ.')
+        require(controller['rear_normal_world'] == reservation['rear_normal_world'] == [0, 0, -1],
+                'Motor rear direction differs.')
+        proof = reservation['verification']
+        require(proof['source_sha256'] == source_hash and proof['validated'] is True
+                and proof['continuous'] is True and proof['open_rear'] is True,
+                'Viewer controller annotation lacks source-matched proof.')
+        for report_key, derived_key in (('nominal_world_bounds_mm', 'controller_world_bounds_mm'),
+                                        ('clearance_world_bounds_mm', 'controller_keepout_world_bounds_mm')):
+            for end in ('min', 'max'):
+                a, e = controller[report_key][end], dimensions['derived'][derived_key][end]
+                require(len(a) == len(e) == 3 and all(math.isfinite(x) and math.isclose(x, y, abs_tol=1e-6)
+                        for x, y in zip(a, e)), 'Controller world-space bounds differ.')
+        refs = roundtrip['reserved_reference_exports']
+        reference_names = {'motor_controller_reserved_envelope', 'motor_controller_clearance_keepout'}
+        require(reference_count == 2 and len(refs) == 2 and {r['name'] for r in refs} == reference_names
+                and all(r['reference_only'] and r['valid'] and r['solids'] == 1 and
+                        r['absolute_volume_error_mm3'] <= 1e-3 for r in refs),
+                'Controller STEP reference roundtrips failed.')
+        require({p.stem for p in (downloads / 'references').glob('*.step')} == reference_names,
+                'Controller reference STEP inventory differs.')
+    else:
+        require(reference_count == 0, 'Unexpected extra STEP references.')
+
     steps = list((downloads / 'parts').glob('*.step'))
     stls = list((downloads / 'parts').glob('*.stl'))
     require({path.stem for path in steps} == names, 'Component STEP inventory differs.')
@@ -168,7 +212,7 @@ def main():
     bundle = downloads / Path(manifest['downloads']['bundle']).name
     with zipfile.ZipFile(bundle) as archive:
         require(archive.testzip() is None, 'Bundle ZIP integrity check failed.')
-        require(sum(name.endswith('.step') for name in archive.namelist()) == count + 1,
+        require(sum(name.endswith('.step') for name in archive.namelist()) == count + 1 + reference_count,
                 'Bundle STEP count differs.')
         require(sum(name.endswith('.stl') for name in archive.namelist()) == len(printable),
                 'Bundle STL count differs.')
@@ -176,6 +220,7 @@ def main():
         'release': args.release, 'site_files': len(actual_files), 'download_checksums': len(checksums),
         'source_sha256': source_hash, 'component_step_files': len(steps), 'printable_stls': len(stls),
         'checked_poses': len(audit['poses']), 'pairs_per_pose': pair_count,
+        'reference_step_files': reference_count,
         'all_intersections': 0, 'archived_bytes_unchanged': True,
         'verification': 'Read-only integrity and saved-report checks; no CAD regeneration.',
     }, indent=2))

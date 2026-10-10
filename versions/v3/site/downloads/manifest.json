@@ -1,0 +1,481 @@
+{
+  "revision": "v3",
+  "source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+  "model": "./assets/model.json",
+  "component_count": 48,
+  "printable_count": 7,
+  "downloads": {
+    "assemblyStep": "./downloads/probe_stage_v3_assembly.step",
+    "assemblyGlb": "./downloads/probe_stage_v3_assembly.glb",
+    "source": "./downloads/probe_stage_v3.py",
+    "bundle": "./downloads/probe_stage_v3.zip",
+    "controllerEnvelope": "./downloads/references/motor_controller_reserved_envelope.step",
+    "controllerKeepout": "./downloads/references/motor_controller_clearance_keepout.step"
+  },
+  "reports": {
+    "dimensions": "./downloads/dimensions_and_checks.json",
+    "allPairs": "./downloads/all_pairs.json",
+    "optical": "./downloads/optical_bounds.json",
+    "roundtrip": "./downloads/step_roundtrip_checks.json",
+    "comparison": "./downloads/mass_moment_comparison.json",
+    "summary": "./downloads/geometry_verification.json",
+    "controller": "./downloads/controller_clearance.json"
+  },
+  "parts": {
+    "frame_front_clamp": {
+      "title": "Compact braced frame and front clamp",
+      "description": "Split microscope clamp, captured vertical dovetail guide, motor mounting plate and braced load path.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/frame_front_clamp.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "164.5 \u00d7 198.5 \u00d7 69.3 mm preview envelope"
+    },
+    "rear_clamp": {
+      "title": "Rear microscope clamp",
+      "description": "Rear half of the \u00d844 mm split clamp, joined with M5 hardware.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/rear_clamp.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "56.3 \u00d7 18.0 \u00d7 56.3 mm preview envelope"
+    },
+    "front_axle_bridge": {
+      "title": "Front axle bridge",
+      "description": "Second axle support carrying wheel loads back to the compact frame.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/front_axle_bridge.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "59.0 \u00d7 104.0 \u00d7 5.0 mm preview envelope"
+    },
+    "sector_crank": {
+      "title": "Compact internal sector crank",
+      "description": "96 mm wheel with a 180\u00b0 internal slot, 40 internal teeth and a 22.5 mm crank radius.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/sector_crank.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "96.0 \u00d7 95.7 \u00d7 13.5 mm preview envelope"
+    },
+    "motor_pinion": {
+      "title": "NEMA17 drive pinion",
+      "description": "20-tooth module 1 pinion with a 5 mm D-shaft bore.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/motor_pinion.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "22.0 \u00d7 22.0 \u00d7 9.5 mm preview envelope"
+    },
+    "connecting_rod": {
+      "title": "Compact connecting rod",
+      "description": "88 mm pivot spacing with 625ZZ bearings.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/connecting_rod.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "44.5 \u00d7 107.1 \u00d7 7.0 mm preview envelope"
+    },
+    "probe_carriage": {
+      "title": "External angled probe carriage",
+      "description": "Captured vertical guide shoe and external 6 mm probe collet; probe approach remains 60\u00b0 above the plate.",
+      "category": "Fabricated parts",
+      "step": "./downloads/parts/probe_carriage.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "56.8 \u00d7 28.0 \u00d7 61.0 mm preview envelope"
+    },
+    "625ZZ_wheel_rear": {
+      "title": "625ZZ bearing wheel rear",
+      "description": "5 mm bore \u00d7 16 mm outside diameter \u00d7 5 mm wide; use a smooth \u00d85 mm axle running section.",
+      "category": "Hardware",
+      "step": "./downloads/parts/625ZZ_wheel_rear.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "16.0 \u00d7 16.0 \u00d7 5.0 mm preview envelope"
+    },
+    "625ZZ_wheel_front": {
+      "title": "625ZZ bearing wheel front",
+      "description": "5 mm bore \u00d7 16 mm outside diameter \u00d7 5 mm wide; use a smooth \u00d85 mm axle running section.",
+      "category": "Hardware",
+      "step": "./downloads/parts/625ZZ_wheel_front.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "16.0 \u00d7 16.0 \u00d7 5.0 mm preview envelope"
+    },
+    "625ZZ_crank": {
+      "title": "625ZZ bearing crank",
+      "description": "5 mm bore \u00d7 16 mm outside diameter \u00d7 5 mm wide; use a smooth \u00d85 mm axle running section.",
+      "category": "Hardware",
+      "step": "./downloads/parts/625ZZ_crank.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "16.0 \u00d7 16.0 \u00d7 5.0 mm preview envelope"
+    },
+    "625ZZ_slider": {
+      "title": "625ZZ bearing slider",
+      "description": "5 mm bore \u00d7 16 mm outside diameter \u00d7 5 mm wide; use a smooth \u00d85 mm axle running section.",
+      "category": "Hardware",
+      "step": "./downloads/parts/625ZZ_slider.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "16.0 \u00d7 16.0 \u00d7 5.0 mm preview envelope"
+    },
+    "wheel_inner_spacer": {
+      "title": "wheel inner spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/wheel_inner_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 2.0 mm preview envelope"
+    },
+    "wheel_rear_spacer": {
+      "title": "wheel rear spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/wheel_rear_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 2.0 mm preview envelope"
+    },
+    "wheel_front_spacer": {
+      "title": "wheel front spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/wheel_front_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 2.0 mm preview envelope"
+    },
+    "crank_rear_spacer": {
+      "title": "crank rear spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/crank_rear_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 16.0 mm preview envelope"
+    },
+    "crank_front_spacer": {
+      "title": "crank front spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/crank_front_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 2.2 mm preview envelope"
+    },
+    "slider_rear_spacer": {
+      "title": "slider rear spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/slider_rear_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 3.5 mm preview envelope"
+    },
+    "slider_front_spacer": {
+      "title": "slider front spacer",
+      "description": "Pivot spacer; verify the final axial stack and bearing inner-ring contact faces.",
+      "category": "Hardware",
+      "step": "./downloads/parts/slider_front_spacer.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "7.0 \u00d7 7.0 \u00d7 2.2 mm preview envelope"
+    },
+    "M5_wheel_axle": {
+      "title": "M5 wheel axle",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_wheel_axle.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 36.5 mm preview envelope"
+    },
+    "M5_crank_bolt": {
+      "title": "M5 crank bolt",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_crank_bolt.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 37.7 mm preview envelope"
+    },
+    "M5_crank_nut": {
+      "title": "M5 crank nut",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_crank_nut.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_slider_pivot_bolt": {
+      "title": "M5 slider pivot bolt",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_slider_pivot_bolt.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 22.7 mm preview envelope"
+    },
+    "M5_slider_captive_nut": {
+      "title": "M5 slider captive nut",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_slider_captive_nut.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_axle_captive_nut": {
+      "title": "M5 axle captive nut",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_axle_captive_nut.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "NEMA17_body": {
+      "title": "NEMA17 motor body",
+      "description": "Simplified motor envelope; check the selected motor dimensions.",
+      "category": "Hardware",
+      "step": "./downloads/parts/NEMA17_body.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "42.0 \u00d7 42.0 \u00d7 37.0 mm preview envelope"
+    },
+    "NEMA17_face": {
+      "title": "NEMA17 motor face",
+      "description": "Motor face and mounting bores; mounting uses four M3 screws.",
+      "category": "Hardware",
+      "step": "./downloads/parts/NEMA17_face.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "42.0 \u00d7 42.0 \u00d7 5.0 mm preview envelope"
+    },
+    "motor_shaft": {
+      "title": "Motor shaft reference",
+      "description": "Nominal 5 mm D-shaft; verify the actual shaft before manufacture.",
+      "category": "Hardware",
+      "step": "./downloads/parts/motor_shaft.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "5.0 \u00d7 5.0 \u00d7 24.0 mm preview envelope"
+    },
+    "M3_motor_-15.5_-15.5": {
+      "title": "M3 motor -15.5 -15.5",
+      "description": "M3 motor mounting screw; principal structural and pivot fasteners use M5.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M3_motor_-15.5_-15.5.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "5.6 \u00d7 5.6 \u00d7 11.5 mm preview envelope"
+    },
+    "M3_motor_-15.5_15.5": {
+      "title": "M3 motor -15.5 15.5",
+      "description": "M3 motor mounting screw; principal structural and pivot fasteners use M5.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M3_motor_-15.5_15.5.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "5.6 \u00d7 5.6 \u00d7 11.5 mm preview envelope"
+    },
+    "M3_motor_15.5_-15.5": {
+      "title": "M3 motor 15.5 -15.5",
+      "description": "M3 motor mounting screw; principal structural and pivot fasteners use M5.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M3_motor_15.5_-15.5.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "5.6 \u00d7 5.6 \u00d7 11.5 mm preview envelope"
+    },
+    "M3_motor_15.5_15.5": {
+      "title": "M3 motor 15.5 15.5",
+      "description": "M3 motor mounting screw; principal structural and pivot fasteners use M5.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M3_motor_15.5_15.5.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "5.6 \u00d7 5.6 \u00d7 11.5 mm preview envelope"
+    },
+    "M5_stop_-1": {
+      "title": "M5 stop -1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_stop_-1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 15.4 mm preview envelope"
+    },
+    "M5_stop_nut_-1": {
+      "title": "M5 stop nut -1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_stop_nut_-1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_stop_1": {
+      "title": "M5 stop 1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_stop_1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 15.4 mm preview envelope"
+    },
+    "M5_stop_nut_1": {
+      "title": "M5 stop nut 1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_stop_nut_1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_clamp_-28": {
+      "title": "M5 clamp -28",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_clamp_-28.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "24.9 \u00d7 8.5 \u00d7 24.9 mm preview envelope"
+    },
+    "M5_clamp_nut_-28": {
+      "title": "M5 clamp nut -28",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_clamp_nut_-28.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 9.2 \u00d7 8.5 mm preview envelope"
+    },
+    "M5_clamp_28": {
+      "title": "M5 clamp 28",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_clamp_28.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "24.9 \u00d7 8.5 \u00d7 24.9 mm preview envelope"
+    },
+    "M5_clamp_nut_28": {
+      "title": "M5 clamp nut 28",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_clamp_nut_28.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 9.2 \u00d7 8.5 mm preview envelope"
+    },
+    "M5_bridge_bolt_0": {
+      "title": "M5 bridge bolt 0",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_bridge_bolt_0.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 36.5 mm preview envelope"
+    },
+    "M5_bridge_nut_0": {
+      "title": "M5 bridge nut 0",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_bridge_nut_0.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_bridge_bolt_1": {
+      "title": "M5 bridge bolt 1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_bridge_bolt_1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.5 \u00d7 8.5 \u00d7 36.5 mm preview envelope"
+    },
+    "M5_bridge_nut_1": {
+      "title": "M5 bridge nut 1",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_bridge_nut_1.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "8.0 \u00d7 9.2 \u00d7 4.0 mm preview envelope"
+    },
+    "M5_probe_clamp_bolt": {
+      "title": "M5 probe clamp bolt",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_probe_clamp_bolt.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "28.5 \u00d7 8.5 \u00d7 8.5 mm preview envelope"
+    },
+    "M5_probe_clamp_nut": {
+      "title": "M5 probe clamp nut",
+      "description": "Simplified assembly hardware reference; threads and bearing internals are omitted.",
+      "category": "Hardware",
+      "step": "./downloads/parts/M5_probe_clamp_nut.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "4.0 \u00d7 9.2 \u00d7 8.0 mm preview envelope"
+    },
+    "microscope_reference": {
+      "title": "Microscope cylinder reference",
+      "description": "\u00d844 mm barrel envelope; lower end at world Y=0.",
+      "category": "References",
+      "step": "./downloads/parts/microscope_reference.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "43.9 \u00d7 140.0 \u00d7 44.0 mm preview envelope"
+    },
+    "probe_reference": {
+      "title": "Necked metal probe reference",
+      "description": "Custom pointed metal probe with a slender stem in the projected optical corridor and a 6 mm external shank.",
+      "category": "References",
+      "step": "./downloads/parts/probe_reference.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "54.6 \u00d7 91.6 \u00d7 6.0 mm preview envelope"
+    },
+    "specimen_plate_reference": {
+      "title": "Specimen plate reference",
+      "description": "Plate 100 mm below the barrel end; lowered tip touches its center.",
+      "category": "References",
+      "step": "./downloads/parts/specimen_plate_reference.step",
+      "xt": null,
+      "quantity": 1,
+      "dimensions": "100.0 \u00d7 3.0 \u00d7 100.0 mm preview envelope"
+    }
+  },
+  "comparison": {
+    "wheel_outer_diameter_mm": 96.0,
+    "baseline_wheel_outer_diameter_mm": 136.0,
+    "printed_volume_reduction_percent": 64.1050503158105,
+    "printed_volume_reduction_vs_v2_percent": 0.9727423379084499,
+    "estimated_mass_g": 581.1559939065334,
+    "baseline_mass_g": 938.5503412285063,
+    "v2_mass_g": 583.109249505615,
+    "estimated_mass_reduction_percent": 38.07940092527856,
+    "estimated_mass_reduction_vs_v2_percent": 0.3349724945604482,
+    "gravity_moment_nm": 0.31668652860314533,
+    "baseline_gravity_moment_nm": 0.8172242898331705,
+    "v2_gravity_moment_nm": 0.3233534738454236,
+    "gravity_moment_reduction_percent": 61.248517384646725,
+    "gravity_moment_reduction_vs_v2_percent": 2.0618133966500585,
+    "solid_fraction": 1.0,
+    "assumptions": "Compared with v1. Static gravity peak over 0\u201340 mm, estimated from 401 poses with bounded refinement; PETG 1.27 g/cm\u00b3 at 100% solid fraction (solid-equivalent estimate); assumed 280 g motor in all versions. Steel hardware 7.85 g/cm\u00b3; 625ZZ bearings 5 g each. Modeled metal probe included; microscope and specimen excluded. Controller, heatsink and cable mass is unknown and excluded; reserved controller boxes are reference space only. Actual print mass depends on material and toolpaths; this is not a structural load rating."
+  },
+  "notes": {
+    "fit": "Compact end mount for a \u00d844 mm microscope, 100 mm working distance, 40 mm straight vertical probe travel and a 60\u00b0 probe approach. The external collet holds a 6 mm shank; only the probe enters the projected barrel corridor. The projected footprint is a clearance assumption, not a measured lens field of view. The motor rear faces tangentially away from the barrel into open space. A 42 \u00d7 42 \u00d7 20 mm controller volume plus 2 mm clearance is reserved behind it. The rear-facing footprint remains unobstructed throughout travel; actual controller, heatsink and cable geometry and mass are not modeled.",
+    "validation": "All 48 components are valid single solids and passed STEP roundtrip checks. No intersections at 41 checked poses; \u00d844 projected barrel corridor clear of non-probe parts. Each pose includes all 1128 component pairs, with no excluded parts or regions. The alternative full-length \u00d86 mm probe was checked against every other component. The independent continuous optical report validates the final world-space transform. Physical collision checks are sampled; strength, stiffness, backlash and print fit need physical validation. Independent continuous bounds verify the controller allowance and rear access against all 48 modeled components throughout the stroke.",
+    "exports": "The bundle includes 48 component STEP files, 7 printable-part STLs, assembly STEP/GLB, source, requirements, viewer geometry, manifest, checksums and all verification and mass/moment comparison reports. Mass and static moment values are estimates under the report assumptions. Optional faceted x_t addons are supplied separately; exact STEP preserves precision geometry. STEP/STL files share assembly placement; arrange STL orientations for manufacture."
+  }
+}

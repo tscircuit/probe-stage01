@@ -4,8 +4,8 @@ import { OrbitControls } from './assets/vendor/OrbitControls.js';
 const $ = (id) => document.getElementById(id);
 const viewport = $('viewport');
 const canvas = $('modelCanvas');
-const state = { parts: [], selected: null, hidden: new Set(), isolate: false, edges: false, ghost: false, playing: false, travel: 0, explode: 0, direction: 1, ready: false, lastTime: 0, pointer: null, hover: null, cameraView: 'iso', opticalKeepout: false };
-let model, manifest, scene, renderer, camera, controls, mechanism, contextGroup, opticalGroup, opticalReference, bounds, baseDistance = 300;
+const state = { parts: [], selected: null, hidden: new Set(), isolate: false, edges: false, ghost: false, playing: false, travel: 0, explode: 0, direction: 1, ready: false, lastTime: 0, pointer: null, hover: null, cameraView: 'iso', opticalKeepout: false, controllerReservation: true };
+let model, manifest, scene, renderer, camera, controls, mechanism, contextGroup, opticalGroup, opticalReference, controllerReference, bounds, baseDistance = 300;
 let kinematics = {}, meshObjects = [], selectionEdge, pose = {}, strokeMax = 40;
 let catalog, activeBundle, activeVersion, loadController, loadToken = 0, resizeObserver, animationFrame, retryVersionId;
 const modelMotionTags = new Set(['fixed', 'fixed_world', 'wheel', 'pinion', 'rod', 'slider', 'crank_pivot', 'slider_pivot']);
@@ -110,6 +110,7 @@ function updateVisibility() {
   $('isolate').textContent = state.isolate ? 'Exit isolate' : 'Isolate part';
   $('isolate').setAttribute('aria-pressed', String(state.isolate));
   $('modelStatus').textContent = state.isolate && state.selected ? state.selected.meta.title + ' · isolated' : `${state.parts.filter((p) => p.object.visible).length} of ${state.parts.length} components visible`;
+  setControllerReservation(state.controllerReservation);
 }
 
 function togglePart(part) {
@@ -168,7 +169,7 @@ function initScene() {
   controls.rotateSpeed = 0.68; controls.panSpeed = 0.7; controls.zoomSpeed = 0.8;
   controls.minDistance = 25; controls.maxDistance = 1600;
   controls.mouseButtons.LEFT = THREE.MOUSE.ROTATE; controls.mouseButtons.MIDDLE = THREE.MOUSE.DOLLY; controls.mouseButtons.RIGHT = THREE.MOUSE.PAN;
-  controls.addEventListener('start', () => { state.cameraView = 'custom'; document.querySelectorAll('[data-view]').forEach((button) => { button.classList.remove('active'); button.setAttribute('aria-pressed', 'false'); }); });
+  controls.addEventListener('start', () => { state.cameraView = 'custom'; setControllerReservation(state.controllerReservation); document.querySelectorAll('[data-view]').forEach((button) => { button.classList.remove('active'); button.setAttribute('aria-pressed', 'false'); }); });
   scene.add(new THREE.HemisphereLight(0xffffff, 0xb1c0ac, 2.0));
   const key = new THREE.DirectionalLight(0xfffdf3, 3.1); key.position.set(-200, 340, 330); scene.add(key);
   const rim = new THREE.DirectionalLight(0xc2dce8, 1.4); rim.position.set(230, 80, -250); scene.add(rim);
@@ -241,6 +242,32 @@ function makeOpticalReference(meta) {
   return { group, reference };
 }
 
+function makeControllerReference(meta) {
+  const reservation = meta.controllerReservation;
+  if (!reservation) return null;
+  const validPoint = (point) => Array.isArray(point) && point.length === 3 && point.every(Number.isFinite);
+  const values = ['local_box_min', 'local_box_max', 'keepout_local_box_min', 'keepout_local_box_max'];
+  if (!values.every((key) => validPoint(reservation[key])) || !validPoint(reservation.nominal_dimensions_mm) || !validPoint(reservation.rear_normal_world) || reservation.reference_only !== true) throw new Error('The controller reservation is invalid.');
+  for (const [minKey, maxKey] of [['local_box_min', 'local_box_max'], ['keepout_local_box_min', 'keepout_local_box_max']]) {
+    if (!reservation[minKey].every((value, index) => value < reservation[maxKey][index])) throw new Error('The controller reservation has invalid dimensions.');
+  }
+  const group = new THREE.Group(); group.name = 'Controller space annotation';
+  const nominalBox = new THREE.Box3(new THREE.Vector3(...reservation.local_box_min), new THREE.Vector3(...reservation.local_box_max));
+  const keepoutBox = new THREE.Box3(new THREE.Vector3(...reservation.keepout_local_box_min), new THREE.Vector3(...reservation.keepout_local_box_max));
+  const center = nominalBox.getCenter(new THREE.Vector3());
+  const volume = new THREE.Mesh(new THREE.BoxGeometry(...nominalBox.getSize(new THREE.Vector3()).toArray()), new THREE.MeshBasicMaterial({ color: 0xa57a41, transparent: true, opacity: .09, depthWrite: false, side: THREE.DoubleSide }));
+  volume.name = 'Nominal controller volume'; volume.position.copy(center); volume.renderOrder = 2; group.add(volume);
+  for (const [box, color, opacity] of [[nominalBox, 0xa57a41, .8], [keepoutBox, 0xc7a06c, .38]]) {
+    const wire = new THREE.Box3Helper(box, color); wire.name = box === nominalBox ? 'Nominal controller outline' : 'Controller clearance outline'; wire.material.transparent = true; wire.material.opacity = opacity; wire.material.depthWrite = false; wire.renderOrder = 3; group.add(wire);
+  }
+  // The arrow is an annotation of the rear's outward direction, not heatsink CAD.
+  const arrow = new THREE.ArrowHelper(new THREE.Vector3(0, 0, -1), new THREE.Vector3(center.x, center.y, nominalBox.min.z), 15, 0xa57a41, 4, 2.2);
+  // ArrowHelper shares default geometry; each disposable version owns its copies.
+  arrow.line.geometry = arrow.line.geometry.clone(); arrow.cone.geometry = arrow.cone.geometry.clone();
+  arrow.name = 'Open motor rear direction'; group.add(arrow);
+  return { group, nominalBox, keepoutBox, reservation };
+}
+
 function disposeBundle(bundle) {
   if (!bundle?.root) return;
   bundle.root.removeFromParent();
@@ -288,6 +315,8 @@ function buildBundle(candidateModel, candidateManifest, version) {
     const gridY = meta.specimen_plate_y ?? meta.specimen_y ?? -Number(meta.workingDistance || meta.working_distance_mm || 100);
     const grid = new THREE.GridHelper(360, 36, 0xc6d5c6, 0xd9e3d7); grid.position.set(meta.optical_center_x || 0, gridY - 1.2, 0); grid.material.transparent = true; grid.material.opacity = .34; grid.material.depthWrite = false; bundle.context.add(grid);
     const optical = makeOpticalReference(meta); bundle.opticalGroup = optical.group; bundle.opticalReference = optical.reference; bundle.root.add(optical.group);
+    bundle.controllerReference = makeControllerReference(meta);
+    if (bundle.controllerReference) bundle.mechanism.add(bundle.controllerReference.group);
     bundle.selectionEdge = new THREE.Group(); bundle.root.add(bundle.selectionEdge);
     return bundle;
   } catch (error) { disposeBundle(bundle); throw error; }
@@ -313,13 +342,14 @@ function updateComparison() {
 }
 
 function captureView() {
-  return { ready: state.ready, preset: state.cameraView, travel: state.travel, optical: state.opticalKeepout, position: camera?.position.clone(), target: controls?.target.clone(), up: camera?.up.clone(), fov: camera?.fov, minDistance: controls?.minDistance };
+  return { ready: state.ready, preset: state.cameraView, travel: state.travel, optical: state.opticalKeepout, controller: state.controllerReservation, position: camera?.position.clone(), target: controls?.target.clone(), up: camera?.up.clone(), fov: camera?.fov, minDistance: controls?.minDistance };
 }
 
 function installBundle(bundle, previousView) {
   const previous = activeBundle;
   activeBundle = bundle; activeVersion = bundle.version; model = bundle.model; manifest = bundle.manifest; kinematics = bundle.kinematics; strokeMax = kinematics.stroke_max;
   mechanism = bundle.mechanism; contextGroup = bundle.context; opticalGroup = bundle.opticalGroup; opticalReference = bundle.opticalReference; selectionEdge = bundle.selectionEdge;
+  controllerReference = bundle.controllerReference;
   state.parts = bundle.parts; meshObjects = bundle.meshes; state.selected = null; state.hidden.clear(); state.isolate = false; state.hover = null; state.pointer = null; state.explode = 0; state.direction = 1; state.lastTime = 0; pose = {};
   $('hoverLabel').hidden = true; canvas.style.cursor = 'grab'; $('explodeSlider').value = '0'; $('explodeValue').textContent = '0%'; $('partSearch').value = '';
   scene.add(bundle.root); state.ready = true;
@@ -339,6 +369,20 @@ function installBundle(bundle, previousView) {
   linkDownload('facetedBundleDownload', addon?.bundle, 'faceted'); $('facetedBundleDownload').hidden = !addon?.bundle || !facetedURL(addon.bundle);
   const reportUrl = addon?.report && facetedURL(addon.report); $('facetedReportLink').hidden = !reportUrl;
   if (reportUrl) $('facetedReportLink').href = reportUrl; else $('facetedReportLink').removeAttribute('href');
+  $('controllerToggle').hidden = !controllerReference;
+  $('motorRearView').hidden = !controllerReference;
+  $('controllerNotes').hidden = !controllerReference;
+  $('controllerNotes').textContent = controllerReference ? 'The motor rear opens tangentially away from the barrel. The amber box reserves 42 × 42 × 20 mm for the controller; the outer wireframe adds 2 mm of side and rear clearance. The heatsink and controller mass are unknown and excluded from the estimates.' : '';
+  const controllerCheck = controllerReference?.reservation?.verification;
+  const verifiedController = /^[a-f0-9]{64}$/.test(controllerCheck?.source_sha256) && controllerCheck.source_sha256 === manifest.source_sha256 && controllerCheck.validated === true && controllerCheck.continuous === true && controllerCheck.open_rear === true;
+  $('controllerVerification').hidden = !verifiedController;
+  $('controllerVerification').textContent = verifiedController ? 'Reserved volume and open rear corridor verified clear through the full stroke.' : '';
+  for (const [id, path] of [['controllerEnvelopeDownload', downloads.controllerEnvelope], ['controllerKeepoutDownload', downloads.controllerKeepout]]) {
+    linkDownload(id, controllerReference ? path : null); $(id).hidden = !controllerReference || !versionURL(path);
+  }
+  const controllerReport = verifiedController && versionURL(manifest.reports?.controller);
+  $('controllerReportLink').hidden = !controllerReport;
+  if (controllerReport) $('controllerReportLink').href = controllerReport; else $('controllerReportLink').removeAttribute('href');
   document.querySelectorAll('.clearance-limit').forEach((element) => element.remove());
   const limit = model.meta?.safe_probe_travel_mm ?? model.meta?.clearance_limit_mm ?? manifest.clearance?.safe_travel_mm;
   if (Number.isFinite(Number(limit)) && Number(limit) > 0 && Number(limit) < strokeMax) {
@@ -355,6 +399,7 @@ function installBundle(bundle, previousView) {
     document.querySelectorAll('[data-view]').forEach((button) => { button.classList.remove('active'); button.setAttribute('aria-pressed', 'false'); });
   } else setCamera(previousView.ready ? previousView.preset : 'iso');
   setOpticalKeepout(previousView.optical);
+  setControllerReservation(previousView.controller);
   $('versionSelect').value = activeVersion.id; $('versionLabel').textContent = activeVersion.label; $('releaseLink').href = activeVersion.release || catalog.repository; $('releaseLink').textContent = `${activeVersion.id} on GitHub ↗`;
   updateComparison();
   $('loadState').hidden = true; window.modelReady = true;
@@ -367,6 +412,15 @@ function setOpticalKeepout(visible) {
   $('opticalKeepout').checked = state.opticalKeepout;
   $('opticalCaption').hidden = !state.opticalKeepout;
   viewport.classList.toggle('show-optical', state.opticalKeepout);
+}
+
+function setControllerReservation(visible) {
+  state.controllerReservation = Boolean(visible);
+  const show = Boolean(controllerReference && state.controllerReservation && state.cameraView !== 'microscope' && !state.isolate && state.explode === 0);
+  if (controllerReference) controllerReference.group.visible = show;
+  $('controllerSpace').checked = state.controllerReservation;
+  $('controllerCaption').hidden = !show;
+  viewport.classList.toggle('show-controller', show);
 }
 
 function setOpticalCamera() {
@@ -434,6 +488,7 @@ function updatePose(travel) {
     part.object.matrixAutoUpdate = false; part.object.matrix.copy(matrix); part.object.matrixWorldNeedsUpdate = true;
   }
   mechanism.updateMatrixWorld(true); contextGroup.updateMatrixWorld(true);
+  setControllerReservation(state.controllerReservation);
   pose = { phi, cx, cy, sy, travel: state.travel };
   $('travelSlider').value = state.travel;
   $('travelSlider').style.setProperty('--progress', `${state.travel / strokeMax * 100}%`);
@@ -523,7 +578,9 @@ function updateAppearance() {
 
 function setCamera(view, focusBounds = null) {
   if (!state.ready) return;
+  if (view === 'motor-rear' && !controllerReference) view = 'iso';
   state.cameraView = view;
+  setControllerReservation(state.controllerReservation);
   if (view === 'microscope') {
     setOpticalKeepout(true); setOpticalCamera();
     $('fitView').title = 'Fit projected optical view'; $('fitView').setAttribute('aria-label', 'Fit projected optical view');
@@ -532,14 +589,18 @@ function setCamera(view, focusBounds = null) {
   }
   camera.fov = 34; camera.updateProjectionMatrix(); controls.minDistance = 25;
   $('fitView').title = 'Fit assembly in view'; $('fitView').setAttribute('aria-label', 'Fit assembly in view');
-  const box = focusBounds || bounds;
+  let box = focusBounds || bounds;
+  if (view === 'motor-rear' && controllerReference) {
+    box = new THREE.Box3().setFromObject(controllerReference.group);
+    for (const part of state.parts.filter((part) => /NEMA17|microscope_reference|rear_clamp|frame_front_clamp/.test(part.name))) box.expandByObject(part.object);
+  }
   if (!box || box.isEmpty()) return;
   const center = box.getCenter(new THREE.Vector3());
   const size = box.getSize(new THREE.Vector3());
   const maxDim = Math.max(size.x, size.y, size.z);
   const aspectAllowance = Math.max(1, 1 / camera.aspect);
   baseDistance = Math.max(85, maxDim / (2 * Math.tan(deg(camera.fov / 2))) * 1.24 * aspectAllowance);
-  const directions = { iso: [1.05, .52, 1.8], front: [0, 0, 1], side: [1, 0, 0], top: [0, 1, .001] };
+  const directions = { iso: [1.05, .52, 1.8], front: [0, 0, 1], side: [1, 0, 0], top: [0, 1, .001], 'motor-rear': [.65, .24, -1.8] };
   const direction = new THREE.Vector3(...(directions[view] || directions.iso)).normalize();
   camera.position.copy(center).addScaledVector(direction, baseDistance);
   setCameraUp([0, 1, 0]);
@@ -622,6 +683,7 @@ function bindEvents() {
   $('edgesToggle').addEventListener('click', () => { state.edges = !state.edges; $('edgesToggle').setAttribute('aria-pressed', String(state.edges)); updateAppearance(); });
   $('ghostToggle').addEventListener('click', () => { state.ghost = !state.ghost; $('ghostToggle').setAttribute('aria-pressed', String(state.ghost)); updateAppearance(); });
   $('opticalKeepout').addEventListener('change', (event) => setOpticalKeepout(event.target.checked));
+  $('controllerSpace').addEventListener('change', (event) => setControllerReservation(event.target.checked));
   $('helpToggle').addEventListener('click', () => { $('navigationHelp').hidden = !$('navigationHelp').hidden; $('helpToggle').setAttribute('aria-expanded', String(!$('navigationHelp').hidden)); });
   $('notesToggle').addEventListener('click', () => { $('designNotes').hidden = !$('designNotes').hidden; $('notesToggle').setAttribute('aria-expanded', String(!$('designNotes').hidden)); });
   $('playMotion').addEventListener('click', () => setPlaying(!state.playing));
@@ -723,7 +785,7 @@ async function start() {
     }
     $('repositoryLink').href = catalog.repository || 'https://github.com/tscircuit/probe-stage01';
     initScene(); bindEvents(); animationFrame = requestAnimationFrame(frame);
-    window.inspector = { state, get model() { return model; }, get manifest() { return manifest; }, get versionId() { return activeVersion?.id; }, get activeVersion() { return activeVersion; }, loadVersion, setTravel: (travel) => { setPlaying(false); updatePose(travel); }, setCamera, fitCurrentView, selectPart: (name) => selectPart(state.parts.find((part) => part.name === name)), renderer, scene, camera, controls, resourceStats: () => ({ versionRoots: scene.children.filter((child) => child.name === 'Version model').length, parts: state.parts.length, pickMeshes: meshObjects.length, geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures }) };
+    window.inspector = { state, get model() { return model; }, get manifest() { return manifest; }, get versionId() { return activeVersion?.id; }, get activeVersion() { return activeVersion; }, get controllerReference() { return controllerReference; }, loadVersion, setTravel: (travel) => { setPlaying(false); updatePose(travel); }, setCamera, setControllerReservation, fitCurrentView, selectPart: (name) => selectPart(state.parts.find((part) => part.name === name)), renderer, scene, camera, controls, resourceStats: () => ({ versionRoots: scene.children.filter((child) => child.name === 'Version model').length, parts: state.parts.length, pickMeshes: meshObjects.length, controllerAnnotations: scene.getObjectByName('Version model') ? (() => { let count = 0; scene.getObjectByName('Version model').traverse((object) => { if (object.name === 'Controller space annotation') count++; }); return count; })() : 0, geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures }) };
     const requested = new URL(location.href).searchParams.get('version'), initial = catalog.versions.find((version) => version.id === requested && version.available === true) || catalog.versions.find((version) => version.id === catalog.defaultVersion && version.available === true) || catalog.versions.find((version) => version.available === true);
     if (requested && requested !== initial.id) toast('That version is not available. Opening the current release.');
     $('versionSelect').value = initial.id; await loadVersion(initial.id);
