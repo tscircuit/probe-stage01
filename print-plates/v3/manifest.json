@@ -1,0 +1,38 @@
+{
+  "public_version": "v3",
+  "source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+  "format": "3MF",
+  "file": "probe-stage-v3-print-plate.3mf",
+  "sha256": "24383de721f8052a1c5af10af65134b82cfa6857143baa64e8238752e1f08afe",
+  "bytes": 253875,
+  "names": [
+    "frame_front_clamp",
+    "rear_clamp",
+    "front_axle_bridge",
+    "sector_crank",
+    "motor_pinion",
+    "connecting_rod",
+    "probe_carriage"
+  ],
+  "object_count": 7,
+  "plate_mm": [
+    256,
+    256
+  ],
+  "packed_extents_mm": [
+    237.99999904632568,
+    231.94525146484375,
+    69.25878715515137
+  ],
+  "hardware_included": false,
+  "all_meshes_manifold_and_oriented": true,
+  "report": "validation.json",
+  "report_sha256": "4aeba849ea02c41be88464e02d00c4a89f2176ced0afe7bde4a5997f55ea7681",
+  "notes": [
+    "Includes the seven fabricated polymer parts only; all 41 hardware/reference components are excluded.",
+    "Meshes are unchanged from the frozen STL files except for rigid rotation and translation; dimensions are in millimeters.",
+    "At least 5 mm bed-edge margin and 5 mm clearance between projected convex hulls; seven separate named build objects.",
+    "Generic Core 3MF geometry; select your printer, material, supports, infill, layer height and adhesion in your slicer.",
+    "Integral frame braces, clamp projections, bearing bosses and angled probe-holder features can require supports. This is not a support-free or pre-sliced print project."
+  ]
+}

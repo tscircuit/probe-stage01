@@ -40,6 +40,20 @@ python -m pip install -r versions/v3/site/downloads/requirements.txt
 python versions/v3/site/downloads/probe_stage_v3.py --out regenerated/v3
 ```
 
+## Printable 3MF plates
+
+The current viewer has a **Print plate · 3MF** button for v3 and v2. Download the [v3 plate](print-plates/v3/probe-stage-v3-print-plate.3mf) or [v2 plate](print-plates/v2/probe-stage-v2-print-plate.3mf). Each contains the seven fabricated polymer parts as separate named objects, arranged on a **256 × 256 mm** build area with at least 5 mm edge margins and part spacing. Bolts, nuts, bearings, motor, metal probe, hardware spacers, microscope, specimen and controller reference volumes are excluded.
+
+The meshes preserve the frozen STL geometry under rigid rotation and translation. These are vendor-neutral Core 3MF geometry files: choose your printer, material, supports and other print settings in your slicer. Integral braces, clamp projections, bosses and the angled probe holder may need supports. The [v3 official lib3mf readback](print-plates/v3/independent-validation.json) and [v2 readback](print-plates/v2/independent-validation.json) confirm seven valid closed oriented meshes, no import warnings, millimeter units, source equivalence and separation. The [v3 inventory and layout report](print-plates/v3/validation.json) records all included and excluded components.
+
+The frozen v1 frame STL contains non-manifold junction edges, so its 3MF plate is withheld. Its original STEP/STL downloads and archive remain unchanged. Optional print plates live outside the immutable version snapshots.
+
+```sh
+python -m pip install -r tools/requirements-print-plates.txt
+python tools/generate_print_plates.py --repo . --output regenerated/print-plates
+python tools/verify_print_plate.py --repo . --plates print-plates --output regenerated/print-plate-checks
+```
+
 ## Compact v2
 
 | Property | v1 | v2 |

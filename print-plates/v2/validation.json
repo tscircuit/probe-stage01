@@ -1,0 +1,836 @@
+{
+  "public_version": "v2",
+  "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+  "complete": true,
+  "validated": true,
+  "format": "3MF Core 2015/02, OPC ZIP",
+  "units": "mm",
+  "object_count": 7,
+  "build_item_count": 7,
+  "included_names": [
+    "frame_front_clamp",
+    "rear_clamp",
+    "front_axle_bridge",
+    "sector_crank",
+    "motor_pinion",
+    "connecting_rod",
+    "probe_carriage"
+  ],
+  "excluded_components": [
+    {
+      "name": "625ZZ_wheel_rear",
+      "category": "Hardware"
+    },
+    {
+      "name": "625ZZ_wheel_front",
+      "category": "Hardware"
+    },
+    {
+      "name": "625ZZ_crank",
+      "category": "Hardware"
+    },
+    {
+      "name": "625ZZ_slider",
+      "category": "Hardware"
+    },
+    {
+      "name": "wheel_inner_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "wheel_rear_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "wheel_front_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "crank_rear_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "crank_front_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "slider_rear_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "slider_front_spacer",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_wheel_axle",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_crank_bolt",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_crank_nut",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_slider_pivot_bolt",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_slider_captive_nut",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_axle_captive_nut",
+      "category": "Hardware"
+    },
+    {
+      "name": "NEMA17_body",
+      "category": "Hardware"
+    },
+    {
+      "name": "NEMA17_face",
+      "category": "Hardware"
+    },
+    {
+      "name": "motor_shaft",
+      "category": "Hardware"
+    },
+    {
+      "name": "M3_motor_-15.5_-15.5",
+      "category": "Hardware"
+    },
+    {
+      "name": "M3_motor_-15.5_15.5",
+      "category": "Hardware"
+    },
+    {
+      "name": "M3_motor_15.5_-15.5",
+      "category": "Hardware"
+    },
+    {
+      "name": "M3_motor_15.5_15.5",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_stop_-1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_stop_nut_-1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_stop_1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_stop_nut_1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_clamp_-28",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_clamp_nut_-28",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_clamp_28",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_clamp_nut_28",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_bridge_bolt_0",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_bridge_nut_0",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_bridge_bolt_1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_bridge_nut_1",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_probe_clamp_bolt",
+      "category": "Hardware"
+    },
+    {
+      "name": "M5_probe_clamp_nut",
+      "category": "Hardware"
+    },
+    {
+      "name": "microscope_reference",
+      "category": "References"
+    },
+    {
+      "name": "probe_reference",
+      "category": "References"
+    },
+    {
+      "name": "specimen_plate_reference",
+      "category": "References"
+    }
+  ],
+  "hardware_included": false,
+  "reference_envelopes_included": false,
+  "vendor_printer_settings_included": false,
+  "all_meshes_manifold_and_oriented": true,
+  "source_nonmanifold_meshes_preserved": [],
+  "plate_mm": [
+    256,
+    256
+  ],
+  "packed_extents_mm": [
+    226.298002243042,
+    230.28569984436035,
+    112.75878715515137
+  ],
+  "build_bounds_mm": {
+    "min": [
+      5.0,
+      5.0,
+      0.0
+    ],
+    "max": [
+      231.298002243042,
+      235.28569984436035,
+      112.75878715515137
+    ]
+  },
+  "edge_margin_mm": 5.0,
+  "minimum_projected_convex_hull_clearance_mm": 5.010316736457014,
+  "separation_method": "Conservative XY convex-hull separating axes with 5 mm gap; all projected source triangles are inside their respective hulls.",
+  "packing_attempts": [
+    {
+      "plate_mm": [
+        256,
+        256
+      ],
+      "packed": true
+    }
+  ],
+  "parts": [
+    {
+      "name": "frame_front_clamp",
+      "source_stl_sha256": "9944bff4b8fa94a6950d49b59f3f2de092231340d134c8576c4f58797b8e8240",
+      "triangle_count": 7224,
+      "source_volume_mm3": 77821.82459019388,
+      "plate_volume_mm3": 77821.82459019391,
+      "absolute_volume_error_mm3": 2.9103830456733704e-11,
+      "source_rigid_equivalence_max_coordinate_error_mm": 0.0,
+      "rigid_rotation_source_to_plate": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        90.98782348632812,
+        57.569374084472656,
+        89.0
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "max": [
+          123.51473617553711,
+          205.40386199951172,
+          112.75878715515137
+        ]
+      },
+      "minimum_triangle_area_mm2": 7.184244382619364e-06,
+      "bed_contact_area_mm2": 220.97415201115737,
+      "orientation": "drive plane horizontal; original +X faces bed",
+      "in_plane_rotation_deg": 0,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 3578,
+      "edge_count": 10836,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 3578,
+        "edge_count": 10836
+      },
+      "validated": true
+    },
+    {
+      "name": "rear_clamp",
+      "source_stl_sha256": "952e94cd667fb1525b1489c109c8b09f78cdad40767e2cc3baa9ad3acebbc7fd",
+      "triangle_count": 1016,
+      "source_volume_mm3": 11380.644371146787,
+      "plate_volume_mm3": 11380.644371146793,
+      "absolute_volume_error_mm3": 5.4569682106375694e-12,
+      "source_rigid_equivalence_max_coordinate_error_mm": 0.0,
+      "rigid_rotation_source_to_plate": [
+        [
+          -1.8369701987210297e-16,
+          6.123233995736766e-17,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.1248198369963932e-32,
+          1.8369701987210297e-16
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        88.75878715515137,
+        202.75878715515137,
+        1.9916989755492604e-15
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          65.0,
+          179.0,
+          0.0
+        ],
+        "max": [
+          121.28569984436035,
+          235.28569984436035,
+          18.000000000000004
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.002924637566904613,
+      "bed_contact_area_mm2": 678.0589133805761,
+      "orientation": "flat clamp end face; original -Y faces bed",
+      "in_plane_rotation_deg": 270,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 506,
+      "edge_count": 1524,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 506,
+        "edge_count": 1524
+      },
+      "validated": true
+    },
+    {
+      "name": "front_axle_bridge",
+      "source_stl_sha256": "0a331a406f89c340365b6d26f2410993087d570e2780bc7b0c1bdf6127524659",
+      "triangle_count": 1172,
+      "source_volume_mm3": 7282.902293178304,
+      "plate_volume_mm3": 7282.902293178304,
+      "absolute_volume_error_mm3": 0.0,
+      "source_rigid_equivalence_max_coordinate_error_mm": 2.842170943040401e-14,
+      "rigid_rotation_source_to_plate": [
+        [
+          -6.123233995736766e-17,
+          -1.2246467991473532e-16,
+          1.0
+        ],
+        [
+          7.498798913309288e-33,
+          -1.0,
+          -1.2246467991473532e-16
+        ],
+        [
+          1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        173.98981475830078,
+        152.3365020751953,
+        -89.0
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          135.0,
+          5.0,
+          0.0
+        ],
+        "max": [
+          193.98980712890625,
+          108.9999885559082,
+          5.0
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.07200620281219017,
+      "bed_contact_area_mm2": 1456.5804586356608,
+      "orientation": "flat bridge face; original -X faces bed",
+      "in_plane_rotation_deg": 180,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 582,
+      "edge_count": 1758,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 582,
+        "edge_count": 1758
+      },
+      "validated": true
+    },
+    {
+      "name": "sector_crank",
+      "source_stl_sha256": "c6791d12e27985e63521c4e27e3adf652133a07ef9abb43a5d96d00175a2def7",
+      "triangle_count": 4632,
+      "source_volume_mm3": 25879.346232751413,
+      "plate_volume_mm3": 25879.346232751413,
+      "absolute_volume_error_mm3": 0.0,
+      "source_rigid_equivalence_max_coordinate_error_mm": 0.0,
+      "rigid_rotation_source_to_plate": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        198.99988555908203,
+        73.65103530883789,
+        87.0
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          121.0,
+          111.0,
+          0.0
+        ],
+        "max": [
+          216.94525146484375,
+          206.96994400024414,
+          13.5
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.006060373932996299,
+      "bed_contact_area_mm2": 176.25713016053487,
+      "orientation": "drive plane horizontal; original +X faces bed",
+      "in_plane_rotation_deg": 0,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 2308,
+      "edge_count": 6948,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 2308,
+        "edge_count": 6948
+      },
+      "validated": true
+    },
+    {
+      "name": "motor_pinion",
+      "source_stl_sha256": "7e5cb97e83e70f376cc69cfeb92321de7dcfc9d24c8198a7f7c4481800dc6d74",
+      "triangle_count": 2024,
+      "source_volume_mm3": 2384.9314301277373,
+      "plate_volume_mm3": 2384.9314301277373,
+      "absolute_volume_error_mm3": 0.0,
+      "source_rigid_equivalence_max_coordinate_error_mm": 0.0,
+      "rigid_rotation_source_to_plate": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        15.999647140502924,
+        -69.33686065673828,
+        83.0
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "max": [
+          26.99929428100586,
+          26.999298095703125,
+          9.5
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.016554838972813485,
+      "bed_contact_area_mm2": 282.0319235689949,
+      "orientation": "drive plane horizontal; original +X faces bed",
+      "in_plane_rotation_deg": 0,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 1010,
+      "edge_count": 3036,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 1010,
+        "edge_count": 3036
+      },
+      "validated": true
+    },
+    {
+      "name": "connecting_rod",
+      "source_stl_sha256": "9ac074e3af6bc3bc13e63efbf390e6a76fd57a410a4500423fab3f83f6948af5",
+      "triangle_count": 1452,
+      "source_volume_mm3": 7772.270326861969,
+      "plate_volume_mm3": 7772.270326861969,
+      "absolute_volume_error_mm3": 0.0,
+      "source_rigid_equivalence_max_coordinate_error_mm": 0.0,
+      "rigid_rotation_source_to_plate": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        250.30288314819336,
+        38.05582809448242,
+        106.0
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          199.0,
+          5.0,
+          0.0
+        ],
+        "max": [
+          231.298002243042,
+          114.39044570922852,
+          7.0
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.3614772821927929,
+      "bed_contact_area_mm2": 1341.168749948357,
+      "orientation": "drive plane horizontal; original +X faces bed",
+      "in_plane_rotation_deg": 0,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 724,
+      "edge_count": 2178,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 724,
+        "edge_count": 2178
+      },
+      "validated": true
+    },
+    {
+      "name": "probe_carriage",
+      "source_stl_sha256": "957708aa11a6e800b3e2e4af8d24092d92b2c981501c85c2bf9aac58705d12f1",
+      "triangle_count": 2454,
+      "source_volume_mm3": 25479.029815277045,
+      "plate_volume_mm3": 25479.029815277067,
+      "absolute_volume_error_mm3": 2.1827872842550278e-11,
+      "source_rigid_equivalence_max_coordinate_error_mm": 7.105427357601002e-15,
+      "rigid_rotation_source_to_plate": [
+        [
+          3.749399456654644e-33,
+          -1.0,
+          6.123233995736766e-17
+        ],
+        [
+          6.123233995736766e-17,
+          6.123233995736766e-17,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "rigid_translation_source_to_plate_mm": [
+        164.94228649139404,
+        49.99999999999999,
+        95.5
+      ],
+      "rotation_determinant": 1.0,
+      "bounds_mm": {
+        "min": [
+          173.0,
+          5.0,
+          0.0
+        ],
+        "max": [
+          200.99999904632568,
+          59.99999999999999,
+          61.28449249267578
+        ]
+      },
+      "minimum_triangle_area_mm2": 0.001961691290489398,
+      "bed_contact_area_mm2": 1105.9746449245486,
+      "orientation": "broad carriage end face; original +X faces bed",
+      "in_plane_rotation_deg": 90,
+      "closed_two_manifold_edges": true,
+      "consistent_outward_winding": true,
+      "connected_components": 1,
+      "vertex_count": 1217,
+      "edge_count": 3681,
+      "source_topology_unchanged": true,
+      "source_topology": {
+        "closed_two_manifold_edges": true,
+        "consistent_outward_winding": true,
+        "connected_components": 1,
+        "vertex_count": 1217,
+        "edge_count": 3681
+      },
+      "validated": true
+    }
+  ],
+  "part_pairs": [
+    {
+      "parts": [
+        "frame_front_clamp",
+        "sector_crank"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 5.040926775207851,
+      "clear": true
+    },
+    {
+      "parts": [
+        "frame_front_clamp",
+        "front_axle_bridge"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 11.48526382446289,
+      "clear": true
+    },
+    {
+      "parts": [
+        "frame_front_clamp",
+        "connecting_rod"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 77.69848453510377,
+      "clear": true
+    },
+    {
+      "parts": [
+        "frame_front_clamp",
+        "rear_clamp"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 6.377526246753263,
+      "clear": true
+    },
+    {
+      "parts": [
+        "frame_front_clamp",
+        "probe_carriage"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 53.493534763059046,
+      "clear": true
+    },
+    {
+      "parts": [
+        "frame_front_clamp",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 14.752860888922516,
+      "clear": true
+    },
+    {
+      "parts": [
+        "sector_crank",
+        "front_axle_bridge"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 5.130618158760548,
+      "clear": true
+    },
+    {
+      "parts": [
+        "sector_crank",
+        "connecting_rod"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 10.1044337673686,
+      "clear": true
+    },
+    {
+      "parts": [
+        "sector_crank",
+        "rear_clamp"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 7.484132008184798,
+      "clear": true
+    },
+    {
+      "parts": [
+        "sector_crank",
+        "probe_carriage"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 52.3246065043771,
+      "clear": true
+    },
+    {
+      "parts": [
+        "sector_crank",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 150.53705152924928,
+      "clear": true
+    },
+    {
+      "parts": [
+        "front_axle_bridge",
+        "connecting_rod"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 5.010316736457014,
+      "clear": true
+    },
+    {
+      "parts": [
+        "front_axle_bridge",
+        "rear_clamp"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 99.59115797848142,
+      "clear": true
+    },
+    {
+      "parts": [
+        "front_axle_bridge",
+        "probe_carriage"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 5.6766552754905035,
+      "clear": true
+    },
+    {
+      "parts": [
+        "front_axle_bridge",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 110.55469940825762,
+      "clear": true
+    },
+    {
+      "parts": [
+        "connecting_rod",
+        "rear_clamp"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 110.99293289023305,
+      "clear": true
+    },
+    {
+      "parts": [
+        "connecting_rod",
+        "probe_carriage"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 5.944944819758035,
+      "clear": true
+    },
+    {
+      "parts": [
+        "connecting_rod",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 180.96311438823258,
+      "clear": true
+    },
+    {
+      "parts": [
+        "rear_clamp",
+        "probe_carriage"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 137.8020735509661,
+      "clear": true
+    },
+    {
+      "parts": [
+        "rear_clamp",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 178.6024752312664,
+      "clear": true
+    },
+    {
+      "parts": [
+        "probe_carriage",
+        "motor_pinion"
+      ],
+      "projected_convex_hull_separating_axis_gap_mm": 146.00070571899414,
+      "clear": true
+    }
+  ],
+  "notes": [
+    "Includes the seven fabricated polymer parts only; all 41 hardware/reference components are excluded.",
+    "Meshes are unchanged from the frozen STL files except for rigid rotation and translation; dimensions are in millimeters.",
+    "At least 5 mm bed-edge margin and 5 mm clearance between projected convex hulls; seven separate named build objects.",
+    "Generic Core 3MF geometry; select your printer, material, supports, infill, layer height and adhesion in your slicer.",
+    "Integral frame braces, clamp projections, bearing bosses and angled probe-holder features can require supports. This is not a support-free or pre-sliced print project."
+  ]
+}

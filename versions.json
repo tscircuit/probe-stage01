@@ -132,6 +132,25 @@
         "report": "./faceted-parasolid/v2/validation.json",
         "bundle": "./faceted-parasolid/v2/probe-stage-v2-faceted-parasolid.zip",
         "unsupported": {}
+      },
+      "printPlate": {
+        "source_sha256": "147afaf5abff81e8cfba460cf8c0c600f8c675360503eed4fa915d061d3ff98a",
+        "names": [
+          "frame_front_clamp",
+          "rear_clamp",
+          "front_axle_bridge",
+          "sector_crank",
+          "motor_pinion",
+          "connecting_rod",
+          "probe_carriage"
+        ],
+        "plate_mm": [
+          256,
+          256
+        ],
+        "sha256": "3987e9885b5806776b4cfb8779eedd678279270a715289641d7c4d8eecc085ba",
+        "bytes": 250874,
+        "file": "./print-plates/v2/probe-stage-v2-print-plate.3mf"
       }
     },
     {
@@ -197,6 +216,25 @@
         "report": "./faceted-parasolid/v3/validation.json",
         "bundle": "./faceted-parasolid/v3/probe-stage-v3-faceted-parasolid.zip",
         "unsupported": {}
+      },
+      "printPlate": {
+        "source_sha256": "50220ccf93c48d7941de36998c6a1734a7201ec2bed9ff2e1670b82bd65be8b6",
+        "names": [
+          "frame_front_clamp",
+          "rear_clamp",
+          "front_axle_bridge",
+          "sector_crank",
+          "motor_pinion",
+          "connecting_rod",
+          "probe_carriage"
+        ],
+        "plate_mm": [
+          256,
+          256
+        ],
+        "sha256": "24383de721f8052a1c5af10af65134b82cfa6857143baa64e8238752e1f08afe",
+        "bytes": 253875,
+        "file": "./print-plates/v3/probe-stage-v3-print-plate.3mf"
       }
     }
   ]

@@ -43,6 +43,25 @@ function validatedFacetedAddon(version, versionManifest) {
   return { ...addon, base };
 }
 
+function printPlateURL(path, version = activeVersion) {
+  if (typeof path !== 'string' || !version) return null;
+  try {
+    const allowed = new URL(`./print-plates/${version.id}/`, document.baseURI), url = new URL(path.trim(), document.baseURI);
+    const filename = url.pathname.slice(allowed.pathname.length);
+    if (!['http:', 'https:'].includes(url.protocol) || url.origin !== location.origin || url.username || url.password || url.search || url.hash || !url.pathname.startsWith(allowed.pathname) || !/^[a-zA-Z0-9_-]+\.3mf$/.test(filename)) return null;
+    return url.href;
+  } catch { return null; }
+}
+
+function validatedPrintPlate(version, versionManifest, versionModel) {
+  const addon = version?.printPlate, printable = versionModel?.meta?.printable;
+  if (!addon || !/^[a-f0-9]{64}$/.test(addon.source_sha256) || addon.source_sha256 !== versionManifest?.source_sha256 || addon.source_sha256 !== versionModel?.meta?.verification?.source_sha256 || !Array.isArray(addon.names) || !Array.isArray(printable) || addon.names.length !== 7 || printable.length !== 7 || versionManifest.printable_count !== 7) return null;
+  const names = new Set(addon.names), modelNames = new Set(versionModel.parts.map((part) => part.name));
+  if (names.size !== 7 || new Set(printable).size !== 7 || !addon.names.every((name) => typeof name === 'string' && modelNames.has(name)) || !printable.every((name) => names.has(name))) return null;
+  const file = printPlateURL(addon.file, version);
+  return file ? { ...addon, file } : null;
+}
+
 function toast(message) {
   $('toast').textContent = message;
   $('toast').hidden = false;
@@ -52,7 +71,7 @@ function toast(message) {
 
 function linkDownload(id, path, kind = 'version') {
   const element = $(id);
-  const safe = kind === 'faceted' ? facetedURL(path) : versionURL(path);
+  const safe = kind === 'faceted' ? facetedURL(path) : kind === 'printPlate' ? printPlateURL(path) : versionURL(path);
   if (safe) { element.href = safe; element.classList.remove('disabled'); element.removeAttribute('aria-disabled'); element.hidden = false; }
   else { element.removeAttribute('href'); element.classList.add('disabled'); element.setAttribute('aria-disabled', 'true'); }
 }
@@ -361,6 +380,11 @@ function installBundle(bundle, previousView) {
   $('opticalCaption').querySelector('strong').textContent = `Ø${(opticalReference.radius * 2).toFixed(0)} mm barrel projection`;
   const downloads = manifest.downloads || {};
   linkDownload('assemblyDownload', downloads.assemblyStep || downloads.assembly_step || manifest.assemblyStep); linkDownload('sourceDownload', downloads.source || manifest.source); linkDownload('bundleDownload', downloads.bundle || manifest.bundle);
+  const printPlate = validatedPrintPlate(activeVersion, manifest, model);
+  for (const id of ['printPlateDownload', 'printPlateNotesDownload']) { linkDownload(id, printPlate?.file, 'printPlate'); $(id).hidden = !printPlate; }
+  $('printPlateNotes').hidden = !printPlate;
+  const plateSize = Array.isArray(printPlate?.plate_mm) && printPlate.plate_mm.length === 2 && printPlate.plate_mm.every((value) => Number.isFinite(value) && value > 0) ? ` · ${printPlate.plate_mm.map((value) => Number(value.toFixed(1))).join(' × ')} mm plate` : '';
+  $('printPlateNotes').textContent = printPlate ? `7 printable parts${plateSize}. No bolts, nuts, bearings, motor or reference parts. Separate objects are laid out on the plate; review orientation, supports and printer fit in your slicer. No printer presets are included.` : '';
   $('fitNotes').textContent = manifest.notes?.fit || `${strokeMax} mm straight vertical travel at a fixed ${$('probeAngleValue').textContent}° probe angle.`;
   $('validationNotes').textContent = manifest.notes?.validation || 'This fit and motion prototype requires physical load, deflection and print-clearance validation.';
   $('cadNotes').textContent = manifest.notes?.exports || 'STEP preserves solid geometry. x_t is unavailable without a genuine Parasolid exporter.';
